@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ansprechpartner – UVC Regionalgruppe Emsland-Osnabrück</title>
+    <title>Kontakt – UVC Regionalgruppe Emsland-Osnabrück</title>
 
     <style>
         body {
@@ -62,12 +62,34 @@
             color: #2e5c2e;
         }
 
-        .contact-box {
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-top: 20px;
-            padding: 15px;
-            border-left: 4px solid #2e5c2e;
-            background: #f7f7f7;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
             border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: #2e5c2e;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #244a24;
         }
 
         footer {
@@ -88,25 +110,34 @@
         <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
-        <a href="ansprechpartner.html"><strong>Ansprechpartner</strong></a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="kontakt.html"><strong>Kontakt</strong></a>
     </nav>
 </header>
 
 <div class="hero">
-    <h1>Ansprechpartner</h1>
+    <h1>Kontakt</h1>
 </div>
 
 <section>
-    <h2>Deine Ansprechpartner der Regionalgruppe</h2>
+    <h2>Schreib uns eine Nachricht</h2>
     <p>
-        Die Kontaktinformationen werden in Kürze ergänzt.  
-        Hier findest du bald die wichtigsten Ansprechpartner für Fragen, Organisation und Aktivitäten.
+        Du hast Fragen, Anregungen oder möchtest mit uns in Kontakt treten?  
+        Nutze einfach das folgende Formular – wir melden uns so schnell wie möglich.
     </p>
 
-    <div class="contact-box">
-        <strong>Kontaktinformationen folgen…</strong>
-    </div>
+    <form action="https://formspree.io/f/mojylqqz" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Nachricht senden</button>
+    </form>
 </section>
 
 <footer>
