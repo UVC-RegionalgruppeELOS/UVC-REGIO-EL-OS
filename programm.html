@@ -29,7 +29,7 @@
     }
 
     h1, h2 {
-        color: #2e5c2e;   /* ← Deine gewünschte Farbe */
+        color: #2e5c2e;
     }
 
     .content { 
@@ -38,15 +38,10 @@
         margin: auto; 
     }
 
-    .placeholder {
+    img.programmbild {
         width: 100%;
-        height: 250px;
-        background: #ccc;
-        border: 2px dashed #888;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #555;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
         margin-bottom: 20px;
     }
 </style>
@@ -64,7 +59,9 @@
 </header>
 
 <div class="content">
-    <div class="placeholder">Platzhalter für Unimog‑Foto</div>
+
+    <!-- Eingebettetes Bild -->
+    <img src="programm.png" alt="Unimog Gruppe im Steinbruch" class="programmbild">
 
     <h1>Programm</h1>
     <p>Hier folgt später das Programm der Regionalgruppe Emsland-Osnabrück.</p>
