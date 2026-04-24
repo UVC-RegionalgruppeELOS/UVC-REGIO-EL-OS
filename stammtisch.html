@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -32,27 +32,10 @@
             color: #2e5c2e;
         }
 
-        .hero {
-            height: 40vh;
-            background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 0 0 10px black;
-            border-bottom: 2px solid #ccc;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin: 0;
-            color: white;
-            text-align: center;
-        }
-
         section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 30px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -60,6 +43,15 @@
 
         h1, h2 {
             color: #2e5c2e;
+            text-align: center;
+        }
+
+        .stammtisch-img {
+            display: block;
+            margin: 25px auto 35px auto;
+            width: 180px;
+            border-radius: 6px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.25);
         }
 
         footer {
@@ -68,7 +60,7 @@
             color: #444;
             font-size: 0.9rem;
             border-top: 1px solid #ccc;
-            margin-top: 40px;
+            margin-top: 60px;
         }
     </style>
 </head>
@@ -84,18 +76,20 @@
     </nav>
 </header>
 
-<div class="hero">
-    <h1>Stammtisch</h1>
-</div>
-
 <section>
     <h2>Unser Stammtisch</h2>
-    <p>
-        Informationen zum Stammtisch folgen in Kürze.  
-        Hier erfährst du künftig alles über Termine, Treffpunkte und gemeinsame Aktivitäten.
+
+    <img src="stammtisch.png" alt="Stammtisch UVC Emsland-Osnabrück" class="stammtisch-img">
+
+    <p style="text-align:center;">
+        In Kürze findest du hier alle wichtigen Informationen zu unserem Stammtisch –<br>
+        inklusive Terminen, Uhrzeiten und Treffpunkten.
     </p>
 </section>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland-Osnabrück
 </footer>
+
+</body>
+</html>
