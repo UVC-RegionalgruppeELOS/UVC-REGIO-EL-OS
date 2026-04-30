@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weiterführende Links | UVC Regionalgruppe Emsland–Osnabrück</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2e5c2e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        h1, h2 {
+            color: #2e5c2e;
+        }
+
+        a {
+            color: #2e5c2e;
+            font-weight: bold;
+        }
+
+        .linkbox {
+            background: #f4f8f4;
+            border-left: 4px solid #4f7a4f;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 1px solid #ccc;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="hosting.html">Hosting & Technik</a>
+        <a href="weiterfuehrende-links.html"><strong>Links</strong></a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Weiterführende Links</h1>
+    <p>
+        Hier findest du eine Sammlung nützlicher Links rund um den Unimog, unsere Regionalgruppe 
+        und hilfreiche Ressourcen für Unimogreisende.
+    </p>
+
+    <!-- Stellplätze für Unimogreisende -->
+    <div class="linkbox">
+        <h2>Stellplätze für Unimogreisende</h2>
+        <p>
+            Eine von Unimogfreunden gepflegte Karte mit 
+            <strong>kostenlosen Übernachtungsplätzen für Unimogreisende</strong>.
+        </p>
+
+        <p>
+            <a href="https://www.google.com/maps/d/viewer?mid=1KPostZkgIq2kmOL44_uf8UQ-0hF_p8CH&ll=46.819716644443496,11.192041249999996&z=5"
+               target="_blank">
+               ➜ Karte der Übernachtungsplätze öffnen
+            </a>
+        </p>
+
+        <p>
+            Wenn du selbst einen Platz kennst oder anbieten möchtest, melde dich gerne bei uns.
+        </p>
+    </div>
+
+    <!-- Weitere Unimog-Themen -->
+    <h2>Weitere Unimog‑Themen</h2>
+    <ul>
+        <li><a href="https://www.unimog-club.de" target="_blank">UVC Dachverband</a></li>
+        <li><a href="https://www.unimog-community.de" target="_blank">Unimog Community Forum</a></li>
+        <li><a href="https://www.mercedes-benz-trucks.com" target="_blank">Mercedes‑Benz Unimog</a></li>
+        <li><a href="https://www.unimog-mania.de" target="_blank">Unimog Mania</a></li>
+        <!-- Du kannst hier jederzeit weitere Links ergänzen -->
+    </ul>
+
+</div>
+
+<footer>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+</footer>
+
+</body>
+</html>
