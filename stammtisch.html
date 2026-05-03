@@ -84,4 +84,71 @@
             font-size: 0.85rem;
         }
 
-        footer a
+        footer a:hover {
+            color: #2e5c2e;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html"><strong>Start</strong></a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Unser Stammtisch</h1>
+
+    <img src="stammtisch.png" alt="Stammtisch UVC Emsland–Osnabrück" class="stammtisch-img">
+
+    <p style="text-align:center;">
+        In Kürze findest du hier alle wichtigen Informationen zu unserem Stammtisch –<br>
+        inklusive Terminen, Uhrzeiten und Treffpunkten.<br><br>
+        <span style="font-size:0.8rem; color:#555;">
+            Das kleine Unimog‑Modell auf dem Tisch hat übrigens eine eigene Geschichte:
+            <a href="#" onclick="document.getElementById('unimogInfo').style.display='block'; return false;" style="color:#2e5c2e; text-decoration:none;">
+                Infos anzeigen
+            </a>
+        </span>
+    </p>
+
+    <div id="unimogInfo">
+        <strong>Spielzeug‑Unimog von Lesney (Matchbox)</strong><br>
+        Dieses kleine Modell ist ein echtes Sammlerstück aus der berühmten <em>Matchbox Series</em> von Lesney Products, England.<br>
+        Auf der Unterseite steht „MATCHBOX SERIES No 41 FORD GT – Made in England by Lesney“.  
+        Lesney produzierte ab den 1950er‑Jahren detailgetreue Druckguss‑Modelle, die wegen ihrer Robustheit und Präzision sehr beliebt waren.<br>
+        Dein roter Unimog stammt vermutlich aus den 1960er‑Jahren und gehört zu den frühen Lesney‑Unimogs, die heute begehrte Sammlerstücke sind – besonders, wenn sie noch die originalen Räder und Lackierung besitzen.<br><br>
+        <a href="#" onclick="document.getElementById('unimogInfo').style.display='none'; return false;" style="color:#2e5c2e; text-decoration:none;">Fenster schließen</a>
+    </div>
+</div>
+
+<footer>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+
+    <br>
+    <a href="hosting.html">Hosting & Technik</a>
+    <br>
+    <a href="impressum.html">Impressum</a>
+    <br>
+    <a href="datenschutz.html">Datenschutz</a>
+
+    <br>
+    <span style="font-size: 0.75rem; color: #777;">
+        Besucher:
+        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+             border="0"
+             alt="visitor counter"
+             style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
+    </span>
+</footer>
+
+</body>
+</html>
