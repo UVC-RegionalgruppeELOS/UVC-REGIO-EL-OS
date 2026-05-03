@@ -15,18 +15,10 @@
         }
 
         header {
-            background: #2d4c2a;
-            color: white;
-            padding: 20px;
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
             text-align: center;
-            margin: 0;
-        }
-
-        nav {
-            background: #1f331d;
-            padding: 10px;
-            text-align: center;
-            margin: 0;
+            border-bottom: 2px solid #ccc;
         }
 
         nav a {
@@ -37,7 +29,7 @@
         }
 
         nav a:hover {
-            color: #a8d0a8;
+            color: #2e5c2e;
         }
 
         .hero {
@@ -59,7 +51,7 @@
 
         section {
             max-width: 900px;
-            width: 90%;
+            width: 90%; /* WICHTIG: Desktop-Fix */
             margin: 40px auto;
             padding: 25px;
             background: white;
@@ -83,7 +75,6 @@
             font-size: 0.9rem;
             border-top: 1px solid #ccc;
             margin-top: 40px;
-            background: #e5e5e5;
         }
 
         footer a {
@@ -101,17 +92,15 @@
 <body>
 
 <header>
-    <h1>UVC Regionalgruppe Emsland–Osnabrück</h1>
+    <nav>
+        <a href="index.html"><strong>Start</strong></a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
 </header>
-
-<nav>
-    <a href="index.html"><strong>Start</strong></a>
-    <a href="programm.html">Programm</a>
-    <a href="stammtisch.html">Stammtisch</a>
-    <a href="ansprechpartner.html">Ansprechpartner</a>
-    <a href="unimogs.html">Unimogs</a>
-    <a href="kontakt.html">Kontakt</a>
-</nav>
 
 <div class="hero">
     <h1>UVC Regionalgruppe<br>Emsland–Osnabrück</h1>
@@ -172,7 +161,7 @@
         <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
              border="0"
              alt="visitor counter"
-             style="vertical-align: middle; opacity: 0.6; width: 60px; height: auto;">
+             style="vertical-align: middle; opacity: 0.6;">
     </span>
 </footer>
 
