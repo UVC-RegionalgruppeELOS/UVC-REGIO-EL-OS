@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | UVC Regionalgruppe Emsland–Osnabrück</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2e5c2e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            color: #2e5c2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 1px solid #ccc;
+            margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Impressum</h1>
+
+    <p><strong>Angaben gemäß § 5 Digitale‑Dienste‑Gesetz (DDG)</strong></p>
+
+    <p>
+        <strong>Verantwortlich für den Inhalt dieser Webseite:</strong><br>
+        Michael Blanke<br>
+        Versmolder Str. 42<br>
+        49196 Bad Laer<br>
+    </p>
+
+    <p>
+        <strong>Kontakt:</strong><br>
+        E‑Mail: michael.blanke@<br>
+    </p>
+
+    <p>
+        Diese Webseite wird privat betrieben und dient der Information über die
+        UVC Regionalgruppe Emsland–Osnabrück.
+    </p>
+</div>
+
+<footer>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+
+    <br><br>
+    <a href="hosting.html">Hosting & Technik</a>
+
+    <br><br>
+    <span style="font-size: 0.75rem; color: #777;">
+        Besucher:
+        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif" border="0" alt="visitor counter" style="vertical-align: middle; opacity: 0.6;">
+    </span>
+</footer>
+
+</body>
+</html>
