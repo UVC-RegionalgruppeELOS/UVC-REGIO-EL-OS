@@ -38,24 +38,22 @@
         }
 
 .hero {
-    width: 900px;              /* exakt gleiche Breite wie Textblöcke */
-    height: 350px;             /* feste Höhe → weniger Weiß oben/unten */
-    margin-left: 4cm;          /* dein gewünschter horizontaler Versatz */
-    margin-right: auto;
+    max-width: 900px;          /* exakt gleiche Breite wie Textblock */
+    margin: 25px auto;         /* exakt gleiche Zentrierung wie Textblock */
     background: #fff;
     border-bottom: 4px solid #2e5c2e;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    overflow: hidden;          /* Bild bleibt sauber im Rahmen */
+    padding: 0;
+    overflow: hidden;
 }
 
 .hero img {
-    width: 100%;
-    height: 100%;              /* Bild füllt den Block vertikal */
-    object-fit: cover;         /* kein Verzerren, nur Zuschneiden */
+    width: 99.5%;              /* optisch perfekt, kein Weiß links/rechts */
+    height: auto;
     display: block;
+    margin: 0 auto;            /* Bild bleibt mittig */
 }
-
 
 
 
