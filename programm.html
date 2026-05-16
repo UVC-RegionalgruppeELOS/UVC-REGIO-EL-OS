@@ -37,25 +37,25 @@
             margin-top: 10px;
         }
 
-        /* Hero-Bereich: exakt gleiche Breite wie Content + Bild fast vollflächig */
-        .hero {
-            max-width: 900px;          /* gleiche Breite wie Textblöcke */
-            margin: 25px auto;         /* zentriert */
-            background: #fff;          /* weißer Rahmen */
-            border-bottom: 4px solid #2e5c2e;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            padding: 10px;             /* dezenter Innenabstand */
-            text-align: center;
-        }
+.hero {
+    width: 900px;              /* feste Breite statt max-width */
+    margin: 25px auto;         /* zentriert */
+    background: #fff;          /* weißer Rahmen */
+    border-bottom: 4px solid #2e5c2e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    padding: 0;                /* kein Innenabstand → volle Breite */
+    overflow: hidden;          /* verhindert Herausrutschen */
+}
 
-        .hero img {
-            width: 98%;                /* Bild fast so breit wie der weiße Block */
-            height: auto;
-            display: block;
-            margin: 0 auto;            /* zentriert im weißen Rahmen */
-            border-radius: 6px;
-        }
+.hero img {
+    width: 100%;               /* Bild füllt den weißen Block komplett */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;          /* optional: keine Rundung am Bildrand */
+}
+
 
         .content { 
             padding: 30px; 
