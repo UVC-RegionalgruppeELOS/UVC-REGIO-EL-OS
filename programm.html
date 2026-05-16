@@ -37,38 +37,52 @@
             margin-top: 10px;
         }
 
-        /* HERO-BLOCK – BASIS (für alle) */
+        /* HERO-BLOCK – BASIS */
         .hero {
-            max-width: 900px;        /* statt feste 900px */
-            width: 100%;             /* füllt auf Handy die Breite */
+            max-width: 900px;
+            width: 100%;
             margin: 25px auto;
             background: #fff;
             border-bottom: 4px solid #2e5c2e;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            overflow: hidden;
+            overflow: visible; /* Handy braucht das */
         }
 
         .hero img {
             width: 100%;
-            height: auto;            /* Bild wächst proportional */
+            height: auto;
             display: block;
         }
 
         /* Handy-Ansicht */
         @media (max-width: 600px) {
+
+            .hero {
+                width: 100%;
+                height: auto;
+                overflow: visible; /* Bild darf höher werden */
+            }
+
             .hero img {
+                width: 120%;              /* Bild wird breiter */
+                height: auto;             /* Bild wird höher */
                 object-fit: cover;
-                object-position: 70% center; /* Bildausschnitt etwas nach rechts */
+                object-position: 70% center; /* Bildausschnitt nach rechts */
+                margin: 0;
+                transform: none;
             }
         }
 
         /* PC-Ansicht */
         @media (min-width: 900px) {
             .hero {
-                height: 320px;        /* nur auf PC feste Höhe */
+                height: 320px;
+                overflow: hidden; /* PC soll sauber bleiben */
             }
+
             .hero img {
+                width: 100%;
                 height: 100%;
                 object-fit: contain;
                 transform: translateX(150px) translateY(10px);
@@ -98,64 +112,3 @@
         footer a {
             color: #777;
             text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <nav>
-        <a href="index.html">Start</a>
-        <a href="programm.html">Programm</a>
-        <a href="stammtisch.html">Stammtisch</a>
-        <a href="ansprechpartner.html">Ansprechpartner</a>
-        <a href="unimogs.html">Unimogs</a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
-    </nav>
-</header>
-
-<div class="hero">
-    <img src="programm.png" alt="Unimog-Gruppe im Steinbruch">
-</div>
-
-<div class="content">
-    <h1>Programm</h1>
-    <h2>Regionalgruppe Emsland–Osnabrück</h2>
-    <p>Hier folgt später das Programm der Regionalgruppe Emsland–Osnabrück.</p>
-</div>
-
-<div class="content">
-    <h2>Weitere Unimog‑Treffen</h2>
-    <p>Hier findest du Termine anderer Unimog‑Vereine und Veranstaltungen:</p>
-    <p>
-        <a href="unimog-termine.html" 
-           style="color:#2e5c2e; font-weight:bold; font-size:1.05rem;">
-           → Zu den Unimog‑Terminen
-        </a>
-    </p>
-</div>
-
-<footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück
-    <br>
-    <a href="hosting.html">Hosting & Technik</a>
-    <br>
-    <a href="impressum.html">Impressum</a>
-    <br>
-    <a href="datenschutz.html">Datenschutz</a>
-    <br>
-    <span style="font-size: 0.75rem; color: #777;">
-        Besucher:
-        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif" border="0" alt="visitor counter" style="vertical-align: middle; opacity: 0.6;">
-    </span>
-</footer>
-
-</body>
-</html>
