@@ -48,18 +48,19 @@
     overflow: hidden;          /* Bild bleibt sauber im Rahmen */
 }
 
+/* Standard (Handy & Tablet) */
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    transform: translateX(150px); /* PC */
+    transform: translateX(40px); /* dein Handy-Wert */
 }
 
-/* Handy-Ansicht */
-@media (max-width: 600px) {
+/* Nur PC / große Bildschirme */
+@media (min-width: 900px) {
     .hero img {
-        transform: translateX(40px); /* viel kleinerer Versatz */
+        transform: translateX(150px) translateY(10px); /* PC: rechts + tiefer */
     }
 }
 
