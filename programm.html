@@ -37,7 +37,7 @@
             margin-top: 10px;
         }
 
-        /* Hero-Bereich mit festem weißen Rahmen und zentriertem Bild */
+        /* Hero-Bereich: exakt gleiche Breite wie Content + Bild vollflächig */
         .hero {
             max-width: 900px;          /* gleiche Breite wie Content */
             margin: 25px auto;         /* zentriert */
@@ -45,16 +45,14 @@
             border-bottom: 4px solid #2e5c2e;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            padding: 15px;             /* etwas Innenabstand */
-            text-align: center;        /* Bild mittig */
+            padding: 0;                /* kein Innenabstand → Bild füllt komplett */
+            overflow: hidden;          /* verhindert Herausrutschen */
         }
 
         .hero img {
             width: 100%;               /* Bild füllt den Rahmen */
             height: auto;
-            border-radius: 6px;
             display: block;
-            margin: 0 auto;
         }
 
         .content { 
@@ -103,7 +101,7 @@
     </nav>
 </header>
 
-<!-- Hero-Bereich mit eingebettetem Bild -->
+<!-- Hero-Bereich mit vollflächigem Bild -->
 <div class="hero">
     <img src="programm.png" alt="Unimog-Gruppe im Steinbruch">
 </div>
