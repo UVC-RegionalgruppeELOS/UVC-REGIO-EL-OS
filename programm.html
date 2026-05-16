@@ -50,21 +50,22 @@
         }
 
         /* Handy-Ansicht */
-        @media (max-width: 600px) {
+  @media (max-width: 600px) {
+    .hero {
+        width: 100%;
+    }
 
-            .hero {
-                width: 100%;          /* WICHTIG: Blockade entfernt */
-            }
+    .hero img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 70% center; /* Bild nach rechts verschieben */
+        display: block;
+        transform: translateX(0) translateY(0);
+        margin-left: 0; /* nicht mehr nötig */
+    }
+}
 
-            .hero img {
-                width: 70%;           /* Bild schmaler */
-                height: 100%;
-                object-fit: cover;
-                display: block;
-                margin-left: 20%;   /* Bild weiter nach links */
-                transform: translateX(0) translateY(0);
-            }
-        }
 
         /* PC-Ansicht */
         @media (min-width: 900px) {
