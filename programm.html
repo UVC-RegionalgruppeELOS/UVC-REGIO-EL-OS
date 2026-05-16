@@ -37,16 +37,24 @@
             margin-top: 10px;
         }
 
-        /* Hero-Bild zentriert + contain */
+        /* Hero-Bereich mit zentriertem Bild */
         .hero {
+            display: flex;
+            justify-content: center;   /* Bild horizontal zentrieren */
+            align-items: center;       /* Bild vertikal zentrieren */
             height: 45vh;
-            background: url('programm.png') center/contain no-repeat;
+            max-width: 900px;          /* gleiche Breite wie Content */
+            margin: 0 auto;            /* zentriert den weißen Rahmen */
+            background: #fff;          /* weißer Hintergrund */
             border-bottom: 4px solid #2e5c2e;
-
-            max-width: 900px;   /* gleiche Breite wie Content */
-            margin: 0 auto;     /* zentriert */
-            background-color: #fff; /* ruhiger Hintergrund */
             border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        .hero img {
+            max-width: 100%;           /* Bild passt sich an */
+            height: auto;
+            border-radius: 6px;
         }
 
         .content { 
@@ -95,7 +103,10 @@
     </nav>
 </header>
 
-<div class="hero"></div>
+<!-- Hero-Bereich mit eingebettetem Bild -->
+<div class="hero">
+    <img src="programm.png" alt="Unimog-Gruppe im Steinbruch">
+</div>
 
 <!-- ERSTER BLOCK: Programm -->
 <div class="content">
