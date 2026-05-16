@@ -53,9 +53,15 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transform: translateX(0%) translateY(35px); 
+    transform: translateX(150px); /* PC */
 }
 
+/* Handy-Ansicht */
+@media (max-width: 600px) {
+    .hero img {
+        transform: translateX(40px); /* viel kleinerer Versatz */
+    }
+}
 
 
 
