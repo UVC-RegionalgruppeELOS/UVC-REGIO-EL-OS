@@ -48,14 +48,18 @@
     overflow: hidden;          /* Bild bleibt sauber im Rahmen */
 }
 
-/* Standard (Handy & Tablet) */
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transform: translateX(40px); /* dein Handy-Wert */
+/* Handy-Ansicht */
+@media (max-width: 600px) {
+    .hero img {
+        width: 85%;            /* Bild wird schmaler */
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;        /* zentriert das Bild */
+        transform: translateX(0px) translateY(0px); /* kein Verschieben auf Handy */
+    }
 }
+
 
 /* Nur PC / große Bildschirme */
 @media (min-width: 900px) {
