@@ -37,11 +37,16 @@
             margin-top: 10px;
         }
 
-        /* Hero-Bild mit grünem Abschluss */
+        /* Hero-Bild zentriert + contain */
         .hero {
             height: 45vh;
-            background: url('programm.png') center/cover no-repeat;
+            background: url('programm.png') center/contain no-repeat;
             border-bottom: 4px solid #2e5c2e;
+
+            max-width: 900px;   /* gleiche Breite wie Content */
+            margin: 0 auto;     /* zentriert */
+            background-color: #fff; /* ruhiger Hintergrund */
+            border-radius: 8px;
         }
 
         .content { 
@@ -59,7 +64,7 @@
             padding: 20px;
             color: #444;
             font-size: 0.9rem;
-            border-top: 2px solid #ccc; /* dezente Trennlinie */
+            border-top: 2px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
         }
