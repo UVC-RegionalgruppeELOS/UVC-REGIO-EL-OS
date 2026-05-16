@@ -46,7 +46,7 @@
             border-bottom: 4px solid #2e5c2e;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            overflow: visible; /* Handy braucht das */
+            overflow: visible; /* wichtig für Handy */
         }
 
         .hero img {
@@ -55,17 +55,17 @@
             display: block;
         }
 
-        /* Handy-Ansicht */
-        @media (max-width: 600px) {
+        /* MOBILE / TABLET BIS 900px */
+        @media (max-width: 900px) {
 
             .hero {
                 width: 100%;
                 height: auto;
-                overflow: visible; /* Bild darf höher werden */
+                overflow: visible;
             }
 
             .hero img {
-                width: 120%;              /* Bild wird breiter */
+                width: 130%;              /* Bild wird breiter */
                 height: auto;             /* Bild wird höher */
                 object-fit: cover;
                 object-position: 70% center; /* Bildausschnitt nach rechts */
@@ -78,7 +78,7 @@
         @media (min-width: 900px) {
             .hero {
                 height: 320px;
-                overflow: hidden; /* PC soll sauber bleiben */
+                overflow: hidden;
             }
 
             .hero img {
@@ -112,3 +112,34 @@
         footer a {
             color: #777;
             text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: #2e5c2e;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <img src="programm.png" alt="Unimog-Gruppe im Steinbruch">
+</div>
+
+<div class="content">
+    <h1>Programm</h1>
+    <h2>Regionalgruppe Emsland–Osnabrück</h2>
+    <p>Hier folgt später das Programm der Regionalgruppe E
