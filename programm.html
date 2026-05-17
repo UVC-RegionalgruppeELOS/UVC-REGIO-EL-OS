@@ -46,7 +46,6 @@
             border-bottom: 4px solid #2e5c2e;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            overflow: visible;
         }
 
         .hero img {
@@ -55,8 +54,8 @@
             display: block;
         }
 
-        /* MOBILE / TABLET BIS 900px */
-        @media (max-width: 900px) {
+        /* MOBILE / TABLET BIS 899px */
+        @media (max-width: 899px) {
 
             .hero {
                 width: 100%;
@@ -65,16 +64,16 @@
             }
 
             .hero img {
-                width: 150%;              /* ← Bild jetzt deutlich breiter */
+                width: 160%;              /* ← Bild jetzt NOCH breiter */
                 height: auto;             /* ← wächst proportional */
                 object-fit: cover;
-                object-position: 70% center; /* ← Ausschnitt nach rechts */
+                object-position: 70% center;
                 margin: 0;
                 transform: none;
             }
         }
 
-        /* PC-Ansicht */
+        /* PC-Ansicht AB 900px */
         @media (min-width: 900px) {
             .hero {
                 height: 320px;
