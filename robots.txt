@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/sitemap.xml
