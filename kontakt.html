@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt – UVC Regionalgruppe Emsland–Osnabrück</title>
+    <title>Kontakt | UVC Regionalgruppe Emsland–Osnabrück</title>
+
+    <!-- SEO-Meta-Tags -->
+    <meta name="description" content="Kontakt zur UVC Regionalgruppe Emsland–Osnabrück. Hier kannst du uns direkt erreichen – für Fragen, Treffen, Mitgliedschaft oder Unimog-Themen.">
+    <meta name="keywords" content="Kontakt, UVC, Unimog, Regionalgruppe, Emsland, Osnabrück, Oldtimer, Verein, Nachricht senden">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kontakt – UVC Regionalgruppe Emsland–Osnabrück">
+    <meta property="og:description" content="Nimm Kontakt zur UVC Regionalgruppe Emsland–Osnabrück auf. Wir freuen uns über jede Anfrage.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/kontakt.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #222;
             background: #e5e5e5;
+            color: #222;
             line-height: 1.6;
         }
 
@@ -32,60 +46,41 @@
             color: #2e5c2e;
         }
 
-        .hero {
-            height: 40vh;
-            background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 0 0 10px black;
-            border-bottom: 2px solid #ccc;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin: 0;
-            color: white;
-            text-align: center;
-        }
-
-        section {
+        .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        h1, h2 {
+        h1 {
             color: #2e5c2e;
         }
 
         form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
             margin-top: 20px;
         }
 
         input, textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
+            margin-top: 10px;
             border: 1px solid #ccc;
             border-radius: 6px;
             font-size: 1rem;
         }
 
         button {
+            margin-top: 15px;
+            padding: 12px 20px;
             background: #2e5c2e;
             color: white;
-            padding: 12px;
             border: none;
             border-radius: 6px;
             font-size: 1rem;
             cursor: pointer;
-            font-weight: bold;
         }
 
         button:hover {
@@ -99,6 +94,13 @@
             font-size: 0.9rem;
             border-top: 1px solid #ccc;
             margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            font-size: 0.85rem;
         }
     </style>
 </head>
@@ -111,26 +113,26 @@
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
         <a href="kontakt.html"><strong>Kontakt</strong></a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
     </nav>
 </header>
 
-<div class="hero">
+<div class="container">
     <h1>Kontakt</h1>
-</div>
 
-<section>
-    <h2>Schreib uns eine Nachricht</h2>
     <p>
-        Du hast Fragen, Anregungen oder möchtest mit uns in Kontakt treten?  
-        Nutze einfach das folgende Formular – wir melden uns so schnell wie möglich.
+        Du möchtest uns etwas mitteilen, hast Fragen zur Regionalgruppe oder möchtest bei einem Treffen dabei sein?  
+        Dann schreib uns einfach über dieses Formular:
     </p>
 
-    <form action="https://formspree.io/f/mojylqqz" method="POST">
+    <!-- Kontaktformular (Formspree) -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">E-Mail</label>
+        <label for="email">E‑Mail</label>
         <input type="email" id="email" name="email" required>
 
         <label for="message">Nachricht</label>
@@ -138,23 +140,22 @@
 
         <button type="submit">Nachricht senden</button>
     </form>
-</section>
+
+    <p style="margin-top:20px; font-size:0.9rem; color:#555;">
+        Hinweis: Mit dem Absenden des Formulars erklärst du dich mit der Verarbeitung deiner Daten gemäß unserer 
+        <a href="datenschutz.html">Datenschutzerklärung</a> einverstanden.
+    </p>
+</div>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
 
     <br>
-    <a href="hosting.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Hosting & Technik
-    </a>
+    <a href="hosting.html">Hosting & Technik</a>
     <br>
-    <a href="impressum.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Impressum
-    </a>
+    <a href="impressum.html">Impressum</a>
     <br>
-    <a href="datenschutz.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Datenschutz
-    </a>
+    <a href="datenschutz.html">Datenschutz</a>
 
     <br>
     <span style="font-size: 0.75rem; color: #777;">
@@ -162,8 +163,6 @@
         <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif" border="0" alt="visitor counter" style="vertical-align: middle; opacity: 0.6;">
     </span>
 </footer>
-
-
 
 </body>
 </html>
