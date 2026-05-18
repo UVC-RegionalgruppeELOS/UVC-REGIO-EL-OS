@@ -28,11 +28,13 @@
             line-height: 1.6;
         }
 
+        /* Neuer Header mit Hamburger-Menü */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
             text-align: center;
             border-bottom: 2px solid #ccc;
+            position: relative;
         }
 
         nav a {
@@ -40,10 +42,50 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            display: inline-block;
         }
 
         nav a:hover {
             color: #2e5c2e;
+        }
+
+        /* Menü-Button (nur mobil sichtbar) */
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        /* Mobile Ansicht */
+        @media (max-width: 899px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
         }
 
         .container {
@@ -74,13 +116,25 @@
             text-decoration: none;
             font-size: 0.85rem;
         }
+
+        footer a:hover {
+            color: #2e5c2e;
+        }
     </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+    </script>
 </head>
 
 <body>
 
 <header>
-    <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
+    <nav id="mainNav">
         <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
@@ -118,17 +172,11 @@
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
 
     <br>
-    <a href="hosting.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Hosting & Technik
-    </a>
+    <a href="hosting.html">Hosting & Technik</a>
     <br>
-    <a href="impressum.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Impressum
-    </a>
+    <a href="impressum.html">Impressum</a>
     <br>
-    <a href="datenschutz.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Datenschutz
-    </a>
+    <a href="datenschutz.html">Datenschutz</a>
 
     <br>
     <span style="font-size: 0.75rem; color: #777;">
