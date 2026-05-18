@@ -10,7 +10,7 @@
     <meta name="keywords" content="Datenschutz, Datenschutzerklärung, UVC, Unimog, Regionalgruppe, Emsland, Osnabrück, DSGVO, GitHub Pages, Formspree, Counter12, Google Maps">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph für Social Media -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Datenschutzerklärung – UVC Regionalgruppe Emsland–Osnabrück">
     <meta property="og:description" content="Informationen zur Datenverarbeitung, Hosting, Kontaktformular, Besucherzähler und Ihren Rechten gemäß DSGVO.">
     <meta property="og:type" content="website">
@@ -28,11 +28,13 @@
             line-height: 1.6;
         }
 
+        /* Neuer Header mit Hamburger-Menü */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
             text-align: center;
             border-bottom: 2px solid #ccc;
+            position: relative;
         }
 
         nav a {
@@ -40,10 +42,50 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            display: inline-block;
         }
 
         nav a:hover {
             color: #2e5c2e;
+        }
+
+        /* Menü-Button (nur mobil sichtbar) */
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        /* Mobile Ansicht */
+        @media (max-width: 899px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
         }
 
         .container {
@@ -79,4 +121,121 @@
             color: #2e5c2e;
         }
     </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+    </script>
 </head>
+
+<body>
+
+<header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
+    <nav id="mainNav">
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Datenschutzerklärung</h1>
+
+    <p>Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten auf dieser Website.</p>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>
+        Michael Blanke<br>
+        Versmolder Str. 42<br>
+        49196 Bad Laer<br>
+        E‑Mail: michael.blanke@
+    </p>
+
+    <h2>2. Hosting</h2>
+    <p>
+        Diese Website wird über <strong>GitHub Pages</strong> gehostet.  
+        Beim Aufruf der Seiten werden automatisch technische Daten verarbeitet, darunter:
+    </p>
+    <ul>
+        <li>IP‑Adresse</li>
+        <li>Browsertyp und Version</li>
+        <li>Datum und Uhrzeit des Zugriffs</li>
+    </ul>
+    <p>
+        GitHub verarbeitet diese Daten gemäß der GitHub‑Datenschutzerklärung.
+    </p>
+
+    <h2>3. Kontaktformular (Formspree)</h2>
+    <p>
+        Für das Kontaktformular nutzen wir den Dienst <strong>Formspree</strong>.  
+        Wenn Sie das Formular absenden, werden Ihre Angaben (Name, E‑Mail, Nachricht) an Formspree in den USA übertragen.
+    </p>
+    <p>
+        Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
+    </p>
+
+    <h2>4. Besucherzähler (Counter12)</h2>
+    <p>
+        Diese Website verwendet einen externen Besucherzähler von <strong>Counter12</strong>.  
+        Dabei wird Ihre IP‑Adresse anonymisiert verarbeitet.
+    </p>
+
+    <h2>5. Eingebettete Inhalte (Google Maps)</h2>
+    <p>
+        Auf der Seite <strong>„Weiterführende Links“</strong> ist eine Karte von <strong>Google Maps</strong> eingebettet.  
+        Beim Aufruf werden Daten an Google übertragen, darunter:
+    </p>
+    <ul>
+        <li>IP‑Adresse</li>
+        <li>Browserinformationen</li>
+        <li>Nutzungsdaten</li>
+    </ul>
+    <p>
+        Google kann Cookies setzen und Daten in die USA übertragen.
+    </p>
+
+    <h2>6. Ihre Rechte</h2>
+    <ul>
+        <li>Auskunft über gespeicherte Daten</li>
+        <li>Berichtigung unrichtiger Daten</li>
+        <li>Löschung Ihrer Daten</li>
+        <li>Einschränkung der Verarbeitung</li>
+        <li>Widerspruch gegen die Verarbeitung</li>
+        <li>Datenübertragbarkeit</li>
+    </ul>
+
+    <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+    <p>
+        Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden.
+    </p>
+</div>
+
+<footer>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+
+    <br>
+    <a href="hosting.html">Hosting & Technik</a>
+    <br>
+    <a href="impressum.html">Impressum</a>
+    <br>
+    <a href="datenschutz.html">Datenschutz</a>
+
+    <br>
+    <span style="font-size: 0.75rem; color: #777;">
+        Besucher:
+        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+             border="0"
+             alt="visitor counter"
+             style="vertical-align: middle; opacity: 0.6;">
+    </span>
+</footer>
+
+</body>
+</html>
