@@ -7,7 +7,7 @@
 
     <!-- SEO-Meta-Tags -->
     <meta name="description" content="Unimog 435 / U 1300L Baujahr 1986. Technische Daten, militärische Historie, Ausstattung und Fahrzeugdetails aus Bundeswehr-Bestand.">
-    <meta name="keywords" content="Unimog 1986, Unimog 435, U 1300L, Bundeswehr Unimog, Unimog Geschichte, OM352, Unimog Veteranen Club, Militärfahrzeug, Allrad, Geländewagen">
+    <meta name="keywords" content="Unimog 1986, Unimog 435, U 1300L, Bundeswehr Unimog, OM352, Militärfahrzeug, Allrad, Geländewagen">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
     <!-- Open Graph -->
@@ -29,19 +29,13 @@
             line-height: 1.6;
         }
 
+        /* Neuer Header mit Hamburger-Menü */
         header {
-            background: #2d4c2a;
-            color: white;
-            padding: 20px;
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
             text-align: center;
-            margin: 0;
-        }
-
-        nav {
-            background: #1f331d;
-            padding: 10px;
-            text-align: center;
-            margin: 0;
+            border-bottom: 2px solid #ccc;
+            position: relative;
         }
 
         nav a {
@@ -49,18 +43,54 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            display: inline-block;
         }
 
         nav a:hover {
-            color: #a8d0a8;
+            color: #2e5c2e;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        @media (max-width: 899px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
         }
 
         .hero-img {
             width: 100%;
             height: auto;
             display: block;
-            margin: 0;
-            padding: 0;
             border-bottom: 2px solid #ccc;
         }
 
@@ -98,24 +128,30 @@
             color: #2e5c2e;
         }
     </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+    </script>
 </head>
 
 <body>
 
 <header>
-    <h1>Unimog 435 / U 1300L – Baujahr 1986</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
+    <nav id="mainNav">
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Start</a>
-    <a href="programm.html">Programm</a>
-    <a href="stammtisch.html">Stammtisch</a>
-    <a href="ansprechpartner.html">Ansprechpartner</a>
-    <a href="unimogs.html">Unimogs</a>
-    <a href="kontakt.html">Kontakt</a>
-</nav>
-
-<!-- Collage -->
 <img src="unimog-1986-collage.jpg" alt="Unimog 435 / U 1300L Collage" class="hero-img">
 
 <div class="container">
@@ -192,4 +228,9 @@
         <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
              border="0"
              alt="visitor counter"
-             style="vertical-align: middle; opacity: 0.6; width: 60
+             style="vertical-align: middle; opacity: 0.6; width: auto; height: 20px;">
+    </span>
+</footer>
+
+</body>
+</html>
