@@ -3,79 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosting & Technik – UVC Regionalgruppe</title>
+    <title>Hosting & Technik | UVC Regionalgruppe Emsland–Osnabrück</title>
+
+    <!-- SEO-Meta-Tags -->
+    <meta name="description" content="Informationen zum Hosting und zur technischen Umsetzung der Website der UVC Regionalgruppe Emsland–Osnabrück. GitHub Pages, Formspree, Besucherzähler und technische Hinweise.">
+    <meta name="keywords" content="Hosting, Technik, GitHub Pages, Formspree, Counter12, UVC, Unimog, Regionalgruppe, Emsland, Osnabrück">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
+
+    <!-- Open Graph für Social Media -->
+    <meta property="og:title" content="Hosting & Technik – UVC Regionalgruppe Emsland–Osnabrück">
+    <meta property="og:description" content="Technische Informationen zur Website: Hosting über GitHub Pages, Kontaktformular, Besucherzähler und technische Umsetzung.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/hosting.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            color: #555;
+            background: #e5e5e5;
+            color: #222;
             line-height: 1.6;
-            font-size: 0.9rem;
+        }
+
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2e5c2e;
         }
 
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px 25px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
             background: white;
-            border-radius: 6px;
-            box-shadow: 0 0 6px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        h1 {
-            font-size: 1.4rem;
-            color: #4f7a4f; /* dezentes Unimog-Grün */
-            margin-top: 0;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            color: #4f7a4f;
-            margin-top: 25px;
-        }
-
-        a {
-            color: #4f7a4f;
-            font-weight: bold;
+        h1, h2 {
+            color: #2e5c2e;
         }
 
         footer {
             text-align: center;
-            margin: 40px 0 20px;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 1px solid #ccc;
+            margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer a {
             color: #777;
-            font-size: 0.75rem;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: #2e5c2e;
         }
     </style>
 </head>
 
 <body>
 
+<header>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+    </nav>
+</header>
+
 <div class="container">
     <h1>Hosting & Technik</h1>
 
     <p>
-        Diese Webseite der <strong>UVC Regionalgruppe Emsland–Osnabrück</strong> wird über 
-        <strong>GitHub Pages</strong> betrieben. Dabei handelt es sich um einen Hosting‑Dienst für 
-        statische Webseiten wie HTML, CSS und JavaScript.
+        Diese Website der <strong>UVC Regionalgruppe Emsland–Osnabrück</strong> wird technisch über moderne, 
+        zuverlässige Dienste betrieben. Hier findest du eine Übersicht über die eingesetzten Systeme.
     </p>
 
-    <h2>Funktionsweise</h2>
+    <h2>1. Hosting über GitHub Pages</h2>
     <p>
-        Die Seite wird direkt aus einem öffentlichen GitHub‑Repository geladen.  
-        Änderungen an den Dateien werden automatisch veröffentlicht, sobald sie im Repository gespeichert werden.
+        Die gesamte Website wird über <strong>GitHub Pages</strong> gehostet.  
+        GitHub stellt eine sichere, schnelle und stabile Infrastruktur bereit, die ideal für Vereinswebseiten ist.
     </p>
 
-    <h2>Technische Grundlage</h2>
+    <h2>2. Kontaktformular (Formspree)</h2>
     <p>
-        Die gesamte Webseite besteht aus einfachen HTML‑ und CSS‑Dateien.  
-        Dadurch bleibt sie schnell, übersichtlich und unabhängig von komplexen Systemen.
+        Für das Kontaktformular nutzen wir den Dienst <strong>Formspree</strong>.  
+        Dadurch können Nachrichten sicher übermittelt werden, ohne dass ein eigener Mailserver notwendig ist.
     </p>
 
+    <h2>3. Besucherzähler (Counter12)</h2>
     <p>
-        Weitere Informationen zu GitHub Pages:<br>
-        <a href="https://pages.github.com" target="_blank">https://pages.github.com</a>
+        Der Besucherzähler stammt von <strong>Counter12</strong>.  
+        Er verarbeitet IP‑Adressen anonymisiert und zeigt die Besucherzahlen im Footer an.
+    </p>
+
+    <h2>4. Eingebettete Inhalte</h2>
+    <p>
+        Auf der Seite <strong>„Weiterführende Links“</strong> wird eine Karte von Google Maps eingebettet.  
+        Dabei können Daten an Google übertragen werden.
+    </p>
+
+    <h2>5. Technische Umsetzung</h2>
+    <p>
+        Die Seite wurde vollständig in <strong>HTML</strong> und <strong>CSS</strong> erstellt.  
+        Es werden keine Cookies gesetzt und keine Tracking‑Dienste verwendet.
     </p>
 </div>
 
@@ -83,27 +138,18 @@
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
 
     <br>
-    <a href="hosting.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Hosting & Technik
-    </a>
+    <a href="hosting.html">Hosting & Technik</a>
     <br>
-    <a href="impressum.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Impressum
-    </a>
+    <a href="impressum.html">Impressum</a>
     <br>
-    <a href="datenschutz.html" style="color:#777; text-decoration:none; font-size:0.85rem;">
-        Datenschutz
-    </a>
+    <a href="datenschutz.html">Datenschutz</a>
 
     <br>
     <span style="font-size: 0.75rem; color: #777;">
         Besucher:
-        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif" border="0" alt="visitor counter" style="vertical-align: middle; opacity: 0.6;">
+        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif" border="0" alt="visitor counter" style="vertical-align: middle; opacity: 0.6; height: 20px;">
     </span>
 </footer>
-
-
-
 
 </body>
 </html>
