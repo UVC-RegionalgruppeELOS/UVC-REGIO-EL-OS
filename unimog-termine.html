@@ -91,15 +91,22 @@
         /* -----------------------------------------
            MOBILE-ANSICHT (bis 899px)
         ----------------------------------------- */
-        @media (max-width: 899px) {
+       @media (max-width: 899px) {
 
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
+    /* Erste zwei Spalten kompakter */
+    td[data-label="Beginn"],
+    td[data-label="Ende"] {
+        padding: 4px 10px;
+        font-size: 0.9rem;
+    }
 
-            thead tr {
-                display: none;
-            }
+    td[data-label="Beginn"]::before,
+    td[data-label="Ende"]::before {
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+    }
+}
+
 
             tr {
                 margin-bottom: 15px;
