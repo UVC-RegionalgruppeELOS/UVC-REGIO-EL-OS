@@ -87,6 +87,47 @@
         footer a:hover {
             color: #2e5c2e;
         }
+
+        /* -----------------------------------------
+           MOBILE-ANSICHT (bis 899px)
+        ----------------------------------------- */
+        @media (max-width: 899px) {
+
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            thead tr {
+                display: none;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                padding: 10px;
+                background: #fff;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            td {
+                text-align: left;
+                padding: 6px 10px;
+                position: relative;
+            }
+
+            td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                color: #2e5c2e;
+                display: block;
+                margin-bottom: 3px;
+            }
+
+            td:last-child {
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -121,39 +162,39 @@
         </tr>
 
         <tr>
-            <td>22.05.2026</td>
-            <td>25.05.2026</td>
-            <td>32689</td>
-            <td>Kalletal‑Osterhagen</td>
-            <td>Unimogfreunde Weserbergland – „UNIMOG und der Wichtel im Tal der Kalle“</td>
-            <td><a href="#" target="_blank">Info</a></td>
+            <td data-label="Beginn">22.05.2026</td>
+            <td data-label="Ende">25.05.2026</td>
+            <td data-label="PLZ">32689</td>
+            <td data-label="Ort">Kalletal‑Osterhagen</td>
+            <td data-label="Beschreibung">Unimogfreunde Weserbergland – „UNIMOG und der Wichtel im Tal der Kalle“</td>
+            <td data-label="Link"><a href="#" target="_blank">Info</a></td>
         </tr>
 
         <tr>
-            <td>28.06.2026</td>
-            <td>28.06.2026</td>
-            <td>---</td>
-            <td>Zollernalb</td>
-            <td>Unimog Treffen REGIONALGRUPPE ZOLLERNALB</td>
-            <td><a href="#" target="_blank">Info</a></td>
+            <td data-label="Beginn">28.06.2026</td>
+            <td data-label="Ende">28.06.2026</td>
+            <td data-label="PLZ">---</td>
+            <td data-label="Ort">Zollernalb</td>
+            <td data-label="Beschreibung">Unimog Treffen REGIONALGRUPPE ZOLLERNALB</td>
+            <td data-label="Link"><a href="#" target="_blank">Info</a></td>
         </tr>
 
         <tr>
-            <td>14.08.2026</td>
-            <td>16.08.2026</td>
-            <td>33415</td>
-            <td>Verl</td>
-            <td>UVC‑Sommertreffen – Unimog Veteranen Club e. V., Ostwestfalenhalle</td>
-            <td><a href="#" target="_blank">Info</a></td>
+            <td data-label="Beginn">14.08.2026</td>
+            <td data-label="Ende">16.08.2026</td>
+            <td data-label="PLZ">33415</td>
+            <td data-label="Ort">Verl</td>
+            <td data-label="Beschreibung">UVC‑Sommertreffen – Unimog Veteranen Club e. V., Ostwestfalenhalle</td>
+            <td data-label="Link"><a href="#" target="_blank">Info</a></td>
         </tr>
 
         <tr>
-            <td>19.09.2026</td>
-            <td>19.09.2026</td>
-            <td>48529</td>
-            <td>Nordhorn</td>
-            <td>YOUNGTIMER FELDTAG in Nordhorn</td>
-            <td><a href="#" target="_blank">Info</a></td>
+            <td data-label="Beginn">19.09.2026</td>
+            <td data-label="Ende">19.09.2026</td>
+            <td data-label="PLZ">48529</td>
+            <td data-label="Ort">Nordhorn</td>
+            <td data-label="Beschreibung">YOUNGTIMER FELDTAG in Nordhorn</td>
+            <td data-label="Link"><a href="#" target="_blank">Info</a></td>
         </tr>
 
     </table>
