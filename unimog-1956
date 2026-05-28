@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimog 1956 – Unimog U 401 mit Beilhack-Schneeschleuder</title>
+
+    <!-- SEO-Meta-Tags -->
+    <meta name="description" content="Unimog Baujahr 1956: Unimog U 401 mit 25 PS und Beilhack-Schneeschleuder. Gekauft von Rainer im Jahr 2000 mit nur 2.150 km. Ausgestattet mit Magirus-Deutz 6-Zylinder Aufbaumotor mit 110 PS. Letzte große Fahrt zur Dorset Steam Fair in England.">
+    <meta name="keywords" content="Unimog 1956, Unimog U401, Beilhack Schneeschleuder, Magirus Deutz, Dorset Steam Fair, Oldtimer, UVC Regionalgruppe Emsland–Osnabrück">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Unimog 1956 – Unimog U 401 mit Beilhack-Schneeschleuder">
+    <meta property="og:description" content="Historie und technische Daten des Unimog U 401 Baujahr 1956 mit Beilhack-Schneeschleuder.">
+    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/1956.jpg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimog-1956.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #2e5c2e;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        @media (max-width: 899px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #2e5c2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 1px solid #ccc;
+            margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: #2e5c2e;
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
+    <nav id="mainNav">
+        <a href="index.html"><strong>Start</strong></a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<img src="1956.jpg"
+     alt="Unimog U 401 Baujahr 1956 mit Beilhack-Schneeschleuder"
+     class="hero-img">
+
+<div class="container">
+    <h2>Steckbrief</h2>
+
+    <p><strong>Unimog U 401</strong></p>
+    <p><strong>Baujahr:</strong> 1956</p>
+    <p><strong>Besitzer:</strong> Rainer (seit 2000)</p>
+    <p><strong>Motorleistung:</strong> 25 PS (Hauptmotor)</p>
+    <p><strong>Anbaugerät:</strong> Beilhack-Schneeschleuder</p>
+    <p><strong>Aufbaumotor Schneeschleuder:</strong> Magirus-Deutz 6‑Zylinder, 110 PS</p>
+    <p><strong>Kilometerstand beim Kauf:</strong> 2.150 km</p>
+
+    <h2>Historie</h2>
+    <p>
+        Dieser Unimog U 401 aus dem Baujahr 1956 wurde von Rainer im Jahr 
+        <strong>2000</strong> übernommen – damals mit einem außergewöhnlich niedrigen 
+        Kilometerstand von nur <strong>2.150 km</strong>.
+    </p>
+
+    <p>
+        Die montierte <strong>Beilhack-Schneeschleuder</strong> wird über einen 
+        leistungsstarken <strong>Magirus-Deutz 6‑Zylinder Aufbaumotor mit 110 PS</strong> angetrieben.
+        Diese Kombination macht das Fahrzeug zu einem beeindruckenden technischen Zeitzeugen.
+    </p>
+
+    <p>
+        Die letzte große Reise führte den Unimog zur berühmten 
+        <a href="https://www.gdsf.co.uk" target="_blank"><strong>Dorset Steam Fair in England</strong></a>,
+        einem der größten historischen Nutzfahrzeug‑ und Dampfmaschinen‑Treffen weltweit.
+    </p>
+</div>
+
+<footer>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+
+    <br>
+    <a href="hosting.html">Hosting & Technik</a>
+    <br>
+    <a href="impressum.html">Impressum</a>
+    <br>
+    <a href="datenschutz.html">Datenschutz</a>
+
+    <br>
+    <span style="font-size: 0.75rem; color: #777;">
+        Besucher:
+        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+             border="0"
+             alt="visitor counter"
+             style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
+    </span>
+</footer>
+
+</body>
+</html>
