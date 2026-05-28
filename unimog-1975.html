@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unimog 406 Cabrio – Baujahr 1975 | UVC Regionalgruppe Emsland–Osnabrück</title>
+    <title>Unimog 1975 – Unimog 406 Cabrio</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Unimog 406 Cabrio, Baujahr 1975. Offenes Fahrerhaus, klassischer Allrad‑Unimog der UVC Regionalgruppe Emsland–Osnabrück.">
-    <meta name="keywords" content="Unimog 406, Unimog Cabrio, Unimog 1975, Unimog Oldtimer, UVC Regionalgruppe Emsland–Osnabrück">
+    <!-- SEO-Meta-Tags -->
+    <meta name="description" content="Unimog Baujahr 1975: Unimog 406 Cabrio mit offenem Fahrerhaus. Steckbrief, Historie und technische Daten des Fahrzeugs der UVC Regionalgruppe Emsland–Osnabrück.">
+    <meta name="keywords" content="Unimog 1975, Unimog 406, Unimog Cabrio, Unimog Oldtimer, UVC, Unimog Veteranen Club">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Unimog 1975 – Unimog 406 Cabrio">
+    <meta property="og:description" content="Steckbrief und Historie des Unimog 406 Cabrio Baujahr 1975.">
+    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/1975.png">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimog-1975.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
         body {
@@ -24,6 +34,7 @@
             padding: 15px;
             text-align: center;
             border-bottom: 2px solid #ccc;
+            position: relative;
         }
 
         nav a {
@@ -31,31 +42,62 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            display: inline-block;
         }
 
         nav a:hover {
             color: #2e5c2e;
         }
 
-        .hero {
-            height: 35vh;
-            background: url('1975.png') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 0 0 10px black;
-            border-bottom: 2px solid #ccc;
-        }
-
-        .hero h1 {
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
             color: white;
-            font-size: 2.8rem;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
         }
 
-        section {
+        @media (max-width: 899px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
+            margin: 30px auto;
+            padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -65,38 +107,40 @@
             color: #2e5c2e;
         }
 
-        .specs {
-            margin-top: 20px;
-        }
-
-        .specs li {
-            margin-bottom: 8px;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 1px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
-            border-top: 1px solid #ccc;
-            font-size: 0.9rem;
         }
 
         footer a {
             color: #777;
             text-decoration: none;
+            font-size: 0.85rem;
         }
 
         footer a:hover {
             color: #2e5c2e;
         }
     </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+    </script>
 </head>
 
 <body>
 
 <header>
-    <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
+    <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
@@ -107,31 +151,45 @@
     </nav>
 </header>
 
-<div class="hero">
-    <h1>Unimog 406 Cabrio – Baujahr 1975</h1>
+<img src="1975.png"
+     alt="Unimog 406 Cabrio, Baujahr 1975, offenes Fahrerhaus"
+     class="hero-img">
+
+<div class="container">
+    <h2>Steckbrief</h2>
+
+    <p><strong>Unimog 406 Cabrio</strong></p>
+    <p><strong>Baujahr:</strong> 1975</p>
+    <p><strong>Fahrerhaus:</strong> Offenes Cabrio‑Fahrerhaus</p>
+    <p><strong>Fahrzeugtyp:</strong> Allrad‑Nutzfahrzeug, Oldtimer</p>
+
+    <h2>Historie</h2>
+    <p>
+        Dieser Unimog 406 Cabrio aus dem Baujahr 1975 ist ein klassischer Vertreter
+        der 406er‑Baureihe mit offenem Fahrerhaus. Als Oldtimer wird er heute
+        vor allem für Ausfahrten, Treffen und Veranstaltungen der
+        UVC Regionalgruppe Emsland–Osnabrück genutzt.
+    </p>
 </div>
 
-<section>
-    <img src="1975.png"
-         alt="Unimog 406 Cabrio, Baujahr 1975, offenes Fahrerhaus"
-         style="width:100%; border-radius:8px; margin-bottom:20px;">
-
-    <h2>Steckbrief</h2>
-    <ul class="specs">
-        <li><strong>Modell:</strong> Unimog 406 Cabrio</li>
-        <li><strong>Baujahr:</strong> 1975</li>
-        <li><strong>Leistung:</strong> 84 PS (Standard OM352‑Motor)</li>
-        <li><strong>Besonderheit:</strong> Offenes Cabrio‑Fahrerhaus</li>
-        <li><strong>Fahrzeugtyp:</strong> Allrad‑Nutzfahrzeug, Oldtimer</li>
-    </ul>
-</section>
-
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+
     <br>
-    <a href="hosting.html">Hosting & Technik</a> · 
-    <a href="impressum.html">Impressum</a> · 
+    <a href="hosting.html">Hosting & Technik</a>
+    <br>
+    <a href="impressum.html">Impressum</a>
+    <br>
     <a href="datenschutz.html">Datenschutz</a>
+
+    <br>
+    <span style="font-size: 0.75rem; color: #777;">
+        Besucher:
+        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+             border="0"
+             alt="visitor counter"
+             style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
+    </span>
 </footer>
 
 </body>
