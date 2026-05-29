@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UVC Regionalgruppe Emsland–Osnabrück | Unimog Veteranen Club</title>
+    <title>UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <!-- SEO-Meta-Tags -->
-    <meta name="description" content="UVC Regionalgruppe Emsland–Osnabrück: Gemeinschaft für historische Unimogs. Treffen, Technik, Geschichte und Aktivitäten der Regionalgruppe.">
-    <meta name="keywords" content="Unimog, UVC, Veteranen Club, Emsland, Osnabrück, Oldtimer, Treffen, Regionalgruppe, Unimog Treffen, MBtrac, Feldtage, historische Fahrzeuge">
+    <meta name="description" content="UVC Regionalgruppe Emsland–Osnabrück – Unimog-Verein, Treffen, Stammtisch, Fahrzeuge und Gemeinschaft.">
+    <meta name="keywords" content="Unimog, UVC, Emsland, Osnabrück, Unimog Treffen, Unimog Club, Oldtimer, Regionalgruppe">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="UVC Regionalgruppe Emsland–Osnabrück">
-    <meta property="og:description" content="Unimog Veteranen Club Regionalgruppe Emsland–Osnabrück: Treffen, Technik, Geschichte und Gemeinschaft rund um historische Unimogs.">
-    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/PLATZHALTER-UNIMOG.jpg">
+    <meta property="og:description" content="Unimog-Begeisterte aus dem Emsland und Osnabrücker Land. Treffen, Stammtisch, Fahrzeuge und Gemeinschaft.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/">
+    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/index.html">
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #222;
             background: #e5e5e5;
+            color: #222;
             line-height: 1.6;
         }
 
@@ -87,27 +83,16 @@
         }
 
         .hero {
-            height: 40vh;
-            background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 0 0 10px black;
+            width: 100%;
+            height: auto;
+            display: block;
             border-bottom: 2px solid #ccc;
         }
 
-        .hero h1 {
-            font-size: 2.8rem;
-            margin: 0;
-            color: white;
-            text-align: center;
-        }
-
-        section {
+        .container {
             max-width: 900px;
-            width: 90%;
-            margin: 40px auto;
-            padding: 25px;
+            margin: 30px auto;
+            padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -117,25 +102,23 @@
             color: #2e5c2e;
         }
 
-        .yearlink {
+        .treffen-liste a {
             color: #2e5c2e;
             font-weight: bold;
+            text-decoration: none;
         }
 
-        .dachverband {
-            background: #f9f9f9;
-            border-left: 4px solid #888;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
+        .treffen-liste a:hover {
+            text-decoration: underline;
         }
 
-        .regionalgruppe {
-            background: #f4f8f4;
-            border-left: 4px solid #4f7a4f;
-            padding: 15px 20px;
-            margin: 20px 0;
+        .treffen-liste li {
+            margin: 12px 0;
+            padding: 10px;
+            background: #f7f7f7;
+            border-left: 4px solid #2e5c2e;
             border-radius: 4px;
+            list-style: none;
         }
 
         footer {
@@ -170,76 +153,49 @@
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
-
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<div class="hero" role="img" aria-label="Historischer Unimog als Titelbild der Regionalgruppe">
-    <h1>UVC Regionalgruppe<br>Emsland–Osnabrück</h1>
-</div>
+<img src="startbild.jpg" alt="Unimog Regionalgruppe Emsland–Osnabrück – Startbild" class="hero">
 
-<section>
-    <h1>Willkommen bei der UVC Regionalgruppe Emsland–Osnabrück</h1>
+<div class="container">
+    <h1>UVC Regionalgruppe Emsland–Osnabrück</h1>
+    <p>
+        Willkommen auf der Seite der Unimog‑Vereinigung Emsland–Osnabrück.  
+        Wir sind eine Gemeinschaft von Unimog‑Begeisterten, die Technik, Tradition und Geselligkeit verbindet.
+    </p>
 
-    <div class="dachverband">
-        <p>
-            Der <strong><a href="https://u-v-c.de/about/" target="_blank" rel="noopener">UVC</a> – Unimog Veteranen Club e. V.</strong> 
-            ist ein Verein für Liebhaber historischer Unimog‑Fahrzeuge. 
-            Er richtet sich besonders an Besitzer, Fahrer und Fans.
-        </p>
-    </div>
-
-    <div class="regionalgruppe">
-        <p>
-            Mit der Gründung unserer <strong>UVC - Regionalgruppe Emsland–Osnabrück</strong> im Jahr 2026 haben wir 
-            einen Treffpunkt geschaffen, an dem Enthusiasten zusammenkommen, sich austauschen und gemeinsame 
-            Aktivitäten planen.
-        </p>
-    </div>
-
-    <h2>Wie unsere Regionalgruppe entstanden ist</h2>
-
-    <p>Unsere Gruppe entstand aus dem Zusammenschluss zweier kleiner Gruppen:</p>
-
-    <ul>
-        <li>Eine Gruppe bildete sich über Jahre hinweg rund um <strong>Philipp</strong>.</li>
-        <li>Die zweite Gruppe entstand auf den <strong>MBtrac + Unimog Feldtagen 2022</strong>.</li>
-    </ul>
-
-    <p>Aus diesen beiden Kreisen entwickelte sich eine feste Gemeinschaft mit ersten gemeinsamen Treffen:</p>
-
-    <ul>
-        <li><strong><a class="yearlink" href="2023.jpg" target="_blank" rel="noopener">2023</a>:</strong> Erstes Unimog‑Treffen in Bad Laer Müschen (Landkreis Osnabrück)</li>
-        <li><strong><a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:</strong> Zweites Treffen, erneut in Bad Laer Müschen</li>
-        <li><strong><a class="yearlink" href="2025.jpg" target="_blank" rel="noopener">2025</a>:</strong> Drittes Treffen in Baccum (Landkreis Emsland)</li>
+    <h2>Unsere Treffen</h2>
+    <ul class="treffen-liste">
+        <li><a href="treffen-2023.html">Unimog‑Treffen 2023 – Bad Laer Müschen</a></li>
+        <li><a href="treffen-2024.html">Unimog‑Treffen 2024 – Bad Laer Müschen</a></li>
+        <li><a href="treffen-2025.html">Unimog‑Treffen 2025 – Baccum</a></li>
+        <li><a href="gruendung-2026.html">Gründungstreffen 2026 – Hof Blanke</a></li>
     </ul>
 
     <p>
-        Am <strong>12.04.2026</strong> folgte der nächste logische Schritt:  
-        die <strong><a class="yearlink" href="gruendung.png" target="_blank" rel="noopener">Gründung</a></strong> der  
-        <strong>UVC Regionalgruppe Emsland–Osnabrück</strong>  
-        auf dem Hof Blanke in Bad Laer Müschen.
+        Weitere Treffen folgen in den kommenden Jahren.  
+        Wir freuen uns über jeden, der sich uns anschließen möchte.
     </p>
-</section>
+</div>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
-
     <br>
     <a href="hosting.html">Hosting & Technik</a>
     <br>
     <a href="impressum.html">Impressum</a>
     <br>
     <a href="datenschutz.html">Datenschutz</a>
-
     <br>
     <span style="font-size: 0.75rem; color: #777;">
         Besucher:
