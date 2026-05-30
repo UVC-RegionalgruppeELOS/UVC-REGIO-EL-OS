@@ -1,45 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Startseite -->
   <url>
     <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/index.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-30</lastmod>
+    <priority>1.0</priority>
   </url>
 
+  <!-- Treffen-Übersicht -->
   <url>
-    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/programm.html</loc>
+    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unsere-treffen.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.9</priority>
   </url>
 
+  <!-- Treffen 2023 -->
   <url>
-    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/stammtisch.html</loc>
+    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/treffen-2023.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.8</priority>
   </url>
 
+  <!-- Treffen 2024 -->
   <url>
-    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/ansprechpartner.html</loc>
+    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/treffen-2024.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.8</priority>
   </url>
 
+  <!-- Treffen 2025 -->
+  <url>
+    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/treffen-2025.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gründung 2026 -->
+  <url>
+    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/gruendung-2026.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Unimogs -->
   <url>
     <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimogs.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimog-termine.html</loc>
-  </url>
-
+  <!-- Kontakt -->
   <url>
     <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/kontakt.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.6</priority>
   </url>
 
-  <url>
-    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/weiterfuehrende-links.html</loc>
-  </url>
-
+  <!-- Impressum -->
   <url>
     <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/impressum.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.5</priority>
   </url>
 
+  <!-- Datenschutz -->
   <url>
     <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/datenschutz.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Hosting & Technik -->
+  <url>
+    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/hosting.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Weiterführende Links -->
+  <url>
+    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/weiterfuehrende-links.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.4</priority>
   </url>
 
 </urlset>
