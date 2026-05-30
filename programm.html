@@ -6,7 +6,7 @@
     <title>Programm – UVC Regionalgruppe Emsland–Osnabrück</title>
 
     <!-- SEO-Meta-Tags -->
-    <meta name="description" content="Programm der UVC Regionalgruppe Emsland–Osnabrück. Übersicht über Aktivitäten, Treffen und Veranstaltungen rund um historische Unimog-Fahrzeuge.">
+    <meta name="description" content="Programm und Treffen der UVC Regionalgruppe Emsland–Osnabrück. Übersicht über Aktivitäten, Veranstaltungen und Unimog-Treffen in der Region.">
     <meta name="keywords" content="Unimog, Programm, Treffen, Veranstaltungen, UVC, Regionalgruppe, Emsland, Osnabrück, Oldtimer, Unimog Veteranen Club">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
@@ -29,7 +29,6 @@
             line-height: 1.6;
         }
 
-        /* Neuer Header mit Hamburger-Menü */
         header { 
             background: rgba(0,0,0,0.75); 
             padding: 15px; 
@@ -92,7 +91,6 @@
             margin-top: 10px;
         }
 
-        /* HERO-BLOCK – BASIS */
         .hero {
             max-width: 900px;
             width: 100%;
@@ -109,25 +107,14 @@
             display: block;
         }
 
-        /* MOBILE / TABLET BIS 899px */
         @media (max-width: 899px) {
-            .hero {
-                width: 100%;
-                height: auto;
-                overflow: visible;
-            }
-
             .hero img {
                 width: 140%;
-                height: auto;
                 object-fit: cover;
                 object-position: 70% center;
-                margin: 0;
-                transform: none;
             }
         }
 
-        /* PC-Ansicht AB 900px */
         @media (min-width: 900px) {
             .hero {
                 height: 320px;
@@ -183,7 +170,7 @@
 <body>
 
 <header>
-    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen oder schließen">☰ Menü</button>
 
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
@@ -191,8 +178,9 @@
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
-         <a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
@@ -219,14 +207,10 @@
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
-
     <br>
-    <a href="hosting.html">Hosting & Technik</a>
-    <br>
-    <a href="impressum.html">Impressum</a>
-    <br>
+    <a href="hosting.html">Hosting & Technik</a><br>
+    <a href="impressum.html">Impressum</a><br>
     <a href="datenschutz.html">Datenschutz</a>
-
     <br>
     <span style="font-size: 0.75rem; color: #777;">
         Besucher:
@@ -236,7 +220,6 @@
              style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
     </span>
 </footer>
-
 
 </body>
 </html>
