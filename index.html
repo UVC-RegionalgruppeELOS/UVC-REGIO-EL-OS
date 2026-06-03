@@ -5,164 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UVC Regionalgruppe Emsland–Osnabrück | Unimog Veteranen Club</title>
 
-    <!-- SEO-Meta-Tags -->
     <meta name="description" content="UVC Regionalgruppe Emsland–Osnabrück: Gemeinschaft für historische Unimogs. Treffen, Technik, Geschichte und Aktivitäten der Regionalgruppe.">
     <meta name="keywords" content="Unimog, UVC, Veteranen Club, Emsland, Osnabrück, Oldtimer, Treffen, Regionalgruppe, Unimog Treffen, MBtrac, Feldtage, historische Fahrzeuge">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="UVC Regionalgruppe Emsland–Osnabrück">
     <meta property="og:description" content="Unimog Veteranen Club Regionalgruppe Emsland–Osnabrück: Treffen, Technik, Geschichte und Gemeinschaft rund um historische Unimogs.">
     <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/PLATZHALTER-UNIMOG.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/">
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #222;
-            background: #e5e5e5;
-            line-height: 1.6;
-        }
-
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
+        body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #e5e5e5; line-height: 1.6; }
+        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
+        nav a:hover { color: #2e5c2e; }
+        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
         @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            nav.active {
-                display: flex;
-            }
+            .menu-toggle { display: block; }
+            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
+            nav a { display: block; margin: 10px 0; }
+            nav.active { display: flex; }
         }
-
-        .hero {
-            height: 40vh;
-            background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 0 0 10px black;
-            border-bottom: 2px solid #ccc;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin: 0;
-            color: white;
-            text-align: center;
-        }
-
-        section {
-            max-width: 900px;
-            width: 90%;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 {
-            color: #2e5c2e;
-        }
-
-        .yearlink {
-            color: #2e5c2e;
-            font-weight: bold;
-        }
-
-        .dachverband {
-            background: #f9f9f9;
-            border-left: 4px solid #888;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
-        .regionalgruppe {
-            background: #f4f8f4;
-            border-left: 4px solid #4f7a4f;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 1px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
+        .hero { height: 40vh; background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-shadow: 0 0 10px black; border-bottom: 2px solid #ccc; }
+        .hero h1 { font-size: 2.8rem; margin: 0; color: white; text-align: center; }
+        section { max-width: 900px; width: 90%; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
+        h1, h2 { color: #2e5c2e; }
+        .yearlink { color: #2e5c2e; font-weight: bold; }
+        .dachverband { background: #f9f9f9; border-left: 4px solid #888; padding: 15px 20px; margin: 20px 0; border-radius: 4px; }
+        .regionalgruppe { background: #f4f8f4; border-left: 4px solid #4f7a4f; padding: 15px 20px; margin: 20px 0; border-radius: 4px; }
+        footer { text-align: center; padding: 20px; color: #444; font-size: 0.9rem; border-top: 1px solid #ccc; margin-top: 40px; background: #e5e5e5; }
+        footer a { color: #777; text-decoration: none; font-size: 0.85rem; }
+        footer a:hover { color: #2e5c2e; }
     </style>
 
     <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
+        function toggleMenu() { document.getElementById("mainNav").classList.toggle("active"); }
     </script>
 </head>
 
@@ -170,7 +50,6 @@
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
-
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
@@ -192,7 +71,7 @@
 
     <div class="dachverband">
         <p>
-            Der <strong><a href="https://u-v-c.de/about/" target="_blank" rel="noopener">UVC</a> – Unimog Veteranen Club e. V.</strong> 
+            Der <strong><a href="https://u-v-c.de/about/" target="_blank" rel="noopener">UVC – Unimog Veteranen Club e. V.</a></strong> 
             ist ein Verein für Liebhaber historischer Unimog‑Fahrzeuge. 
             Er richtet sich besonders an Besitzer, Fahrer und Fans.
         </p>
@@ -220,19 +99,19 @@
     <ul>
         <li>
             <strong><a class="yearlink" href="2023.jpg" target="_blank" rel="noopener">2023</a>:</strong> 
-            Erstes Unimog‑Treffen in Bad Laer Müschen  
+            Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen  
             → <a href="treffen-2023.html">Details ansehen</a>
         </li>
 
         <li>
             <strong><a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:</strong> 
-            Zweites Treffen, erneut in Bad Laer Müschen  
+            Zweites Treffen, erneut auf dem Hof Blanke in Bad Laer Müschen  
             → <a href="treffen-2024.html">Details ansehen</a>
         </li>
 
         <li>
             <strong><a class="yearlink" href="2025.jpg" target="_blank" rel="noopener">2025</a>:</strong> 
-            Drittes Treffen in Baccum  
+            Drittes Treffen in Baccum  
             → <a href="treffen-2025.html">Details ansehen</a>
         </li>
     </ul>
@@ -240,30 +119,4 @@
     <p>
         Am <strong>12.04.2026</strong> folgte der nächste logische Schritt:  
         die <strong><a class="yearlink" href="gruendung-2026.html">Gründung</a></strong> der  
-        <strong>UVC Regionalgruppe Emsland–Osnabrück</strong>  
-        auf dem Hof Blanke in Bad Laer Müschen.
-    </p>
-</section>
-
-<footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück
-
-    <br>
-    <a href="hosting.html">Hosting & Technik</a>
-    <br>
-    <a href="impressum.html">Impressum</a>
-    <br>
-    <a href="datenschutz.html">Datenschutz</a>
-
-    <br>
-    <span style="font-size: 0.75rem; color: #777;">
-        Besucher:
-        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-             border="0"
-             alt="Besucherzähler der Webseite"
-             style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
-    </span>
-</footer>
-
-</body>
-</html>
+        <strong>UVC Regional
