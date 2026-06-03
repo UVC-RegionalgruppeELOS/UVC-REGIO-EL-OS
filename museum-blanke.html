@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Blanke – UVC Regionalgruppe Emsland–Osnabrück</title>
+
+    <meta name="description" content="Museum Blanke in Bad Laer Müschen – historische Technik, Landwirtschaft, Unimog, Telefonie, Haushalt, Werkstatt, Büro, Uhrenanlage und regionale Geschichte.">
+    <meta name="keywords" content="Museum Blanke, Bad Laer, Müschen, Landwirtschaft, Technik, Unimog, Geschichte, Telefonie, Haushalt, Werkstatt, Büro, Uhrenanlage">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
+
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
+        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #2e5c2e; }
+        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+        @media (max-width: 899px) {
+            .menu-toggle { display: block; }
+            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); padding: 10px 0; }
+            nav a { display: block; margin: 10px 0; }
+            nav.active { display: flex; }
+        }
+        .hero { height: 35vh; background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-shadow: 0 0 10px black; border-bottom: 2px solid #ccc; }
+        .hero h1 { color: white; font-size: 2.6rem; margin: 0; text-align: center; }
+        section { max-width: 900px; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
+        h1, h2 { color: #2e5c2e; }
+        .rubrik { margin: 12px 0; }
+        .rubrik a { color: #2e5c2e; font-weight: bold; text-decoration: none; }
+        .rubrik a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 25px; background: #e5e5e5; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; }
+        footer a { color: #2e5c2e; text-decoration: none; }
+        footer a:hover { color: #1d3d1d; }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+    <nav id="mainNav">
+        <a href="index.html"><strong>Start</strong></a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Museum Blanke</h1>
+</div>
+
+<section>
+    <h1>Das kleie private Museum Hof Blanke</h1>
+    <p>
+        
+        Die Sammlung wächst stetig und wird liebevoll gepflegt.
+    </p>
+
+    <h2>Rubriken</h2>
+
+    <!-- Alphabetisch sortiert -->
+    <div class="rubrik"><a href="museum-buero.html">Büro</a></div>
+    <div class="rubrik"><a href="museum-haushalt.html">Haushalt</a></div>
+    <div class="rubrik"><a href="museum-landwirtschaft.html">Landwirtschaftliche Geräte</a></div>
+    <div class="rubrik"><a href="museum-telefonie.html">Telefonie</a></div>
+    <div class="rubrik"><a href="museum-uhrenanlage.html">Uhrenanlage</a></div>
+    <div class="rubrik"><a href="museum-werkstatt.html">Werkstatt</a></div>
+
+</section>
+
+<footer>
+    <div style="max-width: 900px; margin: 0 auto;">
+        <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
+        <p>
+            <a href="hosting.html">Hosting & Technik</a> ·
+            <a href="impressum.html">Impressum</a> ·
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+        <p style="font-size: 0.8rem; color: #777;">
+            Besucher:
+            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+                 alt="Besucherzähler"
+                 style="vertical-align: middle; opacity: 0.7; height: 22px;">
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
