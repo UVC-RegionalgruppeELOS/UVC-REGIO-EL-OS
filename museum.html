@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museum Blanke – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <meta name="description" content="Museum Blanke in Bad Laer Müschen – historische Technik, Landwirtschaft, Unimog, Telefonie, Haushalt, Werkstatt, Büro, Uhrenanlage und regionale Geschichte.">
+    <meta name="description" content="Museum Hof Blanke in Bad Laer Müschen – historische Technik, Landwirtschaft, Unimog, Telefonie, Haushalt, Werkstatt, Büro, Uhrenanlage und regionale Geschichte.">
     <meta name="keywords" content="Museum Blanke, Bad Laer, Müschen, Landwirtschaft, Technik, Unimog, Geschichte, Telefonie, Haushalt, Werkstatt, Büro, Uhrenanlage">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
@@ -25,16 +25,7 @@
             nav.active { display: flex; }
         }
 
-        /* Bilddarstellung */
-        .museum-img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 20px 0;
-            box-shadow: 0 0 8px rgba(0,0,0,0.15);
-        }
-
-        /* Inhalt */
+        /* Hauptinhalt */
         section {
             max-width: 900px;
             margin: 40px auto;
@@ -49,6 +40,14 @@
         .rubrik { margin: 12px 0; }
         .rubrik a { color: #2e5c2e; font-weight: bold; text-decoration: none; }
         .rubrik a:hover { text-decoration: underline; }
+
+        /* Hinweistext */
+        .hinweis {
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
 
         /* Footer */
         footer { text-align: center; padding: 25px; background: #e5e5e5; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; }
@@ -83,11 +82,12 @@
     <h1>Museum Blanke</h1>
 
     <p>
-        Das kleine private Museum Hof Blanke zeigt historische Technik, Geräte und Alltagsgegenstände.
+        Das kleine private Museum Hof Blanke zeigt historische Technik, Geräte und Alltagsgegenstände.
         Die Sammlung wächst stetig und wird liebevoll gepflegt.
     </p>
 
     <h2>Rubriken</h2>
+    <p class="hinweis">Hinweis: Bislang ist nur die Rubrik <strong>Telefonie</strong> mit ersten Inhalten gefüllt.</p>
 
     <div class="rubrik"><a href="museum-buero.html">Büro</a></div>
     <div class="rubrik"><a href="museum-haushalt.html">Haushalt</a></div>
@@ -95,14 +95,13 @@
     <div class="rubrik"><a href="museum-telefonie.html">Telefonie</a></div>
     <div class="rubrik"><a href="museum-uhrenanlage.html">Uhrenanlage</a></div>
     <div class="rubrik"><a href="museum-werkstatt.html">Werkstatt</a></div>
-
 </section>
 
 <footer>
     <div style="max-width: 900px; margin: 0 auto;">
-        <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
+        <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
         <p>
-            <a href="hosting.html">Hosting & Technik</a> ·
+            <a href="hosting.html">Hosting & Technik</a> ·
             <a href="impressum.html">Impressum</a> ·
             <a href="datenschutz.html">Datenschutz</a>
         </p>
