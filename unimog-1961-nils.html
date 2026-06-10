@@ -11,96 +11,41 @@
 
     <meta property="og:title" content="Unimog 411.117 – Baujahr 1961 – Nils">
     <meta property="og:description" content="Steckbrief des Unimog 411.117 Westfalia von Nils. Baujahr 1961, 32 PS, restauriert über 16 Jahre.">
-    <meta property="og:image" content="PLATZHALTER-UNIMOG.jpg">
+    <meta property="og:image" content="unimog-1961-nils.png">
     <meta property="og:type" content="article">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
+        body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #e5e5e5; line-height: 1.6; }
+
+        /* Navigation */
         header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
         nav a:hover { color: #2e5c2e; }
         .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
             nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
             nav a { display: block; margin: 10px 0; }
             nav.active { display: flex; }
         }
-        .hero { height: 30vh; background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-shadow: 0 0 10px black; border-bottom: 2px solid #ccc; }
-        .hero h1 { font-size: 2.6rem; color: white; margin: 0; }
-        .container { max-width: 900px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
-        h1, h2 { color: #2e5c2e; }
-        .bilder img { max-width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2); }
-        footer { text-align: center; padding: 20px; color: #444; font-size: 0.9rem; border-top: 1px solid #ccc; margin-top: 40px; background: #e5e5e5; }
-        footer a { color: #777; text-decoration: none; }
-        footer a:hover { color: #2e5c2e; }
-    </style>
 
-    <script>
-        function toggleMenu() { document.getElementById("mainNav").classList.toggle("active"); }
-    </script>
-</head>
+        /* Hero-Bild */
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
 
-<body>
-
-<header>
-    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
-    <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
-        <a href="programm.html">Programm</a>
-        <a href="stammtisch.html">Stammtisch</a>
-        <a href="ansprechpartner.html">Ansprechpartner</a>
-        <a href="unimogs.html">Unimogs</a>
-        <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
-</header>
-
-<div class="hero">
-    <h1>Unimog 411.117 – 1961</h1>
-</div>
-
-<div class="container">
-    <h1>Steckbrief – Unimog 411.117 Westfalia</h1>
-
-    <p><strong>Modell:</strong> Unimog 411.117 Westfalia<br>
-       <strong>Baujahr:</strong> 1961<br>
-       <strong>Leistung:</strong> 32 PS<br>
-       <strong>Besitzer:</strong> Nils</p>
-
-    <h2>Historie & Besonderheiten</h2>
-
-    <p>
-        Dieser Unimog 411.117 wurde 1961 gebaut und ursprünglich mit einer 
-        <strong>Kabelziehwinde der Firma Lancier</strong> ausgeliefert.
-    </p>
-
-    <p>
-        Bis Anfang der 1990er‑Jahre war er beim <strong>örtlichen Straßenbaubetrieb</strong> im Einsatz, 
-        ausgestattet mit einem <strong>Kehrbesen</strong>.
-    </p>
-
-    <p>
-        Im Jahr 2004 übernahm ein bekannter Oldtimerfreund das Fahrzeug und begann eine 
-        <strong>umfangreiche Komplettrestaurierung</strong>, die sich über beeindruckende 
-        <strong>16 Jahre</strong> erstreckte. Heute befindet sich der Mog in einem außergewöhnlich 
-        gepflegten Zustand.
-    </p>
-
-    <div class="backlinks">
-        <p><a href="unimogs.html">Zurück zur Übersicht</a></p>
-    </div>
-</div>
-
-<footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück<br>
-    <a href="hosting.html">Hosting & Technik</a><br>
-    <a href="impressum.html">Impressum</a><br>
-    <a href="datenschutz.html">Datenschutz</a>
-</footer>
-
-</body>
-</html>
+        /* Inhalt */
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
