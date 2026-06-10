@@ -77,6 +77,9 @@
     <script>
         function toggleMenu() { document.getElementById("mainNav").classList.toggle("active"); }
     </script>
+
+    <!-- Live-Online-Zähler -->
+    <script type="text/javascript" src="//whos.amung.us/swidget/yourwidgetid"></script>
 </head>
 
 <body>
@@ -185,10 +188,12 @@
         </p>
 
         <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
-            Besucher:
+            Besucher gesamt:
             <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
                  alt="Besucherzähler"
                  style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
+            · Aktuell online:
+            <span id="whos-count"></span>
         </p>
     </div>
 </footer>
