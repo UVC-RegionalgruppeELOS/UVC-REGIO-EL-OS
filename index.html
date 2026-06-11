@@ -185,21 +185,38 @@
             <a href="datenschutz.html">Datenschutz</a>
         </p>
 
-        <!-- Besucherzähler + Live-Online-Zähler -->
+        <!-- Besucherzähler -->
         <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
             Besucher gesamt:
             <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
                  alt="Besucherzähler"
                  style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-            · Aktuell online:
+            · Besucher heute: <span id="visitors-today">0</span>
         </p>
 
-        <!-- Live-Online-Zähler (classic) -->
-        <script id="_waugld">
-            var _wau = _wau || [];
-            _wau.push(["classic", "x30eeh2poi", "gld"]);
+        <!-- Besucher heute Script -->
+        <script>
+            const today = new Date().toISOString().slice(0, 10);
+            let data = JSON.parse(localStorage.getItem("visitorData")) || {};
+
+            if (!data[today]) {
+                data[today] = { count: 0, visitors: [] };
+            }
+
+            if (!localStorage.getItem("uniqueVisitorId")) {
+                localStorage.setItem("uniqueVisitorId", Math.random().toString(36).substr(2, 9));
+            }
+
+            const visitorId = localStorage.getItem("uniqueVisitorId");
+
+            if (!data[today].visitors.includes(visitorId)) {
+                data[today].visitors.push(visitorId);
+                data[today].count++;
+                localStorage.setItem("visitorData", JSON.stringify(data));
+            }
+
+            document.getElementById("visitors-today").innerText = data[today].count;
         </script>
-        <script async src="//waust.at/s.js"></script>
 
     </div>
 </footer>
