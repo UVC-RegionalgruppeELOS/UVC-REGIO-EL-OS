@@ -25,6 +25,7 @@
             line-height: 1.6;
         }
 
+        /* Navigation */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
@@ -60,10 +61,7 @@
         }
 
         @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
-
+            .menu-toggle { display: block; }
             nav {
                 display: none;
                 flex-direction: column;
@@ -71,17 +69,11 @@
                 border-top: 2px solid #ccc;
                 padding: 10px 0;
             }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            nav.active {
-                display: flex;
-            }
+            nav a { display: block; margin: 10px 0; }
+            nav.active { display: flex; }
         }
 
+        /* Container */
         .container {
             max-width: 900px;
             margin: 30px auto;
@@ -91,14 +83,14 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        h1, h2 {
-            color: #2e5c2e;
-        }
+        h1, h2 { color: #2e5c2e; }
 
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
+        /* Dezente Linkfarben wie Index */
+        a { color: #2e5c2e; text-decoration: none; transition: color 0.2s ease; }
+        a:hover { color: #1f3b1f; text-decoration: underline; }
+        a:visited { color: #3b6b3b; }
+
+        ul { list-style: none; padding-left: 0; }
 
         li {
             margin: 12px 0;
@@ -108,20 +100,11 @@
             border-radius: 4px;
         }
 
-        li a {
-            color: #2e5c2e;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            text-decoration: underline;
-        }
-
+        /* Footer wie Index */
         footer {
             text-align: center;
-            padding: 20px;
-            color: #444;
+            padding: 25px 10px;
+            color: #555;
             font-size: 0.9rem;
             border-top: 1px solid #ccc;
             margin-top: 40px;
@@ -129,13 +112,13 @@
         }
 
         footer a {
-            color: #777;
+            color: #2e5c2e;
             text-decoration: none;
             font-size: 0.85rem;
         }
 
         footer a:hover {
-            color: #2e5c2e;
+            color: #1d3d1d;
         }
     </style>
 
@@ -149,7 +132,7 @@
 <body>
 
 <header>
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen oder schließen">☰ Menü</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
@@ -170,17 +153,17 @@
     <ul>
         <li>
             <a href="treffen-2023.html">Unimog‑Treffen 2023 – Bad Laer Müschen</a><br>
-            Erstes Treffen der Regionalgruppe, Ausfahrt nach Dissen (Schlingmann), gemütlicher Grillabend.
+            Erstes gemeinsames Treffen, große Ausfahrt mit Besichtigung der Fa. Schlingmann, gemütlicher Grillabend.
         </li>
 
         <li>
             <a href="treffen-2024.html">Unimog‑Treffen 2024 – Bad Laer Müschen</a><br>
-            Planwagenfahrt, Museumsbesuch, 81‑km‑Ausfahrt, Kiesgrube Hankenberge.
+            Freitag Planwagenfahrt, Museumsbesuch; Samstag 81‑km‑Ausfahrt mit Besichtigung der Fa. Dyckerhoff in Lengerich und Einfahrt in die Kiesgrube Hankenberge.
         </li>
 
         <li>
             <a href="treffen-2025.html">Unimog‑Treffen 2025 – Baccum</a><br>
-            Museumsbesuch, Ausfahrt über Barwinkel, Wienhoff und Börstel, geselliges Wochenende.
+            Museumsbesuch, Ausfahrt über Barwinkel, Werksbesichtigung bei Fa. Wienhoff und Börstel, geselliges Wochenende.
         </li>
 
         <li>
@@ -199,21 +182,24 @@
 </div>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück
-    <br>
-    <a href="hosting.html">Hosting & Technik</a>
-    <br>
-    <a href="impressum.html">Impressum</a>
-    <br>
-    <a href="datenschutz.html">Datenschutz</a>
-    <br>
-    <span style="font-size: 0.75rem; color: #777;">
-        Besucher:
-        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-             border="0"
-             alt="Besucherzähler der Webseite"
-             style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
-    </span>
+    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px;">
+        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
+            © 2026 UVC Regionalgruppe Emsland–Osnabrück
+        </p>
+
+        <p style="margin: 6px 0;">
+            <a href="hosting.html">Hosting & Technik</a> ·
+            <a href="impressum.html">Impressum</a> ·
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+
+        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
+            Besucher gesamt:
+            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+                 alt="Besucherzähler"
+                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
+        </p>
+    </div>
 </footer>
 
 </body>
