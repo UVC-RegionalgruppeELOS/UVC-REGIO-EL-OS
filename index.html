@@ -3,81 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UVC Regionalgruppe Emsland–Osnabrück | Unimog Veteranen Club</title>
+    <title>Unsere Treffen – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <meta name="description" content="UVC Regionalgruppe Emsland–Osnabrück: Gemeinschaft für historische Unimogs. Treffen, Technik, Geschichte und Aktivitäten der Regionalgruppe.">
-    <meta name="keywords" content="Unimog, UVC, Veteranen Club, Emsland, Osnabrück, Oldtimer, Treffen, Regionalgruppe, Unimog Treffen, MBtrac, Feldtage, historische Fahrzeuge">
+    <meta name="description" content="Übersicht aller Unimog-Treffen der UVC Regionalgruppe Emsland–Osnabrück. Rückblicke auf die Jahre 2023, 2024, 2025 sowie das Gründungstreffen 2026.">
+    <meta name="keywords" content="Unimog Treffen, UVC Regionalgruppe Emsland–Osnabrück, Unimog Veranstaltungen, Unimog Treffen 2023, 2024, 2025, 2026">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <meta property="og:title" content="UVC Regionalgruppe Emsland–Osnabrück">
-    <meta property="og:description" content="Unimog Veteranen Club Regionalgruppe Emsland–Osnabrück: Treffen, Technik, Geschichte und Gemeinschaft rund um historische Unimogs.">
-    <meta property="og:image" content="PLATZHALTER-UNIMOG.jpg">
+    <meta property="og:title" content="Unsere Treffen – Übersicht">
+    <meta property="og:description" content="Alle Treffen der UVC Regionalgruppe Emsland–Osnabrück im Überblick.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/">
+    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unsere-treffen.html">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #e5e5e5; line-height: 1.6; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
 
         /* Navigation */
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
-        nav a:hover { color: #2e5c2e; }
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #2e5c2e;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
             nav a { display: block; margin: 10px 0; }
             nav.active { display: flex; }
         }
 
-        /* Hero */
-        .hero { height: 40vh; background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-shadow: 0 0 10px black; border-bottom: 2px solid #ccc; }
-        .hero h1 { font-size: 2.8rem; margin: 0; color: white; text-align: center; }
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
 
-        /* Hauptinhalt */
-        section { max-width: 900px; width: 90%; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
         h1, h2 { color: #2e5c2e; }
 
-        /* Linkfarben */
+        /* Dezente Linkfarben wie Index */
         a { color: #2e5c2e; text-decoration: none; transition: color 0.2s ease; }
         a:hover { color: #1f3b1f; text-decoration: underline; }
         a:visited { color: #3b6b3b; }
 
-        .yearlink { font-weight: bold; }
+        ul { list-style: none; padding-left: 0; }
 
-        .dachverband { background: #f9f9f9; border-left: 4px solid #888; padding: 15px 20px; margin: 20px 0; border-radius: 4px; }
-        .regionalgruppe { background: #f4f8f4; border-left: 4px solid #4f7a4f; padding: 15px 20px; margin: 20px 0; border-radius: 4px; }
-
-        /* Zusatzabschnitt Museum */
-        .museum-hinweis {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #f8f8f8;
-            border-radius: 8px;
-            box-shadow: 0 0 6px rgba(0,0,0,0.1);
-            font-size: 0.95rem;
-            color: #444;
+        li {
+            margin: 12px 0;
+            padding: 10px;
+            background: #f7f7f7;
+            border-left: 4px solid #2e5c2e;
+            border-radius: 4px;
         }
-        .museum-hinweis h2 {
+
+        /* Footer wie auf Index */
+        footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: #555;
+            font-size: 0.9rem;
+            border-top: 1px solid #ccc;
+            margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer a {
             color: #2e5c2e;
-            font-size: 1.3rem;
-            margin-top: 0;
+            text-decoration: none;
+            font-size: 0.85rem;
         }
 
-        /* Footer */
-        footer { text-align: center; padding: 25px 10px; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; margin-top: 40px; background: #e5e5e5; }
-        footer a { color: #2e5c2e; text-decoration: none; font-size: 0.85rem; }
-        footer a:hover { color: #1d3d1d; }
+        footer a:hover {
+            color: #1d3d1d;
+        }
     </style>
 
     <script>
-        function toggleMenu() { document.getElementById("mainNav").classList.toggle("active"); }
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
     </script>
-
 </head>
 
 <body>
@@ -96,85 +145,44 @@
     </nav>
 </header>
 
-<div class="hero" role="img" aria-label="Historischer Unimog als Titelbild der Regionalgruppe">
-    <h1>UVC Regionalgruppe<br>Emsland–Osnabrück</h1>
-</div>
+<div class="container">
+    <h1>Unsere Treffen</h1>
+    <p>Hier findest du alle bisherigen Treffen der UVC Regionalgruppe Emsland–Osnabrück.</p>
 
-<section>
-    <h1>Willkommen bei der UVC Regionalgruppe Emsland–Osnabrück</h1>
-
-    <div class="dachverband">
-        <p>
-            Der <strong><a href="https://u-v-c.de/about/" target="_blank" rel="noopener">UVC – Unimog Veteranen Club e. V.</a></strong> 
-            ist ein Verein für Liebhaber historischer Unimog‑Fahrzeuge. 
-            Er richtet sich besonders an Besitzer, Fahrer und Fans.
-        </p>
-    </div>
-
-    <div class="regionalgruppe">
-        <p>
-            Mit der Gründung unserer <strong>UVC - Regionalgruppe Emsland–Osnabrück</strong> im Jahr 2026 haben wir 
-            einen Treffpunkt geschaffen, an dem Enthusiasten zusammenkommen, sich austauschen und gemeinsame 
-            Aktivitäten planen.
-        </p>
-    </div>
-
-    <h2>Wie unsere Regionalgruppe entstanden ist</h2>
-
-    <p>Unsere Gruppe entstand aus dem Zusammenschluss zweier kleiner Gruppen:</p>
-
-    <ul>
-        <li>Eine Gruppe bildete sich über Jahre hinweg rund um <strong>Philipp</strong>.</li>
-        <li>Die zweite Gruppe entstand auf den <strong>MBtrac + Unimog Feldtagen 2022</strong>.</li>
-    </ul>
-
-    <p>Aus diesen beiden Kreisen entwickelte sich eine feste Gemeinschaft mit ersten gemeinsamen Treffen:</p>
-
+    <h2>Vergangene Treffen</h2>
     <ul>
         <li>
-            <strong><a class="yearlink" href="2023.jpg" target="_blank" rel="noopener">2023</a>:</strong> 
-            Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen  
-            → <a href="treffen-2023.html">Details ansehen</a>
+            <a href="treffen-2023.html">Unimog‑Treffen 2023 – Bad Laer Müschen</a><br>
+            Erstes gemeinsames Treffen, große Ausfahrt mit Besichtigung der Fa. Schlingmann, gemütlicher Grillabend.
         </li>
 
         <li>
-            <strong><a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:</strong> 
-            Zweites Treffen, erneut auf dem Hof Blanke in Bad Laer Müschen  
-            → <a href="treffen-2024.html">Details ansehen</a>
+            <a href="treffen-2024.html">Unimog‑Treffen 2024 – Bad Laer Müschen</a><br>
+            Freitag Planwagenfahrt, Museumsbesuch; Samstag 81‑km‑Ausfahrt mit Besichtigung der Fa. Dyckerhoff in Lengerich und Einfahrt in die Kiesgrube Hankenberge.
         </li>
 
         <li>
-            <strong><a class="yearlink" href="2025.jpg" target="_blank" rel="noopener">2025</a>:</strong> 
-            Drittes Treffen auf dem Hof Hense in Baccum  
-            → <a href="treffen-2025.html">Details ansehen</a>
+            <a href="treffen-2025.html">Unimog‑Treffen 2025 – Baccum</a><br>
+            Museumsbesuch, Ausfahrt über Barwinkel, Werksbesichtigung bei Fa. Wienhoff und Börstel, geselliges Wochenende.
+        </li>
+
+        <li>
+            <a href="gruendung-2026.html">Gründungstreffen 2026 – Hof Blanke</a><br>
+            Offizielle Gründung der Regionalgruppe Emsland–Osnabrück.
         </li>
     </ul>
 
-    <p>
-        Am <strong>12.04.2026</strong> folgte der nächste logische Schritt:  
-        die <strong><a class="yearlink" href="gruendung-2026.html">Gründung</a></strong> der  
-        <strong>UVC Regionalgruppe Emsland–Osnabrück</strong>  
-        auf dem Hof Blanke in Bad Laer Müschen.
-    </p>
-</section>
+    <h2>Kommende Treffen</h2>
+    <ul>
+        <li><strong>2027:</strong> Termin folgt</li>
+        <li><strong>2028:</strong> Termin folgt</li>
+    </ul>
 
-<div class="museum-hinweis">
-    <h2>Kleine Sammlung auf dem Hof Blanke</h2>
-    <p>
-        Neben den historischen Unimogs befindet sich auf dem Hof Blanke eine kleine private Sammlung
-        weiterer technischer und alltäglicher Gegenstände vergangener Jahrzehnte – darunter Geräte aus
-        Landwirtschaft, Haushalt, Werkstatt und Telefonie.
-    </p>
-    <p>
-        Die Ausstellung ist liebevoll gestaltet und ergänzt das Hauptthema der Unimog‑Geschichte.
-    </p>
-    <p>
-        <a href="museum.html"><strong>→ Zur Museumsseite</strong></a>
-    </p>
+    <p><a href="index.html">Zur Startseite</a></p>
 </div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px; font-family: Arial, sans-serif; color: #555;">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px;">
         <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
             © 2026 UVC Regionalgruppe Emsland–Osnabrück
         </p>
@@ -185,39 +193,12 @@
             <a href="datenschutz.html">Datenschutz</a>
         </p>
 
-        <!-- Besucherzähler -->
         <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
             Besucher gesamt:
             <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
                  alt="Besucherzähler"
                  style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-            · Besucher heute: <span id="visitors-today">0</span>
         </p>
-
-        <!-- Besucher heute Script -->
-        <script>
-            const today = new Date().toISOString().slice(0, 10);
-            let data = JSON.parse(localStorage.getItem("visitorData")) || {};
-
-            if (!data[today]) {
-                data[today] = { count: 0, visitors: [] };
-            }
-
-            if (!localStorage.getItem("uniqueVisitorId")) {
-                localStorage.setItem("uniqueVisitorId", Math.random().toString(36).substr(2, 9));
-            }
-
-            const visitorId = localStorage.getItem("uniqueVisitorId");
-
-            if (!data[today].visitors.includes(visitorId)) {
-                data[today].visitors.push(visitorId);
-                data[today].count++;
-                localStorage.setItem("visitorData", JSON.stringify(data));
-            }
-
-            document.getElementById("visitors-today").innerText = data[today].count;
-        </script>
-
     </div>
 </footer>
 
