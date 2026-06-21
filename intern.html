@@ -56,14 +56,15 @@
     <input type="password" id="pw">
     <button onclick="checkPW()">Weiter</button>
 </div>
+
 <div id="content" style="display:none;">
     <h2>Interne Dokumente</h2>
-    <p>Hier stehen Protokolle, Infos usw.</p>
+    <p>Hier stehen eure Protokolle, Infos usw.</p>
 
     <h3>Stammtischprotokolle</h3>
     <ul>
-        <li><a href="protokolle/stammtisch-q3-2026.pdf" target="_blank">Drittes Quartal 2026</a></li>
-        <li><a href="protokolle/stammtisch-q4-2026.pdf" target="_blank">Viertes Quartal 2026</a></li>
+        <li><a href="protokoll-q3-2026.html">Drittes Quartal 2026</a></li>
+        <li><a href="protokoll-q4-2026.html">Viertes Quartal 2026</a></li>
     </ul>
 
     <h3>Weitere interne Dokumente</h3>
@@ -73,7 +74,10 @@
         <li><a href="protokoll-03.pdf" target="_blank">Protokoll 03</a></li>
     </ul>
 
-   </div>
+    <h3>Mitgliederliste (optional)</h3>
+    <p>Nur wenn du möchtest – besser ohne Telefonnummern.</p>
+</div>
+
 <footer>
     <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px;">
         <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
@@ -99,6 +103,7 @@
 function checkPW() {
     const pw = document.getElementById("pw").value;
 
+    // Passwort hier ändern
     const correct = "unimog2026";
 
     if (pw === correct) {
