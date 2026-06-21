@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Interner Bereich – UVC Regionalgruppe</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #e5e5e5; padding: 40px; }
+    #loginBox, #content {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+    input[type=password] {
+        width: 100%; padding: 10px; margin-top: 10px;
+        border: 1px solid #ccc; border-radius: 4px;
+    }
+    button {
+        margin-top: 15px; padding: 10px 20px;
+        background: #2e5c2e; color: white; border: none;
+        border-radius: 4px; cursor: pointer;
+    }
+    button:hover { background: #1f3b1f; }
+
+    h2 { color: #2e5c2e; }
+    a { color: #2e5c2e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+        text-align: center;
+        padding: 25px 10px;
+        color: #555;
+        font-size: 0.9rem;
+        border-top: 1px solid #ccc;
+        margin-top: 40px;
+        background: #e5e5e5;
+    }
+    footer a {
+        color: #2e5c2e;
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+    footer a:hover {
+        color: #1d3d1d;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="loginBox">
+    <h2>Interner Bereich</h2>
+    <p>Bitte Passwort eingeben:</p>
+    <input type="password" id="pw">
+    <button onclick="checkPW()">Weiter</button>
+</div>
+<div id="content" style="display:none;">
+    <h2>Interne Dokumente</h2>
+    <p>Hier stehen eure Protokolle, Infos usw.</p>
+
+    <h3>Stammtischprotokolle</h3>
+    <ul>
+        <li><a href="protokolle/stammtisch-q3-2026.pdf" target="_blank">Drittes Quartal 2026</a></li>
+        <li><a href="protokolle/stammtisch-q4-2026.pdf" target="_blank">Viertes Quartal 2026</a></li>
+    </ul>
+
+    <h3>Weitere interne Dokumente</h3>
+    <ul>
+        <li><a href="protokoll-01.pdf" target="_blank">Protokoll 01</a></li>
+        <li><a href="protokoll-02.pdf" target="_blank">Protokoll 02</a></li>
+        <li><a href="protokoll-03.pdf" target="_blank">Protokoll 03</a></li>
+    </ul>
+
+    <h3>Mitgliederliste (optional)</h3>
+    <p>Nur wenn du möchtest – besser ohne Telefonnummern.</p>
+</div>
+<footer>
+    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px;">
+        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
+            © 2026 UVC Regionalgruppe Emsland–Osnabrück
+        </p>
+
+        <p style="margin: 6px 0;">
+            <a href="hosting.html">Hosting & Technik</a> ·
+            <a href="impressum.html">Impressum</a> ·
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+
+        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
+            Besucher gesamt:
+            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+                 alt="Besucherzähler"
+                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
+        </p>
+    </div>
+</footer>
+
+<script>
+function checkPW() {
+    const pw = document.getElementById("pw").value;
+
+    const correct = "unimog2026";
+
+    if (pw === correct) {
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    } else {
+        alert("Falsches Passwort");
+    }
+}
+</script>
+
+</body>
+</html>
