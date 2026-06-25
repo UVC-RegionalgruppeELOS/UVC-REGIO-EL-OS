@@ -1,59 +1,33 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Blanke – Taschenlampen & Handlampen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Museum Blanke – Taschenlampen & Handlampen</title>
 
-    <meta name="description" content="Historische Taschenlampen und Handlampen im Museum Blanke, sortiert nach Baujahr und Hersteller.">
-    <meta name="keywords" content="Taschenlampe, Handlampe, VARTA, Daimon, Maglite, Museum Blanke, Bad Laer, Müschen, Beleuchtung, Geschichte">
-    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
+<meta name="description" content="Historische Taschenlampen und Handlampen im Museum Blanke, sortiert nach Baujahr und Hersteller.">
+<meta name="keywords" content="Taschenlampe, Handlampe, VARTA, Daimon, Maglite, Museum Blanke, Bad Laer, Müschen, Beleuchtung, Geschichte">
+<meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
+<style>
+body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
+header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
+nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+nav a:hover { color: #2e5c2e; }
+section { max-width: 900px; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
+h1, h2 { color: #2e5c2e; }
+.lampe-item { margin-bottom: 40px; }
+.lampe-item img { width: 100%; height: auto; border-radius: 6px; box-shadow: 0 0 8px rgba(0,0,0,0.15); margin-top: 10px; }
+footer { text-align: center; padding: 25px; background: #e5e5e5; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; }
+footer a { color: #2e5c2e; text-decoration: none; }
+footer a:hover { color: #1d3d1d; }
+</style>
 
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #2e5c2e; }
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
-            nav.active { display: flex; }
-        }
-
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 { color: #2e5c2e; }
-
-        .lampe-item { margin-bottom: 40px; }
-        .lampe-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 6px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.15);
-            margin-top: 10px;
-        }
-
-        footer { text-align: center; padding: 25px; background: #e5e5e5; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; }
-        footer a { color: #2e5c2e; text-decoration: none; }
-        footer a:hover { color: #1d3d1d; }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+<script>
+function toggleMenu() {
+    document.getElementById("mainNav").classList.toggle("active");
+}
+</script>
 </head>
 
 <body>
@@ -74,73 +48,78 @@
 </header>
 
 <section>
-    <h1>Taschenlampen & Handlampen</h1>
-    <p>Historische Taschenlampen und Handlampen aus verschiedenen Jahrzehnten. Die Sammlung wird nach Baujahr sortiert.</p>
+<h1>Taschenlampen & Handlampen</h1>
+<p>Historische Taschenlampen und Handlampen aus verschiedenen Jahrzehnten. Die Sammlung ist streng nach Baujahr sortiert.</p>
 
-    <!-- Beispiel-Einträge – du ersetzt nur die Bilddateien und Daten -->
+<!-- 1950er – Daimon -->
+<div class="lampe-item">
+    <h2>1950er Jahre – Daimon 314 (Bundeswehr-Handlampe)</h2>
+    <img src="TL7_Daimon_414.png" alt="Daimon 314 Bundeswehr-Handlampe">
+    <p><strong>Hersteller:</strong> Daimon<br>
+       <strong>Modell:</strong> 314<br>
+       <strong>Baujahr:</strong> Ab den 1950er Jahren<br>
+       <strong>Besonderheiten:</strong> Bundeswehr-Handlampe, robuste Metallausführung</p>
+</div>
 
-    <div class="lampe-item">
-        <h2>VARTA TL 2 – Modell 505</h2>
-        <img src="TL 2 VARTA 505.png" alt="VARTA TL 2">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 2 (505)<br>
-           <strong>Baujahr:</strong> – bitte ergänzen –<br>
-           <strong>Besonderheiten:</strong> Klassische Metalltaschenlampe</p>
-    </div>
+<!-- 1950er – VARTA TL 2 -->
+<div class="lampe-item">
+    <h2>1950er Jahre – VARTA TL 2 (505)</h2>
+    <img src="TL2_VARTA_505.png" alt="VARTA TL 2">
+    <p><strong>Hersteller:</strong> VARTA<br>
+       <strong>Modell:</strong> TL 2 (505)<br>
+       <strong>Baujahr:</strong> Ab den 1950er Jahren<br>
+       <strong>Besonderheiten:</strong> Klassische Metalltaschenlampe</p>
+</div>
 
-    <div class="lampe-item">
-        <h2>VARTA TL 3 – Modell 657</h2>
-        <img src="TL 3 VARTA 657.png" alt="VARTA TL 3">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 3 (657)<br>
-           <strong>Baujahr:</strong> – bitte ergänzen –<br>
-           <strong>Besonderheiten:</strong> Robuste Bauform</p>
-    </div>
+<!-- 1960er – VARTA TL 4 -->
+<div class="lampe-item">
+    <h2>1960er Jahre – VARTA TL 4 (618)</h2>
+    <img src="TL4_VARTA_618.png" alt="VARTA TL 4">
+    <p><strong>Hersteller:</strong> VARTA<br>
+       <strong>Modell:</strong> TL 4 (618)<br>
+       <strong>Baujahr:</strong> Ab den 1960er Jahren<br>
+       <strong>Besonderheiten:</strong> Klassische Haushaltslampe</p>
+</div>
 
-    <div class="lampe-item">
-        <h2>VARTA TL 4 – Modell 618</h2>
-        <img src="TL 4 VARTA 618.png" alt="VARTA TL 4">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 4 (618)<br>
-           <strong>Baujahr:</strong> – bitte ergänzen –<br>
-           <strong>Besonderheiten:</strong> Klassische Haushaltslampe</p>
-    </div>
+<!-- 1970er – VARTA TL 3 -->
+<div class="lampe-item">
+    <h2>1970er Jahre – VARTA TL 3 (657)</h2>
+    <img src="TL3_VARTA_657.png" alt="VARTA TL 3">
+    <p><strong>Hersteller:</strong> VARTA<br>
+       <strong>Modell:</strong> TL 3 (657)<br>
+       <strong>Baujahr:</strong> Ab den 1970er Jahren<br>
+       <strong>Besonderheiten:</strong> Robuste Bauform, langlebige Konstruktion</p>
+</div>
 
-    <div class="lampe-item">
-        <h2>VARTA TL 5 – Modell 658</h2>
-        <img src="TL 5 VARTA 658.png" alt="VARTA TL 5">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 5 (658)<br>
-           <strong>Baujahr:</strong> – bitte ergänzen –<br>
-           <strong>Besonderheiten:</strong> Großes Gehäuse, starke Leuchtkraft</p>
-    </div>
+<!-- 1970er – VARTA TL 5 -->
+<div class="lampe-item">
+    <h2>1970er Jahre – VARTA TL 5 (658)</h2>
+    <img src="TL5_VARTA_658.png" alt="VARTA TL 5">
+    <p><strong>Hersteller:</strong> VARTA<br>
+       <strong>Modell:</strong> TL 5 (658)<br>
+       <strong>Baujahr:</strong> Ab den 1970er Jahren<br>
+       <strong>Besonderheiten:</strong> Großes Gehäuse, starke Leuchtkraft</p>
+</div>
 
-    <div class="lampe-item">
-        <h2>VARTA TL 6 – Duplex</h2>
-        <img src="TL 6 VARTA Duplex.png" alt="VARTA TL 6 Duplex">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 6 Duplex<br>
-           <strong>Baujahr:</strong> – bitte ergänzen –<br>
-           <strong>Besonderheiten:</strong> Doppelreflektor</p>
-    </div>
+<!-- 1970er – VARTA TL 6 -->
+<div class="lampe-item">
+    <h2>1970er Jahre – VARTA TL 6 (430 / Duplex)</h2>
+    <img src="TL6_VARTA_Duplex.png" alt="VARTA TL 6 Duplex">
+    <p><strong>Hersteller:</strong> VARTA<br>
+       <strong>Modell:</strong> TL 6 (430 / Duplex)<br>
+       <strong>Baujahr:</strong> Ab den 1970er Jahren<br>
+       <strong>Besonderheiten:</strong> Doppelreflektor, stabile Ausführung</p>
+</div>
 
-    <div class="lampe-item">
-        <h2>Daimon – Modell 414</h2>
-        <img src="TL 7 Daimon 414.png" alt="Daimon 414">
-        <p><strong>Hersteller:</strong> Daimon<br>
-           <strong>Modell:</strong> 414<br>
-           <strong>Baujahr:</strong> – bitte ergänzen –<br>
-           <strong>Besonderheiten:</strong> Klassische deutsche Blechlampe</p>
-    </div>
-
-    <div class="lampe-item">
-        <h2>Maglite Mini</h2>
-        <img src="TL1 Maglite Mini.png" alt="Maglite Mini">
-        <p><strong>Hersteller:</strong> Maglite<br>
-           <strong>Modell:</strong> Mini Maglite<br>
-           <strong>Baujahr:</strong> – bitte ergänzen –<br>
-           <strong>Besonderheiten:</strong> Aluminiumgehäuse, moderne Technik</p>
-    </div>
+<!-- 1984 – Maglite Mini -->
+<div class="lampe-item">
+    <h2>Ab 1984 – Maglite Mini (Modellreihe AA)</h2>
+    <img src="TL1_Maglite_Mini.png" alt="Maglite Mini">
+    <p><strong>Hersteller:</strong> Maglite<br>
+       <strong>Modell:</strong> Mini Maglite (Modellreihe AA)<br>
+       <strong>Baujahr:</strong> Ab 1984<br>
+       <strong>Besonderheiten:</strong> Aluminiumgehäuse, moderne Technik, kompakte Bauform</p>
+</div>
 
 </section>
 
@@ -151,12 +130,6 @@
             <a href="hosting.html">Hosting & Technik</a> ·
             <a href="impressum.html">Impressum</a> ·
             <a href="datenschutz.html">Datenschutz</a>
-        </p>
-        <p style="font-size: 0.8rem; color: #777;">
-            Besucher:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px;">
         </p>
     </div>
 </footer>
