@@ -68,10 +68,10 @@
         <li><a href="protokoll-q4-2026.html">Viertes Quartal 2026</a></li>
     </ul>
 
-   
-
     <h3>Mitgliederliste</h3>
     <p><a href="mitglieder.html"><strong>→ Mitgliederverzeichnis öffnen</strong></a></p>
+
+    <button onclick="logout()">Logout</button>
 </div>
 
 <footer>
@@ -96,18 +96,28 @@
 </footer>
 
 <script>
+// Login prüfen
+if (localStorage.getItem("uvcLoggedIn") === "true") {
+    document.getElementById("loginBox").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}
+
 function checkPW() {
     const pw = document.getElementById("pw").value;
-
-    // Passwort hier ändern
     const correct = "unimog2026";
 
     if (pw === correct) {
+        localStorage.setItem("uvcLoggedIn", "true");
         document.getElementById("loginBox").style.display = "none";
         document.getElementById("content").style.display = "block";
     } else {
         alert("Falsches Passwort");
     }
+}
+
+function logout() {
+    localStorage.removeItem("uvcLoggedIn");
+    window.location.href = "index.html";
 }
 </script>
 
