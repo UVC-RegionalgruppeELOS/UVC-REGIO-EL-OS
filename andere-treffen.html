@@ -1,21 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andere Treffen – UVC Regionalgruppe Emsland–Osnabrück</title>
+
+    <meta name="description" content="Besuche der UVC Regionalgruppe Emsland–Osnabrück auf anderen Unimog- und Landtechnik-Treffen.">
+    <meta name="keywords" content="Unimog Treffen, Hattert, Nordhorn, Verl, UVC, Feldtage, MBtrac">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
+
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #e5e5e5; line-height: 1.6; }
+
+        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
+        nav a { color: #2e5c2e; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
+        nav a:hover { color: #1f3b1f; text-decoration: underline; }
+        nav a:active, nav a:focus, nav a.current { color: #2e5c2e; outline: none; }
+        nav a:visited { color: #3b6b3b; }
+
+        .menu-toggle { display: none; background: rgba(0,0,0,0.75); color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+
+        @media (max-width: 899px) {
+            .menu-toggle { display: block; }
+            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
+            nav a { display: block; margin: 10px 0; }
+            nav.active { display: flex; }
+        }
+
+        section { max-width: 900px; width: 90%; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
+        h1, h2 { color: #2e5c2e; }
+
+        .treffen-box {
+            background: #f8f8f8;
+            border-left: 4px solid #2e5c2e;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        footer { text-align: center; padding: 25px 10px; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; margin-top: 40px; background: #e5e5e5; }
+        footer a { color: #2e5c2e; text-decoration: none; font-size: 0.85rem; }
+        footer a:hover { color: #1d3d1d; }
+    </style>
+
+    <script>
+        function toggleMenu() { document.getElementById("mainNav").classList.toggle("active"); }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+    <nav id="mainNav">
+        <a href="index.html"><strong>Start</strong></a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html" class="current">Andere Treffen</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
 <section>
     <h1>Andere Treffen</h1>
     <p>Unsere Regionalgruppe besucht regelmäßig weitere Veranstaltungen rund um den Unimog und historische Landtechnik. Eine Auswahl:</p>
 
-    <ul>
-        <li>
-            <strong>Sommertreffen Hattert 2025</strong><br>
-            In Kürze folgen Bericht und Fotos.
-        </li>
+    <div class="treffen-box">
+        <h2>Sommertreffen Hattert 2025</h2>
+        <p>In Kürze folgen Bericht und Fotos.</p>
+    </div>
 
-        <li>
-            <strong>Historischer Feldtag 2022 – Nordhorn</strong><br>
-            In Kürze folgen Bericht und Fotos.
-        </li>
+    <div class="treffen-box">
+        <h2>Historischer Feldtag 2022 – Nordhorn</h2>
+        <p>In Kürze folgen Bericht und Fotos.</p>
+    </div>
 
-        <li>
-            <strong>UVC Sommertreffen 2026 – Ostwestfalenhalle Kaunitz / Verl</strong><br>
-            In Kürze folgen Bericht und Fotos.
-        </li>
-    </ul>
+    <div class="treffen-box">
+        <h2>UVC Sommertreffen 2026 – Ostwestfalenhalle Kaunitz / Verl</h2>
+        <p>In Kürze folgen Bericht und Fotos.</p>
+    </div>
 </section>
+
+<footer>
+    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px; font-family: Arial, sans-serif; color: #555;">
+        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
+            © 2026 UVC Regionalgruppe Emsland–Osnabrück
+        </p>
+
+        <p style="margin: 6px 0;">
+            <a href="hosting.html">Hosting & Technik</a> ·
+            <a href="impressum.html">Impressum</a> ·
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+
+        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
+            Besucher gesamt:
+            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+                 alt="Besucherzähler"
+                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
