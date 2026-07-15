@@ -21,9 +21,12 @@
         body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #e5e5e5; line-height: 1.6; }
 
         header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
-        nav a:hover { color: #2e5c2e; }
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+        nav a { color: #2e5c2e; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
+        nav a:hover { color: #1f3b1f; text-decoration: underline; }
+        nav a:active, nav a:focus, nav a.current { color: #2e5c2e; outline: none; }
+        nav a:visited { color: #3b6b3b; }
+
+        .menu-toggle { display: none; background: rgba(0,0,0,0.75); color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
@@ -79,19 +82,18 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html" class="current"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="zu-besuch-auf-anderen-treffen.html">Zu Besuch auf anderen Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
         <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
-
 
 <div class="hero" role="img" aria-label="Historischer Unimog als Titelbild der Regionalgruppe">
     <h1>UVC Regionalgruppe<br>Emsland–Osnabrück</h1>
