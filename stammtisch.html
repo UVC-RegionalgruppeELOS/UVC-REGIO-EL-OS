@@ -5,85 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stammtisch – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <!-- SEO-Meta-Tags -->
-    <meta name="description" content="Stammtisch der UVC Regionalgruppe Emsland–Osnabrück. Termine, Treffpunkte, Gemeinschaft und Austausch rund um historische Unimog-Fahrzeuge.">
+    <meta name="description" content="Stammtisch der UVC Regionalgruppe Emsland–Osnabrück. Termine, Treffpunkte und Gemeinschaft rund um historische Unimog-Fahrzeuge.">
     <meta name="keywords" content="Unimog, Stammtisch, Treffen, UVC, Regionalgruppe, Emsland, Osnabrück, Oldtimer, Gemeinschaft, Unimog Veteranen Club">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Stammtisch – UVC Regionalgruppe Emsland–Osnabrück">
     <meta property="og:description" content="Informationen zum Stammtisch der UVC Regionalgruppe Emsland–Osnabrück. Austausch, Technik, Gemeinschaft und Unimog-Leidenschaft.">
     <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/stammtisch.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/stammtisch.html">
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #222;
-            background: #e5e5e5;
-            line-height: 1.6;
-        }
-
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
+        body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #e5e5e5; line-height: 1.6; }
+        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
+        nav a:hover { color: #2e5c2e; }
+        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
 
         @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            nav.active {
-                display: flex;
-            }
+            .menu-toggle { display: block; }
+            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
+            nav a { display: block; margin: 10px 0; }
+            nav.active { display: flex; }
         }
 
         .container {
@@ -95,9 +40,7 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        h1, h2 {
-            color: #2e5c2e;
-        }
+        h1, h2 { color: #2e5c2e; }
 
         .stammtisch-img {
             display: block;
@@ -107,20 +50,9 @@
             box-shadow: 0 0 6px rgba(0,0,0,0.25);
         }
 
-        #unimogInfo {
-            display: none;
-            text-align: center;
-            margin-top: 15px;
-            font-size: 0.85rem;
-            color: #333;
-            background: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            padding: 10px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 8px; }
+        th { background: #2e5c2e; color: white; text-align: left; }
 
         footer {
             text-align: center;
@@ -132,15 +64,8 @@
             background: #e5e5e5;
         }
 
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
+        footer a { color: #777; text-decoration: none; font-size: 0.85rem; }
+        footer a:hover { color: #2e5c2e; }
     </style>
 
     <script>
@@ -170,41 +95,57 @@
 <div class="container">
     <h1>Unser Stammtisch</h1>
 
-    <img src="stammtisch.png" 
-         alt="Stammtisch der UVC Regionalgruppe Emsland–Osnabrück mit Unimog-Modell auf dem Tisch" 
-         class="stammtisch-img">
+    <img src="stammtisch.png" alt="Stammtisch der UVC Regionalgruppe Emsland–Osnabrück" class="stammtisch-img">
 
-    <p style="text-align:center;">
-        In Kürze findest du hier alle wichtigen Informationen zu unserem Stammtisch –<br>
-        inklusive Terminen, Uhrzeiten und Treffpunkten.<br><br>
-        <span style="font-size:0.8rem; color:#555;">
-            Das kleine Unimog‑Modell auf dem Tisch hat übrigens eine eigene Geschichte:
-            <a href="#" onclick="document.getElementById('unimogInfo').style.display='block'; return false;" style="color:#2e5c2e; text-decoration:none;">
-                Infos anzeigen
-            </a>
-        </span>
+    <h2>Treffpunkt</h2>
+    <p>
+        Unser Stammtisch findet in der <strong>Gaststätte Urban</strong> statt:<br>
+        <strong>Hasberger Straße 13, 49504 Lotte</strong>.
     </p>
 
-    <div id="unimogInfo">
-        <strong>Spielzeug‑Unimog von Lesney (Matchbox)</strong><br>
-        Dieses kleine Modell ist ein echtes Sammlerstück aus der berühmten <em>Matchbox Series</em> von Lesney Products, England.<br>
-        Auf der Unterseite steht „MATCHBOX SERIES No 41 FORD GT – Made in England by Lesney“.  
-        Lesney produzierte ab den 1950er‑Jahren detailgetreue Druckguss‑Modelle, die wegen ihrer Robustheit und Präzision sehr beliebt waren.<br>
-        Dieser Unimog stammt vermutlich aus den 1960er‑Jahren und gehört zu den frühen Lesney‑Unimogs, die heute begehrte Sammlerstücke sind – besonders, wenn sie noch die originalen Räder und Lackierung besitzen.<br><br>
-        <a href="#" onclick="document.getElementById('unimogInfo').style.display='none'; return false;" style="color:#2e5c2e; text-decoration:none;">Fenster schließen</a>
-    </div>
+    <p>
+        Die Betreiber sind <strong>bodenständig, herzlich und absolut unkompliziert</strong> – genau die richtige Umgebung für gute Gespräche über Technik, Treffen und natürlich den Unimog.
+    </p>
+
+    <p>
+        Die Speisekarte ist bewusst <strong>minimalistisch</strong> gehalten und bietet vor allem klassische Gerichte wie <strong>Pommes und Schnitzel</strong>.
+    </p>
+
+    <p style="color:#b22222; font-weight:bold;">
+        Bitte beachten: In der Gaststätte Urban ist <u>nur Barzahlung</u> möglich.
+    </p>
+
+    <p style="color:#b22222; font-weight:bold;">
+        Zusätzlich wichtig: <u>Es steht kein WLAN zur Verfügung</u>.
+    </p>
+
+    <h2>Termine</h2>
+    <p>
+        Unser Stammtisch findet an jedem <strong>zweiten Freitag eines Quartals</strong> statt – jeweils ab <strong>19:30 Uhr</strong>.
+    </p>
+
+    <table>
+        <tr><th>Quartal</th><th>Datum</th><th>Uhrzeit</th></tr>
+
+        <tr><td>Q4/2026</td><td>09.10.2026</td><td>19:30 Uhr</td></tr>
+        <tr><td>Q1/2027</td><td>08.01.2027</td><td>19:30 Uhr</td></tr>
+        <tr><td>Q2/2027</td><td>09.04.2027</td><td>19:30 Uhr</td></tr>
+        <tr><td>Q3/2027</td><td>08.07.2027</td><td>19:30 Uhr</td></tr>
+        <tr><td>Q4/2027</td><td>14.10.2027</td><td>19:30 Uhr</td></tr>
+
+        <tr><td>Q1/2028</td><td>12.01.2028</td><td>19:30 Uhr</td></tr>
+        <tr><td>Q2/2028</td><td>14.04.2028</td><td>19:30 Uhr</td></tr>
+        <tr><td>Q3/2028</td><td>14.07.2028</td><td>19:30 Uhr</td></tr>
+        <tr><td>Q4/2028</td><td>13.10.2028</td><td>19:30 Uhr</td></tr>
+    </table>
 </div>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
-
     <br>
-    <a href="hosting.html">Hosting & Technik</a>
-    <br>
-    <a href="impressum.html">Impressum</a>
-    <br>
+    <a href="hosting.html">Hosting & Technik</a><br>
+    <a href="impressum.html">Impressum</a><br>
     <a href="datenschutz.html">Datenschutz</a>
-
     <br>
     <span style="font-size: 0.75rem; color: #777;">
         Besucher:
