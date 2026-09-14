@@ -55,4 +55,127 @@
 
     @keyframes scroll {
         0% { transform: translateX(0); }
-        100% {
+        100% { transform: translateX(-50%); }
+    }
+
+    /* Bilder im Vollbild größer anzeigen */
+    :fullscreen .marquee img {
+        height: 60vh;
+        margin: 0 20px;
+    }
+
+    /* Vollbild-Hintergrund schwarz */
+    :fullscreen {
+        background: #000;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Unimog‑Galerie</h1>
+<div class="marquee" ondblclick="toggleFullscreen(this)">
+  <div class="scroll-unimog">
+
+    <!-- Unimog-Bilder -->
+    <img src="1951.jpg" alt="Unimog 1951">
+    <img src="1957.png" alt="Unimog 1957">
+    <img src="unimog-1958-nils.png" alt="Unimog 1958 Nils">
+    <img src="unimog-1961-nils.png" alt="Unimog 1961 Nils">
+    <img src="1975.png" alt="Unimog 1975">
+    <img src="1979.jpg" alt="Unimog 1979">
+    <img src="unimog-1979-2.jpg" alt="Unimog 1979-2">
+    <img src="2023.jpg" alt="Unimog 2023">
+    <img src="2024.jpg" alt="Unimog 2024">
+    <img src="2025.jpg" alt="Unimog 2025">
+    <img src="2026.jpeg" alt="Unimog 2026">
+    <img src="gruendung.png" alt="Gründung">
+
+    <!-- Nordhorn-Serie -->
+    <img src="Nordhorn1.jpg" alt="Nordhorn 1">
+    <img src="Nordhorn2.jpg" alt="Nordhorn 2">
+    <img src="Nordhorn3.jpg" alt="Nordhorn 3">
+    <img src="Nordhorn4.jpg" alt="Nordhorn 4">
+    <img src="Nordhorn5.jpg" alt="Nordhorn 5">
+    <img src="Nordhorn6.jpg" alt="Nordhorn 6">
+    <img src="Nordhorn7.jpg" alt="Nordhorn 7">
+    <img src="Nordhorn8.jpg" alt="Nordhorn 8">
+
+    <!-- Verl-Serie -->
+    <img src="Verl1.jpg" alt="Verl 1">
+    <img src="Verl2.jpg" alt="Verl 2">
+    <img src="Verl3.jpg" alt="Verl 3">
+    <img src="Verl4.jpg" alt="Verl 4">
+    <img src="Verl5.jpg" alt="Verl 5">
+    <img src="Verl6.jpg" alt="Verl 6">
+    <img src="Verl7.jpg" alt="Verl 7">
+    <img src="Verl8.jpg" alt="Verl 8">
+    <img src="Verl9.jpg" alt="Verl 9">
+    <img src="Verl10.jpg" alt="Verl 10">
+    <img src="Verl11.jpg" alt="Verl 11">
+    <img src="Verl12.jpg" alt="Verl 12">
+    <img src="Verl13.jpg" alt="Verl 13">
+    <img src="Verl14.jpg" alt="Verl 14">
+    <img src="Verl15.jpg" alt="Verl 15">
+    <img src="Verl16.jpg" alt="Verl 16">
+    <img src="Verl17.jpg" alt="Verl 17">
+    <img src="Verl18.jpg" alt="Verl 18">
+    <img src="Verl19.jpg" alt="Verl 19">
+    <img src="Verl20.jpg" alt="Verl 20">
+    <img src="Verl21.jpg" alt="Verl 21">
+    <img src="Verl22.jpg" alt="Verl 22">
+    <img src="Verl24.jpg" alt="Verl 24">
+    <img src="Verl25.jpg" alt="Verl 25">
+    <img src="Verl26.jpg" alt="Verl 26">
+    <img src="Verl27.jpg" alt="Verl 27">
+    <img src="Verl28.jpg" alt="Verl 28">
+    <img src="Verl29.jpg" alt="Verl 29">
+    <img src="Verl30.jpg" alt="Verl 30">
+    <img src="Verl30a.jpg" alt="Verl 30a">
+    <img src="Verl31.jpg" alt="Verl 31">
+    <img src="Verl32.jpg" alt="Verl 32">
+    <img src="Verl33.jpg" alt="Verl 33">
+    <img src="Verl34.jpg" alt="Verl 34">
+    <img src="Verl35.jpg" alt="Verl 35">
+    <img src="Verl36.jpg" alt="Verl 36">
+    <img src="Verl37.jpg" alt="Verl 37">
+    <img src="Verl38.jpg" alt="Verl 38">
+
+  </div>
+</div>
+
+<h1>Museums‑Galerie</h1>
+<div class="marquee" ondblclick="toggleFullscreen(this)">
+  <div class="scroll-museum">
+
+    <!-- Museumsbilder -->
+    <img src="DDR IFW W.png" alt="DDR IFW W">
+    <img src="DDR-W58.png" alt="DDR W58">
+    <img src="FeTAp 2L-752-1 von 08-1989.png" alt="FeTAp 2L-752-1 1989">
+    <img src="FeTAp 611-1a von 11-1979.png" alt="FeTAp 611-1a 1979">
+    <img src="FeTAp 611-2 von 05-1971.png" alt="FeTAp 611-2 1971">
+    <img src="FeTAp 612 von 1977.png" alt="FeTAp 612 1977">
+    <img src="FeTAp 612-2a angeschlossen.png" alt="FeTAp 612-2a angeschlossen">
+    <img src="FeTAp 791-1 von 12-1986.png" alt="FeTAp 791-1 1986">
+    <img src="FeTAp 795-1 von 10-1988.png" alt="FeTAp 795-1 1988">
+    <img src="FeTAp BW Modell 54 OB-ZB ang.png" alt="FeTAp BW Modell 54 OB-ZB">
+    <img src="FeTAp Masterset 80er Jahre.png" alt="FeTAp Masterset 80er Jahre">
+    <img src="FeTAp SEL1026 von 10-1991.png" alt="FeTAp SEL1026 1991">
+    <img src="FeTAp Te100 von 11-1972.png" alt="FeTAp Te100 1972">
+    <img src="FeTAp Tel 0164 LXvon 02-1991.png" alt="FeTAp Tel 0164 LX 1991">
+
+  </div>
+</div>
+
+<script>
+function toggleFullscreen(element) {
+    if (!document.fullscreenElement) {
+        element.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+}
+</script>
+
+</body>
+</html>
