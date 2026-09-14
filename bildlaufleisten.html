@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bildlaufleisten – UVC Regionalgruppe Emsland–Osnabrück</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2e5c2e;
+        margin: 25px 0 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .marquee {
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .marquee img {
+        height: 180px;
+        margin: 0 12px;
+        border-radius: 6px;
+        box-shadow: 0 0 6px rgba(0,0,0,0.5);
+        transition: transform 0.2s;
+    }
+
+    .marquee img:hover {
+        transform: scale(1.05);
+    }
+
+    .scroll {
+        display: inline-block;
+        animation: scroll 60s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Unimog‑Galerie</h1>
+<div class="marquee" ondblclick="toggleFullscreen(this)">
+  <div class="scroll">
+    <!-- Unimog-Bilder -->
+    <img src="1951.jpg" alt="Unimog 1951">
+    <img src="1957.png" alt="Unimog 1957">
+    <img src="unimog-1958-nils.png" alt="Unimog 1958 Nils">
+    <img src="unimog-1961-nils.png" alt="Unimog 1961 Nils">
+    <img src="1975.png" alt="Unimog 1975">
+    <img src="1979.jpg" alt="Unimog 1979">
+    <img src="unimog-1979-2.jpg" alt="Unimog 1979-2">
+    <img src="2023.jpg" alt="Unimog 2023">
+    <img src="2024.jpg" alt="Unimog 2024">
+    <img src="2025.jpg" alt="Unimog 2025">
+    <img src="2026.jpeg" alt="Unimog 2026">
+    <img src="gruendung.png" alt="Gründung">
+
+    <!-- Nordhorn-Serie -->
+    <img src="Nordhorn1.jpg" alt="Nordhorn 1">
+    <img src="Nordhorn2.jpg" alt="Nordhorn 2">
+    <img src="Nordhorn3.jpg" alt="Nordhorn 3">
+    <img src="Nordhorn4.jpg" alt="Nordhorn 4">
+    <img src="Nordhorn5.jpg" alt="Nordhorn 5">
+    <img src="Nordhorn6.jpg" alt="Nordhorn 6">
+    <img src="Nordhorn7.jpg" alt="Nordhorn 7">
+    <img src="Nordhorn8.jpg" alt="Nordhorn 8">
+
+    <!-- Verl-Serie -->
+    <img src="Verl1.jpg" alt="Verl 1">
+    <img src="Verl2.jpg" alt="Verl 2">
+    <img src="Verl3.jpg" alt="Verl 3">
+    <img src="Verl4.jpg" alt="Verl 4">
+    <img src="Verl5.jpg" alt="Verl 5">
+    <img src="Verl6.jpg" alt="Verl 6">
+    <img src="Verl7.jpg" alt="Verl 7">
+    <img src="Verl8.jpg" alt="Verl 8">
+    <img src="Verl9.jpg" alt="Verl 9">
+    <img src="Verl10.jpg" alt="Verl 10">
+    <img src="Verl11.jpg" alt="Verl 11">
+    <img src="Verl12.jpg" alt="Verl 12">
+    <img src="Verl13.jpg" alt="Verl 13">
+    <img src="Verl14.jpg" alt="Verl 14">
+    <img src="Verl15.jpg" alt="Verl 15">
+    <img src="Verl16.jpg" alt="Verl 16">
+    <img src="Verl17.jpg" alt="Verl 17">
+    <img src="Verl18.jpg" alt="Verl 18">
+    <img src="Verl19.jpg" alt="Verl 19">
+    <img src="Verl20.jpg" alt="Verl 20">
+    <img src="Verl21.jpg" alt="Verl 21">
+    <img src="Verl22.jpg" alt="Verl 22">
+    <img src="Verl24.jpg" alt="Verl 24">
+    <img src="Verl25.jpg" alt="Verl 25">
+    <img src="Verl26.jpg" alt="Verl 26">
+    <img src="Verl27.jpg" alt="Verl 27">
+    <img src="Verl28.jpg" alt="Verl 28">
+    <img src="Verl29.jpg" alt="Verl 29">
+    <img src="Verl30.jpg" alt="Verl 30">
+    <img src="Verl30a.jpg" alt="Verl 30a">
+    <img src="Verl31.jpg" alt="Verl 31">
+    <img src="Verl32.jpg" alt="Verl 32">
+    <img src="Verl33.jpg" alt="Verl 33">
+    <img src="Verl34.jpg" alt="Verl 34">
+    <img src="Verl35.jpg" alt="Verl 35">
+    <img src="Verl36.jpg" alt="Verl 36">
+    <img src="Verl37.jpg" alt="Verl 37">
+    <img src="Verl38.jpg" alt="Verl 38">
+
+    <!-- Wiederholung für Endloslauf -->
+    <img src="1951.jpg" alt="Unimog 1951">
+    <img src="1957.png" alt="Unimog 1957">
+    <img src="unimog-1958-nils.png" alt="Unimog 1958 Nils">
+    <img src="unimog-1961-nils.png" alt="Unimog 1961 Nils">
+    <img src="1975.png" alt="Unimog 1975">
+    <img src="1979.jpg" alt="Unimog 1979">
+    <img src="unimog-1979-2.jpg" alt="Unimog 1979-2">
+    <img src="2023.jpg" alt="Unimog 2023">
+    <img src="2024.jpg" alt="Unimog 2024">
+    <img src="2025.jpg" alt="Unimog 2025">
+    <img src="2026.jpeg" alt="Unimog 2026">
+  </div>
+</div>
+
+<h1>Museums‑Galerie</h1>
+<div class="marquee" ondblclick="toggleFullscreen(this)">
+  <div class="scroll">
+    <!-- Hier später Museumsbilder einfügen -->
+    <img src="museum1.jpg" alt="Museum 1">
+    <img src="museum2.jpg" alt="Museum 2">
+    <img src="museum3.jpg" alt="Museum 3">
+    <img src="museum4.jpg" alt="Museum 4">
+    <img src="museum5.jpg" alt="Museum 5">
+
+    <!-- Wiederholung für Endloslauf -->
+    <img src="museum1.jpg" alt="Museum 1">
+    <img src="museum2.jpg" alt="Museum 2">
+    <img src="museum3.jpg" alt="Museum 3">
+    <img src="museum4.jpg" alt="Museum 4">
+    <img src="museum5.jpg" alt="Museum 5">
+  </div>
+</div>
+
+<script>
+function toggleFullscreen(element) {
+    if (!document.fullscreenElement) {
+        element.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+}
+</script>
+
+</body>
+</html>
