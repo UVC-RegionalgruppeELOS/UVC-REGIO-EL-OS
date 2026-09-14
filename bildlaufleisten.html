@@ -8,8 +8,8 @@
 <style>
     body {
         margin: 0;
-        background: #111;
-        color: white;
+        background: #e5e5e5;   /* Standard-Grau wie alle Seiten */
+        color: #222;
         font-family: Arial, sans-serif;
         overflow-x: hidden;
     }
@@ -43,12 +43,23 @@
 
     .scroll {
         display: inline-block;
-        animation: scroll 60s linear infinite;
+        animation: scroll 120s linear infinite; /* langsamer */
     }
 
     @keyframes scroll {
         0% { transform: translateX(0); }
         100% { transform: translateX(-50%); }
+    }
+
+    /* Bilder im Vollbild größer anzeigen */
+    :fullscreen .marquee img {
+        height: 60vh;
+        margin: 0 20px;
+    }
+
+    /* Vollbild-Hintergrund schwarz für Präsentationen */
+    :fullscreen {
+        background: #000;
     }
 </style>
 </head>
@@ -58,6 +69,7 @@
 <h1>Unimog‑Galerie</h1>
 <div class="marquee" ondblclick="toggleFullscreen(this)">
   <div class="scroll">
+
     <!-- Unimog-Bilder -->
     <img src="1951.jpg" alt="Unimog 1951">
     <img src="1957.png" alt="Unimog 1957">
@@ -134,25 +146,28 @@
     <img src="2024.jpg" alt="Unimog 2024">
     <img src="2025.jpg" alt="Unimog 2025">
     <img src="2026.jpeg" alt="Unimog 2026">
+
   </div>
 </div>
 
 <h1>Museums‑Galerie</h1>
 <div class="marquee" ondblclick="toggleFullscreen(this)">
   <div class="scroll">
-    <!-- Hier später Museumsbilder einfügen -->
+
+    <!-- Museumsbilder später einfügen -->
     <img src="museum1.jpg" alt="Museum 1">
     <img src="museum2.jpg" alt="Museum 2">
     <img src="museum3.jpg" alt="Museum 3">
     <img src="museum4.jpg" alt="Museum 4">
     <img src="museum5.jpg" alt="Museum 5">
 
-    <!-- Wiederholung für Endloslauf -->
+    <!-- Wiederholung -->
     <img src="museum1.jpg" alt="Museum 1">
     <img src="museum2.jpg" alt="Museum 2">
     <img src="museum3.jpg" alt="Museum 3">
     <img src="museum4.jpg" alt="Museum 4">
     <img src="museum5.jpg" alt="Museum 5">
+
   </div>
 </div>
 
