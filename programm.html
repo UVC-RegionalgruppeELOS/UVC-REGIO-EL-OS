@@ -13,7 +13,6 @@
     <meta property="og:description" content="Aktivitäten, Treffen und Veranstaltungen der UVC Regionalgruppe Emsland–Osnabrück.">
     <meta property="og:image" content="programm.png">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/programm.html">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -26,7 +25,7 @@
             line-height: 1.6;
         }
 
-        /* Einheitlicher Header */
+        /* Header */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
@@ -81,7 +80,7 @@
             nav.active { display: flex; }
         }
 
-        /* Hero-Bild modernisiert */
+        /* Hero */
         .hero {
             max-width: 900px;
             width: 100%;
@@ -96,16 +95,13 @@
             height: 320px;
             object-fit: cover;
             object-position: center;
-            display: block;
         }
 
         @media (max-width: 899px) {
-            .hero img {
-                height: 240px;
-            }
+            .hero img { height: 240px; }
         }
 
-        /* Content-Boxen vereinheitlicht */
+        /* Content */
         .content {
             max-width: 900px;
             margin: 30px auto;
@@ -113,7 +109,6 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            text-align: left;
         }
 
         h1, h2 {
@@ -130,7 +125,7 @@
             text-decoration: underline;
         }
 
-        /* Einheitlicher Footer (2 Zeilen, mobil garantiert 2 Zeilen) */
+        /* Footer – garantiert 2 Zeilen */
         footer {
             text-align: center;
             padding: 20px;
@@ -139,6 +134,10 @@
             border-top: 2px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
+        }
+
+        footer p {
+            margin: 6px 0;
         }
 
         footer a {
@@ -201,11 +200,12 @@
 </div>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück
-    <br>
-    <a href="hosting.html">Hosting & Technik</a> ·
-    <a href="impressum.html">Impressum</a> ·
-    <a href="datenschutz.html">Datenschutz</a>
+    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
+    <p>
+        <a href="hosting.html">Hosting & Technik</a> ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
 </footer>
 
 </body>
