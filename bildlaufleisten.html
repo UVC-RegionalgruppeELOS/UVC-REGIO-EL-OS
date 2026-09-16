@@ -8,7 +8,7 @@
 <style>
     body {
         margin: 0;
-        background: #e5e5e5;   /* Standard-Grau */
+        background: #e5e5e5;
         color: #222;
         font-family: Arial, sans-serif;
         overflow-x: hidden;
@@ -41,13 +41,11 @@
         transform: scale(1.05);
     }
 
-    /* Unimog-Leiste langsamer */
     .scroll-unimog {
         display: inline-block;
         animation: scroll 140s linear infinite;
     }
 
-    /* Museums-Leiste schneller */
     .scroll-museum {
         display: inline-block;
         animation: scroll 100s linear infinite;
@@ -60,8 +58,8 @@
 
     /* Bilder im Vollbild größer anzeigen */
     :fullscreen .marquee img {
-        height: 60vh;
-        margin: 0 20px;
+        height: 100vh;      /* Vollbild komplett ausnutzen */
+        margin: 0 30px;
     }
 
     /* Vollbild-Hintergrund schwarz */
