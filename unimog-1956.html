@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimog 1956 – Unimog U 401 mit Beilhack-Schneeschleuder</title>
 
-    <meta name="description" content="Unimog Baujahr 1956: Unimog U 401 mit 25 PS und Beilhack-Schneeschleuder. Gekauft von Rainer im Jahr 2000 mit nur 2.150 km. Ausgestattet mit Magirus-Deutz 6-Zylinder Aufbaumotor mit 110 PS. Letzte große Fahrt zur Dorset Steam Fair 2022 in England.">
-    <meta name="keywords" content="Unimog 1956, Unimog U401, Beilhack Schneeschleuder, Magirus Deutz, Dorset Steam Fair 2022, Oldtimer, UVC Regionalgruppe Emsland–Osnabrück">
+    <meta name="description" content="Unimog Baujahr 1956: Unimog U 401 mit 25 PS und Beilhack-Schneeschleuder. Gekauft von Rainer 2000 mit nur 2.150 km. Ausgestattet mit Magirus-Deutz 6-Zylinder Aufbaumotor mit 110 PS. Letzte große Fahrt zur Dorset Steam Fair 2022 in England.">
+    <meta name="keywords" content="Unimog 1956, Unimog U401, Beilhack Schneeschleuder, Magirus Deutz, Dorset Steam Fair, Oldtimer, UVC Regionalgruppe Emsland–Osnabrück">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
     <meta property="og:title" content="Unimog 1956 – Unimog U 401 mit Beilhack-Schneeschleuder">
     <meta property="og:description" content="Historie und technische Daten des Unimog U 401 Baujahr 1956 mit Beilhack-Schneeschleuder.">
-    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/1956.jpg">
+    <meta property="og:image" content="1956.jpg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimog-1956.html">
 
@@ -26,6 +26,7 @@
             line-height: 1.6;
         }
 
+        /* Einheitlicher Header */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
@@ -35,10 +36,11 @@
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: rgba(255,255,255,0.92);
+            margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -60,9 +62,7 @@
         }
 
         @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
+            .menu-toggle { display: block; }
 
             nav {
                 display: none;
@@ -75,23 +75,39 @@
             nav a {
                 display: block;
                 margin: 10px 0;
+                font-size: 1.05rem;
             }
 
-            nav.active {
-                display: flex;
-            }
+            nav.active { display: flex; }
         }
 
-        .hero-img {
+        /* Hero-Bild */
+        .hero {
+            max-width: 900px;
             width: 100%;
-            height: auto;
-            display: block;
+            height: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width: 899px) {
+            .hero { height: 220px; }
+        }
+
+        /* Inhalt */
         .container {
             max-width: 900px;
             margin: 30px auto;
-            padding: 20px;
+            padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -99,19 +115,31 @@
 
         h2 {
             color: #2e5c2e;
+            margin-top: 0;
         }
 
+        a {
+            color: #2e5c2e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Video-Container */
         #videoContainer {
             display: none;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
+        /* Einheitlicher Footer – garantiert 2 Zeilen */
         footer {
             text-align: center;
             padding: 20px;
             color: #444;
             font-size: 0.9rem;
-            border-top: 1px solid #ccc;
+            border-top: 2px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
         }
@@ -134,7 +162,6 @@
 
         function showVideo() {
             document.getElementById("videoContainer").style.display = "block";
-            document.getElementById("videoLink").style.color = "#2e5c2e";
         }
     </script>
 </head>
@@ -143,6 +170,7 @@
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
@@ -154,19 +182,23 @@
     </nav>
 </header>
 
-<img src="1956.jpg" alt="Unimog U 401 Baujahr 1956 mit Beilhack-Schneeschleuder" class="hero-img">
+<div class="hero">
+    <img src="1956.jpg" alt="Unimog U 401 Baujahr 1956 mit Beilhack-Schneeschleuder">
+</div>
 
 <div class="container">
     <h2>Steckbrief</h2>
-    <p><strong>Unimog U 401</strong></p>
+
+    <p><strong>Modell:</strong> Unimog U 401</p>
     <p><strong>Baujahr:</strong> 1956</p>
     <p><strong>Besitzer:</strong> Rainer (seit 2000)</p>
     <p><strong>Motorleistung:</strong> 25 PS (Hauptmotor)</p>
     <p><strong>Anbaugerät:</strong> Beilhack-Schneeschleuder</p>
-    <p><strong>Aufbaumotor Schneeschleuder:</strong> Magirus-Deutz 6‑Zylinder, 110 PS</p>
+    <p><strong>Aufbaumotor:</strong> Magirus-Deutz 6‑Zylinder, 110 PS</p>
     <p><strong>Kilometerstand beim Kauf:</strong> 2.150 km</p>
 
     <h2>Historie</h2>
+
     <p>
         Dieser Unimog U 401 aus dem Baujahr 1956 wurde von Rainer im Jahr 
         <strong>2000</strong> übernommen – damals mit einem außergewöhnlich niedrigen 
@@ -181,7 +213,7 @@
 
     <p>
         Die letzte große Reise führte den Unimog zur berühmten 
-        <a href="#" id="videoLink" onclick="showVideo()"><strong>Dorset Steam Fair 2022 in England</strong></a>,
+        <a href="#" onclick="showVideo()"><strong>Dorset Steam Fair 2022 in England</strong></a>,
         einem der größten historischen Nutzfahrzeug‑ und Dampfmaschinen‑Treffen weltweit.
     </p>
 
@@ -189,10 +221,9 @@
         <h2>Video</h2>
         <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
             <iframe 
-                src="https://www.youtube.com/embed/gZFXGqSgO2w" 
+                src="https://www.youtube.com/embed/gZFXGqSgO2w"
                 title="Great Dorset Steam Fair 2022 – Overview"
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
         </div>
@@ -200,21 +231,11 @@
 </div>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a>  
-    <br>
-    <a href="impressum.html">Impressum</a>  
-    <br>
-    <a href="datenschutz.html">Datenschutz</a>  
-    <br>
-    <span style="font-size: 0.75rem; color: #777;">
-        Besucher:
-        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-             border="0"
-             alt="visitor counter"
-             style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
-    </span>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
