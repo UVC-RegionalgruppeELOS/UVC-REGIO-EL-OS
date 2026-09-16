@@ -1,63 +1,187 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Interner Bereich – UVC Regionalgruppe</title>
-<style>
-    body { font-family: Arial, sans-serif; background: #e5e5e5; padding: 40px; }
-    #loginBox, #content {
-        max-width: 600px;
-        margin: 0 auto;
-        background: white;
-        padding: 25px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    }
-    input[type=password] {
-        width: 100%; padding: 10px; margin-top: 10px;
-        border: 1px solid #ccc; border-radius: 4px;
-    }
-    button {
-        margin-top: 15px; padding: 10px 20px;
-        background: #2e5c2e; color: white; border: none;
-        border-radius: 4px; cursor: pointer;
-    }
-    button:hover { background: #1f3b1f; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interner Bereich – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    h2 { color: #2e5c2e; }
-    a { color: #2e5c2e; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    <meta name="description" content="Interner Bereich der UVC Regionalgruppe Emsland–Osnabrück. Passwortgeschützter Zugang zu Protokollen und Dokumenten.">
+    <meta name="keywords" content="UVC, Intern, Protokolle, Mitglieder, Regionalgruppe, Emsland, Osnabrück">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    footer {
-        text-align: center;
-        padding: 25px 10px;
-        color: #555;
-        font-size: 0.9rem;
-        border-top: 1px solid #ccc;
-        margin-top: 40px;
-        background: #e5e5e5;
-    }
-    footer a {
-        color: #2e5c2e;
-        text-decoration: none;
-        font-size: 0.85rem;
-    }
-    footer a:hover {
-        color: #1d3d1d;
-    }
-</style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.92);
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #2e5c2e;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        @media (max-width: 899px) {
+            .menu-toggle { display: block; }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.05rem;
+            }
+
+            nav.active { display: flex; }
+        }
+
+        /* Content Box */
+        .box {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        h2, h3 {
+            color: #2e5c2e;
+            margin-top: 0;
+        }
+
+        input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1f3b1f;
+        }
+
+        a {
+            color: #2e5c2e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 2px solid #ccc;
+            margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer p {
+            margin: 6px 0;
+        }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: #2e5c2e;
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+    </script>
 </head>
 
 <body>
 
-<div id="loginBox">
+<header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
+    <nav id="mainNav">
+        <a href="index.html"><strong>Start</strong></a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<!-- LOGIN -->
+<div id="loginBox" class="box">
     <h2>Interner Bereich</h2>
     <p>Bitte Passwort eingeben:</p>
     <input type="password" id="pw">
     <button onclick="checkPW()">Weiter</button>
 </div>
 
-<div id="content" style="display:none;">
+<!-- CONTENT -->
+<div id="content" class="box" style="display:none;">
     <h2>Interne Dokumente</h2>
     <p>Hier stehen unsere Protokolle, Infos usw.</p>
 
@@ -75,24 +199,18 @@
 </div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px;">
-        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
-            © 2026 UVC Regionalgruppe Emsland–Osnabrück
-        </p>
-
-        <p style="margin: 6px 0;">
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-
-        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
-            Besucher gesamt:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-        </p>
-    </div>
+    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
+    <p>
+        <a href="hosting.html">Hosting & Technik</a> ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+    <p style="font-size:0.8rem; color:#777;">
+        Besucher gesamt:
+        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+             alt="Besucherzähler"
+             style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
+    </p>
 </footer>
 
 <script>
