@@ -6,7 +6,7 @@
     <title>Unimog 411.110 Cabrio – Baujahr 1958 – Nils</title>
 
     <meta name="description" content="Steckbrief des Unimog 411.110 Cabrio von Nils. Baujahr 1958, 32 PS, gepflegter Zustand, historischer Unimog der UVC Regionalgruppe Emsland–Osnabrück.">
-    <meta name="keywords" content="Unimog 411, Unimog 411.110, Cabrio, 1958, Nils, Unimog Veteranen Club, UVC, Oldtimer, Restaurierung">
+    <meta name="keywords" content="Unimog 411, Unimog 411.110, Cabrio, 1958, Nils, Unimog Veteranen Club, UVC, Oldtimer">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
     <meta property="og:title" content="Unimog 411.110 Cabrio – Baujahr 1958 – Nils">
@@ -17,50 +17,145 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #e5e5e5; line-height: 1.6; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
 
-        /* Navigation */
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
-        nav a:hover { color: #2e5c2e; }
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+        /* Header */
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.92);
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #2e5c2e;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.05rem;
+            }
+
             nav.active { display: flex; }
         }
 
-        /* Hero-Bild */
-        .hero-img {
+        /* Hero */
+        .hero {
+            max-width: 900px;
             width: 100%;
-            height: auto;
-            display: block;
-            margin: 0;
-            padding: 0;
+            height: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        /* Hauptinhalt */
-        .container { max-width: 900px; width: 90%; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
-        h1, h2 { color: #2e5c2e; }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
 
-        /* Moderne Linkfarben */
-        a { color: #2e5c2e; text-decoration: none; transition: color 0.2s ease; }
-        a:hover { color: #1f3b1f; text-decoration: underline; }
-        a:visited { color: #3b6b3b; }
+        @media (max-width: 899px) {
+            .hero { height: 220px; }
+        }
 
-        .backlinks { margin-top: 25px; }
-        .backlinks a { font-weight: bold; }
+        /* Content */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
 
-        /* Neuer Footer */
-        footer { text-align: center; padding: 25px 10px; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; margin-top: 40px; background: #e5e5e5; }
-        footer a { color: #2e5c2e; text-decoration: none; font-size: 0.85rem; }
-        footer a:hover { color: #1d3d1d; }
+        h1, h2 {
+            color: #2e5c2e;
+            margin-top: 0;
+        }
+
+        a {
+            color: #2e5c2e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .backlinks {
+            margin-top: 25px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 2px solid #ccc;
+            margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: #2e5c2e;
+        }
     </style>
 
     <script>
-        function toggleMenu() { document.getElementById("mainNav").classList.toggle("active"); }
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
     </script>
 </head>
 
@@ -68,6 +163,7 @@
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
@@ -80,34 +176,30 @@
     </nav>
 </header>
 
-<img src="unimog-1958-nils.png"
-     alt="Unimog 411.110 Cabrio Baujahr 1958"
-     class="hero-img">
+<div class="hero">
+    <img src="unimog-1958-nils.png" alt="Unimog 411.110 Cabrio Baujahr 1958">
+</div>
 
 <div class="container">
-    <h1>Steckbrief – Unimog 411.110 Cabrio</h1>
+    <h1>Unimog 411.110 Cabrio – Baujahr 1958</h1>
 
-    <p><strong>Modell:</strong> Unimog 411.110 Cabrio<br>
-       <strong>Baujahr:</strong> 1958<br>
-       <strong>Leistung:</strong> 32 PS<br>
-       <strong>Besitzer:</strong> Nils</p>
+    <p><strong>Modell:</strong> Unimog 411.110 Cabrio</p>
+    <p><strong>Baujahr:</strong> 1958</p>
+    <p><strong>Leistung:</strong> 32 PS</p>
+    <p><strong>Besitzer:</strong> Nils</p>
 
     <h2>Historie & Besonderheiten</h2>
 
     <p>
-        Dieser Unimog 411.110 Cabrio stammt aus dem Baujahr 1958 und ist ein
-        früher Vertreter der beliebten 411er‑Baureihe.
-    </p>
-
-    <p>
-        Der offene Aufbau macht ihn zu einem besonderen Fahrzeug für Ausfahrten
-        und Treffen, bei denen der historische Charakter des Unimog besonders
+        Dieser Unimog 411.110 Cabrio stammt aus dem Baujahr 1958 und ist ein früher Vertreter
+        der beliebten 411er‑Baureihe. Der offene Aufbau macht ihn zu einem besonderen Fahrzeug
+        für Ausfahrten und Treffen, bei denen der historische Charakter des Unimog besonders
         zur Geltung kommt.
     </p>
 
     <p>
-        Der Mog befindet sich in einem gepflegten Zustand und wird regelmäßig
-        bei Veranstaltungen der UVC Regionalgruppe Emsland–Osnabrück eingesetzt.
+        Der Mog befindet sich in einem gepflegten Zustand und wird regelmäßig bei Veranstaltungen
+        der UVC Regionalgruppe Emsland–Osnabrück eingesetzt.
     </p>
 
     <div class="backlinks">
@@ -116,24 +208,11 @@
 </div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px; font-family: Arial, sans-serif; color: #555;">
-        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
-            © 2026 UVC Regionalgruppe Emsland–Osnabrück
-        </p>
-
-        <p style="margin: 6px 0;">
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-
-        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
-            Besucher:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-        </p>
-    </div>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
