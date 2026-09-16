@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unimog 1979 – 2. (HJ) – Unimog 424 / U 1000</title>
+    <title>Unimog 1979 – 2. Halbjahr – Unimog 424 / U 1000</title>
 
-    <!-- SEO -->
     <meta name="description" content="Unimog 424 / U 1000 Baujahr 1979, zweites Halbjahr. Ehemaliges Kommunalfahrzeug mit Kipppritsche, Zapfwellen und großer Hydraulik.">
     <meta name="keywords" content="Unimog 424, U 1000, Unimog 1979, Kommunalfahrzeug, Kipppritsche, Zapfwelle, Hydraulik">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Unimog 1979 – Unimog 424 / U 1000">
     <meta property="og:description" content="Ehemaliges Kommunalfahrzeug mit Kipppritsche, Zapfwellen und großer Hydraulik.">
-    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/Unimog-1979-2.jpg">
+    <meta property="og:image" content="unimog-1979-2.jpg">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimog-1979-2.html">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -28,6 +25,7 @@
             line-height: 1.6;
         }
 
+        /* Header */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
@@ -37,10 +35,11 @@
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: rgba(255,255,255,0.92);
+            margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -63,36 +62,77 @@
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.05rem;
+            }
+
             nav.active { display: flex; }
-            nav a { margin: 10px 0; }
         }
 
-        .hero-img {
+        /* Hero */
+        .hero {
+            max-width: 900px;
             width: 100%;
-            height: auto;
-            display: block;
-            border-bottom: 2px solid #ccc;
+            height: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width: 899px) {
+            .hero { height: 220px; }
+        }
+
+        /* Content */
         .container {
             max-width: 900px;
-            width: 90%;
             margin: 30px auto;
-            padding: 20px;
+            padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        h2 { color: #2e5c2e; }
+        h2 {
+            color: #2e5c2e;
+            margin-top: 0;
+        }
 
+        a {
+            color: #2e5c2e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             color: #444;
             font-size: 0.9rem;
-            border-top: 1px solid #ccc;
+            border-top: 2px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
         }
@@ -103,7 +143,9 @@
             font-size: 0.85rem;
         }
 
-        footer a:hover { color: #2e5c2e; }
+        footer a:hover {
+            color: #2e5c2e;
+        }
     </style>
 
     <script>
@@ -124,15 +166,14 @@
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
-        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="weiterführende-links.html">Weiterführende Links</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<!-- Eingebautes Bild -->
-<img src="unimog-1979-2.jpg"
-     alt="Unimog 424 / U 1000 Baujahr 1979 – Kommunalfahrzeug"
-     class="hero-img">
+<div class="hero">
+    <img src="unimog-1979-2.jpg" alt="Unimog 424 / U 1000 Baujahr 1979 – Kommunalfahrzeug">
+</div>
 
 <div class="container">
 
@@ -148,24 +189,27 @@
     <p><strong>Zapfwelle vorne:</strong> ja</p>
     <p><strong>Zapfwelle hinten:</strong> ja</p>
     <p><strong>Hydraulik:</strong> große Kommunalhydraulik</p>
- 
+
     <h2>Technische Daten</h2>
-    <p><strong>Motor:</strong> OM 352 (typisch für U 1000)</p>
+    <p><strong>Motor:</strong> OM 352</p>
     <p><strong>Leistung:</strong> ca. 100 PS</p>
     <p><strong>Getriebe:</strong> UG 3/40</p>
     <p><strong>Antrieb:</strong> Allrad, Portalachsen</p>
-    <p><strong>Zul. Gesamtgewicht:</strong> –7.500 kg</p>
+    <p><strong>Zulässiges Gesamtgewicht:</strong> 7.500 kg</p>
 
     <h2>Historie</h2>
-    <p>Ehemaliges Kommunalfahrzeug.</p>
+    <p>
+        Der Unimog wurde als Kommunalfahrzeug eingesetzt und verfügt über die typische Ausstattung
+        für kommunale Aufgaben wie Hydraulik, Zapfwellen und Kipppritsche.
+    </p>
 
 </div>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a><br>
-    <a href="impressum.html">Impressum</a><br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
