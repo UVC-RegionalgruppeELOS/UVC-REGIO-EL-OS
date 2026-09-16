@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ansprechpartner – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <!-- SEO-Meta-Tags -->
     <meta name="description" content="Ansprechpartner der UVC Regionalgruppe Emsland–Osnabrück. Kontaktpersonen für Fragen, Organisation, Treffen und Aktivitäten rund um historische Unimog-Fahrzeuge.">
     <meta name="keywords" content="Unimog, Ansprechpartner, UVC, Regionalgruppe, Emsland, Osnabrück, Kontakt, Oldtimer, Unimog Veteranen Club">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Ansprechpartner – UVC Regionalgruppe Emsland–Osnabrück">
     <meta property="og:description" content="Hier findest du die Ansprechpartner der UVC Regionalgruppe Emsland–Osnabrück für Fragen, Organisation und Aktivitäten.">
-    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/PLATZHALTER-UNIMOG.jpg">
+    <meta property="og:image" content="PLATZHALTER-UNIMOG.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/ansprechpartner.html">
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
@@ -39,11 +36,11 @@
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: rgba(255,255,255,0.92);
+            margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
-            display: inline-block;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -65,9 +62,7 @@
         }
 
         @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
+            .menu-toggle { display: block; }
 
             nav {
                 display: none;
@@ -80,43 +75,56 @@
             nav a {
                 display: block;
                 margin: 10px 0;
+                font-size: 1.05rem;
             }
 
-            nav.active {
-                display: flex;
-            }
+            nav.active { display: flex; }
         }
 
-        /* Hero-Bereich */
+        /* Hero-Bereich modernisiert */
         .hero {
-            height: 40vh;
+            max-width: 900px;
+            width: 100%;
+            height: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
             background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-shadow: 0 0 10px black;
-            border-bottom: 2px solid #ccc;
         }
 
         .hero h1 {
-            font-size: 2.8rem;
-            margin: 0;
+            font-size: 2.4rem;
             color: white;
-            text-align: center;
+            text-shadow: 0 0 10px black;
+            margin: 0;
+        }
+
+        @media (max-width: 899px) {
+            .hero {
+                height: 220px;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
         }
 
         /* Inhalt */
         section {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        h1, h2 {
+        h2 {
             color: #2e5c2e;
+            margin-top: 0;
         }
 
         .contact-box {
@@ -127,7 +135,16 @@
             border-radius: 6px;
         }
 
-        /* Einheitlicher Footer ohne Besucherzähler */
+        a {
+            color: #2e5c2e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Einheitlicher Footer – garantiert 2 Zeilen */
         footer {
             text-align: center;
             padding: 20px;
@@ -159,7 +176,7 @@
 <body>
 
 <header>
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen oder schließen">☰ Menü</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
 
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
@@ -168,12 +185,12 @@
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="weiterführende-links.html">Weiterführende Links</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<div class="hero" role="img" aria-label="Symbolbild eines historischen Unimog als Platzhalter für Ansprechpartner">
+<div class="hero">
     <h1>Ansprechpartner</h1>
 </div>
 
@@ -192,8 +209,8 @@
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a><br>
-    <a href="impressum.html">Impressum</a><br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
