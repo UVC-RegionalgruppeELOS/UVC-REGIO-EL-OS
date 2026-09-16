@@ -5,44 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programm – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <!-- SEO-Meta-Tags -->
     <meta name="description" content="Programm und Treffen der UVC Regionalgruppe Emsland–Osnabrück. Übersicht über Aktivitäten, Veranstaltungen und Unimog-Treffen in der Region.">
     <meta name="keywords" content="Unimog, Programm, Treffen, Veranstaltungen, UVC, Regionalgruppe, Emsland, Osnabrück, Oldtimer, Unimog Veteranen Club">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Programm – UVC Regionalgruppe Emsland–Osnabrück">
     <meta property="og:description" content="Aktivitäten, Treffen und Veranstaltungen der UVC Regionalgruppe Emsland–Osnabrück.">
-    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/programm.png">
+    <meta property="og:image" content="programm.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/programm.html">
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            background: #e5e5e5; 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #e5e5e5;
             color: #222;
             line-height: 1.6;
         }
 
-        header { 
-            background: rgba(0,0,0,0.75); 
-            padding: 15px; 
-            text-align: center; 
+        /* Einheitlicher Header */
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
             border-bottom: 2px solid #ccc;
             position: relative;
         }
 
-        nav a { 
-            color: white; 
-            margin: 0 15px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            display: inline-block;
+        nav a {
+            color: rgba(255,255,255,0.92);
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -64,9 +62,7 @@
         }
 
         @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
+            .menu-toggle { display: block; }
 
             nav {
                 display: none;
@@ -79,66 +75,62 @@
             nav a {
                 display: block;
                 margin: 10px 0;
+                font-size: 1.05rem;
             }
 
-            nav.active {
-                display: flex;
-            }
+            nav.active { display: flex; }
         }
 
-        h1, h2 {
-            color: #2e5c2e;
-            margin-top: 10px;
-        }
-
+        /* Hero-Bild modernisiert */
         .hero {
             max-width: 900px;
             width: 100%;
-            margin: 25px auto;
-            background: #fff;
-            border-bottom: 4px solid #2e5c2e;
+            margin: 30px auto;
             border-radius: 8px;
+            overflow: hidden;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
         .hero img {
             width: 100%;
-            height: auto;
+            height: 320px;
+            object-fit: cover;
+            object-position: center;
             display: block;
         }
 
         @media (max-width: 899px) {
             .hero img {
-                width: 140%;
-                object-fit: cover;
-                object-position: 70% center;
+                height: 240px;
             }
         }
 
-        @media (min-width: 900px) {
-            .hero {
-                height: 320px;
-                overflow: hidden;
-            }
-
-            .hero img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                transform: translateX(150px) translateY(10px);
-            }
-        }
-
-        .content { 
-            padding: 30px; 
-            max-width: 900px; 
-            margin: 25px auto; 
+        /* Content-Boxen vereinheitlicht */
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            text-align: center;
+            text-align: left;
         }
 
+        h1, h2 {
+            color: #2e5c2e;
+            margin-top: 0;
+        }
+
+        a {
+            color: #2e5c2e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Einheitlicher Footer (2 Zeilen, mobil garantiert 2 Zeilen) */
         footer {
             text-align: center;
             padding: 20px;
@@ -170,7 +162,7 @@
 <body>
 
 <header>
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen oder schließen">☰ Menü</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
 
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
@@ -194,7 +186,7 @@
 
     <p>
         Zurzeit haben wir keine aktuellen Programmpunkte außer unserem regelmäßigen 
-        <strong><a href="stammtisch.html" style="color:#2e5c2e;">Stammtisch</a></strong>.
+        <strong><a href="stammtisch.html">Stammtisch</a></strong>.
     </p>
 </div>
 
@@ -202,9 +194,8 @@
     <h2>Weitere Unimog‑Treffen</h2>
     <p>Hier findest du Termine anderer Unimog‑Vereine und Veranstaltungen:</p>
     <p>
-        <a href="unimog-termine.html" 
-           style="color:#2e5c2e; font-weight:bold; font-size:1.05rem;">
-           → Zu den Unimog‑Terminen
+        <a href="unimog-termine.html" style="font-weight:bold;">
+            → Zu den Unimog‑Terminen
         </a>
     </p>
 </div>
@@ -212,8 +203,8 @@
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a><br>
-    <a href="impressum.html">Impressum</a><br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
