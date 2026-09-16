@@ -27,6 +27,7 @@
         box-sizing: border-box;
         padding: 10px 0;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
 
     .marquee img {
@@ -56,14 +57,25 @@
         100% { transform: translateX(-50%); }
     }
 
-    /* --- WICHTIG: Bildserie im Vollbild groß machen --- */
+    /* Vollbild: gesamte Bildlaufleiste vergrößern */
+    :fullscreen .marquee {
+        padding: 40px 0;
+    }
+
     :fullscreen .marquee img {
-        height: 90vh !important;   /* Bildhöhe fast Vollbild */
+        height: 90vh !important;   /* fast volle Bildschirmhöhe */
         margin: 0 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 12px rgba(255,255,255,0.4);
     }
 
     :fullscreen {
         background: #000;
+    }
+
+    :fullscreen .scroll-unimog,
+    :fullscreen .scroll-museum {
+        animation-duration: 220s; /* langsamer im Vollbild */
     }
 </style>
 </head>
@@ -156,22 +168,4 @@
     <img src="FeTAp 795-1 von 10-1988.png" alt="FeTAp 795-1 1988">
     <img src="FeTAp BW Modell 54 OB-ZB ang.png" alt="FeTAp BW Modell 54 OB-ZB">
     <img src="FeTAp Masterset 80er Jahre.png" alt="FeTAp Masterset 80er Jahre">
-    <img src="FeTAp SEL1026 von 10-1991.png" alt="FeTAp SEL1026 1991">
-    <img src="FeTAp Te100 von 11-1972.png" alt="FeTAp Te100 1972">
-    <img src="FeTAp Tel 0164 LXvon 02-1991.png" alt="FeTAp Tel 0164 LX 1991">
-
-  </div>
-</div>
-
-<script>
-function toggleFullscreen(element) {
-    if (!document.fullscreenElement) {
-        element.requestFullscreen();
-    } else {
-        document.exitFullscreen();
-    }
-}
-</script>
-
-</body>
-</html>
+    <img src="FeTAp SEL
