@@ -20,7 +20,6 @@
             line-height: 1.6;
         }
 
-        /* Header */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
@@ -57,7 +56,6 @@
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-
             nav {
                 display: none;
                 flex-direction: column;
@@ -65,17 +63,14 @@
                 border-top: 2px solid #ccc;
                 padding: 10px 0;
             }
-
             nav a {
                 display: block;
                 margin: 10px 0;
                 font-size: 1.05rem;
             }
-
             nav.active { display: flex; }
         }
 
-        /* Content Box */
         .box {
             max-width: 900px;
             margin: 30px auto;
@@ -121,7 +116,6 @@
             text-decoration: underline;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -172,7 +166,6 @@
     </nav>
 </header>
 
-<!-- LOGIN -->
 <div id="loginBox" class="box">
     <h2>Interner Bereich</h2>
     <p>Bitte Passwort eingeben:</p>
@@ -180,7 +173,6 @@
     <button onclick="checkPW()">Weiter</button>
 </div>
 
-<!-- CONTENT -->
 <div id="content" class="box" style="display:none;">
     <h2>Interne Dokumente</h2>
     <p>Hier stehen unsere Protokolle, Infos usw.</p>
@@ -205,16 +197,9 @@
         <a href="impressum.html">Impressum</a> ·
         <a href="datenschutz.html">Datenschutz</a>
     </p>
-    <p style="font-size:0.8rem; color:#777;">
-        Besucher gesamt:
-        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-             alt="Besucherzähler"
-             style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-    </p>
 </footer>
 
 <script>
-// Login prüfen
 if (localStorage.getItem("uvcLoggedIn") === "true") {
     document.getElementById("loginBox").style.display = "none";
     document.getElementById("content").style.display = "block";
