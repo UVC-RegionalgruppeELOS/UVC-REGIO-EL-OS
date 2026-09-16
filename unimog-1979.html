@@ -5,19 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimog 1979 – Unimog 424</title>
 
-    <!-- SEO-Meta-Tags -->
     <meta name="description" content="Unimog Baujahr 1979: Modell 424 mit Schmidt Frontlader FL4. Historie, Besitzer, Restaurierung und technische Ausstattung des Fahrzeugs der UVC Regionalgruppe Emsland–Osnabrück.">
-    <meta name="keywords" content="Unimog 1979, Unimog 424, Schmidt Frontlader FL4, WIKA Beton, Restaurierung, Unimog Geschichte, Oldtimer, UVC, Unimog Veteranen Club">
+    <meta name="keywords" content="Unimog 1979, Unimog 424, Schmidt Frontlader FL4, WIKA Beton, Restaurierung, Oldtimer, UVC Regionalgruppe Emsland–Osnabrück">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Unimog 1979 – Unimog 424">
     <meta property="og:description" content="Historie, Restaurierung und technische Ausstattung des Unimog 424 Baujahr 1979.">
-    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/1979.jpg">
+    <meta property="og:image" content="1979.jpg">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimog-1979.html">
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
@@ -29,6 +25,7 @@
             line-height: 1.6;
         }
 
+        /* Header */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
@@ -38,11 +35,11 @@
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: rgba(255,255,255,0.92);
+            margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
-            display: inline-block;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -64,9 +61,7 @@
         }
 
         @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
+            .menu-toggle { display: block; }
 
             nav {
                 display: none;
@@ -79,25 +74,39 @@
             nav a {
                 display: block;
                 margin: 10px 0;
+                font-size: 1.05rem;
             }
 
-            nav.active {
-                display: flex;
-            }
+            nav.active { display: flex; }
         }
 
-        .hero-img {
+        /* Hero */
+        .hero {
+            max-width: 900px;
             width: 100%;
-            height: auto;
-            display: block;
-            margin: 0;
-            padding: 0;
+            height: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width: 899px) {
+            .hero { height: 220px; }
+        }
+
+        /* Content */
         .container {
             max-width: 900px;
             margin: 30px auto;
-            padding: 20px;
+            padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -105,14 +114,25 @@
 
         h2 {
             color: #2e5c2e;
+            margin-top: 0;
         }
 
+        a {
+            color: #2e5c2e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             color: #444;
             font-size: 0.9rem;
-            border-top: 1px solid #ccc;
+            border-top: 2px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
         }
@@ -146,65 +166,53 @@
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
-        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="weiterführende-links.html">Weiterführende Links</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<img src="1979.jpg"
-     alt="Unimog 424 Baujahr 1979 mit Schmidt Frontlader FL4, restauriert 2009 und ursprünglich im Einsatz bei WIKA Beton in Stade"
-     class="hero-img">
+<div class="hero">
+    <img src="1979.jpg" alt="Unimog 424 Baujahr 1979 mit Schmidt Frontlader FL4">
+</div>
 
 <div class="container">
     <h2>Steckbrief</h2>
 
-    <p><strong>Unimog 424</strong></p>
+    <p><strong>Modell:</strong> Unimog 424</p>
     <p><strong>Baujahr:</strong> 1979</p>
-    <p><strong>Erstbesitzer:</strong> WIKA Beton, Stade (gegründet 1962)</p>
-    <p><strong>Besitzer ab 2009:</strong> Private Familie aus Egerstorf, Ortsteil Schätzendorf</p>
+    <p><strong>Erstbesitzer:</strong> WIKA Beton, Stade</p>
+    <p><strong>Besitzer ab 2009:</strong> Familie aus Egerstorf (Schätzendorf)</p>
     <p><strong>Besitzer seit 2017:</strong> Michael</p>
     <p><strong>Anbaugerät:</strong> Schmidt Frontlader Typ FL4</p>
 
     <h2>Historie</h2>
     <p>
-        Der Unimog 424 aus dem Baujahr 1979 wurde ursprünglich von der Firma 
-        <strong>WIKA Beton</strong> in Stade eingesetzt – einem traditionsreichen 
-        Transportbetonwerk, das bereits <strong>1962</strong> gegründet wurde.
+        Der Unimog 424 aus dem Baujahr 1979 wurde ursprünglich von der Firma
+        <strong>WIKA Beton</strong> in Stade eingesetzt – einem traditionsreichen
+        Transportbetonwerk, das bereits 1962 gegründet wurde.
     </p>
 
     <p>
-        Im Jahr <strong>2009</strong> wurde der Unimog an eine private Familie aus 
-        <strong>Egerstorf (Ortsteil Schätzendorf)</strong> verkauft. 
-        Im selben Jahr erfolgte eine <strong>aufwendige Restaurierung</strong>, 
-        bei der das Fahrzeug technisch und optisch umfassend überarbeitet wurde.
+        Im Jahr 2009 wurde der Unimog an eine private Familie aus
+        <strong>Egerstorf (Ortsteil Schätzendorf)</strong> verkauft.
+        Im selben Jahr erfolgte eine umfassende Restaurierung, bei der das Fahrzeug
+        technisch und optisch überarbeitet wurde.
     </p>
 
     <p>
-        Seit <strong>2017</strong> befindet sich der Unimog im Besitz von Michael, 
-        der das Fahrzeug weiter pflegt und erhält. Mit dem montierten 
-        <strong>Schmidt Frontlader Typ FL4</strong> ist der Unimog vielseitig einsetzbar 
-        und bleibt ein beeindruckendes Beispiel für die robuste 424er‑Baureihe.
+        Seit 2017 befindet sich der Unimog im Besitz von Michael und wird weiterhin
+        gepflegt und erhalten. Mit dem montierten <strong>Schmidt Frontlader FL4</strong>
+        ist der Unimog vielseitig einsetzbar und bleibt ein beeindruckendes Beispiel
+        für die robuste 424er‑Baureihe.
     </p>
 </div>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
-
     <br>
-    <a href="hosting.html">Hosting & Technik</a>
-    <br>
-    <a href="impressum.html">Impressum</a>
-    <br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
-
-    <br>
-    <span style="font-size: 0.75rem; color: #777;">
-        Besucher:
-        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-             border="0"
-             alt="visitor counter"
-             style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
-    </span>
 </footer>
 
 </body>
