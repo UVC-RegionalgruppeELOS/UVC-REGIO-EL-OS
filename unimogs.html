@@ -13,7 +13,6 @@
     <meta property="og:description" content="Alle Unimogs der Regionalgruppe Emsland–Osnabrück übersichtlich nach Baujahr und Ausstattung sortiert.">
     <meta property="og:image" content="PLATZHALTER-UNIMOG.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimogs.html">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -26,7 +25,7 @@
             line-height: 1.6;
         }
 
-        /* Einheitlicher Header */
+        /* Header */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
@@ -81,7 +80,7 @@
             nav.active { display: flex; }
         }
 
-        /* Hero modernisiert */
+        /* Hero */
         .hero {
             max-width: 900px;
             width: 100%;
@@ -104,15 +103,11 @@
         }
 
         @media (max-width: 899px) {
-            .hero {
-                height: 220px;
-            }
-            .hero h1 {
-                font-size: 1.9rem;
-            }
+            .hero { height: 220px; }
+            .hero h1 { font-size: 1.9rem; }
         }
 
-        /* Inhalt */
+        /* Content */
         section {
             max-width: 900px;
             margin: 30px auto;
@@ -152,7 +147,7 @@
             flex: 1 1 400px;
         }
 
-        /* Einheitlicher Footer – garantiert 2 Zeilen */
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -161,6 +156,10 @@
             border-top: 2px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
+        }
+
+        footer p {
+            margin: 6px 0;
         }
 
         footer a {
@@ -204,7 +203,7 @@
 
 <section class="flex-container">
 
-    <!-- Linke Spalte: Baujahre -->
+    <!-- Linke Spalte -->
     <div class="flex-item">
         <h2>Baujahre</h2>
         <ul>
@@ -220,9 +219,26 @@
         </ul>
     </div>
 
-    <!-- Rechte Spalte: Anbaugeräte -->
+    <!-- Rechte Spalte -->
     <div class="flex-item">
         <h2>Anbaugeräte</h2>
         <ul>
             <li><a class="yearlink" href="anbaugeraet-abc.html">abc</a></li>
-            <li><a class="yearlink" href="anbaugeraet-bcd.html">
+            <li><a class="yearlink" href="anbaugeraet-bcd.html">bcd</a></li>
+            <li><a class="yearlink" href="anbaugeraet-cde.html">cde</a></li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
+    <p>
+        <a href="hosting.html">Hosting & Technik</a> ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+</footer>
+
+</body>
+</html>
