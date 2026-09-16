@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimogs unserer Mitglieder – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <!-- SEO-Meta-Tags -->
     <meta name="description" content="Übersicht aller Unimogs der UVC Regionalgruppe Emsland–Osnabrück. Fahrzeuge nach Baujahr und Anbaugeräten sortiert.">
-    <meta name="keywords" content="Unimog, Unimog Übersicht, Unimog Baujahre, Unimog Anbaugeräte, UVC, Unimog Veteranen Club, Oldtimer, Unimog 2010, Unimog 411, Unimog 424, Unimog 435">
+    <meta name="keywords" content="Unimog, Unimog Übersicht, Unimog Baujahre, Unimog Anbaugeräte, UVC, Unimog Veteranen Club, Oldtimer">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Unimogs unserer Mitglieder – Übersicht">
     <meta property="og:description" content="Alle Unimogs der Regionalgruppe Emsland–Osnabrück übersichtlich nach Baujahr und Ausstattung sortiert.">
-    <meta property="og:image" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/PLATZHALTER-UNIMOG.jpg">
+    <meta property="og:image" content="PLATZHALTER-UNIMOG.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unimogs.html">
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
@@ -39,11 +36,11 @@
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: rgba(255,255,255,0.92);
+            margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
-            display: inline-block;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -65,9 +62,7 @@
         }
 
         @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
+            .menu-toggle { display: block; }
 
             nav {
                 display: none;
@@ -80,43 +75,56 @@
             nav a {
                 display: block;
                 margin: 10px 0;
+                font-size: 1.05rem;
             }
 
-            nav.active {
-                display: flex;
-            }
+            nav.active { display: flex; }
         }
 
-        /* Hero */
+        /* Hero modernisiert */
         .hero {
-            height: 30vh;
+            max-width: 900px;
+            width: 100%;
+            height: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
             background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-shadow: 0 0 10px black;
-            border-bottom: 2px solid #ccc;
         }
 
         .hero h1 {
-            font-size: 2.8rem;
-            margin: 0;
+            font-size: 2.4rem;
             color: white;
-            text-align: center;
+            text-shadow: 0 0 10px black;
+            margin: 0;
+        }
+
+        @media (max-width: 899px) {
+            .hero {
+                height: 220px;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
         }
 
         /* Inhalt */
         section {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        h1, h2 {
+        h2 {
             color: #2e5c2e;
+            margin-top: 0;
         }
 
         ul li {
@@ -126,6 +134,11 @@
         a.yearlink {
             color: #2e5c2e;
             font-weight: bold;
+            text-decoration: none;
+        }
+
+        a.yearlink:hover {
+            text-decoration: underline;
         }
 
         .flex-container {
@@ -139,7 +152,7 @@
             flex: 1 1 400px;
         }
 
-        /* Einheitlicher Footer */
+        /* Einheitlicher Footer – garantiert 2 Zeilen */
         footer {
             text-align: center;
             padding: 20px;
@@ -189,11 +202,6 @@
     <h1>Unimogs unserer Mitglieder</h1>
 </div>
 
-<!-- Unsichtbares SEO-Bild -->
-<img src="PLATZHALTER-UNIMOG.jpg"
-     alt="Unimog Fahrzeuge der Mitglieder der UVC Regionalgruppe Emsland–Osnabrück"
-     style="width:1px; height:1px; opacity:0; position:absolute; left:-9999px;">
-
 <section class="flex-container">
 
     <!-- Linke Spalte: Baujahre -->
@@ -206,8 +214,8 @@
             <li><a class="yearlink" href="unimog-1958-nils.html">1958 – Unimog 411.110 Cabrio</a></li>
             <li><a class="yearlink" href="unimog-1961-nils.html">1961 – Unimog 411.117 Westfalia</a></li>
             <li><a class="yearlink" href="unimog-1975.html">1975 – Unimog 406 Cabrio</a></li>
-            <li><a class="yearlink" href="unimog-1979.html">1979 (1.HJ)– Unimog 424 / U 1000</a></li>
-            <li><a class="yearlink" href="unimog-1979-2.html">1979 (2. HJ) – Unimog 424 / U 1000</a></li>
+            <li><a class="yearlink" href="unimog-1979.html">1979 (1.HJ) – Unimog 424 / U 1000</a></li>
+            <li><a class="yearlink" href="unimog-1979-2.html">1979 (2.HJ) – Unimog 424 / U 1000</a></li>
             <li><a class="yearlink" href="unimog-1986.html">1986 – Unimog 435 / U 1300L</a></li>
         </ul>
     </div>
@@ -217,20 +225,4 @@
         <h2>Anbaugeräte</h2>
         <ul>
             <li><a class="yearlink" href="anbaugeraet-abc.html">abc</a></li>
-            <li><a class="yearlink" href="anbaugeraet-bcd.html">bcd</a></li>
-            <li><a class="yearlink" href="anbaugeraet-cde.html">cde</a></li>
-        </ul>
-    </div>
-
-</section>
-
-<footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück
-    <br>
-    <a href="hosting.html">Hosting & Technik</a><br>
-    <a href="impressum.html">Impressum</a><br>
-    <a href="datenschutz.html">Datenschutz</a>
-</footer>
-
-</body>
-</html>
+            <li><a class="yearlink" href="anbaugeraet-bcd.html">
