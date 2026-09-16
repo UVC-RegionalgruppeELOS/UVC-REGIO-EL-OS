@@ -56,13 +56,12 @@
         100% { transform: translateX(-50%); }
     }
 
-    /* Bilder im Vollbild größer anzeigen */
+    /* --- WICHTIG: Bildserie im Vollbild groß machen --- */
     :fullscreen .marquee img {
-        height: 100vh;      /* Vollbild komplett ausnutzen */
+        height: 90vh !important;   /* Bildhöhe fast Vollbild */
         margin: 0 30px;
     }
 
-    /* Vollbild-Hintergrund schwarz */
     :fullscreen {
         background: #000;
     }
@@ -146,7 +145,6 @@
 <div class="marquee" ondblclick="toggleFullscreen(this)">
   <div class="scroll-museum">
 
-    <!-- Museumsbilder -->
     <img src="DDR IFW W.png" alt="DDR IFW W">
     <img src="DDR-W58.png" alt="DDR W58">
     <img src="FeTAp 2L-752-1 von 08-1989.png" alt="FeTAp 2L-752-1 1989">
