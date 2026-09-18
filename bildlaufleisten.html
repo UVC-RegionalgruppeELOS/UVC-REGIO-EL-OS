@@ -42,14 +42,10 @@
         transform: scale(1.05);
     }
 
-    .scroll-unimog {
-        display: inline-block;
-        animation: scroll 140s linear infinite;
-    }
-
+    .scroll-unimog,
     .scroll-museum {
         display: inline-block;
-        animation: scroll 100s linear infinite;
+        animation: scroll 120s linear infinite;
     }
 
     @keyframes scroll {
@@ -57,13 +53,12 @@
         100% { transform: translateX(-50%); }
     }
 
-    /* Vollbild: gesamte Bildlaufleiste vergrößern */
     :fullscreen .marquee {
         padding: 40px 0;
     }
 
     :fullscreen .marquee img {
-        height: 90vh !important;   /* fast volle Bildschirmhöhe */
+        height: 90vh !important;
         margin: 0 30px;
         border-radius: 10px;
         box-shadow: 0 0 12px rgba(255,255,255,0.4);
@@ -75,97 +70,119 @@
 
     :fullscreen .scroll-unimog,
     :fullscreen .scroll-museum {
-        animation-duration: 220s; /* langsamer im Vollbild */
+        animation-duration: 220s;
     }
 </style>
-</head>
 
+<script>
+function toggleFullscreen(el) {
+    if (!document.fullscreenElement) {
+        el.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+}
+
+// Zufallsfunktion
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+</script>
+
+</head>
 <body>
 
+<!-- ===================== UNIMOG ===================== -->
+
 <h1>Unimog‑Galerie</h1>
+
+<script>
+const unimogImages = shuffle([
+    "1951.jpg","1957.png","unimog-1958-nils.png","unimog-1961-nils.png",
+    "1975.png","1979.jpg","unimog-1979-2.jpg","2023.jpg","2024.jpg",
+    "2025.jpg","2026.jpeg","gruendung.png",
+    "Nordhorn1.jpg","Nordhorn2.jpg","Nordhorn3.jpg","Nordhorn4.jpg",
+    "Nordhorn5.jpg","Nordhorn6.jpg","Nordhorn7.jpg","Nordhorn8.jpg",
+    "Verl1.jpg","Verl2.jpg","Verl3.jpg","Verl4.jpg","Verl5.jpg","Verl6.jpg",
+    "Verl7.jpg","Verl8.jpg","Verl9.jpg","Verl10.jpg","Verl11.jpg","Verl12.jpg",
+    "Verl13.jpg","Verl14.jpg","Verl15.jpg","Verl16.jpg","Verl17.jpg","Verl18.jpg",
+    "Verl19.jpg","Verl20.jpg","Verl21.jpg","Verl22.jpg","Verl24.jpg","Verl25.jpg",
+    "Verl26.jpg","Verl27.jpg","Verl28.jpg","Verl29.jpg","Verl30.jpg","Verl30a.jpg",
+    "Verl31.jpg","Verl32.jpg","Verl33.jpg","Verl34.jpg","Verl35.jpg","Verl36.jpg",
+    "Verl37.jpg","Verl38.jpg"
+]);
+</script>
+
 <div class="marquee" ondblclick="toggleFullscreen(this)">
-  <div class="scroll-unimog">
-
-    <!-- Unimog-Bilder -->
-    <img src="1951.jpg" alt="Unimog 1951">
-    <img src="1957.png" alt="Unimog 1957">
-    <img src="unimog-1958-nils.png" alt="Unimog 1958 Nils">
-    <img src="unimog-1961-nils.png" alt="Unimog 1961 Nils">
-    <img src="1975.png" alt="Unimog 1975">
-    <img src="1979.jpg" alt="Unimog 1979">
-    <img src="unimog-1979-2.jpg" alt="Unimog 1979-2">
-    <img src="2023.jpg" alt="Unimog 2023">
-    <img src="2024.jpg" alt="Unimog 2024">
-    <img src="2025.jpg" alt="Unimog 2025">
-    <img src="2026.jpeg" alt="Unimog 2026">
-    <img src="gruendung.png" alt="Gründung">
-
-    <!-- Nordhorn-Serie -->
-    <img src="Nordhorn1.jpg" alt="Nordhorn 1">
-    <img src="Nordhorn2.jpg" alt="Nordhorn 2">
-    <img src="Nordhorn3.jpg" alt="Nordhorn 3">
-    <img src="Nordhorn4.jpg" alt="Nordhorn 4">
-    <img src="Nordhorn5.jpg" alt="Nordhorn 5">
-    <img src="Nordhorn6.jpg" alt="Nordhorn 6">
-    <img src="Nordhorn7.jpg" alt="Nordhorn 7">
-    <img src="Nordhorn8.jpg" alt="Nordhorn 8">
-
-    <!-- Verl-Serie -->
-    <img src="Verl1.jpg" alt="Verl 1">
-    <img src="Verl2.jpg" alt="Verl 2">
-    <img src="Verl3.jpg" alt="Verl 3">
-    <img src="Verl4.jpg" alt="Verl 4">
-    <img src="Verl5.jpg" alt="Verl 5">
-    <img src="Verl6.jpg" alt="Verl 6">
-    <img src="Verl7.jpg" alt="Verl 7">
-    <img src="Verl8.jpg" alt="Verl 8">
-    <img src="Verl9.jpg" alt="Verl 9">
-    <img src="Verl10.jpg" alt="Verl 10">
-    <img src="Verl11.jpg" alt="Verl 11">
-    <img src="Verl12.jpg" alt="Verl 12">
-    <img src="Verl13.jpg" alt="Verl 13">
-    <img src="Verl14.jpg" alt="Verl 14">
-    <img src="Verl15.jpg" alt="Verl 15">
-    <img src="Verl16.jpg" alt="Verl 16">
-    <img src="Verl17.jpg" alt="Verl 17">
-    <img src="Verl18.jpg" alt="Verl 18">
-    <img src="Verl19.jpg" alt="Verl 19">
-    <img src="Verl20.jpg" alt="Verl 20">
-    <img src="Verl21.jpg" alt="Verl 21">
-    <img src="Verl22.jpg" alt="Verl 22">
-    <img src="Verl24.jpg" alt="Verl 24">
-    <img src="Verl25.jpg" alt="Verl 25">
-    <img src="Verl26.jpg" alt="Verl 26">
-    <img src="Verl27.jpg" alt="Verl 27">
-    <img src="Verl28.jpg" alt="Verl 28">
-    <img src="Verl29.jpg" alt="Verl 29">
-    <img src="Verl30.jpg" alt="Verl 30">
-    <img src="Verl30a.jpg" alt="Verl 30a">
-    <img src="Verl31.jpg" alt="Verl 31">
-    <img src="Verl32.jpg" alt="Verl 32">
-    <img src="Verl33.jpg" alt="Verl 33">
-    <img src="Verl34.jpg" alt="Verl 34">
-    <img src="Verl35.jpg" alt="Verl 35">
-    <img src="Verl36.jpg" alt="Verl 36">
-    <img src="Verl37.jpg" alt="Verl 37">
-    <img src="Verl38.jpg" alt="Verl 38">
-
-  </div>
+  <div class="scroll-unimog" id="unimogScroll"></div>
 </div>
 
-<h1>Museums‑Galerie</h1>
-<div class="marquee" ondblclick="toggleFullscreen(this)">
-  <div class="scroll-museum">
+<script>
+const unimogContainer = document.getElementById("unimogScroll");
+unimogImages.forEach(img => {
+    const el = document.createElement("img");
+    el.src = img;
+    el.alt = img;
+    unimogContainer.appendChild(el);
+});
+</script>
 
-    <img src="DDR IFW W.png" alt="DDR IFW W">
-    <img src="DDR-W58.png" alt="DDR W58">
-    <img src="FeTAp 2L-752-1 von 08-1989.png" alt="FeTAp 2L-752-1 1989">
-    <img src="FeTAp 611-1a von 11-1979.png" alt="FeTAp 611-1a 1979">
-    <img src="FeTAp 611-2 von 05-1971.png" alt="FeTAp 611-2 1971">
-    <img src="FeTAp 612 von 1977.png" alt="FeTAp 612 1977">
-    <img src="FeTAp 612-2a angeschlossen.png" alt="FeTAp 612-2a angeschlossen">
-    <img src="FeTAp 791-1 von 12-1986.png" alt="FeTAp 791-1 1986">
-    <img src="FeTAp 795-1 von 10-1988.png" alt="FeTAp 795-1 1988">
-    <img src="FeTAp BW Modell 54 OB-ZB ang.png" alt="FeTAp BW Modell 54 OB-ZB">
-    <img src="FeTAp Masterset 80er Jahre.png" alt="FeTAp Masterset 80er Jahre">
-    <img src="FeTAp SEL
+<!-- ===================== MUSEUM ===================== -->
+
+<h1>Museums‑Galerie</h1>
+
+<script>
+const museumImages = shuffle([
+    "DDR IFW W.png","DDR-W58.png","FeTAp 2L-752-1 von 08-1989.png",
+    "FeTAp 611-1a von 11-1979.png","FeTAp 611-2 von 05-1971.png",
+    "FeTAp 612 von 1977.png","FeTAp 612-2a angeschlossen.png",
+    "FeTAp 791-1 von 12-1986.png","FeTAp 795-1 von 10-1988.png",
+    "FeTAp BW Modell 54 OB-ZB ang.png","FeTAp Masterset 80er Jahre.png",
+    "FeTAp SEL 1026.png",
+
+    /* Lampen */
+    "TL 7 Daimon 414..png",
+    "TL 2 VARTA 505.png",
+    "TL 8 VARTA 616.jpg",
+    "TL 4 VARTA 618.png",
+    "TL 3 VARTA 657.png",
+    "TL 5 VARTA 658.png",
+    "TL 6 VARTA Duplex.png",
+    "TL1 Maglite Mini.png",
+    "HL 1 Makita.png",
+    "HL CEAG Dortmund.jpg",
+    "HL Acculux SL6 LED.jpg"
+]);
+</script>
+
+<div class="marquee" ondblclick="toggleFullscreen(this)">
+  <div class="scroll-museum" id="museumScroll"></div>
+</div>
+
+<script>
+const museumContainer = document.getElementById("museumScroll");
+museumImages.forEach(img => {
+    const el = document.createElement("img");
+    el.src = img;
+    el.alt = img;
+    museumContainer.appendChild(el);
+});
+</script>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer>
+    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
+    <p>
+        <a href="hosting.html">Hosting & Technik</a> ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+</footer>
+
+</body>
+</html>
