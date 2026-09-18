@@ -41,16 +41,16 @@
     .marquee img:hover {
         transform: scale(1.05);
     }
-.scroll-unimog {
-    display: inline-block;
-    animation: scroll 120s linear infinite; /* Unimog bleibt gleich */
-}
 
-.scroll-museum {
-    display: inline-block;
-    animation: scroll 80s linear infinite;  /* Museumsleiste läuft schneller */
-}
+    /* Geschwindigkeit */
+    .scroll-unimog {
+        display: inline-block;
+        animation: scroll 120s linear infinite;
+    }
 
+    .scroll-museum {
+        display: inline-block;
+        animation: scroll 80s linear infinite;
     }
 
     @keyframes scroll {
@@ -88,7 +88,6 @@ function toggleFullscreen(el) {
     }
 }
 
-// Zufallsfunktion
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
