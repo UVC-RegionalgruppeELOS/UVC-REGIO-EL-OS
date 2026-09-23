@@ -3,42 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unimog‑Lieder – UVC Regionalgruppe Emsland–Osnabrück</title>
+<title>Weiterführende Links – UVC Regionalgruppe Emsland–Osnabrück</title>
+
+<meta name="description" content="Nützliche weiterführende Links rund um den Unimog, Stellplätze für Unimogreisende und themenbezogene Ressourcen der UVC Regionalgruppe Emsland–Osnabrück.">
+<meta name="keywords" content="Unimog Links, Unimog Stellplätze, Unimog Reisen, Unimog Veteranen Club, UVC, Unimog Karte, Unimog Ressourcen">
+<meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
 <style>
     body {
+        margin: 0;
         font-family: Arial, sans-serif;
         background: #e5e5e5;
         color: #222;
-        margin: 0;
         line-height: 1.6;
     }
+
+    header {
+        background: rgba(0,0,0,0.75);
+        padding: 15px;
+        text-align: center;
+        border-bottom: 2px solid #ccc;
+        position: relative;
+    }
+
+    nav a {
+        color: rgba(255,255,255,0.92);
+        margin: 0 12px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.95rem;
+    }
+
+    nav a:hover {
+        color: #2e5c2e;
+    }
+
+    .menu-toggle {
+        display: none;
+        background: #2e5c2e;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 4px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    @media (max-width: 899px) {
+        .menu-toggle { display: block; }
+
+        nav {
+            display: none;
+            flex-direction: column;
+            background: rgba(0,0,0,0.85);
+            border-top: 2px solid #ccc;
+            padding: 10px 0;
+        }
+
+        nav a {
+            display: block;
+            margin: 10px 0;
+            font-size: 1.05rem;
+        }
+
+        nav.active { display: flex; }
+    }
+
     .container {
         max-width: 900px;
         margin: 30px auto;
-        background: white;
         padding: 25px;
+        background: white;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
-    h1 {
+
+    h1, h2 {
         color: #2e5c2e;
-        text-align: center;
+        margin-top: 0;
     }
-    .song {
-        background: #f4f8f4;
-        border-left: 4px solid #4f7a4f;
-        padding: 15px 20px;
-        margin: 20px 0;
-        border-radius: 4px;
-    }
+
     a {
         color: #2e5c2e;
         font-weight: bold;
         text-decoration: none;
     }
+
     a:hover {
         text-decoration: underline;
     }
+
+    .linkbox {
+        background: #f4f8f4;
+        border-left: 4px solid #4f7a4f;
+        padding: 15px 20px;
+        margin: 25px 0;
+        border-radius: 4px;
+    }
+
     button {
         background: #2e5c2e;
         color: white;
@@ -48,16 +115,42 @@
         cursor: pointer;
         font-size: 0.9rem;
     }
+
     button:hover {
         background: #3f7a3f;
     }
+
     .counter {
         margin-left: 10px;
         font-weight: bold;
         color: #2e5c2e;
     }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #444;
+        font-size: 0.9rem;
+        border-top: 2px solid #ccc;
+        margin-top: 40px;
+        background: #e5e5e5;
+    }
+
+    footer a {
+        color: #777;
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+
+    footer a:hover {
+        color: #2e5c2e;
+    }
 </style>
+
 <script>
+function toggleMenu() {
+    document.getElementById("mainNav").classList.toggle("active");
+}
 function vote(id) {
     const counter = document.getElementById(id);
     let count = parseInt(counter.innerText);
@@ -65,66 +158,57 @@ function vote(id) {
 }
 </script>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>🎵 Unimog‑Lieder & Musikvideos 🎶</h1>
+<header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+    <nav id="mainNav">
+        <a href="index.html"><strong>Start</strong></a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
 
-    <div class="song">
-        <p>🎵 <a href="https://youtu.be/pe8ZGbIO0Cc?si=NRBgqFurib8IlG1a" target="_blank" rel="noopener">
-        „Unimog – Der Alleskönner“</a></p>
-        <p><strong>Beschreibung:</strong> Ein Fan‑Song über die Vielseitigkeit des Unimog – vom Acker bis zur Straße, mit nostalgischen Bildern und typischem Motorensound.</p>
+<div class="container">
+    <h1>Weiterführende Links</h1>
+    <p>Eine kuratierte Sammlung hilfreicher Ressourcen rund um den Unimog, unsere Regionalgruppe und nützliche Informationen für Unimogreisende.</p>
+
+    <!-- Rubrik 1: Stellplätze -->
+    <div class="linkbox">
+        <h2>Stellplätze für Unimogreisende</h2>
+        <p>Eine von Unimogfreunden gepflegte Karte mit <strong>kostenlosen Übernachtungsplätzen für Unimogreisende</strong>.</p>
+        <p>
+            <a href="https://www.google.com/maps/d/viewer?mid=1KPostZkgIq2kmOL44_uf8UQ-0hF_p8CH&ll=46.819716644443496,11.192041249999996&z=5"
+               target="_blank" rel="noopener">
+               ➜ Karte der Übernachtungsplätze öffnen
+            </a>
+        </p>
+    </div>
+
+    <!-- Rubrik 2: Unimog-Lieder -->
+    <div class="linkbox">
+        <h2>Unimog‑Lieder & Musikvideos</h2>
+        <p>Eine Sammlung von YouTube‑Videos rund um den Unimog – Fan‑Songs, Nostalgie und Klassiker.</p>
+
+        <ul>
+            <li>🎵 <a href="https://youtu.be/pe8ZGbIO0Cc?si=NRBgqFurib8IlG1a" target="_blank" rel="noopener">„Unimog – Der Alleskönner“</a></li>
+            <li>🎶 <a href="https://youtu.be/SL1PZTuxN882?si=4czhSHsf7kuf7Auho" target="_blank" rel="noopener">„Unimog‑Oldtimer auf Tour“</a></li>
+            <li>🎵 <a href="https://youtu.be/ZILqhT2-Bts?si=r7utiPSCVslqRQ8g" target="_blank" rel="noopener">„Mein Unimog, mein Stolz“</a></li>
+            <li>🎶 <a href="https://youtu.be/NDsQAhSk-DO?si=rCbctMrBATnSTCmW" target="_blank" rel="noopener">„Unimog Truck Music“</a></li>
+            <li>🎵 <a href="https://youtu.be/uylT9kYWxbU?si=5ANhos37DqRB548-" target="_blank" rel="noopener">„Unimog – Kraft und Herz“</a></li>
+            <li>🎶 <a href="https://youtu.be/sx8cZMYrPF4?si=wGPDO7WpRUBOENK" target="_blank" rel="noopener">„Unimog – Der Klang der Arbeit“</a></li>
+        </ul>
+
+        <p><strong>Abstimmung:</strong> Welches Lied gefällt dir am besten?</p>
         <button onclick="vote('vote1')">👍 Stimme abgeben</button>
         <span class="counter" id="vote1">0</span>
     </div>
 
-    <div class="song">
-        <p>🎶 <a href="https://youtu.be/SL1PZTuxN882?si=4czhSHsf7kuf7Auho" target="_blank" rel="noopener">
-        „Unimog‑Oldtimer auf Tour“</a></p>
-        <p><strong>Beschreibung:</strong> Ein nostalgisches Lied über historische Unimogs auf Reisen – mit Originalaufnahmen aus den 1960er‑Jahren.</p>
-        <button onclick="vote('vote2')">👍 Stimme abgeben</button>
-        <span class="counter" id="vote2">0</span>
-    </div>
-
-    <div class="song">
-        <p>🎵 <a href="https://youtu.be/ZILqhT2-Bts?si=r7utiPSCVslqRQ8g" target="_blank" rel="noopener">
-        „Mein Unimog, mein Stolz“</a></p>
-        <p><strong>Beschreibung:</strong> Ein moderner Fan‑Song mit Country‑Einflüssen – über die Leidenschaft und den Stolz, einen Unimog zu fahren.</p>
-        <button onclick="vote('vote3')">👍 Stimme abgeben</button>
-        <span class="counter" id="vote3">0</span>
-    </div>
-
-    <div class="song">
-        <p>🎶 <a href="https://youtu.be/NDsQAhSk-DO?si=rCbctMrBATnSTCmW" target="_blank" rel="noopener">
-        „Unimog Truck Music“</a></p>
-        <p><strong>Beschreibung:</strong> Instrumentalstück mit echten Unimog‑Motorgeräuschen – perfekt für Technikfans.</p>
-        <button onclick="vote('vote4')">👍 Stimme abgeben</button>
-        <span class="counter" id="vote4">0</span>
-    </div>
-
-    <div class="song">
-        <p>🎵 <a href="https://youtu.be/uylT9kYWxbU?si=5ANhos37DqRB548-" target="_blank" rel="noopener">
-        „Unimog – Kraft und Herz“</a></p>
-        <p><strong>Beschreibung:</strong> Ein emotionales Lied über die Verbindung zwischen Mensch und Maschine – der Unimog als treuer Begleiter.</p>
-        <button onclick="vote('vote5')">👍 Stimme abgeben</button>
-        <span class="counter" id="vote5">0</span>
-    </div>
-
-    <div class="song">
-        <p>🎶 <a href="https://youtu.be/sx8cZMYrPF4?si=wGPDO7WpRUBOENK" target="_blank" rel="noopener">
-        „Unimog – Der Klang der Arbeit“</a></p>
-        <p><strong>Beschreibung:</strong> Ein rhythmisches Lied mit echten Arbeits‑ und Fahrgeräuschen – eine Hommage an den Sound des Unimog.</p>
-        <button onclick="vote('vote6')">👍 Stimme abgeben</button>
-        <span class="counter" id="vote6">0</span>
-    </div>
-</div>
-
-<footer style="text-align:center; padding:20px; font-size:0.9rem; color:#444;">
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück · 
-    <a href="hosting.html">Hosting & Technik</a> · 
-    <a href="impressum.html">Impressum</a> · 
-    <a href="datenschutz.html">Datenschutz</a>
-</footer>
-
-</body>
-</html>
+    <!-- Rubrik 3: Weitere Themen -->
+    <
