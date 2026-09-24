@@ -80,7 +80,10 @@
             nav.active { display: flex; }
         }
 
-        /* Hero */
+        /* Hero
+           WICHTIG: Diese Bildzentrierung darf bei optischen Seitenanpassungen NICHT verändert werden!
+           Sie sorgt für die korrekte horizontale und vertikale Ausrichtung des Titelbildes auf allen Geräten.
+        */
         .hero {
             max-width: 900px;
             width: 100%;
@@ -88,19 +91,24 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .hero img {
             width: 100%;
-            height: 320px;
-            object-fit: cover;
+            height: auto;
+            max-height: 320px;
+            object-fit: contain;
             object-position: center center;
             display: block;
-            margin: 0 auto;
         }
 
         @media (max-width: 899px) {
-            .hero img { height: 240px; }
+            .hero img {
+                max-height: 240px;
+            }
         }
 
         /* Content */
