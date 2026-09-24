@@ -7,9 +7,66 @@
 
 <style>
     body { margin:0; font-family:Arial, sans-serif; background:#e5e5e5; color:#222; line-height:1.6; }
-    header { background:rgba(0,0,0,0.75); padding:15px; text-align:center; border-bottom:2px solid #ccc; }
-    nav a { color:#fff; margin:0 12px; text-decoration:none; font-weight:bold; }
-    nav a:hover { color:#2e5c2e; }
+
+    /* Header */
+    header {
+        background: rgba(0,0,0,0.75);
+        padding: 15px;
+        text-align: center;
+        border-bottom: 2px solid #ccc;
+        position: relative;
+    }
+
+    /* Desktop Navigation */
+    nav a {
+        color: rgba(255,255,255,0.92);
+        margin: 0 12px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.95rem;
+    }
+
+    nav a:hover {
+        color: #2e5c2e;
+    }
+
+    /* Berliner Menü Button */
+    .menu-toggle {
+        display: none;
+        background: #2e5c2e;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 4px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    /* Mobile Navigation */
+    @media (max-width: 899px) {
+        .menu-toggle { display: block; }
+
+        nav {
+            display: none;
+            flex-direction: column;
+            background: rgba(0,0,0,0.85);
+            border-top: 2px solid #ccc;
+            padding: 10px 0;
+        }
+
+        nav a {
+            display: block;
+            margin: 10px 0;
+            font-size: 1.05rem;
+        }
+
+        nav.active { display: flex; }
+    }
+
+    /* Content */
     .container { max-width:900px; margin:30px auto; background:white; padding:25px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.15); }
     h1, h2 { color:#2e5c2e; }
     .linkbox { background:#f4f8f4; border-left:4px solid #4f7a4f; padding:15px 20px; margin:25px 0; border-radius:4px; }
@@ -18,10 +75,16 @@
     button { background:#2e5c2e; color:white; border:none; padding:6px 12px; border-radius:4px; cursor:pointer; }
     button:hover { background:#3f7a3f; }
     .counter { margin-left:10px; font-weight:bold; color:#2e5c2e; }
+
+    /* Footer */
     footer { text-align:center; padding:20px; color:#444; font-size:0.9rem; border-top:2px solid #ccc; margin-top:40px; }
 </style>
 
 <script>
+function toggleMenu() {
+    document.getElementById("mainNav").classList.toggle("active");
+}
+
 function vote(id) {
     const counter = document.getElementById(id);
     counter.innerText = parseInt(counter.innerText) + 1;
@@ -32,8 +95,10 @@ function vote(id) {
 <body>
 
 <header>
-    <nav>
-        <a href="index.html">Start</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
+    <nav id="mainNav">
+        <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
