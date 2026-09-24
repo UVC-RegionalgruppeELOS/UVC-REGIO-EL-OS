@@ -6,7 +6,7 @@
 <style>
     body { font-family: Arial, sans-serif; background: #e5e5e5; padding: 40px; }
     .content {
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
         background: white;
         padding: 25px;
@@ -23,6 +23,7 @@
         padding: 10px;
         border-bottom: 1px solid #ccc;
         text-align: left;
+        vertical-align: top;
     }
     th {
         background: #f4f8f4;
@@ -61,25 +62,29 @@
 
     <table>
         <tr>
-            <th>Mitgliedsnummer</th>
+            <th>Nr.</th>
             <th>Vorname</th>
             <th>Nachname</th>
+            <th>Straße</th>
+            <th>PLZ</th>
+            <th>Ort</th>
+            <th>Festnetz</th>
+            <th>Handy</th>
+            <th>Mail</th>
         </tr>
 
-        <tr><td>1</td><td>Fritz</td><td>Bruns</td></tr>
-        <tr><td>2</td><td>Marcel</td><td>Ardends</td></tr>
-        <tr><td>3</td><td>Henrik</td><td>Garner</td></tr>
-        <tr><td>4</td><td>Reinhold</td><td>Hense</td></tr>
-        <tr><td>5</td><td>Philip</td><td>Cosfeld</td></tr>
-        <tr><td>6</td><td>Andre</td><td>Kuttler</td></tr>
-        <tr><td>7</td><td>Kai</td><td>Rühenholl</td></tr>
-        <tr><td>8</td><td>Michael</td><td>Blanke</td></tr>
-        <tr><td>9</td><td>Michael</td><td>Spoida</td></tr>
-        <tr><td>10</td><td>Michael</td><td>Sperver</td></tr>
-        <tr><td>11</td><td>Andre</td><td>Wrobbel</td></tr>
-        <tr><td>12</td><td>Nils</td><td>Wrobbel</td></tr>
-       
-        
+        <tr><td>1</td><td>Michael</td><td>Blanke</td><td>Versmolder Straße 42</td><td>49196</td><td>Bad Laer</td><td>05424 - 803810</td><td>0152 242 98 151</td><td><a href="mailto:michael.blanke@mail.de">michael.blanke@mail.de</a></td></tr>
+        <tr><td>2</td><td>Philip</td><td>Cosfeld</td><td>Laer Straße 57</td><td>33775</td><td>Versmold</td><td></td><td>0162 959 6051</td><td><a href="mailto:cosfeld@dieckmann-Versmold.de">cosfeld@dieckmann-Versmold.de</a></td></tr>
+        <tr><td>3</td><td>Kai</td><td>Rühenholl</td><td>Müllerweg 17</td><td>33775</td><td>Versmold</td><td></td><td>0172 948 3822</td><td><a href="mailto:nils-wrobbel@t-online.de">nils-wrobbel@t-online.de</a></td></tr>
+        <tr><td>4</td><td>Nils</td><td>Wrobbel</td><td>Postdamm 2</td><td>33775</td><td>Versmold</td><td></td><td>0152 5574 5533</td><td><a href="mailto:nils-wrobbel@t-online.de">nils-wrobbel@t-online.de</a></td></tr>
+        <tr><td>5</td><td>Andre</td><td>Kuttler</td><td>Lechterker Str. 70</td><td>49636</td><td>Badbergen</td><td>05433 - 902000</td><td>0172 5333 313</td><td><a href="mailto:zuppel1@web.de">zuppel1@web.de</a></td></tr>
+        <tr><td>6</td><td>Andre</td><td>Wrobbel</td><td>Münsterstr. 31</td><td>33775</td><td>Versmold</td><td></td><td>0175 8393 129</td><td></td></tr>
+        <tr><td>7</td><td>Michael</td><td>Spoida</td><td>Liebigstr. 8</td><td>49134</td><td>Wallenhorst</td><td></td><td>0171 6471 486</td><td><a href="mailto:michael_spoida@gmx.de">michael_spoida@gmx.de</a></td></tr>
+        <tr><td>8</td><td>Fritz</td><td>Bruns</td><td>Königsberger Str. 32</td><td>49740</td><td>Haselünne</td><td></td><td>0163 8843 913</td><td><a href="mailto:fritzbruns1@web.de">fritzbruns1@web.de</a></td></tr>
+        <tr><td>9</td><td>Reinhold</td><td>Hense</td><td>Elsenbusch 2</td><td>49811</td><td>Baccum</td><td></td><td>0171 9725 608</td><td><a href="mailto:r.hense@t-online.de">r.hense@t-online.de</a></td></tr>
+        <tr><td>10</td><td>Henrik</td><td>Garner</td><td>Heidländer Weg 76</td><td>33775</td><td>Dissen</td><td></td><td>0178 6917 031</td><td><a href="mailto:henrikgarner@gmx.net">henrikgarner@gmx.net</a></td></tr>
+        <tr><td>11</td><td>Marcel</td><td>Ardends</td><td>Jürgerstr. 7</td><td>33775</td><td>Versmold</td><td></td><td>0160 9413 5230</td><td><a href="mailto:marci86@gmx.net">marci86@gmx.net</a></td></tr>
+        <tr><td>12</td><td>Michael</td><td>Sperver</td><td>Andruper Weg 14</td><td>48369</td><td>Saerbeck</td><td></td><td>0151 5487 6177</td><td><a href="mailto:michaelsperver@web.de">michaelsperver@web.de</a></td></tr>
     </table>
 
     <p style="margin-top:20px;">
@@ -88,19 +93,13 @@
 </div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px;">
-        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
-            © 2026 UVC Regionalgruppe Emsland–Osnabrück
-        </p>
+    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
+    <p>
+        <a href="hosting.html">Hosting & Technik</a> ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+</footer>
 
-        <p style="margin: 6px 0;">
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-
-        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
-            Besucher gesamt:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity
+</body>
+</html>
