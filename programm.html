@@ -80,13 +80,13 @@
             nav.active { display: flex; }
         }
 
-        /* HERO – zentriert und größer */
+        /* HERO – größer, bleibt mittig, läuft nicht links raus */
         .hero {
             position: relative;
-            max-width: 1000px;
-            width: 95%;
-            height: 480px;
-            margin: 40px auto;
+            max-width: 1200px;      /* noch breiter */
+            width: 97%;             /* nutzt fast die gesamte Breite */
+            height: 580px;          /* deutlich höher */
+            margin: 40px auto;      /* zentriert den Container */
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -97,15 +97,15 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+            width: 100%;            /* nutzt volle Breite */
+            height: 100%;           /* nutzt volle Höhe */
+            object-fit: contain;    /* Bild bleibt vollständig sichtbar */
             display: block;
         }
 
         @media (max-width: 899px) {
             .hero {
-                height: 320px;
+                height: 360px;      /* größer auch auf Handy */
                 width: 95%;
             }
 
