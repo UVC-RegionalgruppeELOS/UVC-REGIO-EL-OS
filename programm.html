@@ -80,13 +80,14 @@
             nav.active { display: flex; }
         }
 
-        /* HERO – exakt wie Textkasten, Bild füllt komplett */
+        /* HERO – exakt wie Textkasten, gleiche Breite und Hintergrund */
         .hero {
-            max-width: 900px;      /* gleiche Breite wie .content */
+            max-width: 900px;          /* identisch mit .content */
             width: 100%;
-            height: 580px;         /* große Bildfläche */
+            height: 360px;             /* harmonische Höhe */
             margin: 40px auto;
             border-radius: 8px;
+            background: white;         /* gleiche Hintergrundfarbe wie Textkasten */
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
@@ -94,13 +95,13 @@
         .hero img {
             width: 100%;
             height: 100%;
-            object-fit: cover;     /* Bild füllt den gesamten Kasten */
+            object-fit: cover;         /* Bild füllt den gesamten Kasten */
             display: block;
         }
 
         @media (max-width: 899px) {
             .hero {
-                height: 360px;
+                height: 260px;
                 width: 95%;
             }
 
