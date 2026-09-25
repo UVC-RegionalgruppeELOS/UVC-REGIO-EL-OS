@@ -80,39 +80,34 @@
             nav.active { display: flex; }
         }
 
-        /* HERO – größer, bleibt mittig, läuft nicht links raus */
+        /* HERO – exakt wie Textkasten, Bild füllt komplett */
         .hero {
-            position: relative;
-            max-width: 1200px;      /* noch breiter */
-            width: 97%;             /* nutzt fast die gesamte Breite */
-            height: 580px;          /* deutlich höher */
-            margin: 40px auto;      /* zentriert den Container */
+            max-width: 900px;      /* gleiche Breite wie .content */
+            width: 100%;
+            height: 580px;         /* große Bildfläche */
+            margin: 40px auto;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
         .hero img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;            /* nutzt volle Breite */
-            height: 100%;           /* nutzt volle Höhe */
-            object-fit: contain;    /* Bild bleibt vollständig sichtbar */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;     /* Bild füllt den gesamten Kasten */
             display: block;
         }
 
         @media (max-width: 899px) {
             .hero {
-                height: 360px;      /* größer auch auf Handy */
+                height: 360px;
                 width: 95%;
             }
 
             .hero img {
                 width: 100%;
                 height: 100%;
-                transform: translate(-50%, -50%);
+                object-fit: cover;
             }
         }
 
