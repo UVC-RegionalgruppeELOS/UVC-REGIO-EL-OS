@@ -12,16 +12,64 @@
     <style>
         body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
 
-        /* Navigation */
+        /* Menüleiste – identisch zur index.html */
         header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #2e5c2e; }
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+
+        nav a {
+            color: #2e5c2e;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #1f3b1f;
+            text-decoration: underline;
+        }
+
+        nav a.current {
+            color: #2e5c2e;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: rgba(0,0,0,0.75);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+                color: #2e5c2e; /* GRÜN wie auf index.html */
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            nav a:hover {
+                color: #1f3b1f;
+                text-decoration: underline;
+            }
+
             nav.active { display: flex; }
         }
 
@@ -41,7 +89,6 @@
         .rubrik a { color: #2e5c2e; font-weight: bold; text-decoration: none; }
         .rubrik a:hover { text-decoration: underline; }
 
-        /* Hinweistext */
         .hinweis {
             color: #777;
             font-size: 0.9rem;
@@ -50,7 +97,15 @@
         }
 
         /* Footer */
-        footer { text-align: center; padding: 25px; background: #e5e5e5; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #e5e5e5;
+            color: #555;
+            font-size: 0.9rem;
+            border-top: 1px solid #ccc;
+        }
+
         footer a { color: #2e5c2e; text-decoration: none; }
         footer a:hover { color: #1d3d1d; }
     </style>
@@ -73,7 +128,10 @@
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterführende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
@@ -87,10 +145,11 @@
     </p>
 
     <h2>Rubriken</h2>
-    <p class="hinweis">Hinweis: Die Rubriken werden nach und nach mit Inhalten gefüllt. Bereits aktiv sind <strong>Telefonie und Taschenlampen & Handlampen</strong>.</p>
+    <p class="hinweis">Hinweis: Die Rubriken werden nach und nach mit Inhalten gefüllt.</p>
 
     <div class="rubrik"><a href="museum-buero.html">Büro</a></div>
     <div class="rubrik"><a href="museum-haushalt.html">Haushalt</a></div>
+    <div class="rubrik"><a href="museum-haushaltsgeraete-mit-kurbel.html">Haushaltsgeräte mit Kurbel</a></div>
     <div class="rubrik"><a href="museum-landwirtschaft.html">Landwirtschaftliche Geräte</a></div>
     <div class="rubrik"><a href="museum-telefonie.html">Telefonie</a></div>
     <div class="rubrik"><a href="museum-lampen.html">Taschenlampen & Handlampen</a></div>
