@@ -12,20 +12,18 @@
     <style>
         body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
 
-        /* Navigation */
         header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #2e5c2e; }
+        nav a { color: #2e5c2e; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #1f3b1f; text-decoration: underline; }
         .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
             nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
+            nav a { display: block; margin: 10px 0; color: #2e5c2e; }
             nav.active { display: flex; }
         }
 
-        /* Hauptinhalt */
         section {
             max-width: 900px;
             margin: 40px auto;
@@ -57,53 +55,41 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
+        <a href="museum.html">Museum</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="weiterführende-links.html">Weiterführende Links</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
 <section>
     <h1>Vorhängeschlösser</h1>
-    <p>Diese Sammlung zeigt verschiedene Vorhängeschlösser aus unterschiedlichen Epochen und Materialien. 
-    Sie verdeutlicht die Entwicklung der Sicherheitstechnik vom einfachen Eisenverschluss bis zum modernen Präzisionsschloss.</p>
+    <p>Diese Sammlung zeigt verschiedene Vorhängeschlösser aus unterschiedlichen Epochen und Materialien – von frühen Eisenmodellen bis zu modernen Messingausführungen.</p>
 
-    <!-- 1. ABUS 465-60 -->
-    <div class="schloss">
-        <img src="VHS Abus 465-60.jpg" alt="ABUS 465-60 Vorhängeschloss">
-        <h3>ABUS 465‑60 (ca. 1960er Jahre)</h3>
-        <p>Massives Vorhängeschloss aus Stahl mit schwarzer Lackierung und verchromtem Bügel. 
-        Das Modell 465‑60 stammt aus der Sicherheitsserie von <strong>ABUS</strong> (August Bremicker Söhne KG, Velbert), 
-        die ab den 1950er Jahren produziert wurde. 
-        ABUS gilt als einer der führenden deutschen Hersteller von Sicherheitstechnik. 
-        Dieses Schloss war für den industriellen und privaten Einsatz konzipiert und zeichnet sich durch hohe Widerstandsfähigkeit gegen Rost und Aufbruchversuche aus.</p>
-    </div>
-
-    <!-- 2. ABUS rot -->
-    <div class="schloss">
-        <img src="VHS Abus rot.jpg" alt="ABUS rotes Vorhängeschloss">
-        <h3>ABUS Vorhängeschloss rot (ca. 1970er Jahre)</h3>
-        <p>Ein auffälliges, rot lackiertes Schloss mit rechteckigem Gehäuse und vertikalem ABUS‑Schriftzug. 
-        Diese farbigen Modelle wurden häufig für Werkzeugkisten und Schränke verwendet. 
-        Die Lackierung diente nicht nur der Optik, sondern auch der Korrosionsbeständigkeit. 
-        ABUS führte in dieser Zeit zahlreiche Designvarianten ein, um die Schlösser besser an unterschiedliche Einsatzbereiche anzupassen.</p>
-    </div>
-
-    <!-- 3. Altes Schloss -->
+    <!-- 1. Altes Schloss -->
     <div class="schloss">
         <img src="VHS alt.jpg" alt="Altes Vorhängeschloss">
         <h3>Altes Vorhängeschloss (ca. 1920–1930)</h3>
         <p>Ein frühes, stark korrodiertes Schloss aus Eisen mit genieteten Platten und einfachem Schließmechanismus. 
         Solche Modelle wurden häufig in landwirtschaftlichen Betrieben und Werkstätten eingesetzt. 
-        Der Schlüssel ist flach und besitzt einen einfachen Bart – typisch für die Zwischenkriegszeit. 
+        Der flache Schlüssel mit einfachem Bart ist typisch für die Zwischenkriegszeit. 
         Diese Bauform zeigt die Übergangsphase von handgefertigten zu industriell gefertigten Schlössern.</p>
     </div>
 
-    <!-- 4. BURG Schloss -->
+    <!-- 2. Rundes Schloss -->
+    <div class="schloss">
+        <img src="VHS rund.jpg" alt="Rundes Vorhängeschloss">
+        <h3>Rundes Vorhängeschloss (ca. 1950–1960)</h3>
+        <p>Ein rundes Schloss aus Stahl mit zentralem Schließmechanismus. 
+        Diese Bauform wurde oft für Schuppen und Garagen verwendet, da sie schwerer mit Bolzenschneidern zu öffnen war. 
+        Der runde Körper bot weniger Angriffsfläche und war ein früher Versuch, die Sicherheit mechanisch zu erhöhen.</p>
+    </div>
+
+    <!-- 3. BURG Schloss -->
     <div class="schloss">
         <img src="VHS Burg.jpg" alt="BURG Vorhängeschloss">
         <h3>BURG Vorhängeschloss (ca. 1960–1970)</h3>
@@ -113,7 +99,26 @@
         BURG‑Schlösser dieser Zeit waren für den Außeneinsatz konzipiert und galten als besonders langlebig.</p>
     </div>
 
-    <!-- 5. Goldfarbenes Schloss -->
+    <!-- 4. ABUS 465-60 -->
+    <div class="schloss">
+        <img src="VHS Abus 465-60.jpg" alt="ABUS 465-60 Vorhängeschloss">
+        <h3>ABUS 465‑60 (ca. 1960er Jahre)</h3>
+        <p>Massives Vorhängeschloss aus Stahl mit schwarzer Lackierung und verchromtem Bügel. 
+        Das Modell 465‑60 stammt aus der Sicherheitsserie von <strong>ABUS</strong> (August Bremicker Söhne KG, Velbert), 
+        die ab den 1950er Jahren produziert wurde. 
+        Dieses Schloss war für den industriellen und privaten Einsatz konzipiert und zeichnet sich durch hohe Widerstandsfähigkeit gegen Rost und Aufbruchversuche aus.</p>
+    </div>
+
+    <!-- 5. ABUS rot -->
+    <div class="schloss">
+        <img src="VHS Abus rot.jpg" alt="ABUS rotes Vorhängeschloss">
+        <h3>ABUS Vorhängeschloss rot (ca. 1970er Jahre)</h3>
+        <p>Ein auffälliges, rot lackiertes Schloss mit rechteckigem Gehäuse und vertikalem ABUS‑Schriftzug. 
+        Diese farbigen Modelle wurden häufig für Werkzeugkisten und Schränke verwendet. 
+        Die Lackierung diente nicht nur der Optik, sondern auch der Korrosionsbeständigkeit.</p>
+    </div>
+
+    <!-- 6. Goldfarbenes Mini-Schloss -->
     <div class="schloss">
         <img src="VHS Goldfarbend.jpg" alt="Goldfarbenes Vorhängeschloss">
         <h3>Goldfarbenes Mini‑Schloss (ca. 1980er Jahre)</h3>
@@ -122,52 +127,7 @@
         Messing bietet guten Korrosionsschutz und war in den 1980er Jahren das bevorzugte Material für leichte Vorhängeschlösser.</p>
     </div>
 
-    <!-- 6. Rundes Schloss -->
-    <div class="schloss">
-        <img src="VHS rund.jpg" alt="Rundes Vorhängeschloss">
-        <h3>Rundes Vorhängeschloss (ca. 1950–1960)</h3>
-               <p>Ein rundes Schloss aus Stahl mit zentralem Schließmechanismus. 
-        Diese Bauform wurde oft für Schuppen und Garagen verwendet, da sie schwerer mit Bolzenschneidern zu öffnen war. 
-        Der runde Körper bot weniger Angriffsfläche und war ein früher Versuch, die Sicherheit mechanisch zu erhöhen.</p>
-    </div>
-
-    <!-- 7. Kleines Schloss -->
-    <div class="schloss">
-        <img src="VHS Goldfarbend.jpg" alt="Kleines Vorhängeschloss">
-        <h3>Kleines Vorhängeschloss (ca. 1980er Jahre)</h3>
-        <p>Ein kleines, goldfarbenes Schloss aus Messing mit einfachem Zylinderschließmechanismus. 
-        Solche Modelle wurden häufig für Koffer, Tagebücher oder kleine Schränke verwendet. 
-        Messing bietet guten Korrosionsschutz und war in den 1980er Jahren das bevorzugte Material für leichte Vorhängeschlösser.</p>
-    </div>
-
-    <!-- 8. Modernes Schloss -->
-    <div class="schloss">
-        <img src="VHS Burg.jpg" alt="BURG Vorhängeschloss">
-        <h3>BURG Vorhängeschloss (ca. 1960–1970)</h3>
-        <p>Silberfarbenes Schloss der Marke <strong>BURG</strong> (Burg‑Wächter KG, Wetter/Ruhr). 
-        BURG‑Wächter ist neben ABUS einer der bekanntesten deutschen Hersteller von Schlössern und Tresoren. 
-        Das hier gezeigte Modell besitzt ein vernickeltes Gehäuse und einen stabilen Bügel. 
-        BURG‑Schlösser dieser Zeit waren für den Außeneinsatz konzipiert und galten als besonders langlebig.</p>
-    </div>
-
 </section>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto;">
-        <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-        <p>
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-        <p style="font-size: 0.8rem; color: #777;">
-            Besucher:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px;">
-        </p>
-    </div>
-</footer>
-
-</body>
-</html>
+    <div style="max-width
