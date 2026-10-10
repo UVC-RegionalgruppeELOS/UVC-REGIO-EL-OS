@@ -1,135 +1,62 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Mitgliederverzeichnis – UVC Regionalgruppe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitgliederliste – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-<style>
-    body { font-family: Arial, sans-serif; background: #e5e5e5; margin: 0; }
+    <meta name="description" content="Mitgliederliste der UVC Regionalgruppe Emsland–Osnabrück mit Adressen und Kontaktinformationen.">
+    <meta name="keywords" content="UVC, Mitglieder, Unimog, Regionalgruppe, Emsland, Osnabrück">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    /* Menü */
-    header {
-        background: rgba(0,0,0,0.75);
-        padding: 15px;
-        text-align: center;
-        border-bottom: 2px solid #ccc;
-        position: relative;
-    }
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
 
-    nav a {
-        color: #2e5c2e;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-    }
+        /* Header und Menü */
+        header { background: rgba(0,0,0,0.85); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
+        nav a { color: #e5e5e5; margin: 0 12px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: color 0.3s; }
+        nav a:hover { color: #2e5c2e; }
+        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
 
-    nav a:hover {
-        color: #1f3b1f;
-        text-decoration: underline;
-    }
+        @media (max-width: 899px) {
+            .menu-toggle { display: block; }
+            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.9); border-top: 2px solid #ccc; padding: 10px 0; }
+            nav a { display: block; margin: 10px 0; font-size: 1.05rem; color: #e5e5e5; }
+            nav.active { display: flex; }
+        }
 
-    .menu-toggle {
-        display: none;
-        background: rgba(0,0,0,0.75);
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        border-radius: 4px;
-        position: absolute;
-        left: 15px;
-        top: 15px;
-    }
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
 
-    @media (max-width: 899px) {
-        .menu-toggle { display: block; }
+        h1 { color: #2e5c2e; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #f3f3f3; color: #2e5c2e; }
 
-        nav {
-            display: none;
-            flex-direction: column;
-            background: rgba(0,0,0,0.85);
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
             border-top: 2px solid #ccc;
-            padding: 10px 0;
+            margin-top: 40px;
+            background: #e5e5e5;
         }
+        footer a { color: #777; text-decoration: none; font-size: 0.85rem; }
+        footer a:hover { color: #2e5c2e; }
+    </style>
 
-        nav a {
-            display: block;
-            margin: 10px 0;
-            color: #2e5c2e !important; /* exakt wie index.html */
-            text-decoration: none;
-            font-weight: bold;
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
         }
-
-        nav a:hover {
-            color: #1f3b1f;
-            text-decoration: underline;
-        }
-
-        nav.active { display: flex; }
-    }
-
-    /* Inhalt */
-    .content {
-        max-width: 1000px;
-        margin: 40px auto;
-        background: white;
-        padding: 25px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    }
-
-    h1 { color: #2e5c2e; }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
-
-    th, td {
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-        text-align: left;
-        vertical-align: top;
-    }
-
-    th {
-        background: #f4f8f4;
-        color: #2e5c2e;
-    }
-
-    a { color: #2e5c2e; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* Footer */
-    footer {
-        text-align: center;
-        padding: 25px 10px;
-        color: #555;
-        font-size: 0.9rem;
-        border-top: 1px solid #ccc;
-        margin-top: 40px;
-        background: #e5e5e5;
-    }
-
-    footer a {
-        color: #2e5c2e;
-        text-decoration: none;
-        font-size: 0.85rem;
-    }
-
-    footer a:hover {
-        color: #1d3d1d;
-    }
-</style>
-
-<script>
-    function toggleMenu() {
-        document.getElementById("mainNav").classList.toggle("active");
-    }
-</script>
+    </script>
 </head>
 
 <body>
@@ -143,71 +70,39 @@
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="andere-treffen.html">Andere Treffen</a>
-        <a href="bildlaufleisten.html">Bildlaufleisten</a>
-        <a href="weiterführende-links.html">Weiterführende Links</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
         <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<div class="content">
-    <h1>Mitgliederverzeichnis</h1>
-    <p>Liste der Mitglieder der UVC Regionalgruppe Emsland–Osnabrück.</p>
-
-    <p><em>Hinweis: Die ersten Mitgliedsnummern (Gründungs-Mitglieder) wurden elektronisch nach dem Zufallsprinzip vergeben.Alle weiteren werden numerisch hinzugefügt.</em></p>
+<section>
+    <h1>Mitgliederliste</h1>
+    <p>Stand: Oktober 2026 – fortlaufend ergänzt</p>
 
     <table>
         <tr>
             <th>Nr.</th>
             <th>Vorname</th>
             <th>Nachname</th>
-            <th>Straße</th>
-            <th>PLZ</th>
-            <th>Ort</th>
-            <th>Festnetz</th>
-            <th>Handy</th>
-            <th>Mail</th>
+            <th>Adresse</th>
+            <th>PLZ / Ort</th>
+            <th>Telefon</th>
+            <th>E‑Mail</th>
         </tr>
 
-        <tr><td>1</td><td>Marcel</td><td>Ardends</td><td>Jürgerstr. 7</td><td>33775</td><td>Versmold</td><td></td><td>0160 9413 5230</td><td><a href="mailto:marci86@gmx.net">marci86@gmx.net</a></td></tr>
+        <tr><td>1</td><td>Fritz</td><td>Bruns</td><td>–</td><td>49740 Haselünne</td><td>–</td><td>–</td></tr>
+        <tr><td>2</td><td>Marcel</td><td>Arends</td><td>Jägerstraße 7</td><td>–</td><td>–</td><td>–</td></tr>
+        <tr><td>3</td><td>Michael</td><td>Spoida</td><td>Liebigstraße 8</td><td>48369 Saerbeck</td><td>0172 948 3822</td><td>–</td></tr>
+        <tr><td>4</td><td>Michael</td><td>Sperver</td><td>Andruper Weg 14</td><td>33775 Versmold</td><td>0175 839 3129</td><td>–</td></tr>
+        <tr><td>5</td><td>Kai</td><td>Rühenholl</td><td>Mühlenweg 17</td><td>33775 Versmold</td><td>–</td><td>–</td></tr>
+        <tr><td>6</td><td>Andre</td><td>Wrobbel</td><td>Münsterstr. 31</td><td>33775 Versmold</td><td>0152 5574 5533</td><td>a.wrobbel@bevermann-handel.de</td></tr>
+        <tr><td>7</td><td>Nils</td><td>Wrobbel</td><td>Postdamm 2</td><td>33775 Versmold</td><td>–</td><td>nils-wrobbel@t-online.de</td></tr>
 
-        <tr><td>2</td><td>Fritz</td><td>Bruns</td><td>Königsberger Str. 32</td><td>49740</td><td>Haselünne</td><td></td><td>0163 8843 913</td><td><a href="mailto:fritzbruns1@web.de">fritzbruns1@web.de</a></td></tr>
-
-        <tr><td>3</td><td>Philip</td><td>Cosfeld</td><td>Laer Straße 57</td><td>33775</td><td>Versmold</td><td></td><td>0162 959 6051</td><td><a href="mailto:cosfeld@dieckmann-Versmold.de">cosfeld@dieckmann-Versmold.de</a></td></tr>
-
-        <tr><td>4</td><td>Henrik</td><td>Garner</td><td>Heidländer Weg 76</td><td>33775</td><td>Dissen</td><td></td><td>0178 6917 031</td><td><a href="mailto:henrikgarner@gmx.net">henrikgarner@gmx.net</a></td></tr>
-
-        <tr><td>5</td><td>Reinhold</td><td>Hense</td><td>Elsenbusch 2</td><td>49811</td><td>Baccum</td><td></td><td>0171 9725 608</td><td><a href="mailto:r.hense@t-online.de">r.hense@t-online.de</a></td></tr>
-
-        <tr><td>6</td><td>Andre</td><td>Kuttler</td><td>Lechterker Str. 70</td><td>49636</td><td>Badbergen</td><td>05433 - 902000</td><td>0172 5333 313</td><td><a href="mailto:zuppel1@web.de">zuppel1@web.de</a></td></tr>
-
-        <tr><td>7</td><td>Michael</td><td>Blanke</td><td>Versmolder Straße 42</td><td>49196</td><td>Bad Laer</td><td>05424 - 803810</td><td>0152 242 98 151</td><td><a href="mailto:michael.blanke@mail.de">michael.blanke@mail.de</a></td></tr>
-
-        <tr><td>8</td><td>Michael</td><td>Spoida</td><td>Liebigstr. 8</td><td>49134</td><td>Wallenhorst</td><td></td><td>0171 6471 486</td><td><a href="mailto:michael_spoida@gmx.de">michael_spoida@gmx.de</a></td></tr>
-
-        <tr><td>9</td><td>Michael</td><td>Sperver</td><td>Andruper Weg 14</td><td>48369</td><td>Saerbeck</td><td></td><td>0151 5487 6177</td><td><a href="mailto:michaelsperver@web.de">michaelsperver@web.de</a></td></tr>
-
-        <tr><td>10</td><td>Kai</td><td>Rühenholl</td><td>Müllerweg 17</td><td>33775</td><td>Versmold</td><td></td><td>0172 948 3822</td><td><a href="mailto:nils-wrobbel@t-online.de">nils-wrobbel@t-online.de</a></td></tr>
-
-        <tr><td>11</td><td>Andre</td><td>Wrobbel</td><td>Münsterstr. 31</td><td>33775</td><td>Versmold</td><td></td><td>0175 8393 129</td><td></td></tr>
-
-        <tr><td>12</td><td>Nils</td><td>Wrobbel</td><td>Postdamm 2</td><td>33775</td><td>Versmold</td><td></td><td>0152 5574 5533</td><td><a href="mailto:nils-wrobbel@t-online.de">nils-wrobbel@t-online.de</a></td></tr>
-    </table>
-
-    <p style="margin-top:20px;">
-        <a href="intern.html">← Zurück zum internen Bereich</a>
-    </p>
-</div>
-
-<footer>
-    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-    <p>
-        <a href="hosting.html">Hosting & Technik</a> ·
-        <a href="impressum.html">Impressum</a> ·
-        <a href="datenschutz.html">Datenschutz</a>
-    </p>
-</footer>
-
-</body>
-</html>
+        <!-- Neue Mitglieder -->
+        <tr><td>8</td><td>Jürgen</td><td>Walterman</td><td>Lütkefeld 11</td><td>49419 Sülbergen</td><td>05976 344853</td><td>klaus.walterman@t-online.de</td></tr>
+        <tr><td>9</td><td>Daniel</td><td>Vogt</td><td>Ludwig‑Müller‑Str. 10</td><td>49082 Osnabrück</td><td>0541 4215999</td><td>daniel.vogt@osnanet.de</td></tr>
+        <tr><td>10</td><td>Sascha</td><td>Walles</td><td>Eusterbrocker Str. 42</td><td>49334 Wallenhorst</td><td>0151 54676483</td><td>sascha.walles@gmail.com</td></tr>
+        <tr><td>11</td><td>Malte</td><td>Schött</td><td>Dockingstr. 14</td><td>49176 Hilter</td><td>0172 2085198</td><td>malte.schoett@allink.de</td></tr>
+        <tr><td>12</td><td>Andreas</td><td>Brinkmann</td><td>Heisenberg 7</td><td>49176 Hilter</td><td>0160 1823243</td><td>brinkmann-a@osnanet.de</td></tr>
+        <tr><td>13</td><td>Dirk</td><td>Gander</td><td>–</td><td>
