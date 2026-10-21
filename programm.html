@@ -72,37 +72,25 @@
             nav.active { display: flex; }
         }
 
-        /* Weißer Block mit Bild */
-        .header-image {
+        /* Weißer Block – jetzt identisch für Bild und Inhalt */
+        .white-block {
             max-width: 1200px;
-            margin: 80px auto 0 auto;
-            height: 600px;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .header-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* zeigt das ganze Bild */
-            object-position: center bottom; /* leicht nach unten verschoben */
-            background-color: #e5e5e5; /* neutraler Hintergrund hinter dem Bild */
-            display: block;
-        }
-
-        /* Inhalt */
-        section {
-            max-width: 1200px;
+            width: 90%;
             margin: 40px auto;
-            padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            padding: 25px;
+        }
+
+        /* Bild im weißen Block */
+        .white-block img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            background-color: #e5e5e5;
         }
 
         h1, h2 {
@@ -185,11 +173,13 @@
     </nav>
 </header>
 
-<div class="header-image">
+<!-- Weißer Block mit Bild -->
+<div class="white-block">
     <img src="programm.png" alt="Unimog-Treffen in der Kiesgrube">
 </div>
 
-<section>
+<!-- Weißer Block mit Inhalt -->
+<div class="white-block">
     <h1>Programm</h1>
     <h2>Regionalgruppe Emsland–Osnabrück</h2>
 
@@ -201,15 +191,15 @@
             Dieses Treffen ist das Herzstück unseres Jahresprogramms – gemütliches Beisammensein, Fachgespräche rund um den Unimog und gemeinsame Ausfahrten.
         </div>
     </div>
-</section>
+</div>
 
-<section>
+<div class="white-block">
     <h2>Weitere Unimog-Treffen</h2>
     <p>Hier findest du die Termine anderer Unimog-Vereine und Veranstaltungen:</p>
     <a href="andere-treffen.html" style="color:#2e5c2e; font-weight:bold; text-decoration:none;">
         → Zu den Unimog-Terminen
     </a>
-</section>
+</div>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück  
