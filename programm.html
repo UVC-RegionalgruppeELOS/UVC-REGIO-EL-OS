@@ -63,9 +63,9 @@
 
         /* Weißer Block mit Bild */
         .header-image {
-            max-width: 1000px;          /* gleiche Breite wie andere Blöcke */
+            max-width: 1200px;          /* breiter als bisher, gleiche Breite wie andere Blöcke */
             margin: 40px auto 0 auto;
-            height: 550px;              /* Bild wird höher dargestellt */
+            height: 600px;              /* Bild wird höher dargestellt */
             background: white;
             border-radius: 8px;
             overflow: hidden;
@@ -73,16 +73,16 @@
         }
 
         .header-image img {
-            width: 120%;                /* Bild wächst nach rechts */
-            height: 120%;               /* Bild wächst nach unten */
-            object-fit: cover;          /* füllt den Block ohne Verzerrung */
-            object-position: 70% center;/* leicht nach rechts verschoben */
+            width: 100%;                /* Bild füllt den Block komplett */
+            height: 100%;
+            object-fit: cover;          /* bleibt proportional */
+            object-position: center;    /* zentriert das Bild, grauer Unimog bleibt sichtbar */
             display: block;
         }
 
         /* Inhalt */
         section {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 40px auto;
             padding: 25px;
             background: white;
