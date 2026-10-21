@@ -18,6 +18,7 @@
             line-height: 1.6;
         }
 
+        /* Grünes Menü wie auf der Startseite */
         header {
             background: rgba(0,0,0,0.85);
             padding: 15px;
@@ -27,7 +28,7 @@
         }
 
         nav a {
-            color: #e5e5e5;
+            color: #2e5c2e;
             margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
@@ -36,7 +37,7 @@
         }
 
         nav a:hover {
-            color: #2e5c2e;
+            color: #1b3b1b;
         }
 
         .menu-toggle {
@@ -56,28 +57,29 @@
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
             nav { display: none; flex-direction: column; background: rgba(0,0,0,0.9); border-top: 2px solid #ccc; padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; font-size: 1.05rem; color: #e5e5e5; }
+            nav a { display: block; margin: 10px 0; font-size: 1.05rem; color: #2e5c2e; }
             nav.active { display: flex; }
         }
 
+        /* Weißer Block mit Bild */
         .header-image {
-            width: 100%;
-            height: 420px; /* Höhe des weißen Blocks */
-            overflow: hidden;
-            border-radius: 8px;
-            margin: 40px auto 0 auto;
             max-width: 1000px;
+            margin: 40px auto 0 auto;
+            height: 420px;
             background: white;
+            border-radius: 8px;
+            overflow: hidden;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
         .header-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Bild füllt den Bereich vollständig */
+            object-fit: cover;
             display: block;
         }
 
+        /* Inhalt */
         section {
             max-width: 1000px;
             margin: 40px auto;
@@ -96,17 +98,33 @@
             margin-top: 0;
         }
 
-        ul {
-            list-style: none;
-            padding-left: 0;
+        .termin-box {
+            background: #f7f7f7;
+            border-left: 5px solid #2e5c2e;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
         }
 
-        li {
-            margin-bottom: 10px;
-        }
-
-        li strong {
+        .termin-title {
+            font-size: 1.1rem;
+            font-weight: bold;
             color: #2e5c2e;
+        }
+
+        .termin-date {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .termin-location {
+            margin-top: 5px;
+        }
+
+        .termin-note {
+            margin-top: 5px;
+            font-style: italic;
+            color: #555;
         }
 
         footer {
@@ -164,21 +182,28 @@
     <h1>Programm</h1>
     <h2>Unsere aktuellen Termine</h2>
 
-    <ul>
-        <li><strong>27.–30.05.</strong> 30 Jahre Oberbayerische Unimogfreunde und UCG‑Jahrestreffen in Golkofen bei Wolfratshausen</li>
-        <li><strong>09.–11.07.</strong> Unser Sommertreffen bei Spoida</li>
-        <li><strong>29.07.–01.08.</strong> Dülmen UVC‑Sommertreffen Dülmen‑Rorup</li>
-        <li><strong>27.–29.08.</strong> Der Berg ruft – Venner Berg (Termin ist offiziell noch nicht raus)</li>
-        <li><strong>03.–05.09.</strong> MB trac & Unimog Feldtage Kirchlinteln/Kreepen (Termin ist noch nicht offiziell raus)</li>
-        <li><strong>11.–12.09.</strong> Unimog & MB trac Treffen Friedeburg (Termin ist noch nicht offiziell raus)</li>
-    </ul>
+    <div class="termin-box">
+        <div class="termin-title">Unimogtreffen unserer Regionalgruppe in Wallenhorst bei Michael Spoida</div>
+        <div class="termin-date">📅 09.07.2026 – 11.07.2026</div>
+        <div class="termin-location">📍 Wallenhorst</div>
+        <div class="termin-note">
+            Dieses Treffen ist das Herzstück unseres Jahresprogramms – gemütliches Beisammensein, Fachgespräche rund um den Unimog und gemeinsame Ausfahrten.  
+            Zurzeit haben wir keine weiteren Programmpunkte geplant.
+        </div>
+    </div>
+
+    <br><br>
+
+    <a href="stammtisch.html" style="color:#2e5c2e; font-weight:bold; text-decoration:none;">
+        ← zurück zur Stammtischseite
+    </a>
 </section>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück  
     <br>
-    <a href="hosting.html">Hosting & Technik</a> ·  
-    <a href="impressum.html">Impressum</a> ·  
+    <a href="hosting.html">Hosting & Technik</a> ·  
+    <a href="impressum.html">Impressum</a> ·  
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
