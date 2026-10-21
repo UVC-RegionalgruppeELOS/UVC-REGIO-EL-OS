@@ -26,25 +26,37 @@
             line-height: 1.6;
         }
 
+        /* Header */
         header {
-            background: rgba(0,0,0,0.75);
+            background: rgba(0,0,0,0.85);
             padding: 15px;
             text-align: center;
             border-bottom: 2px solid #ccc;
             position: relative;
         }
 
+        /* PC-Menü: weiß */
         nav a {
-            color: #2e5c2e;
+            color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #1f3b1f;
-            text-decoration: underline;
+            color: #2e5c2e;
+        }
+
+        /* Handy-Menü: grün */
+        @media (max-width: 899px) {
+            nav a {
+                color: #2e5c2e;
+            }
+            nav a:hover {
+                color: #1f3b1f;
+            }
         }
 
         nav a.current {
@@ -82,6 +94,7 @@
             nav.active { display: flex; }
         }
 
+        /* Hero */
         .hero {
             max-width: 900px;
             width: 90%;
@@ -99,6 +112,7 @@
             margin: 0;
         }
 
+        /* Inhalt */
         section {
             max-width: 900px;
             width: 90%;
@@ -132,6 +146,7 @@
             text-decoration: underline;
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 25px 10px;
@@ -199,24 +214,22 @@
 </section>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px; font-family: Arial, sans-serif; color: #555;">
-        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
-            © 2026 UVC Regionalgruppe Emsland–Osnabrück
-        </p>
+    <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
+        © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    </p>
 
-        <p style="margin: 6px 0;">
-            <a href="hosting.html">Hosting & Technik</a> ·  
-            <a href="impressum.html">Impressum</a> ·  
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
+    <p style="margin: 6px 0;">
+        <a href="hosting.html">Hosting & Technik</a> ·  
+        <a href="impressum.html">Impressum</a> ·  
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
 
-        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
-            Besucher gesamt:  
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-        </p>
-    </div>
+    <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
+        Besucher gesamt:  
+        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
+             alt="Besucherzähler"
+             style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
+    </p>
 </footer>
 
 </body>
