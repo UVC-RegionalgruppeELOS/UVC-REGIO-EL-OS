@@ -75,19 +75,23 @@
         /* Weißer Block mit Bild */
         .header-image {
             max-width: 1200px;
-            margin: 100px auto 0 auto; /* weiter nach unten */
+            margin: 80px auto 0 auto;
             height: 600px;
             background: white;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .header-image img {
-            width: 120%;
-            height: 120%;
-            object-fit: cover;
-            object-position: 75% 60%; /* weiter nach rechts und unten */
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* zeigt das ganze Bild */
+            object-position: center bottom; /* leicht nach unten verschoben */
+            background-color: #e5e5e5; /* neutraler Hintergrund hinter dem Bild */
             display: block;
         }
 
