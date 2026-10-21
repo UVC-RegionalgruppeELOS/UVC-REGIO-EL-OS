@@ -26,6 +26,7 @@
             line-height: 1.6;
         }
 
+        /* Header */
         header {
             background: rgba(0,0,0,0.75);
             padding: 15px;
@@ -34,8 +35,9 @@
             position: relative;
         }
 
+        /* PC-Menü: weiß */
         nav a {
-            color: #2e5c2e;
+            color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
@@ -43,8 +45,17 @@
         }
 
         nav a:hover {
-            color: #1f3b1f;
-            text-decoration: underline;
+            color: #2e5c2e;
+        }
+
+        /* Handy-Menü: grün */
+        @media (max-width: 899px) {
+            nav a {
+                color: #2e5c2e;
+            }
+            nav a:hover {
+                color: #1b3b1b;
+            }
         }
 
         nav a.current {
@@ -214,7 +225,7 @@
         </li>
         <li>
             <strong><a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:</strong>
-            Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen (erneut in Müschen)
+            Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen
             → <a href="treffen-2024.html">Details ansehen</a>
         </li>
         <li>
