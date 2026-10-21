@@ -18,7 +18,7 @@
             line-height: 1.6;
         }
 
-        /* Grünes Menü wie auf der Startseite */
+        /* Header */
         header {
             background: rgba(0,0,0,0.85);
             padding: 15px;
@@ -27,8 +27,9 @@
             position: relative;
         }
 
+        /* PC-Menü: weiß */
         nav a {
-            color: #2e5c2e;
+            color: white;
             margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
@@ -37,7 +38,17 @@
         }
 
         nav a:hover {
-            color: #1b3b1b;
+            color: #2e5c2e;
+        }
+
+        /* Handy-Menü: grün */
+        @media (max-width: 899px) {
+            nav a {
+                color: #2e5c2e;
+            }
+            nav a:hover {
+                color: #1b3b1b;
+            }
         }
 
         .menu-toggle {
@@ -57,7 +68,7 @@
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
             nav { display: none; flex-direction: column; background: rgba(0,0,0,0.9); border-top: 2px solid #ccc; padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; font-size: 1.05rem; color: #2e5c2e; }
+            nav a { display: block; margin: 10px 0; font-size: 1.05rem; }
             nav.active { display: flex; }
         }
 
