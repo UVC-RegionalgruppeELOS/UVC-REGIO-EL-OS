@@ -78,73 +78,58 @@
             nav.active { display: flex; }
         }
 
-        .logo-bereich,
-        section,
-        .museum-hinweis {
-            max-width: 900px;
-            width: 90%;
+        /* Weißer Block mit Bild */
+        .header-image {
+            max-width: 1200px;
+            margin: 60px auto 0 auto; /* etwas nach unten verschoben */
+            height: 600px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: center; /* Bild mittig horizontal */
+            align-items: center;     /* Bild mittig vertikal */
+        }
+
+        .header-image img {
+            width: 95%;              /* leicht verkleinert, damit alles sichtbar bleibt */
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Inhalt */
+        section {
+            max-width: 1200px;
             margin: 40px auto;
+            padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            padding: 25px;
-        }
-
-        .logo-bereich {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo-bereich img {
-            max-width: 320px;
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
         }
 
         h1, h2 { color: #2e5c2e; }
 
-        a { color: #2e5c2e; text-decoration: none; transition: color 0.2s ease; }
-        a:hover { color: #1f3b1f; text-decoration: underline; }
-
-        .yearlink { font-weight: bold; }
-
-        .dachverband {
-            background: #f9f9f9;
-            border-left: 4px solid #888;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
-        .regionalgruppe {
-            background: #f4f8f4;
-            border-left: 4px solid #4f7a4f;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
         footer {
             text-align: center;
-            padding: 25px 10px;
-            color: #555;
+            padding: 20px;
+            color: #444;
             font-size: 0.9rem;
-            border-top: 1px solid #ccc;
+            border-top: 2px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
         }
 
         footer a {
-            color: #2e5c2e;
+            color: #777;
             text-decoration: none;
             font-size: 0.85rem;
         }
 
-        footer a:hover { color: #1d3d1d; }
+        footer a:hover {
+            color: #2e5c2e;
+        }
     </style>
 
     <script>
@@ -173,106 +158,50 @@
     </nav>
 </header>
 
-<div class="logo-bereich">
-    <img src="Logo mit Schriftzug.jpg" alt="Unimog Stammtisch Emsland–Osnabrück Logo">
+<div class="header-image">
+    <img src="programm.png" alt="Unimog-Treffen in der Kiesgrube">
 </div>
 
 <section>
     <h1>Willkommen bei der UVC Regionalgruppe Emsland–Osnabrück</h1>
-
-    <div class="dachverband">
-        <p>
-            Der <strong><a href="https://u-v-c.de/about/" target="_blank" rel="noopener">UVC – Unimog Veteranen Club e. V.</a></strong>
-            ist ein Verein für Liebhaber historischer Unimog‑Fahrzeuge. Er richtet sich besonders an Besitzer, Fahrer und Fans.
-        </p>
-    </div>
-
-    <div class="regionalgruppe">
-        <p>
-            Mit der Gründung unserer <strong>UVC – Regionalgruppe Emsland–Osnabrück</strong> im Jahr 2026 haben wir
-            einen Treffpunkt geschaffen, an dem Enthusiasten zusammenkommen, sich austauschen und gemeinsame Aktivitäten planen.
-        </p>
-    </div>
+    <p>
+        Mit der Gründung unserer <strong>UVC – Regionalgruppe Emsland–Osnabrück</strong> im Jahr 2026 haben wir
+        einen Treffpunkt geschaffen, an dem Enthusiasten zusammenkommen, sich austauschen und gemeinsame Aktivitäten planen.
+    </p>
 
     <h2>Wie unsere Regionalgruppe entstanden ist</h2>
-
-    <p>Unsere Gruppe entstand aus dem Zusammenschluss zweier kleiner Gruppen:</p>
-
+    <p>
+        Unsere Gruppe entstand aus dem Zusammenschluss zweier kleiner Gruppen:
+    </p>
     <ul>
         <li>Eine Gruppe bildete sich über Jahre hinweg rund um <strong>Philipp</strong>.</li>
         <li>Die zweite Gruppe entstand auf den <strong>MBtrac + Unimog Feldtagen 2022</strong>.</li>
     </ul>
 
     <p>Aus diesen beiden Kreisen entwickelte sich eine feste Gemeinschaft mit ersten gemeinsamen Treffen:</p>
+    <ul>
+        <li><strong>2023:</strong> Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen → <a href="treffen-2023.html">Details ansehen</a></li>
+        <li><strong>2024:</strong> Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen → <a href="treffen-2024.html">Details ansehen</a></li>
+        <li><strong>2025:</strong> Drittes Treffen auf dem Hof Hense in Baccum → <a href="treffen-2025.html">Details ansehen</a></li>
+    </ul>
+
+    <p>
+        Am <strong>12.04.2026</strong> folgte der nächste logische Schritt:
+        die <strong><a href="gruendung-2026.html">Gründung</a></strong> der
+        <strong>UVC Regionalgruppe Emsland–Osnabrück</strong> auf dem Hof Blanke in Bad Laer Müschen.
+    </p>
 
     <ul>
-        <li>
-            <strong><a class="yearlink" href="2023.jpg" target="_blank" rel="noopener">2023</a>:</strong>
-            Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen
-            → <a href="treffen-2023.html">Details ansehen</a>
-        </li>
-        <li>
-            <strong><a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:</strong>
-            Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen (erneut in Müschen)
-            → <a href="treffen-2024.html">Details ansehen</a>
-        </li>
-        <li>
-            <strong><a class="yearlink" href="2025.jpg" target="_"_blank" rel="noopener">2025</a>:</strong>
-Drittes Treffen auf dem Hof Hense in Baccum
-→ <a href="treffen-2025.html">Details ansehen</a>
-</li>
-</ul>
-
-<p>
-    Am <strong>12.04.2026</strong> folgte der nächste logische Schritt:
-    die <strong><a class="yearlink" href="gruendung-2026.html">Gründung</a></strong> der
-    <strong>UVC Regionalgruppe Emsland–Osnabrück</strong>
-    auf dem Hof Blanke in Bad Laer Müschen.
-</p>
-
-<ul>
-    <li>
-        <strong><a class="yearlink" href="2026.jpeg" target="_blank" rel="noopener">2026</a>:</strong>
-        Viertes Treffen auf dem Hof Coesfeld in Versmold‑Loxten
-        → <a href="treffen-2026.html">Details ansehen</a>
-    </li>
-</ul>
+        <li><strong>2026:</strong> Viertes Treffen auf dem Hof Coesfeld in Versmold‑Loxten → <a href="treffen-2026.html">Details ansehen</a></li>
+    </ul>
 </section>
 
-<div class="museum-hinweis">
-    <h2>Kleine Sammlung auf dem Hof Blanke</h2>
-    <p>
-        Neben den historischen Unimogs befindet sich auf dem Hof Blanke eine kleine private Sammlung
-        weiterer technischer und alltäglicher Gegenstände vergangener Jahrzehnte – darunter Geräte aus
-        Landwirtschaft, Haushalt, Werkstatt und Telefonie.
-    </p>
-    <p>
-        Die Ausstellung ist liebevoll gestaltet und ergänzt das Hauptthema der Unimog‑Geschichte.
-    </p>
-    <p>
-        <a href="museum.html"><strong>→ Zur Museumsseite</strong></a>
-    </p>
-</div>
-
 <footer>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px; font-family: Arial, sans-serif; color: #555;">
-        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
-            © 2026 UVC Regionalgruppe Emsland–Osnabrück
-        </p>
-
-        <p style="margin: 6px 0;">
-            <a href="hosting.html">Hosting & Technik</a> ·  
-            <a href="impressum.html">Impressum</a> ·  
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-
-        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
-            Besucher gesamt:  
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-        </p>
-    </div>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
+    <br>
+    <a href="hosting.html">Hosting & Technik</a> ·  
+    <a href="impressum.html">Impressum</a> ·  
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
