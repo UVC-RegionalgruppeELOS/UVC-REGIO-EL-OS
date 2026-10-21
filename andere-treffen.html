@@ -3,32 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andere Treffen – UVC Regionalgruppe Emsland–Osnabrück</title>
+    <title>Unimog‑Termine – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <meta name="description" content="Besuche der UVC Regionalgruppe Emsland–Osnabrück auf anderen Unimog- und Landtechnik-Treffen.">
-    <meta name="keywords" content="Unimog Treffen, Hattert, Nordhorn, Verl, UVC, Feldtage, MBtrac">
+    <meta name="description" content="Termine anderer Unimog‑Treffen für die UVC Regionalgruppe Emsland–Osnabrück.">
+    <meta name="keywords" content="Unimog Treffen, Kirchrinteln, Vennerberg, Friedeburg, MBtrac, Landtechnik">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #e5e5e5; line-height: 1.6; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
 
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: #2e5c2e; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
-        nav a:hover { color: #1f3b1f; text-decoration: underline; }
-        nav a:active, nav a:focus, nav a.current { color: #2e5c2e; outline: none; }
-        nav a:visited { color: #3b6b3b; }
+        header {
+            background: rgba(0,0,0,0.75);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
 
-        .menu-toggle { display: none; background: rgba(0,0,0,0.75); color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+        nav a {
+            color: #2e5c2e;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1f3b1f;
+            text-decoration: underline;
+        }
+
+        nav a.current {
+            color: #2e5c2e;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: rgba(0,0,0,0.75);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.85);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.05rem;
+            }
             nav.active { display: flex; }
         }
 
-        section { max-width: 900px; width: 90%; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
-        h1, h2 { color: #2e5c2e; }
+        section {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        h1, h2 {
+            color: #2e5c2e;
+            margin-top: 0;
+        }
 
         .treffen-box {
             background: #f8f8f8;
@@ -38,22 +96,35 @@
             border-radius: 6px;
         }
 
-        .treffen-box a {
+        .treffen-box strong {
+            color: #2e5c2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 2px solid #ccc;
+            margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer a {
             color: #2e5c2e;
             text-decoration: none;
+            font-size: 0.85rem;
         }
 
-        .treffen-box a:hover {
-            text-decoration: underline;
+        footer a:hover {
+            color: #1d3d1d;
         }
-
-        footer { text-align: center; padding: 25px 10px; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; margin-top: 40px; background: #e5e5e5; }
-        footer a { color: #2e5c2e; text-decoration: none; font-size: 0.85rem; }
-        footer a:hover { color: #1d3d1d; }
     </style>
 
     <script>
-        function toggleMenu() { document.getElementById("mainNav").classList.toggle("active"); }
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
     </script>
 </head>
 
@@ -61,6 +132,7 @@
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
@@ -68,7 +140,8 @@
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="andere-treffen.html" class="current">Andere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="unimog-termine.html" class="current">Unimog‑Termine</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
         <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
@@ -76,41 +149,39 @@
 </header>
 
 <section>
-    <h1>Andere Treffen</h1>
-    <p>Unsere Regionalgruppe besucht regelmäßig weitere Veranstaltungen rund um den Unimog und historische Landtechnik. Eine Auswahl:</p>
+    <h1>Unimog‑Termine anderer Vereine</h1>
+    <p>Hier findest du kommende Unimog‑Treffen in der Region und darüber hinaus – nach Datum sortiert.</p>
 
+    <!-- Kirchrinteln -->
     <div class="treffen-box">
-        <h2><a href="feldtag-nordhorn-2022.html">Historischer Feldtag 2022 – Nordhorn</a></h2>
-          </div>
-
-    <div class="treffen-box">
-        <h2><a href="hattert-2025.html">Sommertreffen Hattert 2025</a></h2>
+        <h2>Kirchrinteln – Termin 2027 folgt</h2>
+        <p><strong>Unimog & MBtrac Frühjahrs‑Treffen</strong><br>
+        Erwarteter Zeitraum: Mitte April 2027.</p>
     </div>
 
+    <!-- Vennerberg -->
     <div class="treffen-box">
-        <h2><a href="verltreffen2026.html">UVC Sommertreffen 2026 – Ostwestfalenhalle Kaunitz / Verl</a></h2>
+        <h2>Vennerberg – Termin 2027 folgt</h2>
+        <p><strong>Unimog & Landtechnik Treffen Vennerberg</strong><br>
+        Erwarteter Zeitraum: Anfang August 2027.</p>
     </div>
+
+    <!-- Friedeburg -->
+    <div class="treffen-box">
+        <h2>Friedeburg – Termin 2027 folgt</h2>
+        <p><strong>Unimog Treffen Ostfriesland</strong><br>
+        Erwarteter Zeitraum: September 2027.</p>
+    </div>
+
 </section>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px; font-family: Arial, sans-serif; color: #555;">
-        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
-            © 2026 UVC Regionalgruppe Emsland–Osnabrück
-        </p>
-
-        <p style="margin: 6px 0;">
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-
-        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
-            Besucher gesamt:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-        </p>
-    </div>
+    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
+    <p>
+        <a href="hosting.html">Hosting & Technik</a> ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
 </footer>
 
 </body>
