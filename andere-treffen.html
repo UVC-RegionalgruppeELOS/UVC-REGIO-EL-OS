@@ -36,9 +36,40 @@
 
         h1 { color: #2e5c2e; }
 
-        ul { list-style: none; padding-left: 0; }
-        li { margin-bottom: 10px; }
-        li strong { color: #2e5c2e; }
+        .termin-box {
+            background: #f7f7f7;
+            border-left: 5px solid #2e5c2e;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .termin-box img {
+            width: 22px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .termin-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2e5c2e;
+        }
+
+        .termin-date {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .termin-location {
+            margin-top: 5px;
+        }
+
+        .termin-note {
+            margin-top: 5px;
+            font-style: italic;
+            color: #555;
+        }
 
         footer {
             text-align: center;
@@ -81,27 +112,43 @@
     <h1>Termine 2026</h1>
     <p>Aktuelle Übersicht der geplanten Treffen und Veranstaltungen:</p>
 
-    <ul>
-        <li><strong>27.–30.05.</strong> 30 Jahre Oberbayerische Unimogfreunde und UCG‑Jahrestreffen in Golkofen bei Wolfratshausen</li>
-        <li><strong>09.–11.07.</strong> Unser Sommertreffen bei Spoida</li>
-        <li><strong>29.07.–01.08.</strong> Dülmen UVC‑Sommertreffen Dülmen‑Rorup</li>
-        <li><strong>27.–29.08.</strong> Der Berg ruft – Venner Berg (Termin ist offiziell noch nicht raus)</li>
-        <li><strong>03.–05.09.</strong> MB trac & Unimog Feldtage Kirchlinteln/Kreepen (Termin ist noch nicht offiziell raus)</li>
-        <li><strong>11.–12.09.</strong> Unimog & MB trac Treffen Friedeburg (Termin ist noch nicht offiziell raus)</li>
-    </ul>
+    <!-- 1 -->
+    <div class="termin-box">
+        <div class="termin-title">30 Jahre Oberbayerische Unimogfreunde & UCG‑Jahrestreffen</div>
+        <div class="termin-date">📅 27.–30.05.2026</div>
+        <div class="termin-location">📍 Golkofen bei Wolfratshausen</div>
+    </div>
 
-    <p style="margin-top:20px; font-style:italic;">
-    
-    </p>
-</section>
+    <!-- 2 -->
+    <div class="termin-box">
+        <div class="termin-title">Unser Sommertreffen bei Spoida</div>
+        <div class="termin-date">📅 09.–11.07.2026</div>
+        <div class="termin-location">📍 Spoida</div>
+    </div>
 
-<footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
-    <br>
-    <a href="hosting.html">Hosting & Technik</a> ·  
-    <a href="impressum.html">Impressum</a> ·  
-    <a href="datenschutz.html">Datenschutz</a>
-</footer>
+    <!-- 3 -->
+    <div class="termin-box">
+        <div class="termin-title">UVC‑Sommertreffen Dülmen‑Rorup</div>
+        <div class="termin-date">📅 29.07.–01.08.2026</div>
+        <div class="termin-location">📍 Dülmen‑Rorup</div>
+    </div>
 
-</body>
-</html>
+    <!-- 4 -->
+    <div class="termin-box">
+        <div class="termin-title">Der Berg ruft – Venner Berg</div>
+        <div class="termin-date">📅 27.–29.08.2026</div>
+        <div class="termin-note">Termin ist offiziell noch nicht raus</div>
+        <div class="termin-location">📍 Venner Berg</div>
+    </div>
+
+    <!-- 5 -->
+    <div class="termin-box">
+        <div class="termin-title">MB trac & Unimog Feldtage</div>
+        <div class="termin-date">📅 03.–05.09.2026</div>
+        <div class="termin-note">Termin ist noch nicht offiziell raus</div>
+        <div class="termin-location">📍 Kirchlinteln / Kreepen</div>
+    </div>
+
+    <!-- 6 -->
+    <div class="termin-box">
+        <div class="termin-title">Unimog & MB trac Treffen Friedeburg</div>
