@@ -67,12 +67,22 @@
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.9); border-top: 2px solid #ccc; padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; font-size: 1.05rem; }
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.9);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.05rem;
+            }
             nav.active { display: flex; }
         }
 
-        /* Weißer Block – identisch für Bild und Inhalt */
+        /* Weißer Block */
         .white-block {
             max-width: 1200px;
             width: 90%;
@@ -81,22 +91,22 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
             padding: 25px;
+
+            /* Bild sauber zentrieren */
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* horizontal mittig */
+            align-items: center;     /* vertikal mittig */
         }
 
-        /* Bild im weißen Block */
-     .white-block img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;       /* zeigt das ganze Bild */
-    object-position: 65% 60%;  /* leicht nach rechts und unten */
-    border-radius: 6px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    display: block;
-}
-
+        /* Bild */
+        .white-block img {
+            max-width: 95%;          /* Abstand zu den Rändern */
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            object-fit: contain;     /* alle Unimogs sichtbar */
+            margin-top: 20px;        /* leicht nach unten */
+        }
 
         h1, h2 {
             color: #2e5c2e;
@@ -172,7 +182,7 @@
         <a href="unsere-treffen.html">Unsere Treffen</a>
         <a href="andere-treffen.html">Andere Treffen</a>
         <a href="bildlaufleisten.html">Bildlaufleisten</a>
-        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="weiterführende-links.html">Weiterführende Links</a>
         <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
