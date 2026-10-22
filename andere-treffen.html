@@ -10,23 +10,82 @@
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
 
-        header { background: rgba(0,0,0,0.85); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: #2e5c2e; margin: 0 12px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: color 0.3s; }
-        nav a:hover { color: #1b3b1b; }
+        /* Header */
+        header {
+            background: rgba(0,0,0,0.85);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
 
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+        /* PC-Menü: weiß */
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2e5c2e;
+        }
+
+        /* Handy-Menü: grün */
+        @media (max-width: 899px) {
+            nav a {
+                color: #2e5c2e;
+            }
+            nav a:hover {
+                color: #1b3b1b;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.9); border-top: 2px solid #ccc; padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; font-size: 1.05rem; color: #2e5c2e; }
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.9);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.05rem;
+            }
             nav.active { display: flex; }
         }
 
+        /* Weißer Block */
         section {
             max-width: 900px;
+            width: 90%;
             margin: 40px auto;
             padding: 25px;
             background: white;
@@ -34,7 +93,9 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
-        h1 { color: #2e5c2e; }
+        h1 {
+            color: #2e5c2e;
+        }
 
         .termin-box {
             background: #f7f7f7;
@@ -59,12 +120,6 @@
             margin-top: 5px;
         }
 
-        .termin-note {
-            margin-top: 5px;
-            font-style: italic;
-            color: #555;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -75,8 +130,15 @@
             background: #e5e5e5;
         }
 
-        footer a { color: #777; text-decoration: none; font-size: 0.85rem; }
-        footer a:hover { color: #2e5c2e; }
+        footer a {
+            color: #777;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: #2e5c2e;
+        }
     </style>
 
     <script>
@@ -106,7 +168,7 @@
 </header>
 
 <section>
-    <h1>Termine 2026</h1>
+    <h1>Termine 2026 & 2027</h1>
     <p>Aktuelle Übersicht der geplanten Treffen und Veranstaltungen:</p>
 
     <div class="termin-box">
@@ -124,23 +186,28 @@
     <div class="termin-box">
         <div class="termin-title">Der Berg ruft – Venner Berg</div>
         <div class="termin-date">📅 27.–29.08.2026</div>
-        <div class="termin-note">Termin ist offiziell noch nicht raus</div>
         <div class="termin-location">📍 Venner Berg</div>
     </div>
 
     <div class="termin-box">
         <div class="termin-title">MB trac & Unimog Feldtage</div>
         <div class="termin-date">📅 03.–05.09.2026</div>
-        <div class="termin-note">Termin ist noch nicht offiziell raus</div>
         <div class="termin-location">📍 Kirchlinteln / Kreepen</div>
     </div>
 
     <div class="termin-box">
         <div class="termin-title">Unimog & MB trac Treffen Friedeburg</div>
         <div class="termin-date">📅 11.–12.09.2026</div>
-        <div class="termin-note">Termin ist noch nicht offiziell raus</div>
         <div class="termin-location">📍 Friedeburg</div>
     </div>
+
+    <!-- Neuer Termin 2027 -->
+    <div class="termin-box">
+        <div class="termin-title">UVC‑Jahreshauptversammlung</div>
+        <div class="termin-date">📅 07.03.2027</div>
+        <div class="termin-location">📍 Aschenberg</div>
+    </div>
+
 </section>
 
 <footer>
