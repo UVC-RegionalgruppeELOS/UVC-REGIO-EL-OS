@@ -1,120 +1,185 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weiterführende Links – UVC Regionalgruppe Emsland–Osnabrück</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weiterführende Links – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-<style>
-    body { margin:0; font-family:Arial, sans-serif; background:#e5e5e5; color:#222; line-height:1.6; }
+    <meta name="description" content="Weiterführende Links und Musikvideos rund um den Unimog der UVC Regionalgruppe Emsland–Osnabrück.">
+    <meta name="keywords" content="UVC, Unimog, Musik, Links, Stellplätze, Regionalgruppe, Emsland, Osnabrück">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    /* Header */
-    header {
-        background: rgba(0,0,0,0.75);
-        padding: 15px;
-        text-align: center;
-        border-bottom: 2px solid #ccc;
-        position: relative;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #222;
+            line-height: 1.6;
+        }
 
-    /* Desktop Navigation */
-    nav a {
-        color: rgba(255,255,255,0.92);
-        margin: 0 12px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 0.95rem;
-    }
-
-    nav a:hover {
-        color: #2e5c2e;
-    }
-
-    /* Berliner Menü Button */
-    .menu-toggle {
-        display: none;
-        background: #2e5c2e;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        border-radius: 4px;
-        position: absolute;
-        left: 15px;
-        top: 15px;
-    }
-
-    /* Mobile Navigation */
-    @media (max-width: 899px) {
-        .menu-toggle { display: block; }
-
-        nav {
-            display: none;
-            flex-direction: column;
+        /* Header */
+        header {
             background: rgba(0,0,0,0.85);
-            border-top: 2px solid #ccc;
-            padding: 10px 0;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            position: relative;
         }
 
+        /* PC-Menü: weiß */
         nav a {
-            display: block;
-            margin: 10px 0;
-            font-size: 1.05rem;
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
 
-        nav.active { display: flex; }
-    }
+        nav a:hover {
+            color: #2e5c2e;
+        }
 
-    /* Content */
-    .container { max-width:900px; margin:30px auto; background:white; padding:25px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.15); }
-    h1, h2 { color:#2e5c2e; }
-    .linkbox { background:#f4f8f4; border-left:4px solid #4f7a4f; padding:15px 20px; margin:25px 0; border-radius:4px; }
-    a { color:#2e5c2e; font-weight:bold; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    button { background:#2e5c2e; color:white; border:none; padding:6px 12px; border-radius:4px; cursor:pointer; }
-    button:hover { background:#3f7a3f; }
-    .counter { margin-left:10px; font-weight:bold; color:#2e5c2e; }
+        /* Handy-Menü: grün */
+        @media (max-width: 899px) {
+            nav a {
+                color: #2e5c2e;
+            }
+            nav a:hover {
+                color: #1b3b1b;
+            }
+        }
 
-    /* Footer – neue Version */
-    footer {
-        text-align:center;
-        padding:20px;
-        color:#444;
-        font-size:0.9rem;
-        border-top:2px solid #ccc;
-        margin-top:40px;
-        background:#e5e5e5;
-    }
+        .menu-toggle {
+            display: none;
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
 
-    footer a {
-        color:#2e5c2e;
-        text-decoration:none;
-        font-size:0.85rem;
-    }
+        @media (max-width: 899px) {
+            .menu-toggle { display: block; }
+            nav {
+                display: none;
+                flex-direction: column;
+                background: rgba(0,0,0,0.9);
+                border-top: 2px solid #ccc;
+                padding: 10px 0;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.05rem;
+            }
+            nav.active { display: flex; }
+        }
 
-    footer a:hover {
-        color:#1d3d1d;
-    }
-</style>
+        /* Weißer Block */
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
 
-<script>
-function toggleMenu() {
-    document.getElementById("mainNav").classList.toggle("active");
-}
+        h1, h2 {
+            color: #2e5c2e;
+        }
 
-function vote(id) {
-    const counter = document.getElementById(id);
-    counter.innerText = parseInt(counter.innerText) + 1;
-}
-</script>
+        .linkbox {
+            background: #f7f7f7;
+            border-left: 5px solid #2e5c2e;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .linkbox a {
+            color: #2e5c2e;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .linkbox a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        button {
+            background: #2e5c2e;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+
+        button:hover {
+            background: #3f7a3f;
+        }
+
+        .counter {
+            margin-left: 10px;
+            font-weight: bold;
+            color: #2e5c2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9rem;
+            border-top: 2px solid #ccc;
+            margin-top: 40px;
+            background: #e5e5e5;
+        }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: #2e5c2e;
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+
+        function vote(id) {
+            const counter = document.getElementById(id);
+            counter.innerText = parseInt(counter.innerText) + 1;
+        }
+    </script>
 </head>
 
 <body>
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
-
     <nav id="mainNav">
         <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
@@ -122,7 +187,7 @@ function vote(id) {
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="weiterführende-links.html">Weiterführende Links</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
@@ -135,33 +200,43 @@ function vote(id) {
     <div class="linkbox">
         <h2>Stellplätze für Unimogreisende</h2>
         <p>Eine Karte mit kostenlosen Übernachtungsplätzen für Unimogreisende.</p>
-        <p><a href="https://www.google.com/maps/d/viewer?mid=1KPostZkgIq2kmOL44_uf8UQ-0hF_p8CH&ll=46.819716644443496,11.192041249999996&z=5" target="_blank" rel="noopener">➜ Karte öffnen</a></p>
+        <p>
+            <a href="https://www.google.com/maps/d/viewer?mid=1KPostZkgIq2kmOL44_uf8UQ-0hF_p8CH&ll=46.819716644443496,11.192041249999996&z=5"
+               target="_blank" rel="noopener">
+               ➜ Karte öffnen
+            </a>
+        </p>
     </div>
 
     <!-- Rubrik 2 -->
     <div class="linkbox">
         <h2>Unimog‑Lieder & Musikvideos</h2>
-        <p>Alle Links wurden überprüft und funktionieren jetzt zuverlässig.</p>
+        <p>Ausgewählte Musikvideos rund um den Unimog – alle funktionieren zuverlässig.</p>
 
         <ul>
             <li>
-                🎵 <a href="https://youtu.be/pe8ZGbIO0Cc?si=NRBgqFurib8IlG1a" target="_blank" rel="noopener">Unimog – Der Alleskönner</a>
+                🎵 <a href="https://www.youtube.com/watch?v=pe8ZGbIO0Cc" target="_blank" rel="noopener">Unimog – Der Alleskönner</a>
                 <button onclick="vote('v1')">👍</button><span class="counter" id="v1">0</span>
             </li>
 
             <li>
-                🎵 <a href="https://youtu.be/SL1PZTvxN88?si=BnrysGn2irld" target="_blank" rel="noopener">Unimog‑Oldtimer auf Tour</a>
+                🎵 <a href="https://www.youtube.com/watch?v=NDsQAhSk-Do" target="_blank" rel="noopener">Unimog Fieber</a>
                 <button onclick="vote('v2')">👍</button><span class="counter" id="v2">0</span>
             </li>
 
             <li>
-                🎵 <a href="https://youtu.be/8YYv8S9oOJY?si=nSbwNVIYQZYpStQD" target="_blank" rel="noopener">Unimog‑Song – Klassiker der Straße</a>
+                🎵 <a href="https://www.youtube.com/watch?v=nmzAKt6ReSc" target="_blank" rel="noopener">Unimog – Der Klassiker</a>
                 <button onclick="vote('v3')">👍</button><span class="counter" id="v3">0</span>
             </li>
 
             <li>
-                🎵 <a href="https://youtu.be/uyLT9KYWXbU?si=goHFcxXte4" target="_blank" rel="noopener">Unimog – Kraft und Herz</a>
-                <button onclick="vote('v6')">👍</button><span class="counter" id="v6">0</span>
+                🎵 <a href="https://www.youtube.com/watch?v=uyLT9KYWxbU" target="_blank" rel="noopener">Unimog – Kraft und Herz</a>
+                <button onclick="vote('v4')">👍</button><span class="counter" id="v4">0</span>
+            </li>
+
+            <li>
+                🎵 <a href="https://www.youtube.com/watch?v=sx8cZMy-PF4" target="_blank" rel="noopener">Unimog – Der Klang der Arbeit</a>
+                <button onclick="vote('v5')">👍</button><span class="counter" id="v5">0</span>
             </li>
         </ul>
     </div>
@@ -175,9 +250,10 @@ function vote(id) {
 </div>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück · 
-    <a href="hosting.html" rel="noopener">Hosting</a> · 
-    <a href="impressum.html" rel="noopener">Impressum</a> · 
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
+    <br>
+    <a href="hosting.html" rel="noopener">Hosting & Technik</a> ·
+    <a href="impressum.html" rel="noopener">Impressum</a> ·
     <a href="datenschutz.html" rel="noopener">Datenschutz</a>
 </footer>
 
