@@ -28,43 +28,30 @@
 
         /* Header */
         header {
-            background: rgba(0,0,0,0.75);
+            background: rgba(0,0,0,0.85);
             padding: 15px;
             text-align: center;
             border-bottom: 2px solid #ccc;
             position: relative;
         }
 
-        /* PC-Menü: weiß */
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
-            display: inline-block;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
 
         nav a:hover {
             color: #2e5c2e;
         }
 
-        /* Handy-Menü: grün */
-        @media (max-width: 899px) {
-            nav a {
-                color: #2e5c2e;
-            }
-            nav a:hover {
-                color: #1b3b1b;
-            }
-        }
-
-        nav a.current {
-            color: #2e5c2e;
-        }
-
+        /* Handy-Menü */
         .menu-toggle {
             display: none;
-            background: rgba(0,0,0,0.75);
+            background: #2e5c2e;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -81,32 +68,32 @@
             nav {
                 display: none;
                 flex-direction: column;
-                background: rgba(0,0,0,0.85);
+                background: rgba(0,0,0,0.9);
                 border-top: 2px solid #ccc;
                 padding: 10px 0;
             }
-            nav a { display: block; margin: 10px 0; font-size: 1.05rem; }
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.05rem;
+                color: #2e5c2e;
+            }
             nav.active { display: flex; }
         }
 
-        /* Weiße Inhaltsblöcke */
-        .logo-bereich,
-        section,
-        .museum-hinweis {
+        /* Weißer Hauptblock */
+        section, .logo-bereich, .museum-hinweis {
             max-width: 900px;
             width: 90%;
             margin: 40px auto;
             background: white;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            padding: 25px;
         }
 
         .logo-bereich {
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         .logo-bereich img {
@@ -117,46 +104,55 @@
             margin: 0 auto;
         }
 
-        h1, h2 { color: #2e5c2e; }
-
-        a { color: #2e5c2e; text-decoration: none; transition: color 0.2s ease; }
-        a:hover { color: #1f3b1f; text-decoration: underline; }
-
-        .yearlink { font-weight: bold; }
-
-        .dachverband {
-            background: #f9f9f9;
-            border-left: 4px solid #888;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
+        h1, h2 {
+            color: #2e5c2e;
         }
 
-        .regionalgruppe {
-            background: #f4f8f4;
-            border-left: 4px solid #4f7a4f;
+        a {
+            color: #2e5c2e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Graue Kästen mit grüner Linie links */
+        .box {
+            background: #f7f7f7;
+            border-left: 5px solid #2e5c2e;
             padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
         }
 
         footer {
             text-align: center;
-            padding: 25px 10px;
-            color: #555;
+            padding: 20px;
+            color: #444;
             font-size: 0.9rem;
-            border-top: 1px solid #ccc;
+            border-top: 2px solid #ccc;
             margin-top: 40px;
             background: #e5e5e5;
         }
 
         footer a {
-            color: #2e5c2e;
+            color: #777;
             text-decoration: none;
             font-size: 0.85rem;
         }
 
-        footer a:hover { color: #1d3d1d; }
+        footer a:hover {
+            color: #2e5c2e;
+        }
     </style>
 
     <script>
@@ -171,7 +167,7 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html" class="current"><strong>Start</strong></a>
+        <a href="index.html"><strong>Start</strong></a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
@@ -192,86 +188,44 @@
 <section>
     <h1>Willkommen bei der UVC Regionalgruppe Emsland–Osnabrück</h1>
 
-    <div class="dachverband">
+    <div class="box">
         <p>
             Der <strong><a href="https://u-v-c.de/about/" target="_blank" rel="noopener">UVC – Unimog Veteranen Club e. V.</a></strong>
             ist ein Verein für Liebhaber historischer Unimog‑Fahrzeuge. Er richtet sich besonders an Besitzer, Fahrer und Fans.
         </p>
     </div>
 
-    <div class="regionalgruppe">
+    <div class="box">
         <p>
             Mit der Gründung unserer <strong>UVC – Regionalgruppe Emsland–Osnabrück</strong> im Jahr 2026 haben wir
             einen Treffpunkt geschaffen, an dem Enthusiasten zusammenkommen, sich austauschen und gemeinsame Aktivitäten planen.
         </p>
     </div>
 
-    <h2>Wie unsere Regionalgruppe entstanden ist</h2>
+    <div class="box">
+        <h2>Wie unsere Regionalgruppe entstanden ist</h2>
 
-    <p>Unsere Gruppe entstand aus dem Zusammenschluss zweier kleiner Gruppen:</p>
+        <p>Unsere Gruppe entstand aus dem Zusammenschluss zweier kleiner Gruppen:</p>
 
-    <ul>
-        <li>Eine Gruppe bildete sich über Jahre hinweg rund um <strong>Philipp</strong>.</li>
-        <li>Die zweite Gruppe entstand auf den <strong>MBtrac + Unimog Feldtagen 2022</strong>.</li>
-    </ul>
+        <ul>
+            <li>Eine Gruppe bildete sich über Jahre hinweg rund um <strong>Philipp</strong>.</li>
+            <li>Die zweite Gruppe entstand auf den <strong>MBtrac + Unimog Feldtagen 2022</strong>.</li>
+        </ul>
 
-    <p>Aus diesen beiden Kreisen entwickelte sich eine feste Gemeinschaft mit ersten gemeinsamen Treffen:</p>
+        <p>Aus diesen beiden Kreisen entwickelte sich eine feste Gemeinschaft mit ersten gemeinsamen Treffen:</p>
 
-    <ul>
-        <li>
-            <strong><a class="yearlink" href="2023.jpg" target="_blank" rel="noopener">2023</a>:</strong>
-            Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen
-            → <a href="treffen-2023.html">Details ansehen</a>
-        </li>
-        <li>
-            <strong><a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:</strong>
-            Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen
-            → <a href="treffen-2024.html">Details ansehen</a>
-        </li>
-        <li>
-            <strong><a class="yearlink" href="2025.jpg" target="_blank" rel="noopener">2025</a>:</strong>
-            Drittes Treffen auf dem Hof Hense in Baccum
-            → <a href="treffen-2025.html">Details ansehen</a>
-        </li>
-    </ul>
-
-    <p>
-        Am <strong>12.04.2026</strong> folgte der nächste logische Schritt:
-        die <strong><a class="yearlink" href="gruendung-2026.html">Gründung</a></strong> der
-        <strong>UVC Regionalgruppe Emsland–Osnabrück</strong> auf dem Hof Blanke in Bad Laer Müschen.
-    </p>
-
-    <ul>
-        <li>
-            <strong><a class="yearlink" href="2026.jpeg" target="_blank" rel="noopener">2026</a>:</strong>
-            Viertes Treffen auf dem Hof Coesfeld in Versmold‑Loxten
-            → <a href="treffen-2026.html">Details ansehen</a>
-        </li>
-    </ul>
-</section>
-
-<div class="museum-hinweis">
-    <h2>Kleine Sammlung auf dem Hof Blanke</h2>
-    <p>
-        Neben den historischen Unimogs befindet sich auf dem Hof Blanke eine kleine private Sammlung
-        weiterer technischer und alltäglicher Gegenstände vergangener Jahrzehnte – darunter Geräte aus
-        Landwirtschaft, Haushalt, Werkstatt und Telefonie.
-    </p>
-    <p>
-        Die Ausstellung ist liebevoll gestaltet und ergänzt das Hauptthema der Unimog‑Geschichte.
-    </p>
-    <p>
-        <a href="museum.html"><strong>→ Zur Museumsseite</strong></a>
-    </p>
-</div>
-
-<footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
-    <br>
-    <a href="hosting.html">Hosting & Technik</a> ·  
-    <a href="impressum.html">Impressum</a> ·  
-    <a href="datenschutz.html">Datenschutz</a>
-</footer>
-
-</body>
-</html>
+        <ul>
+            <li>
+                <strong><a class="yearlink" href="2023.jpg" target="_blank" rel="noopener">2023</a>:</strong>
+                Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen
+                → <a href="treffen-2023.html">Details ansehen</a>
+            </li>
+            <li>
+                <strong><a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:</strong>
+                Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen
+                → <a href="treffen-2024.html">Details ansehen</a>
+            </li>
+            <li>
+                <strong><a class="yearlink" href="2025.jpg" target="_blank" rel="noopener">2025</a>:</strong>
+                Drittes Treffen auf dem Hof Hense in Baccum
+                → <a href="treffen-2025.html">Details ansehen
