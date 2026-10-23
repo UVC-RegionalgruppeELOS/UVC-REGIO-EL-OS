@@ -9,24 +9,18 @@
     <meta name="keywords" content="Unimog, Stammtisch, Treffen, UVC, Regionalgruppe, Emsland, Osnabrück, Oldtimer, Gemeinschaft, Unimog Veteranen Club">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <meta property="og:title" content="Stammtisch – UVC Regionalgruppe Emsland–Osnabrück">
-    <meta property="og:description" content="Informationen zum Stammtisch der UVC Regionalgruppe Emsland–Osnabrück. Austausch, Technik, Gemeinschaft und Unimog-Leidenschaft.">
-    <meta property="og:image" content="stammtisch.png">
-    <meta property="og:type" website>
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #222;
             background: #e5e5e5;
+            color: #222;
             line-height: 1.6;
         }
 
+        /* Header */
         header {
-            background: rgba(0,0,0,0.75);
+            background: rgba(0,0,0,0.85);
             padding: 15px;
             text-align: center;
             border-bottom: 2px solid #ccc;
@@ -34,17 +28,19 @@
         }
 
         nav a {
-            color: rgba(255,255,255,0.92);
+            color: white;
             margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
             font-size: 0.95rem;
+            transition: color 0.3s;
         }
 
         nav a:hover {
             color: #2e5c2e;
         }
 
+        /* Handy-Menü */
         .menu-toggle {
             display: none;
             background: #2e5c2e;
@@ -61,38 +57,47 @@
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-
             nav {
                 display: none;
                 flex-direction: column;
-                background: rgba(0,0,0,0.85);
+                background: rgba(0,0,0,0.9);
                 border-top: 2px solid #ccc;
                 padding: 10px 0;
             }
-
             nav a {
                 display: block;
                 margin: 10px 0;
                 font-size: 1.05rem;
+                color: #2e5c2e;
             }
-
             nav.active { display: flex; }
         }
 
+        /* Weißer Hauptblock */
         .container {
             max-width: 900px;
-            margin: 30px auto;
-            padding: 25px;
+            width: 90%;
+            margin: 40px auto;
             background: white;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
         h1, h2 {
             color: #2e5c2e;
-            margin-top: 0;
         }
 
+        /* Graue Kästen mit grüner Linie links */
+        .box {
+            background: #f7f7f7;
+            border-left: 5px solid #2e5c2e;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        /* Bild */
         .stammtisch-img {
             display: block;
             margin: 25px auto 35px auto;
@@ -101,10 +106,11 @@
             box-shadow: 0 0 6px rgba(0,0,0,0.25);
         }
 
+        /* Tabelle */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         th, td {
@@ -126,6 +132,7 @@
             text-decoration: underline;
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -175,65 +182,68 @@
 </header>
 
 <div class="container">
+
     <h1>Unser Stammtisch</h1>
 
     <img src="stammtisch.png" alt="Stammtisch der UVC Regionalgruppe Emsland–Osnabrück" class="stammtisch-img">
 
-    <h2>Treffpunkt</h2>
-    <p>
-        Unser Stammtisch findet in der <strong>Gaststätte Urban</strong> statt:<br>
-        <strong>Hasberger Straße 13, 49504 Lotte</strong>.
-    </p>
+    <!-- Treffpunkt -->
+    <div class="box">
+        <h2>Treffpunkt</h2>
+        <p>
+            Unser Stammtisch findet in der <strong>Gaststätte Urban</strong> statt:<br>
+            <strong>Hasberger Straße 13, 49504 Lotte</strong>.
+        </p>
+        <p>
+            Die Betreiber sind <strong>bodenständig, herzlich und absolut unkompliziert</strong> – genau die richtige Umgebung für gute Gespräche über Technik, Treffen und natürlich den Unimog.
+        </p>
+        <p>
+            Die Speisekarte ist bewusst <strong>minimalistisch</strong> gehalten und bietet vor allem klassische Gerichte wie <strong>Pommes und Schnitzel</strong>.
+        </p>
+        <p style="color:#b22222; font-weight:bold;">
+            Bitte beachten: In der Gaststätte Urban ist <u>nur Barzahlung</u> möglich.
+        </p>
+        <p style="color:#b22222; font-weight:bold;">
+            Zusätzlich wichtig: <u>Es steht kein WLAN zur Verfügung</u>.
+        </p>
+        <p style="color:#b22222; font-weight:bold; margin-top:20px;">
+            Hinweis: Der Stammtisch am <strong>09.04.2027</strong> findet <u>nicht</u> im Urban statt.  
+            Die alternative Gaststätte wird noch bekannt gegeben.
+        </p>
+    </div>
 
-    <p>
-        Die Betreiber sind <strong>bodenständig, herzlich und absolut unkompliziert</strong> – genau die richtige Umgebung für gute Gespräche über Technik, Treffen und natürlich den Unimog.
-    </p>
+    <!-- Termine -->
+    <div class="box">
+        <h2>Termine</h2>
+        <p>
+            Unser Stammtisch findet an jedem <strong>zweiten Freitag eines Quartals</strong> statt – jeweils ab <strong>19:30 Uhr</strong>.
+        </p>
 
-    <p>
-        Die Speisekarte ist bewusst <strong>minimalistisch</strong> gehalten und bietet vor allem klassische Gerichte wie <strong>Pommes und Schnitzel</strong>.
-    </p>
+        <table>
+            <tr><th>Quartal</th><th>Datum</th><th>Uhrzeit</th></tr>
 
-    <p style="color:#b22222; font-weight:bold;">
-        Bitte beachten: In der Gaststätte Urban ist <u>nur Barzahlung</u> möglich.
-    </p>
+            <tr><td>Q4/2026</td><td>09.10.2026</td><td>19:30 Uhr</td></tr>
+            <tr><td>Q1/2027</td><td>08.01.2027</td><td>19:30 Uhr</td></tr>
 
-    <p style="color:#b22222; font-weight:bold;">
-        Zusätzlich wichtig: <u>Es steht kein WLAN zur Verfügung</u>.
-    </p>
+            <tr>
+                <td>Q2/2027</td>
+                <td>
+                    09.04.2027<br>
+                    <span style="color:#b22222; font-weight:bold;">Nicht im Urban – neuer Treffpunkt folgt</span>
+                </td>
+                <td>19:30 Uhr</td>
+            </tr>
 
-    <p style="color:#b22222; font-weight:bold; margin-top:20px;">
-        Hinweis: Der Stammtisch am <strong>09.04.2027</strong> findet <u>nicht</u> in der Gaststätte Urban statt.
-        Die alternative Gaststätte wird noch bekannt gegeben.
-    </p>
+            <tr><td>Q3/2027</td><td>09.07.2027</td><td>19:30 Uhr</td></tr>
+            <tr><td>Q4/2027</td><td>15.10.2027</td><td>19:30 Uhr</td></tr>
 
-    <h2>Termine</h2>
-    <p>
-        Unser Stammtisch findet an jedem <strong>zweiten Freitag eines Quartals</strong> statt – jeweils ab <strong>19:30 Uhr</strong>.
-    </p>
+            <tr><td>Q1/2028</td><td>14.01.2028</td><td>19:30 Uhr</td></tr>
+            <tr><td>Q2/2028</td><td>14.04.2028</td><td>19:30 Uhr</td></tr>
+            <tr><td>Q3/2028</td><td>14.07.2028</td><td>19:30 Uhr</td></tr>
+            <tr><td>Q4/2028</td><td>13.10.2028</td><td>19:30 Uhr</td></tr>
+        </table>
+    </div>
 
-    <table>
-        <tr><th>Quartal</th><th>Datum</th><th>Uhrzeit</th></tr>
-
-        <tr><td>Q4/2026</td><td>09.10.2026</td><td>19:30 Uhr</td></tr>
-        <tr><td>Q1/2027</td><td>08.01.2027</td><td>19:30 Uhr</td></tr>
-
-        <tr>
-            <td>Q2/2027</td>
-            <td>
-                09.04.2027<br>
-                <span style="color:#b22222; font-weight:bold;">Nicht im Urban – neuer Treffpunkt folgt</span>
-            </td>
-            <td>19:30 Uhr</td>
-        </tr>
-
-        <tr><td>Q3/2027</td><td>09.07.2027</td><td>19:30 Uhr</td></tr>
-        <tr><td>Q4/2027</td><td>15.10.2027</td><td>19:30 Uhr</td></tr>
-
-        <tr><td>Q1/2028</td><td>14.01.2028</td><td>19:30 Uhr</td></tr>
-        <tr><td>Q2/2028</td><td>14.04.2028</td><td>19:30 Uhr</td></tr>
-        <tr><td>Q3/2028</td><td>14.07.2028</td><td>19:30 Uhr</td></tr>
-        <tr><td>Q4/2028</td><td>13.10.2028</td><td>19:30 Uhr</td></tr>
-    </table>
 </div>
 
 <footer>
