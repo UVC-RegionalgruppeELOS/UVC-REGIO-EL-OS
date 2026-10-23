@@ -9,14 +9,6 @@
     <meta name="keywords" content="Unimog, UVC, Veteranen Club, Emsland, Osnabrück, Oldtimer, Treffen, Regionalgruppe, Unimog Treffen, MBtrac, Feldtage, historische Fahrzeuge">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <meta property="og:title" content="UVC Regionalgruppe Emsland–Osnabrück">
-    <meta property="og:description" content="Unimog Veteranen Club Regionalgruppe Emsland–Osnabrück: Treffen, Technik, Geschichte und Gemeinschaft rund um historische Unimogs.">
-    <meta property="og:image" content="PLATZHALTER-UNIMOG.jpg">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/">
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <style>
         body {
             margin: 0;
@@ -48,7 +40,6 @@
             color: #2e5c2e;
         }
 
-        /* Handy-Menü */
         .menu-toggle {
             display: none;
             background: #2e5c2e;
@@ -82,7 +73,7 @@
         }
 
         /* Weißer Hauptblock */
-        section, .logo-bereich, .museum-hinweis {
+        section, .logo-bereich, .museum-block {
             max-width: 900px;
             width: 90%;
             margin: 40px auto;
@@ -104,6 +95,14 @@
             margin: 0 auto;
         }
 
+        /* Besucherzähler */
+        .counter {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #2e5c2e;
+            text-align: center;
+        }
+
         h1, h2 {
             color: #2e5c2e;
         }
@@ -117,7 +116,6 @@
             text-decoration: underline;
         }
 
-        /* Graue Kästen mit grüner Linie links */
         .box {
             background: #f7f7f7;
             border-left: 5px solid #2e5c2e;
@@ -126,13 +124,8 @@
             border-radius: 6px;
         }
 
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
 
         footer {
             text-align: center;
@@ -159,6 +152,15 @@
         function toggleMenu() {
             document.getElementById("mainNav").classList.toggle("active");
         }
+
+        // Besucherzähler
+        document.addEventListener("DOMContentLoaded", function() {
+            const counterElement = document.getElementById("visitorCount");
+            let count = localStorage.getItem("visitorCount") || 0;
+            count++;
+            localStorage.setItem("visitorCount", count);
+            counterElement.textContent = "Besucherzähler: " + count;
+        });
     </script>
 </head>
 
@@ -183,6 +185,7 @@
 
 <div class="logo-bereich">
     <img src="Logo mit Schriftzug.jpg" alt="Unimog Stammtisch Emsland–Osnabrück Logo">
+    <div class="counter" id="visitorCount">Besucherzähler: wird geladen...</div>
 </div>
 
 <section>
@@ -220,12 +223,7 @@
                 Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen
                 → <a href="treffen-2023.html">Details ansehen</a>
             </li>
-            <li>
-                <strong><a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:</strong>
-                Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen
-                → <a href="treffen-2024.html">Details ansehen</a>
-            </li>
-                   <li>
+                  <li>
             <strong>
                 <a class="yearlink" href="2024.jpg" target="_blank" rel="noopener">2024</a>:
             </strong>
@@ -260,7 +258,7 @@
 </div>
 </section>
 
-<div class="museum-hinweis box">
+<div class="museum-block">
     <h2>Kleine Sammlung auf dem Hof Blanke</h2>
     <p>
         Neben den historischen Unimogs befindet sich auf dem Hof Blanke eine kleine private Sammlung
@@ -270,7 +268,7 @@
     <p>
         Die Ausstellung ist liebevoll gestaltet und ergänzt das Hauptthema der Unimog‑Geschichte.
     </p>
-    <p>
+    <p style="text-align:center;">
         <a href="museum.html"><strong>→ Zur Museumsseite</strong></a>
     </p>
 </div>
