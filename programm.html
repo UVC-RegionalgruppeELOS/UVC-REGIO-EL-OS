@@ -70,6 +70,24 @@
             nav.active { display: flex; }
         }
 
+        /* Neuer freistehender Bildblock */
+        .programmbild-full {
+            text-align: center;
+            background: white;
+            padding: 25px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            margin: 40px auto;
+            max-width: 95%;
+        }
+
+        .programmbild-full img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            border-radius: 8px;
+        }
+
         section {
             max-width: 900px;
             width: 90%;
@@ -93,19 +111,6 @@
         a:hover {
             color: #1b3b1b;
             text-decoration: underline;
-        }
-
-        .programmbild-wrapper {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        .programmbild {
-            max-width: 90%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            display: inline-block;
         }
 
         .box {
@@ -166,14 +171,13 @@
     </nav>
 </header>
 
+<!-- Freistehender Bildblock -->
+<div class="programmbild-full">
+    <img src="programm.png" alt="Unimog‑Treffen im Steinbruch Bad Laer">
+</div>
+
 <section>
     <h1>Unser Programm</h1>
-
-    <div class="programmbild-wrapper">
-        <img src="programm.png"
-             alt="Unimog‑Treffen im Steinbruch Bad Laer"
-             class="programmbild">
-    </div>
 
     <div class="box">
         <h2>Schwerpunkte unseres Jahresprogramms</h2>
