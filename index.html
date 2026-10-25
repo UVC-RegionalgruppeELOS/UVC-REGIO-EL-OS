@@ -9,6 +9,8 @@
     <meta name="keywords" content="Unimog, UVC, Veteranen Club, Emsland, Osnabrück, Oldtimer, Treffen, Regionalgruppe, Unimog Treffen, MBtrac, Feldtage, historische Fahrzeuge">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <style>
         body {
             margin: 0;
@@ -93,13 +95,6 @@
             margin: 0 auto;
         }
 
-        .counter {
-            margin-top: 10px;
-            font-size: 0.9rem;
-            color: #2e5c2e;
-            text-align: center;
-        }
-
         h1, h2, h3 {
             color: #2e5c2e;
         }
@@ -143,13 +138,20 @@
         }
 
         footer a {
-            color: #777;
+            color: #2e5c2e;
             text-decoration: none;
             font-size: 0.85rem;
         }
 
         footer a:hover {
-            color: #2e5c2e;
+            color: #1b3b1b;
+        }
+
+        /* Besucherzähler dezenter */
+        .counter {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 8px;
         }
     </style>
 
@@ -157,15 +159,6 @@
         function toggleMenu() {
             document.getElementById("mainNav").classList.toggle("active");
         }
-
-        // Besucherzähler
-        document.addEventListener("DOMContentLoaded", function() {
-            const counterElement = document.getElementById("visitorCount");
-            let count = localStorage.getItem("visitorCount") || 0;
-            count++;
-            localStorage.setItem("visitorCount", count);
-            counterElement.textContent = "Besucherzähler: " + count;
-        });
     </script>
 </head>
 
@@ -228,16 +221,10 @@
             <li><strong>2025:</strong> Drittes Treffen auf dem Hof Hense in Baccum → <a href="treffen-2025.html">Details ansehen</a></li>
         </ul>
 
-              <p>
+        <p>
             Am <strong>12.04.2026</strong> folgte der nächste logische Schritt:
             die <strong><a href="gruendung-2026.html">Gründung</a></strong> der
-            <strong>UVC Regionalgruppe Emsland–Osnabrück</strong> auf dem Hof Blanke in Bad Laer Müschen.
-        </p>
-
-        <p>
-            Am <strong>09.10.2026</strong> fand unser erster öffentlicher Stammtisch in der
-            <strong>Gaststätte Urban, Hasberger Straße 13 in 49504 Lotte</strong> statt.
-            Seitdem treffen wir uns regelmäßig einmal pro Quartal zum Austausch und zur Planung gemeinsamer Aktivitäten.
+                     <strong>UVC Regionalgruppe Emsland–Osnabrück</strong> auf dem Hof Blanke in Bad Laer Müschen.
         </p>
 
         <ul>
@@ -268,18 +255,15 @@
     <a href="impressum.html">Impressum</a> ·  
     <a href="datenschutz.html">Datenschutz</a>
     <br><br>
-    <div class="counter" id="visitorCount">Besucherzähler: wird geladen...</div>
-</footer>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const counterElement = document.getElementById("visitorCount");
-        let count = localStorage.getItem("visitorCount") || 0;
-        count++;
-        localStorage.setItem("visitorCount", count);
-        counterElement.textContent = "Besucherzähler: " + count;
-    });
-</script>
+    <!-- Besucherzähler (dezent) -->
+    <div class="counter">
+        Besucher gesamt:
+        <script src="https://www.besucherzaehler-kostenlos.de/counter_js.php?u=DEINE_ID"></script>
+        · Besucher heute:
+        <script src="https://www.besucherzaehler-kostenlos.de/counter_js.php?u=DEINE_ID&d=1"></script>
+    </div>
+</footer>
 
 </body>
 </html>
