@@ -6,7 +6,7 @@
     <title>Museum Blanke – Taschenlampen & Handlampen</title>
 
     <meta name="description" content="Historische Taschenlampen und Handlampen im Museum Blanke, sortiert nach Baujahr und Hersteller.">
-    <meta name="keywords" content="Taschenlampe, Handlampe, VARTA, Daimon, Maglite, Makita, CEAG, Acculux, Museum Blanke, Bad Laer, Müschen, Beleuchtung, Geschichte">
+    <meta name="keywords" content="Taschenlampe, Handlampe, VARTA, Daimon, Maglite, Makita, CEAG, Acculux, Museum Blanke, Bad Laer, Beleuchtung, Geschichte">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
     <style>
@@ -19,7 +19,7 @@
         }
 
         header {
-            background: rgba(0,0,0,0.75);
+            background: rgba(0,0,0,0.85);
             padding: 15px;
             text-align: center;
             border-bottom: 2px solid #ccc;
@@ -28,9 +28,11 @@
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
         nav a:hover { color: #2e5c2e; }
 
@@ -50,8 +52,8 @@
 
         @media (max-width: 899px) {
             .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
+            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.9); padding: 10px 0; }
+            nav a { display: block; margin: 10px 0; color: #2e5c2e; }
             nav.active { display: flex; }
         }
 
@@ -76,13 +78,6 @@
             margin: 15px auto;
             border-radius: 6px;
             box-shadow: 0 0 8px rgba(0,0,0,0.15);
-        }
-
-        @media (max-width: 899px) {
-            .lampe-item img {
-                width: 100%;
-                max-width: none;
-            }
         }
 
         footer {
@@ -125,14 +120,15 @@
     <h1>Taschenlampen & Handlampen</h1>
     <p>Historische Taschenlampen und Handlampen aus verschiedenen Jahrzehnten. Die Sammlung ist streng nach Baujahr sortiert.</p>
 
-    <!-- 1950er – Daimon -->
+
+    <!-- 1950er – Daimon 314 -->
     <div class="lampe-item">
         <h2>1950er Jahre – Daimon 314 (Bundeswehr-Handlampe)</h2>
         <img src="TL 7 Daimon 414..png" alt="Daimon 314 Bundeswehr-Handlampe">
         <p><strong>Hersteller:</strong> Daimon<br>
            <strong>Modell:</strong> 314<br>
            <strong>Baujahr:</strong> Ab den 1950er Jahren<br>
-           <strong>Besonderheiten:</strong> Bundeswehr-Handlampe, robuste Metallausführung</p>
+           <strong>Besonderheiten:</strong> Robuste Metalllampe, häufig bei der Bundeswehr eingesetzt.</p>
     </div>
 
     <!-- 1950er – VARTA TL 2 -->
@@ -142,19 +138,29 @@
         <p><strong>Hersteller:</strong> VARTA<br>
            <strong>Modell:</strong> TL 2 (505)<br>
            <strong>Baujahr:</strong> Ab den 1950er Jahren<br>
-           <strong>Besonderheiten:</strong> Klassische Metalltaschenlampe</p>
+           <strong>Besonderheiten:</strong> Klassische Metalltaschenlampe.</p>
     </div>
 
-    <!-- 1950er–1960er – VARTA 616 -->
+    <!-- 1950er – Daimon Focus (NEU) -->
     <div class="lampe-item">
-        <h2>1950er–1960er Jahre – VARTA Spot‑Light 616 (Duplexlampe)</h2>
-        <img src="TL 8 VARTA 616.jpg" alt="VARTA Spot-Light 616 Duplexlampe">
-        <p><strong>Hersteller:</strong> VARTA AG, Hagen<br>
-           <strong>Modell:</strong> Spot‑Light 616 („Duplexlampe“)<br>
-           <strong>Baujahr:</strong> ca. 1958 – 1965<br>
-           <strong>Material:</strong> Metallgehäuse mit verchromter Front und Glaslinse<br>
-           <strong>Besonderheiten:</strong> Doppelreflektor‑System für breiten und punktuellen Lichtstrahl, Betrieb mit 4,5 V‑Flachbatterie, frühe Spot‑Light‑Technik, häufig im Haushalt und in Werkstätten verwendet.</p>
+        <h2>1950er Jahre – Daimon Focus</h2>
+        <img src="TL 9 Daimon Focus.jpg" alt="Daimon Focus">
+        <p><strong>Hersteller:</strong> Daimon<br>
+           <strong>Modell:</strong> Focus<br>
+           <strong>Baujahr:</strong> 1950er Jahre<br>
+           <strong>Besonderheiten:</strong> Frühe Fokuslampe mit Metallgehäuse und verstellbarem Reflektor.</p>
     </div>
+
+
+    <!-- 1958–1965 – VARTA 616 -->
+    <div class="lampe-item">
+        <h2>1958–1965 – VARTA Spot‑Light 616 (Duplexlampe)</h2>
+        <img src="TL 8 VARTA 616.jpg" alt="VARTA Spot-Light 616 Duplexlampe">
+        <p><strong>Hersteller:</strong> VARTA AG, Hagen<br>
+           <strong>Modell:</strong> Spot‑Light 616<br>
+           <strong>Besonderheiten:</strong> Doppelreflektor-System, 4,5‑V‑Flachbatterie.</p>
+    </div>
+
 
     <!-- 1960er – VARTA TL 4 -->
     <div class="lampe-item">
@@ -162,9 +168,20 @@
         <img src="TL 4 VARTA 618.png" alt="VARTA TL 4">
         <p><strong>Hersteller:</strong> VARTA<br>
            <strong>Modell:</strong> TL 4 (618)<br>
-           <strong>Baujahr:</strong> Ab den 1960er Jahren<br>
-           <strong>Besonderheiten:</strong> Klassische Haushaltslampe</p>
+           <strong>Baujahr:</strong> 1960er Jahre<br>
+           <strong>Besonderheiten:</strong> Klassische Haushaltslampe.</p>
     </div>
+
+    <!-- 1960er – Daimon (NEU) -->
+    <div class="lampe-item">
+        <h2>1960er Jahre – Daimon Handlampe</h2>
+        <img src="TL 11 Daimon.jpg" alt="Daimon Handlampe">
+        <p><strong>Hersteller:</strong> Daimon<br>
+           <strong>Modell:</strong> unbekannt<br>
+           <strong>Baujahr:</strong> 1960er Jahre<br>
+           <strong>Besonderheiten:</strong> Metallgehäuse, typisches Design der 60er Jahre.</p>
+    </div>
+
 
     <!-- 1970er – VARTA TL 3 -->
     <div class="lampe-item">
@@ -172,8 +189,8 @@
         <img src="TL 3 VARTA 657.png" alt="VARTA TL 3">
         <p><strong>Hersteller:</strong> VARTA<br>
            <strong>Modell:</strong> TL 3 (657)<br>
-           <strong>Baujahr:</strong> Ab den 1970er Jahren<br>
-           <strong>Besonderheiten:</strong> Robuste Bauform, langlebige Konstruktion</p>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Robuste Bauform.</p>
     </div>
 
     <!-- 1970er – VARTA TL 5 -->
@@ -182,8 +199,8 @@
         <img src="TL 5 VARTA 658.png" alt="VARTA TL 5">
         <p><strong>Hersteller:</strong> VARTA<br>
            <strong>Modell:</strong> TL 5 (658)<br>
-           <strong>Baujahr:</strong> Ab den 1970er Jahren<br>
-                      <strong>Besonderheiten:</strong> Großes Gehäuse, starke Leuchtkraft</p>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Großes Gehäuse, starke Leuchtkraft.</p>
     </div>
 
     <!-- 1970er – VARTA TL 6 -->
@@ -191,52 +208,129 @@
         <h2>1970er Jahre – VARTA TL 6 (430 / Duplex)</h2>
         <img src="TL 6 VARTA Duplex.png" alt="VARTA TL 6 Duplex">
         <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 6 (430 / Duplex)<br>
-           <strong>Baujahr:</strong> Ab den 1970er Jahren<br>
-           <strong>Besonderheiten:</strong> Doppelreflektor, stabile Ausführung</p>
+           <strong>Modell:</strong> TL 6 (430)<br>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Doppelreflektor.</p>
     </div>
 
-    <!-- 1970er–1990er – CEAG Sicherheitslampe -->
+    <!-- 1970er – VARTA 670 (NEU) -->
     <div class="lampe-item">
-        <h2>1970er–1990er Jahre – CEAG Akkumulator‑Sicherheitslampen mit Ladestation</h2>
-        <img src="HL CEAG Dortmund.jpg" alt="CEAG Akkumulator-Sicherheitslampen mit Ladestation">
+        <h2>1970er Jahre – VARTA 670</h2>
+        <img src="TL 12 VARTA 670.jpg" alt="VARTA 670">
+        <p><strong>Hersteller:</strong> VARTA<br>
+           <strong>Modell:</strong> 670<br>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Kompakte Bauform, Kunststoffgehäuse.</p>
+    </div>
+
+    <!-- 1970er – VARTA 615 (NEU) -->
+    <div class="lampe-item">
+        <h2>1970er Jahre – VARTA 615</h2>
+        <img src="TL 13 VARTA 615.jpg" alt="VARTA 615">
+        <p><strong>Hersteller:</strong> VARTA<br>
+           <strong>Modell:</strong> 615<br>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Klassische 4,5‑V‑Lampe.</p>
+    </div>
+
+    <!-- 1970er – VARTA (NEU) -->
+    <div class="lampe-item">
+        <h2>1970er Jahre – VARTA Handlampe</h2>
+        <img src="TL 14 VARTA.jpg" alt="VARTA Handlampe">
+        <p><strong>Hersteller:</strong> VARTA<br>
+           <strong>Modell:</strong> unbekannt<br>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Kunststoffgehäuse, typische 70er‑Jahre Form.</p>
+    </div>
+
+    <!-- 1970er – VARTA (NEU) -->
+    <div class="lampe-item">
+        <h2>1970er Jahre – VARTA TL</h2>
+        <img src="TL 15 VARTA.jpg" alt="VARTA TL">
+        <p><strong>Hersteller:</strong> VARTA<br>
+           <strong>Modell:</strong> unbekannt<br>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Haushaltslampe.</p>
+    </div>
+
+    <!-- 1970er – VARTA (NEU) -->
+    <div class="lampe-item">
+        <h2>1970er Jahre – VARTA TL</h2>
+        <img src="TL 16 VARTA.jpg" alt="VARTA TL">
+        <p><strong>Hersteller:</strong> VARTA<br>
+           <strong>Modell:</strong> unbekannt<br>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Kompakte Bauform.</p>
+    </div>
+
+    <!-- 1970er – VARTA (NEU) -->
+    <div class="lampe-item">
+        <h2>1970er Jahre – VARTA TL</h2>
+        <img src="TL 17 VARTA.jpg" alt="VARTA TL">
+        <p><strong>Hersteller:</strong> VARTA<br>
+           <strong>Modell:</strong> unbekannt<br>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Kunststoffgehäuse.</p>
+    </div>
+
+    <!-- 1970er – unbekannt (NEU) -->
+    <div class="lampe-item">
+        <h2>1970er Jahre – Handlampe</h2>
+        <img src="TL 18.jpg" alt="Handlampe">
+        <p><strong>Hersteller:</strong> unbekannt<br>
+           <strong>Modell:</strong> unbekannt<br>
+           <strong>Baujahr:</strong> 1970er Jahre<br>
+           <strong>Besonderheiten:</strong> Klassische Form der 70er Jahre.</p>
+    </div>
+
+
+    <!-- 1970er–1990er – CEAG -->
+    <div class="lampe-item">
+        <h2>1970er–1990er Jahre – CEAG Akkumulator‑Sicherheitslampen</h2>
+        <img src="HL CEAG Dortmund.jpg" alt="CEAG Akkumulator-Sicherheitslampen">
         <p><strong>Hersteller:</strong> CEAG Dortmund<br>
-           <strong>Modell:</strong> Akkumulator‑Sicherheitslampen (2 Stück mit Ladestation)<br>
-           <strong>Baujahr:</strong> 1970er bis 1990er Jahre<br>
-           <strong>Material:</strong> Gehäuse nicht aus Metall, schlagfester Kunststoff<br>
-           <strong>Besonderheiten:</strong> Zwei Sicherheitslampen mit gemeinsamer Ladestation, für Industrie- und Sicherheitsanwendungen konzipiert.</p>
+           <strong>Modell:</strong> Sicherheitslampen<br>
+           <strong>Besonderheiten:</strong> Zwei Lampen mit gemeinsamer Ladestation.</p>
     </div>
 
     <!-- 1984 – Maglite Mini -->
     <div class="lampe-item">
-        <h2>Ab 1984 – Maglite Mini (Modellreihe AA)</h2>
+        <h2>Ab 1984 – Maglite Mini AA</h2>
         <img src="TL1 Maglite Mini.png" alt="Maglite Mini">
         <p><strong>Hersteller:</strong> Maglite<br>
            <strong>Modell:</strong> Mini AA<br>
-           <strong>Baujahr:</strong> Ab 1984<br>
-           <strong>Besonderheiten:</strong> Kompakte Metalllampe, sehr langlebig</p>
+           <strong>Baujahr:</strong> ab 1984<br>
+           <strong>Besonderheiten:</strong> Kompakte Metalllampe.</p>
     </div>
 
-    <!-- 1990er – Makita ML120 -->
+    <!-- 1990er – Makita -->
     <div class="lampe-item">
         <h2>1990er Jahre – Makita ML120 (12 V)</h2>
-        <img src="HL 1 Makita.png" alt="Makita ML120 12V">
+        <img src="HL 1 Makita.png" alt="Makita ML120">
         <p><strong>Hersteller:</strong> Makita<br>
-           <strong>Modell:</strong> ML120 (12 V)<br>
+           <strong>Modell:</strong> ML120<br>
            <strong>Baujahr:</strong> 1990er Jahre<br>
-           <strong>Besonderheiten:</strong> Teil der 12‑Volt‑Serie. Makita gegründet 1915 in Nagoya. Akku‑Werkzeuge ab 1978 (7,2 V), später 18 V (2005), 40 V (2020), 2×40 V (2024).</p>
+           <strong>Besonderheiten:</strong> Teil der frühen Akku‑Werkzeugserie.</p>
     </div>
 
-    <!-- 2000er – Acculux SL6 LED -->
+    <!-- 1990er – Wonder Babet (NEU) -->
     <div class="lampe-item">
-        <h2>2000er Jahre – Acculux SL6 LED (Akkumulator‑Sicherheitslampe)</h2>
-        <img src="HL Acculux SL6 LED.jpg" alt="Acculux SL6 LED Akkumulator-Sicherheitslampe">
-        <p><strong>Hersteller:</strong> Acculux Leuchten GmbH, Murrhardt<br>
-           <strong>Modell:</strong> SL 6 LED<br>
-           <strong>Baujahr:</strong> Ab ca. 2005 – 2010<br>
-           <strong>Material:</strong> Schlagfester Kunststoff, spritzwassergeschützt<br>
-           <strong>Energiequelle:</strong> NiMH‑Akkumulator 6 V<br>
-           <strong>Besonderheiten:</strong> Erste LED‑Sicherheitslampe mit hoher Lichtausbeute, Dauerlicht bis 8 Stunden, automatische Ladeabschaltung, Einsatz bei Feuerwehr und Industrie.</p>
+        <h2>1990er Jahre – Wonder Babet</h2>
+        <img src="TL 19 Wonder Babet.jpg" alt="Wonder Babet">
+        <p><strong>Hersteller:</strong> Wonder<br>
+           <strong>Modell:</strong> Babet<br>
+           <strong>Baujahr:</strong> 1990er Jahre<br>
+           <strong>Besonderheiten:</strong> Französische Kunststofflampe, typische 90er‑Jahre Form.</p>
+    </div>
+
+    <!-- 2000er – Acculux -->
+    <div class="lampe-item">
+        <h2>2000er Jahre – Acculux SL6 LED</h2>
+        <img src="HL Acculux SL6 LED.jpg" alt="Acculux SL6 LED">
+        <p><strong>Hersteller:</strong> Acculux<br>
+           <strong>Modell:</strong> SL6 LED<br>
+           <strong>Baujahr:</strong> ca. 2005–2010<br>
+           <strong>Besonderheiten:</strong> Erste LED‑Sicherheitslampe.</p>
     </div>
 
 </section>
@@ -244,11 +338,8 @@
 <footer>
     <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
     <p>
-        <a href="hosting.html">Hosting & Technik</a> ·
-        <a href="impressum.html">Impressum</a> ·
+        <a href="hosting.html">Hosting & Technik</a> ·
+        <a href="impressum.html">Impressum</a> ·
         <a href="datenschutz.html">Datenschutz</a>
     </p>
 </footer>
-
-</body>
-</html>
