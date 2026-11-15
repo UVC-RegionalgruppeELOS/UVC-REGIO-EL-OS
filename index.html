@@ -73,7 +73,6 @@
             nav.active { display: flex; }
         }
 
-        /* Haupt-Container + Museum-Block + Logo-Bereich */
         section, .logo-bereich, .museum-block {
             max-width: 900px;
             width: 90%;
@@ -82,8 +81,6 @@
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-
-            /* WICHTIG: verhindert Textüberlauf auf Handy */
             overflow-wrap: break-word;
             word-wrap: break-word;
             hyphens: auto;
@@ -128,8 +125,6 @@
             padding: 15px 20px;
             margin: 25px 0;
             border-radius: 6px;
-
-            /* Auch hier sicherheitshalber */
             overflow-wrap: break-word;
             word-wrap: break-word;
             hyphens: auto;
@@ -163,11 +158,66 @@
             color: #777;
             margin-top: 10px;
         }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 95%;
+            max-height: 90vh;
+            border-radius: 8px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+            background: white;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .lightbox-close:hover {
+            color: #ccc;
+        }
     </style>
 
     <script>
         function toggleMenu() {
             document.getElementById("mainNav").classList.toggle("active");
+        }
+
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById("collageLightbox");
+            const lightboxImg = document.getElementById("lightboxImage");
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add("active");
+        }
+
+        function closeLightbox() {
+            document.getElementById("collageLightbox").classList.remove("active");
         }
     </script>
 </head>
@@ -226,9 +276,9 @@
         <p>Aus diesen beiden Kreisen entwickelte sich eine feste Gemeinschaft mit ersten gemeinsamen Treffen:</p>
 
         <ul>
-            <li><strong><a href="2023.jpg" target="_blank">2023</a>:</strong> Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen → <a href="treffen-2023.html">Details ansehen</a></li>
-            <li><strong><a href="2024.jpg" target="_blank">2024</a>:</strong> Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen → <a href="treffen-2024.html">Details ansehen</a></li>
-            <li><strong><a href="2025.jpg" target="_blank">2025</a>:</strong> Drittes Treffen auf dem Hof Hense in Baccum → <a href="treffen-2025.html">Details ansehen</a></li>
+            <li><a href="2023.jpg" onclick="openLightbox('2023.jpg'); return false;"><strong>2023:</strong></a> Erstes Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen → <a href="treffen-2023.html">Details ansehen</a></li>
+            <li><a href="2024.jpg" onclick="openLightbox('2024.jpg'); return false;"><strong>2024:</strong></a> Zweites Unimog‑Treffen auf dem Hof Blanke in Bad Laer Müschen → <a href="treffen-2024.html">Details ansehen</a></li>
+            <li><a href="2025.jpg" onclick="openLightbox('2025.jpg'); return false;"><strong>2025:</strong></a> Drittes Treffen auf dem Hof Hense in Baccum → <a href="treffen-2025.html">Details ansehen</a></li>
         </ul>
 
         <p>
@@ -238,7 +288,7 @@
         </p>
 
         <ul>
-            <li><strong><a href="2026.jpeg" target="_blank">2026</a>:</strong> Viertes Treffen auf dem Hof Coesfeld in Versmold‑Loxten → <a href="treffen-2026.html">Details ansehen</a></li>
+            <li><a href="2026.jpeg" onclick="openLightbox('2026.jpeg'); return false;"><strong>2026:</strong></a> Viertes Treffen auf dem Hof Coesfeld in Versmold‑Loxten → <a href="treffen-2026.html">Details ansehen</a></li>
         </ul>
     </div>
 </section>
@@ -272,6 +322,11 @@
              style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
     </p>
 </footer>
+
+<div id="collageLightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightboxImage" src="" alt="Treffen Collage" onclick="event.stopPropagation()">
+</div>
 
 </body>
 </html>
