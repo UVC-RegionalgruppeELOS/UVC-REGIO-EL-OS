@@ -8,6 +8,8 @@
     <meta name="description" content="Programm der UVC Regionalgruppe Emsland–Osnabrück: Stammtische, Treffen und Aktivitäten rund um historische Unimogs.">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <style>
         body {
             margin: 0;
@@ -25,12 +27,13 @@
             position: relative;
         }
 
+        /* Optimierte Abstände für eine einzeilige Navigation */
         nav a {
             color: white;
-            margin: 0 12px;
+            margin: 0 8px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             transition: color 0.3s;
         }
 
@@ -81,6 +84,7 @@
         .programmbild-top img {
             width: 100%;
             height: auto;
+            display: block;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
@@ -93,6 +97,8 @@
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
         }
 
         h1, h2 {
@@ -132,13 +138,13 @@
         }
 
         footer a {
-            color: #777;
+            color: #2e5c2e;
             text-decoration: none;
             font-size: 0.85rem;
         }
 
         footer a:hover {
-            color: #2e5c2e;
+            color: #1b3b1b;
         }
     </style>
 
@@ -154,8 +160,8 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
-        <a href="programm.html">Programm</a>
+        <a href="index.html">Start</a>
+        <a href="programm.html"><strong>Programm</strong></a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
@@ -168,9 +174,8 @@
     </nav>
 </header>
 
-<!-- Bild oben, frei und mittig -->
 <div class="programmbild-top">
-    <img src="programm.png" alt="Unimog‑Treffen im Steinbruch Bad Laer">
+    <img src="programm.jpg" alt="Unimog-Treffen im Steinbruch Bad Laer">
 </div>
 
 <section>
@@ -179,10 +184,10 @@
     <div class="box">
         <h2>Schwerpunkte unseres Jahresprogramms</h2>
         <ul>
-            <li>Regelmäßige Stammtische zum Austausch und zur Planung gemeinsamer Aktivitäten.</li>
-            <li>Unimog‑Treffen und Ausfahrten in der Region Emsland–Osnabrück.</li>
-            <li>Besuche von Veranstaltungen anderer Gruppen und Vereine.</li>
-            <li>Pflege und Erhalt historischer Unimog‑Fahrzeuge.</li>
+            <li>Regelmäßige <a href="stammtisch.html">Stammtische</a> zum Austausch und zur Planung gemeinsamer Aktivitäten.</li>
+            <li><a href="unsere-treffen.html">Unimog-Treffen</a> und Ausfahrten in der Region Emsland–Osnabrück.</li>
+            <li>Besuche von <a href="andere-treffen.html">Veranstaltungen anderer Gruppen</a> und Vereine.</li>
+            <li>Pflege und Erhalt historischer <a href="unimogs.html">Unimog-Fahrzeuge</a>.</li>
         </ul>
     </div>
 
@@ -190,16 +195,16 @@
         <h2>Aktuelle Termine</h2>
         <p>
             Die jeweils aktuellen Termine und Details zu unserem Programm findest du auf der Seite
-            <a href="stammtisch.html">Stammtisch</a> sowie unter
-            <a href="unsere-treffen.html">Unsere Treffen</a>.
+            <a href="stammtisch.html"><strong>Stammtisch</strong></a> sowie unter
+            <a href="unsere-treffen.html"><strong>Unsere Treffen</strong></a>.
         </p>
     </div>
 </section>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
     <br>
-    <a href="hosting.html">Hosting & Technik</a> ·  
+    <a href="hosting.html">Hosting & Technik</a> ·  
     <a href="impressum.html">Impressum</a> ·  
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
