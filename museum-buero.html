@@ -9,43 +9,14 @@
     <meta name="keywords" content="Museum Blanke, Büro, Schreibmaschine, Tropen Gold, Skrebba, Kugelschreiber, Taschenrechner, Pelikan, Aschenbecher, Schreibwaren">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: #2e5c2e; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #1f3b1f; text-decoration: underline; }
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+    <meta property="og:title" content="Museum Hof Blanke – Büro">
+    <meta property="og:description" content="Historische Bürogeräte und Schreibutensilien aus der Sammlung Hof Blanke.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://github.io">
 
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; color: #2e5c2e; }
-            nav.active { display: flex; }
-        }
-
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 { color: #2e5c2e; }
-        .exponat { margin-bottom: 40px; }
-        .exponat img { width: 100%; max-width: 400px; border-radius: 6px; box-shadow: 0 0 6px rgba(0,0,0,0.1); margin-bottom: 10px; }
-
-        footer { text-align: center; padding: 25px; background: #e5e5e5; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; }
-        footer a { color: #2e5c2e; text-decoration: none; }
-        footer a:hover { color: #1d3d1d; }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -53,98 +24,133 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
-        <a href="museum.html">Museum</a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<section>
-    <h1>Büro</h1>
-    <p>Diese Rubrik zeigt klassische Bürogeräte und Schreibutensilien aus mehreren Jahrzehnten – vom mechanischen Hefter bis zum programmierbaren Taschenrechner.</p>
+<div class="container">
+    <h1>Museum Blanke – Büro</h1>
+    <p>
+        Diese Rubrik zeigt klassische Bürogeräte und Schreibutensilien aus mehreren Jahrzehnten – vom mechanischen Hefter bis zum programmierbaren Taschenrechner. 
+        <em>(Klicke auf ein Bild, um es zu vergrößern.)</em>
+    </p>
 
-    <!-- Chronologisch sortiert nach Baujahr -->
-
-    <div class="exponat">
-        <img src="Büro Schreibmaschine.jpg" alt="Schreibmaschine">
-        <h3>Schreibmaschine (ca. 1950er Jahre)</h3>
-        <p>Mechanische Schreibmaschine mit Metallgehäuse und Rundtasten. 
-        Ein klassisches Beispiel für die Bürokommunikation vor der Computerzeit.</p>
+    <div class="box">
+        <img src="Büro Schreibmaschine.jpg" 
+             alt="Schreibmaschine" 
+             onclick="openLightbox('Büro Schreibmaschine.jpg')"
+             style="width: 100%; max-width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 14px; cursor: zoom-in; display: block;">
+        <h3>Schreibmaschine (ca. 1950er Jahre)</h3>
+        <p style="margin-bottom: 0;">
+            Mechanische Schreibmaschine mit Metallgehäuse und Rundtasten. 
+            Ein klassisches Beispiel für die Bürokommunikation vor der Computerzeit.
+        </p>
     </div>
 
-    <div class="exponat">
-        <img src="Büro Hefter.jpg" alt="Hefter Skrebba">
-        <h3>Hefter Skrebba (ca. 1950–1960)</h3>
-        <p>Mechanischer Hefter der Firma <strong>Skrebba</strong>.  
-        Das Unternehmen wurde 1921 von <strong>Otto Skrebba</strong> gegründet und entwickelte sich zu einem führenden Hersteller von Büroheftgeräten.</p>
+    <div class="box">
+        <img src="Büro Hefter.jpg" 
+             alt="Hefter Skrebba" 
+             onclick="openLightbox('Büro Hefter.jpg')"
+             style="width: 100%; max-width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 14px; cursor: zoom-in; display: block;">
+        <h3>Hefter Skrebba (ca. 1950–1960)</h3>
+        <p style="margin-bottom: 0;">
+            Mechanischer Hefter der Firma <strong>Skrebba</strong>.  
+            Das Unternehmen wurde 1921 von <strong>Otto Skrebba</strong> gegründet und entwickelte sich zu einem führenden Hersteller von Büroheftgeräten.
+        </p>
     </div>
 
-    <div class="exponat">
-        <img src="Büro Aschenbecher.jpg" alt="Aschenbecher Alabaster">
-        <h3>Aschenbecher aus Alabaster (ca. 1950er Jahre)</h3>
-        <p>Schwerer, cremefarbener Aschenbecher aus <strong>Alabaster</strong>. 
-        Dieses Material war in den 1950er Jahren beliebt für dekorative Büroartikel.</p>
+    <div class="box">
+        <img src="Büro Aschenbecher.jpg" 
+             alt="Aschenbecher Alabaster" 
+             onclick="openLightbox('Büro Aschenbecher.jpg')"
+             style="width: 100%; max-width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 14px; cursor: zoom-in; display: block;">
+        <h3>Aschenbecher aus Alabaster (ca. 1950er Jahre)</h3>
+        <p style="margin-bottom: 0;">
+            Schwerer, cremefarbener Aschenbecher aus <strong>Alabaster</strong>. 
+            Dieses Material war in den 1950er Jahren beliebt für dekorative Büroartikel.
+        </p>
     </div>
 
-    <div class="exponat">
-        <img src="Büro Füller.jpg" alt="Füller Tropen Gold">
-        <h3>Füller Tropen „Gold“ (ca. 1960er Jahre)</h3>
-        <p>Füllfederhalter der Marke <strong>Tropen</strong>, Modell <strong>„Tropen Gold“</strong>. 
-        Tropen war ein deutscher Hersteller robuster und preislich attraktiver Schreibgeräte.</p>
+    <div class="box">
+        <img src="Büro Füller.jpg" 
+             alt="Füller Tropen Gold" 
+             onclick="openLightbox('Büro Füller.jpg')"
+             style="width: 100%; max-width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 14px; cursor: zoom-in; display: block;">
+        <h3>Füller Tropen „Gold“ (ca. 1960er Jahre)</h3>
+        <p style="margin-bottom: 0;">
+            Füllfederhalter der Marke <strong>Tropen</strong>, Modell <strong>„Tropen Gold“</strong>. 
+            Tropen war ein deutscher Hersteller robuster und preislich attraktiver Schreibgeräte.
+        </p>
     </div>
 
-    <div class="exponat">
-        <img src="Büro Box.jpg" alt="Büro-Box">
-        <h3>Büro-Box (ca. 1970er Jahre)</h3>
-        <p>Rote Ablagebox mit schwarzem Metallraster – diente zur Aufbewahrung kleiner Büroartikel wie Büroklammern oder Radiergummis.</p>
+    <div class="box">
+        <img src="Büro Box.jpg" 
+             alt="Büro-Box" 
+             onclick="openLightbox('Büro Box.jpg')"
+             style="width: 100%; max-width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 14px; cursor: zoom-in; display: block;">
+        <h3>Büro-Box (ca. 1970er Jahre)</h3>
+        <p style="margin-bottom: 0;">
+            Rote Ablagebox mit schwarzem Metallraster – diente zur Aufbewahrung kleiner Büroartikel wie Büroklammern oder Radiergummis.
+        </p>
     </div>
 
-    <div class="exponat">
-        <img src="Büro Pelikan.jpg" alt="Pelikan-Etui">
-        <h3>Pelikan-Etui (ca. 1970er Jahre)</h3>
-        <p>Metallisches Etui der Marke <strong>Pelikan</strong> – bekannt für hochwertige Schreibwaren. 
-        Diente zur Aufbewahrung von Füllern oder Ersatzfedern.</p>
+    <div class="box">
+        <img src="Büro Pelikan.jpg" 
+             alt="Pelikan-Etui" 
+             onclick="openLightbox('Büro Pelikan.jpg')"
+             style="width: 100%; max-width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 14px; cursor: zoom-in; display: block;">
+        <h3>Pelikan-Etui (ca. 1970er Jahre)</h3>
+        <p style="margin-bottom: 0;">
+            Metallisches Etui der Marke <strong>Pelikan</strong> – bekannt für hochwertige Schreibwaren. 
+            Diente zur Aufbewahrung von Füllern oder Ersatzfedern.
+        </p>
     </div>
 
-    <div class="exponat">
-        <img src="Büro 100 Kugelschreiber.jpg" alt="Kugelschreiber-Sammlung">
-        <h3>Kugelschreiber-Sammlung (20. Jahrhundert)</h3>
-        <p>Sammlung von rund 100 Kugelschreibern aus verschiedenen Jahrzehnten. 
-        Sie zeigt die Vielfalt an Formen, Farben und Werbeaufdrucken.</p>
+    <div class="box">
+        <img src="Büro 100 Kugelschreiber.jpg" 
+             alt="Kugelschreiber-Sammlung" 
+             onclick="openLightbox('Büro 100 Kugelschreiber.jpg')"
+             style="width: 100%; max-width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 14px; cursor: zoom-in; display: block;">
+        <h3>Kugelschreiber-Sammlung (20. Jahrhundert)</h3>
+        <p style="margin-bottom: 0;">
+            Sammlung von rund 100 Kugelschreibern aus verschiedenen Jahrzehnten. 
+            Sie zeigt die Vielfalt an Formen, Farben und Werbeaufdrucken.
+        </p>
     </div>
 
-   <div class="exponat">
-        <img src="Büro Taschenrechner.jpg" alt="Taschenrechner Casio FX-790P">
+    <div class="box">
+        <img src="Büro Taschenrechner.jpg" 
+             alt="Taschenrechner Casio FX-790P" 
+             onclick="openLightbox('Büro Taschenrechner.jpg')"
+             style="width: 100%; max-width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 14px; cursor: zoom-in; display: block;">
         <h3>Programmierbarer Taschenrechner Casio FX‑790P (Markteinführung 1985)</h3>
-        <p>Elektronischer, programmierbarer Taschenrechner der Marke <strong>Casio</strong>, Made in Japan.  
-        Der FX‑790P wurde <strong>1985</strong> vorgestellt und ab <strong>1986</strong> regulär produziert.  
-        Die Firma <strong>Sharp</strong> brachte bereits 1977 den ersten programmierbaren Taschenrechner der Welt heraus – 
-        Casio folgte mit eigenen Modellen wie dem FX‑790P, der zu den beliebtesten Geräten seiner Zeit gehörte.</p>
+        <p style="margin-bottom: 0;">
+            Elektronischer, programmierbarer Taschenrechner der Marke <strong>Casio</strong>, Made in Japan.  
+            Der FX‑790P wurde <strong>1985</strong> vorgestellt und ab <strong>1986</strong> regulär produziert.  
+            Die Firma <strong>Sharp</strong> brachte bereits 1977 den ersten programmierbaren Taschenrechner der Welt heraus – 
+            Casio folgte mit eigenen Modellen wie dem FX‑790P, der zu den beliebtesten Geräten seiner Zeit gehörte.
+        </p>
     </div>
 
-</section>
+    <a href="museum.html" class="btn-zurueck">← Zurück zum Museum</a>
+</div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto;">
-        <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-        <p>
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-        <p style="font-size: 0.8rem; color: #777;">
-            Besucher:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px;">
-        </p>
-    </div>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
