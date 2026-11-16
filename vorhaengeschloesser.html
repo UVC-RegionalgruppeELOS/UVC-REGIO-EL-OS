@@ -3,50 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Hof Blanke – Vorhängeschlösser</title>
+    <title>Museum Hof Blanke – Vorhängeschlösser | UVC Regionalgruppe Emsland–Osnabrück</title>
 
     <meta name="description" content="Historische Vorhängeschlösser aus der Sammlung Hof Blanke: ABUS, BURG, alte Modelle und Sonderformen.">
     <meta name="keywords" content="Museum Blanke, Vorhängeschloss, ABUS, BURG, Schloss, Sicherheitstechnik, Metall, Geschichte, Mechanik">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
-
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: #2e5c2e; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #1f3b1f; text-decoration: underline; }
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; color: #2e5c2e; }
-            nav.active { display: flex; }
-        }
-
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 { color: #2e5c2e; }
-        .schloss { margin-bottom: 40px; }
-        .schloss img { width: 100%; max-width: 400px; border-radius: 6px; box-shadow: 0 0 6px rgba(0,0,0,0.1); margin-bottom: 10px; }
-
-        footer { text-align: center; padding: 25px; background: #e5e5e5; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; }
-        footer a { color: #2e5c2e; text-decoration: none; }
-        footer a:hover { color: #1d3d1d; }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -54,82 +19,76 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
-        <a href="museum.html">Museum</a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<section>
+<div class="container">
     <h1>Vorhängeschlösser</h1>
-    <p>Diese Sammlung zeigt verschiedene Vorhängeschlösser aus unterschiedlichen Epochen und Materialien – von frühen Eisenmodellen bis zu modernen Messingausführungen.</p>
+    <p>Diese Sammlung auf dem Hof Blanke zeigt verschiedene Vorhängeschlösser aus unterschiedlichen Epochen und Materialien – von frühen Eisenmodellen bis zu modernen Messingausführungen. Ein Klick auf ein Foto öffnet die vergrößerte Ansicht.</p>
 
     <!-- 1. Altes Schloss -->
-    <div class="schloss">
-        <img src="VHS alt.jpg" alt="Altes Vorhängeschloss">
-        <h3>Altes Vorhängeschloss (ca. 1920–1930)</h3>
-        <p>Ein frühes, stark korrodiertes Schloss aus Eisen mit genieteten Platten und einfachem Schließmechanismus. 
-        Solche Modelle wurden häufig in landwirtschaftlichen Betrieben und Werkstätten eingesetzt. 
-        Der flache Schlüssel mit einfachem Bart ist typisch für die Zwischenkriegszeit. 
-        Diese Bauform zeigt die Übergangsphase von handgefertigten zu industriell gefertigten Schlössern.</p>
+    <div class="box">
+        <h2>Altes Vorhängeschloss (ca. 1920–1930)</h2>
+        <img src="VHS alt.jpg" alt="Altes Vorhängeschloss" onclick="openLightbox('VHS alt.jpg')" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <p>Ein frühes, stark korrodiertes Schloss aus Eisen mit genieteten Platten und einfachem Schließmechanismus. Solche Modelle wurden häufig in landwirtschaftlichen Betrieben und Werkstätten eingesetzt. Der flache Schlüssel mit einfachem Bart ist typisch für die Zwischenkriegszeit. Diese Bauform zeigt die Übergangsphase von handgefertigten zu industriell gefertigten Schlössern.</p>
     </div>
 
-  <!-- 2. Kleines Rundschloss -->
-<div class="schloss">
-    <img src="VHS rund.jpg" alt="Kleines rundes Vorhängeschloss">
-    <h3>Kleines rundes Vorhängeschloss (ca. 1950–1960)</h3>
-    <p>Sehr kleines Rundschloss aus Stahl, typischerweise nur etwa 3–4 cm groß. 
-    Diese Mini‑Schlösser wurden häufig für kleine Kisten, Schubladen, Werkzeugkästen oder einfache Innenverschlüsse verwendet. 
-    Die kompakte Bauform bot keinen hohen Schutz gegen Aufbruch, war aber für leichte Anwendungen ausreichend. 
-    Der zentrale Schließmechanismus und die runde Form waren in den 1950er Jahren weit verbreitet.</p>
-</div>
-
+    <!-- 2. Kleines Rundschloss -->
+    <div class="box">
+        <h2>Kleines rundes Vorhängeschloss (ca. 1950–1960)</h2>
+        <img src="VHS rund.jpg" alt="Kleines rundes Vorhängeschloss" onclick="openLightbox('VHS rund.jpg')" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <p>Sehr kleines Rundschloss aus Stahl, typischerweise nur etwa 3–4 cm groß. Diese Mini‑Schlösser wurden häufig für kleine Kisten, Schubladen, Werkzeugkästen oder einfache Innenverschlüsse verwendet. Die kompakte Bauform bot keinen hohen Schutz gegen Aufbruch, war aber für leichte Anwendungen ausreichend. Der zentrale Schließmechanismus und die runde Form waren in den 1950er Jahren weit verbreitet.</p>
+    </div>
 
     <!-- 3. BURG Schloss -->
-    <div class="schloss">
-        <img src="VHS Burg.jpg" alt="BURG Vorhängeschloss">
-        <h3>BURG Vorhängeschloss (ca. 1960–1970)</h3>
-        <p>Silberfarbenes Schloss der Marke <strong>BURG</strong> (Burg‑Wächter KG, Wetter/Ruhr). 
-        BURG‑Wächter ist neben ABUS einer der bekanntesten deutschen Hersteller von Schlössern und Tresoren. 
-        Das hier gezeigte Modell besitzt ein vernickeltes Gehäuse und einen stabilen Bügel. 
-        BURG‑Schlösser dieser Zeit waren für den Außeneinsatz konzipiert und galten als besonders langlebig.</p>
+    <div class="box">
+        <h2>BURG Vorhängeschloss (ca. 1960–1970)</h2>
+        <img src="VHS Burg.jpg" alt="BURG Vorhängeschloss" onclick="openLightbox('VHS Burg.jpg')" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <p>Silberfarbenes Schloss der Marke <strong>BURG</strong> (Burg‑Wächter KG, Wetter/Ruhr). BURG‑Wächter ist neben ABUS einer der bekanntesten deutschen Hersteller von Schlössern und Tresoren. Das hier gezeigte Modell besitzt ein vernickeltes Gehäuse und einen stabilen Bügel. BURG‑Schlösser dieser Zeit waren für den Außeneinsatz konzipiert und galten als besonders langlebig.</p>
     </div>
 
     <!-- 4. ABUS 465-60 -->
-    <div class="schloss">
-        <img src="VHS Abus 465-60.jpg" alt="ABUS 465-60 Vorhängeschloss">
-        <h3>ABUS 465‑60 (ca. 1960er Jahre)</h3>
-        <p>Massives Vorhängeschloss aus Stahl mit schwarzer Lackierung und verchromtem Bügel. 
-        Das Modell 465‑60 stammt aus der Sicherheitsserie von <strong>ABUS</strong> (August Bremicker Söhne KG, Velbert), 
-        die ab den 1950er Jahren produziert wurde. 
-        Dieses Schloss war für den industriellen und privaten Einsatz konzipiert und zeichnet sich durch hohe Widerstandsfähigkeit gegen Rost und Aufbruchversuche aus.</p>
+    <div class="box">
+        <h2>ABUS 465‑60 (ca. 1960er Jahre)</h2>
+        <img src="VHS Abus 465-60.jpg" alt="ABUS 465-60 Vorhängeschloss" onclick="openLightbox('VHS Abus 465-60.jpg')" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <p>Massives Vorhängeschloss aus Stahl mit schwarzer Lackierung und verchromtem Bügel. Das Modell 465‑60 stammt aus der Sicherheitsserie von <strong>ABUS</strong> (August Bremicker Söhne KG, Velbert), die ab den 1950er Jahren produziert wurde. Dieses Schloss war für den industriellen und privaten Einsatz konzipiert und zeichnet sich durch hohe Widerstandsfähigkeit gegen Rost und Aufbruchversuche aus.</p>
     </div>
 
     <!-- 5. ABUS rot -->
-    <div class="schloss">
-        <img src="VHS Abus rot.jpg" alt="ABUS rotes Vorhängeschloss">
-        <h3>ABUS Vorhängeschloss rot (ca. 1970er Jahre)</h3>
-        <p>Ein auffälliges, rot lackiertes Schloss mit rechteckigem Gehäuse und vertikalem ABUS‑Schriftzug. 
-        Diese farbigen Modelle wurden häufig für Werkzeugkisten und Schränke verwendet. 
-        Die Lackierung diente nicht nur der Optik, sondern auch der Korrosionsbeständigkeit.</p>
+    <div class="box">
+        <h2>ABUS Vorhängeschloss rot (ca. 1970er Jahre)</h2>
+        <img src="VHS Abus rot.jpg" alt="ABUS rotes Vorhängeschloss" onclick="openLightbox('VHS Abus rot.jpg')" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <p>Ein auffälliges, rot lackiertes Schloss mit rechteckigem Gehäuse und vertikalem ABUS‑Schriftzug. Diese farbigen Modelle wurden häufig für Werkzeugkisten und Schränke verwendet. Die Lackierung diente nicht nur der Optik, sondern auch der Korrosionsbeständigkeit.</p>
     </div>
 
     <!-- 6. Goldfarbenes Mini-Schloss -->
-    <div class="schloss">
-        <img src="VHS Goldfarbend.jpg" alt="Goldfarbenes Vorhängeschloss">
-        <h3>Goldfarbenes Mini‑Schloss (ca. 1980er Jahre)</h3>
-        <p>Kleines Messing‑Schloss mit einfachem Zylinderschließmechanismus. 
-        Diese Modelle wurden häufig für Koffer, Tagebücher oder kleine Schränke verwendet. 
-        Messing bietet guten Korrosionsschutz und war in den 1980er Jahren das bevorzugte Material für leichte Vorhängeschlösser.</p>
+    <div class="box">
+        <h2>Goldfarbenes Mini‑Schloss (ca. 1980er Jahre)</h2>
+        <img src="VHS Goldfarbend.jpg" alt="Goldfarbenes Vorhängeschloss" onclick="openLightbox('VHS Goldfarbend.jpg')" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <p>Kleines Messing‑Schloss mit einfachem Zylinderschließmechanismus. Diese Modelle wurden häufig für Koffer, Tagebücher oder kleine Schränke verwendet. Messing bietet guten Korrosionsschutz und war in den 1980er Jahren das bevorzugte Material für leichte Vorhängeschlösser.</p>
     </div>
 
-</section>
+    <a href="museum.html" class="btn-zurueck">← Zurück zum Museum</a>
+</div>
 
 <footer>
-    <div style="max-width
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
+</footer>
+
+</body>
+</html>
