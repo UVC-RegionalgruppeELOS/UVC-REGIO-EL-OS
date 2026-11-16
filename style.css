@@ -280,10 +280,13 @@ footer a:hover {
 }
 
 .counter {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     color: #777;
-    margin-top: 12px;
+    margin-top: 14px;
+    opacity: 0.75;
+    transition: opacity 0.25s ease;
 }
+
 
 /* --- Lightbox --- */
 .lightbox {
