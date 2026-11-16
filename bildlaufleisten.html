@@ -1,191 +1,71 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bildlaufleisten – UVC Regionalgruppe Emsland–Osnabrück</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildlaufleisten &amp; Präsentation – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-<style>
-    body {
-        margin: 0;
-        background: #e5e5e5;
-        color: #222;
-        font-family: Arial, sans-serif;
-        overflow-x: hidden;
-    }
+    <meta name="description" content="Endlos-Bildlaufleisten der Unimog-Galerie und des Museums auf dem Hof Blanke mit Vollbild-Modus für Präsentationen.">
+    <meta name="keywords" content="UVC, Unimog, Bildlaufleiste, Präsentation, Galerie, Museum Hof Blanke, Emsland, Osnabrück">
+    <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    h1 {
-        text-align: center;
-        color: #2e5c2e;
-        margin: 25px 0 10px 0;
-        font-size: 1.8rem;
-    }
-
-    .marquee {
-        overflow: hidden;
-        white-space: nowrap;
-        box-sizing: border-box;
-        padding: 10px 0;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-
-    .marquee img {
-        height: 180px;
-        margin: 0 12px;
-        border-radius: 6px;
-        box-shadow: 0 0 6px rgba(0,0,0,0.5);
-        transition: transform 0.2s;
-    }
-
-    .marquee img:hover {
-        transform: scale(1.05);
-    }
-
-    /* Geschwindigkeit */
-    .scroll-unimog {
-        display: inline-block;
-        animation: scroll 120s linear infinite;
-    }
-
-    .scroll-museum {
-        display: inline-block;
-        animation: scroll 80s linear infinite;
-    }
-
-    @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-    }
-
-    :fullscreen .marquee {
-        padding: 40px 0;
-    }
-
-    :fullscreen .marquee img {
-        height: 90vh !important;
-        margin: 0 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 12px rgba(255,255,255,0.4);
-    }
-
-    :fullscreen {
-        background: #000;
-    }
-
-    :fullscreen .scroll-unimog,
-    :fullscreen .scroll-museum {
-        animation-duration: 220s;
-    }
-</style>
-
-<script>
-function toggleFullscreen(el) {
-    if (!document.fullscreenElement) {
-        el.requestFullscreen();
-    } else {
-        document.exitFullscreen();
-    }
-}
-
-function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
-</script>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-<!-- ===================== UNIMOG ===================== -->
+<header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+    <nav id="mainNav">
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html" class="aktiv">Bildlaufleisten</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
 
-<h1>Unimog‑Galerie</h1>
+<div class="container">
+    <h1>Bildlaufleisten – Präsentationsmodus</h1>
+    <p>Beide Galerien laufen in zufälliger Reihenfolge als nahtlose Dauerschleife. <strong>Tipp für den Stammtisch:</strong> Ein Klick direkt auf eine Bildlaufleiste (oder den Vollbild-Button) startet die gewählte Galerie im Vollbildmodus vor schwarzem Hintergrund. Mit einem weiteren Klick oder der <strong>ESC-Taste</strong> beenden Sie das Vollbild wieder.</p>
 
-<script>
-const unimogImages = shuffle([
-    "1951.jpg","1957.png","unimog-1958-nils.png","unimog-1961-nils.png",
-    "1975.png","1979.jpg","unimog-1979-2.jpg","2023.jpg","2024.jpg",
-    "2025.jpg","2026.jpeg","gruendung.png",
-    "Nordhorn1.jpg","Nordhorn2.jpg","Nordhorn3.jpg","Nordhorn4.jpg",
-    "Nordhorn5.jpg","Nordhorn6.jpg","Nordhorn7.jpg","Nordhorn8.jpg",
-    "Verl1.jpg","Verl2.jpg","Verl3.jpg","Verl4.jpg","Verl5.jpg","Verl6.jpg",
-    "Verl7.jpg","Verl8.jpg","Verl9.jpg","Verl10.jpg","Verl11.jpg","Verl12.jpg",
-    "Verl13.jpg","Verl14.jpg","Verl15.jpg","Verl16.jpg","Verl17.jpg","Verl18.jpg",
-    "Verl19.jpg","Verl20.jpg","Verl21.jpg","Verl22.jpg","Verl24.jpg","Verl25.jpg",
-    "Verl26.jpg","Verl27.jpg","Verl28.jpg","Verl29.jpg","Verl30.jpg","Verl30a.jpg",
-    "Verl31.jpg","Verl32.jpg","Verl33.jpg","Verl34.jpg","Verl35.jpg","Verl36.jpg",
-    "Verl37.jpg","Verl38.jpg"
-]);
-</script>
+    <!-- Unimog-Galerie -->
+    <div class="marquee-box">
+        <div class="marquee-header">
+            <h2>Unimog‑Galerie</h2>
+            <button type="button" class="btn-fullscreen" onclick="toggleMarqueeFullscreen('marqueeUnimog')">⛶ Vollbild starten</button>
+        </div>
+        <div class="marquee" id="marqueeUnimog" onclick="toggleMarqueeFullscreen('marqueeUnimog')" title="Klicken für Vollbild-Präsentation">
+            <div class="marquee-track" id="unimogScroll"></div>
+        </div>
+    </div>
 
-<div class="marquee" ondblclick="toggleFullscreen(this)">
-  <div class="scroll-unimog" id="unimogScroll"></div>
+    <!-- Museums-Galerie -->
+    <div class="marquee-box">
+        <div class="marquee-header">
+            <h2>Museums‑Galerie (Hof Blanke)</h2>
+            <button type="button" class="btn-fullscreen" onclick="toggleMarqueeFullscreen('marqueeMuseum')">⛶ Vollbild starten</button>
+        </div>
+        <div class="marquee" id="marqueeMuseum" onclick="toggleMarqueeFullscreen('marqueeMuseum')" title="Klicken für Vollbild-Präsentation">
+            <div class="marquee-track museum-speed" id="museumScroll"></div>
+        </div>
+    </div>
 </div>
-
-<script>
-const unimogContainer = document.getElementById("unimogScroll");
-unimogImages.forEach(img => {
-    const el = document.createElement("img");
-    el.src = img;
-    el.alt = img;
-    unimogContainer.appendChild(el);
-});
-</script>
-
-<!-- ===================== MUSEUM ===================== -->
-
-<h1>Museums‑Galerie</h1>
-
-<script>
-const museumImages = shuffle([
-    "DDR IFW W.png","DDR-W58.png","FeTAp 2L-752-1 von 08-1989.png",
-    "FeTAp 611-1a von 11-1979.png","FeTAp 611-2 von 05-1971.png",
-    "FeTAp 612 von 1977.png","FeTAp 612-2a angeschlossen.png",
-    "FeTAp 791-1 von 12-1986.png","FeTAp 795-1 von 10-1988.png",
-    "FeTAp BW Modell 54 OB-ZB ang.png","FeTAp Masterset 80er Jahre.png",
-    "FeTAp SEL 1026.png",
-
-    /* Lampen */
-    "TL 7 Daimon 414..png",
-    "TL 2 VARTA 505.png",
-    "TL 8 VARTA 616.jpg",
-    "TL 4 VARTA 618.png",
-    "TL 3 VARTA 657.png",
-    "TL 5 VARTA 658.png",
-    "TL 6 VARTA Duplex.png",
-    "TL1 Maglite Mini.png",
-    "HL 1 Makita.png",
-    "HL CEAG Dortmund.jpg",
-    "HL Acculux SL6 LED.jpg"
-]);
-</script>
-
-<div class="marquee" ondblclick="toggleFullscreen(this)">
-  <div class="scroll-museum" id="museumScroll"></div>
-</div>
-
-<script>
-const museumContainer = document.getElementById("museumScroll");
-museumImages.forEach(img => {
-    const el = document.createElement("img");
-    el.src = img;
-    el.alt = img;
-    museumContainer.appendChild(el);
-});
-</script>
-
-<!-- ===================== FOOTER ===================== -->
 
 <footer>
-    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-    <p>
-        <a href="hosting.html">Hosting & Technik</a> ·
-        <a href="impressum.html">Impressum</a> ·
-        <a href="datenschutz.html">Datenschutz</a>
-    </p>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
