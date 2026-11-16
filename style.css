@@ -118,7 +118,6 @@ section,
     padding: 28px;
 }
 
-/* Logo-Bereich auf der Startseite */
 .logo-bereich {
     text-align: center;
 }
@@ -131,7 +130,6 @@ section,
     margin: 0 auto;
 }
 
-/* Hero / Collagen-Container */
 .hero {
     padding: 0;
     overflow: hidden;
@@ -280,13 +278,10 @@ footer a:hover {
 }
 
 .counter {
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     color: #777;
-    margin-top: 14px;
-    opacity: 0.75;
-    transition: opacity 0.25s ease;
+    margin-top: 12px;
 }
-
 
 /* --- Lightbox --- */
 .lightbox {
@@ -330,6 +325,7 @@ footer a:hover {
 .lightbox-close:hover {
     color: #bbb;
 }
+
 /* --- Bildlaufleisten & Vollbild-Präsentation --- */
 .marquee-box {
     background: var(--box-grau);
@@ -364,4 +360,80 @@ footer a:hover {
     font-size: 0.9rem;
     cursor: pointer;
     transition: background 0.2s ease;
+}
+
+.btn-fullscreen:hover {
+    background: var(--gruen-dunkel);
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 12px 0;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    animation: marqueeScroll 180s linear infinite;
+}
+
+.marquee-track.museum-speed {
+    animation-duration: 210s;
+}
+
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.marquee img {
+    height: 180px;
+    width: auto;
+    margin: 0 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.marquee img:hover {
+    transform: scale(1.04);
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Vollbild-Modus für Präsentationen */
+.marquee:fullscreen {
+    background: #000000;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+}
+
+.marquee:fullscreen .marquee-track {
+    animation-duration: 260s;
+    animation-play-state: running !important;
+}
+
+.marquee:fullscreen img {
+    height: 88vh;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
 }
