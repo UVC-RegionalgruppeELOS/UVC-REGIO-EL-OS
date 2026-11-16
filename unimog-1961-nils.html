@@ -15,186 +15,62 @@
     <meta property="og:type" content="article">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: rgba(255,255,255,0.92);
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-                font-size: 1.05rem;
-            }
-
-            nav.active { display: flex; }
-        }
-
-        /* Hero */
-        .hero {
-            max-width: 900px;
-            width: 100%;
-            margin: 30px auto;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            background: white;
-        }
-
-        .hero img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Content */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 {
-            color: #2e5c2e;
-            margin-top: 0;
-        }
-
-        a {
-            color: #2e5c2e;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .backlinks {
-            margin-top: 25px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
-
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
-        <a href="unimogs.html">Unimogs</a>
+        <a href="unimogs.html" class="aktiv">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="weiterführende-links.html">Weiterführende Links</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
 <div class="hero">
-    <img src="unimog-1961-nils.png" alt="Unimog 411.117 Westfalia Baujahr 1961">
+    <img src="unimog-1961-nils.png"
+         alt="Unimog 411.117 Westfalia Baujahr 1961"
+         onclick="openLightbox('unimog-1961-nils.png')">
 </div>
 
 <div class="container">
     <h1>Unimog 411.117 Westfalia – Baujahr 1961</h1>
 
-    <p><strong>Modell:</strong> Unimog 411.117 Westfalia</p>
-    <p><strong>Baujahr:</strong> 1961</p>
-    <p><strong>Leistung:</strong> 32 PS</p>
-    <p><strong>Besitzer:</strong> Nils</p>
+    <h2>Steckbrief</h2>
+    <dl class="datenblatt">
+        <dt>Modell:</dt>
+        <dd>Unimog 411.117 Westfalia</dd>
+
+        <dt>Baujahr:</dt>
+        <dd>1961</dd>
+
+        <dt>Leistung:</dt>
+        <dd>32 PS</dd>
+
+        <dt>Besitzer:</dt>
+        <dd>Nils</dd>
+    </dl>
 
     <h2>Historie & Besonderheiten</h2>
-
     <p>
         Dieser Unimog 411.117 wurde 1961 gebaut und ursprünglich mit einer
         <strong>Kabelziehwinde der Firma Lancier</strong> ausgeliefert.
     </p>
-
     <p>
         Bis Anfang der 1990er‑Jahre war er beim <strong>örtlichen Straßenbaubetrieb</strong> im Einsatz,
         ausgestattet mit einem <strong>Kehrbesen</strong>.
     </p>
-
     <p>
         Im Jahr 2004 übernahm ein bekannter Oldtimerfreund das Fahrzeug und begann eine
         <strong>umfangreiche Komplettrestaurierung</strong>, die sich über beeindruckende
@@ -202,9 +78,7 @@
         gepflegten Zustand.
     </p>
 
-    <div class="backlinks">
-        <p><a href="unimogs.html">← Zurück zur Übersicht</a></p>
-    </div>
+    <a href="unimogs.html" class="btn-zurueck">← Zurück zur Übersicht</a>
 </div>
 
 <footer>
