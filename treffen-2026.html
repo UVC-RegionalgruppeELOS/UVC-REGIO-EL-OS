@@ -3,66 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unimog‑Treffen 2026 – Versmold‑Loxten</title>
+    <title>Unimog-Treffen 2026 – Versmold-Loxten</title>
 
-    <meta name="description" content="Unimog‑Treffen 2026 der UVC Regionalgruppe Emsland–Osnabrück auf dem Hof Coesfeld in Versmold‑Loxten. Ausfahrten, Museumsbesuche, gesellige Abende und rund 30 Unimogs.">
+    <meta name="description" content="Unimog-Treffen 2026 der UVC Regionalgruppe Emsland–Osnabrück auf dem Hof Coesfeld in Versmold-Loxten. Ausfahrten, Museumsbesuche, gesellige Abende und rund 30 Unimogs.">
     <meta name="keywords" content="Unimog Treffen 2026, Versmold, Loxten, Peckelloh, Automuseum Melle, Heimatmuseum Versmold, UVC Regionalgruppe Emsland–Osnabrück">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <meta property="og:title" content="Unimog‑Treffen 2026 – Versmold‑Loxten">
-    <meta property="og:description" content="Rückblick auf das Unimog‑Treffen 2026 mit Ausfahrten, Museumsbesuchen und geselligem Beisammensein.">
-    <meta property="og:image" content="2026.jpeg">
+    <meta property="og:title" content="Unimog-Treffen 2026 – Versmold-Loxten">
+    <meta property="og:description" content="Rückblick auf das Unimog-Treffen 2026 mit Ausfahrten, Museumsbesuchen und geselligem Beisammensein.">
+    <meta property="og:image" content="https://github.io">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/treffen-2026.html">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
-
-        /* globaler Link-Stil */
-        a {
-            color: #2e5c2e;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #1f3b1f;
-            text-decoration: underline;
-        }
-
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
-        nav a:hover { color: #2e5c2e; }
-
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
-            nav.active { display: flex; }
-        }
-
-        .container { max-width: 900px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
-
-        h1, h2, h3 { color: #2e5c2e; }
-
-        .meta { font-size: 0.95rem; color: #555; margin-bottom: 15px; }
-
-        .bilder { margin-top: 30px; text-align: center; }
-        .bilder img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.2); }
-
-        .backlinks { margin-top: 30px; font-size: 0.95rem; }
-        .backlinks a { font-weight: bold; }
-
-        footer { text-align: center; padding: 20px; color: #444; font-size: 0.9rem; border-top: 1px solid #ccc; margin-top: 40px; background: #e5e5e5; }
-        footer a { color: #777; text-decoration: none; font-size: 0.85rem; }
-        footer a:hover { color: #2e5c2e; }
-    </style>
-
-    <script>
-        function toggleMenu() { document.getElementById("mainNav").classList.toggle("active"); }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -70,25 +25,33 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen oder schließen">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
-        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="unsere-treffen.html" class="aktiv">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
 <div class="container">
-    <h1>Unimog‑Treffen 2026 – Versmold‑Loxten</h1>
+    <h1>Unimog-Treffen 2026 – Versmold-Loxten</h1>
 
-    <p class="meta">
-        <strong>Zeitraum:</strong> Freitag, 10.07.2026 bis Sonntag, 12.07.2026<br>
-        <strong>Ort:</strong> Hof Coesfeld, Versmold‑Loxten<br>
-        <strong>Teilnehmer:</strong> Rund 20 Unimogs am Freitag, später ca. 30 Fahrzeuge
-    </p>
+    <dl class="datenblatt">
+        <dt>Zeitraum:</dt>
+        <dd>Freitag, 10.07.2026 bis Sonntag, 12.07.2026</dd>
+
+        <dt>Ort:</dt>
+        <dd>Hof Coesfeld, Versmold-Loxten</dd>
+
+        <dt>Teilnehmer:</dt>
+        <dd>Rund 20 Unimogs am Freitag, später ca. 30 Fahrzeuge</dd>
+    </dl>
 
     <h2>Freitag – Ankunft, Ausfahrt und Museumsbesuch</h2>
 
@@ -100,7 +63,7 @@
 
     <p>
         Die Route führte durch die idyllische <strong>Peckelloher Seenplatte</strong> weiter nach Versmold zum 
-        <strong>Heimatmuseum Versmold</strong> (heimatverein-versmold.de).  
+        <a href="https://heimatverein-versmold.de" target="_blank" rel="noopener"><strong>Heimatmuseum Versmold</strong></a>.  
         Dort erhielten wir eine ausführliche und sehr interessante Führung.
     </p>
 
@@ -111,21 +74,23 @@
 
     <h2>Samstag – Große Ausfahrt nach Melle</h2>
 
-    <p>
-        Nach dem Frühstück startete die große Tagesausfahrt: Rund <strong>30 Unimogs</strong> machten sich auf den Weg 
-        nach Melle zum <strong>Automobilmuseum</strong> (automuseum-melle.de).  
-        Die Führung war beeindruckend und bot viele spannende Einblicke in die Automobilgeschichte.
-    </p>
-
-    <p>
-        Auf dem Rückweg legten wir einen Zwischenstopp in <strong>Wellinholzhausen</strong> ein, wo wir beim 
-        <strong>Beutling</strong> (bredenstein-gmbh.de) einkehrten.  
-        Bei mittlerweile <strong>33 °C</strong> war die Pause mehr als willkommen.
-    </p>
+    <div class="box">
+        <h3>Ausfahrt zum Automuseum &amp; Einkehr beim Beutling</h3>
+        <p>
+            Nach dem Frühstück startete die große Tagesausfahrt: Rund <strong>30 Unimogs</strong> machten sich auf den Weg 
+            nach Melle zum <a href="https://automuseum-melle.de" target="_blank" rel="noopener"><strong>Automobilmuseum Melle</strong></a>.  
+            Die Führung war beeindruckend und bot viele spannende Einblicke in die Automobilgeschichte.
+        </p>
+        <p style="margin-bottom: 0;">
+            Auf dem Rückweg legten wir einen Zwischenstopp in <strong>Wellingholzhausen</strong> ein, wo wir beim 
+            <a href="https://bredenstein-gmbh.de" target="_blank" rel="noopener"><strong>Beutling</strong></a> einkehrten.  
+            Bei mittlerweile <strong>33 °C</strong> war die Pause mehr als willkommen.
+        </p>
+    </div>
 
     <p>
         Zurück auf dem Hof Coesfeld angekommen, klang der Abend erneut in geselliger Runde aus. 
-        Bei leckerem Essen (z.B. sensationelle Steaks vom Wildschwein), kühlen Getränken und vielen Gesprächen über Technik, Reisen und 
+        Bei leckerem Essen (z. B. sensationelle Steaks vom Wildschwein), kühlen Getränken und vielen Gesprächen über Technik, Reisen und 
         vergangene Treffen wurde es ein langer und sehr schöner Sommerabend.
     </p>
 
@@ -143,35 +108,22 @@
         beeindruckenden Fahrzeugen und vielen neuen Eindrücken.
     </p>
 
-   <div class="bilder">
-    <h3>Bilder vom Treffen 2026</h3>
-    <p>Die folgende Collage zeigt einige Eindrücke vom Unimog‑Treffen 2026 in Versmold‑Loxten:</p>
-    <img src="2026.jpeg" alt="Unimog‑Treffen 2026 – Versmold‑Loxten">
-</div>
+    <h2>Bilder vom Treffen 2026</h2>
+    <p>Die folgende Collage zeigt einige Eindrücke vom Unimog-Treffen 2026 in Versmold-Loxten (zum Vergrößern anklicken):</p>
+    <img src="2026.jpeg" 
+         alt="Fotocollage Unimog-Treffen 2026 – Versmold-Loxten"
+         onclick="openLightbox('2026.jpeg')"
+         style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.18); cursor: zoom-in; display: block; margin-bottom: 15px;">
 
-
-    <div class="backlinks">
-        <p>
-            <a href="unsere-treffen.html">← Zurück zur Übersicht unserer Treffen</a>
-        </p>
-        <p>
-            <a href="index.html">Zur Startseite</a>
-        </p>
-    </div>
+    <a href="unsere-treffen.html" class="btn-zurueck">← Zurück zu unseren Treffen</a>
 </div>
 
 <footer>
-    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-    <p>
-        <a href="impressum.html">Impressum</a> |
-        <a href="datenschutz.html">Datenschutz</a>
-    </p>
-    <p>
-        Besucher:
-        <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-             alt="Besucherzähler"
-             style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto;">
-    </p>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
