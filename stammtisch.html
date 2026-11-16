@@ -9,156 +9,15 @@
     <meta name="keywords" content="Unimog, Stammtisch, Treffen, UVC, Regionalgruppe, Emsland, Osnabrück, Oldtimer, Gemeinschaft, Unimog Veteranen Club">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
+    <meta property="og:title" content="Stammtisch – UVC Regionalgruppe Emsland–Osnabrück">
+    <meta property="og:description" content="Termine, Treffpunkte und Gemeinschaft rund um historische Unimog-Fahrzeuge in Lotte.">
+    <meta property="og:image" content="stammtisch.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.io">
 
-        /* Header */
-        header {
-            background: rgba(0,0,0,0.85);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        /* Handy-Menü */
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.9);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-                font-size: 1.05rem;
-                color: #2e5c2e;
-            }
-            nav.active { display: flex; }
-        }
-
-        /* Weißer Hauptblock */
-        .container {
-            max-width: 900px;
-            width: 90%;
-            margin: 40px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 {
-            color: #2e5c2e;
-        }
-
-        /* Graue Kästen mit grüner Linie links */
-        .box {
-            background: #f7f7f7;
-            border-left: 5px solid #2e5c2e;
-            padding: 15px 20px;
-            margin: 25px 0;
-            border-radius: 6px;
-        }
-
-        /* Bild */
-        .stammtisch-img {
-            display: block;
-            margin: 25px auto 35px auto;
-            width: 180px;
-            border-radius: 6px;
-            box-shadow: 0 0 6px rgba(0,0,0,0.25);
-        }
-
-        /* Tabelle */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        th, td {
-            padding: 8px;
-        }
-
-        th {
-            background: #2e5c2e;
-            color: white;
-            text-align: left;
-        }
-
-        a {
-            color: #2e5c2e;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -167,9 +26,9 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
 
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
-        <a href="stammtisch.html">Stammtisch</a>
+        <a href="stammtisch.html" class="aktiv">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
@@ -185,65 +44,114 @@
 
     <h1>Unser Stammtisch</h1>
 
-    <img src="stammtisch.png" alt="Stammtisch der UVC Regionalgruppe Emsland–Osnabrück" class="stammtisch-img">
+    <img src="stammtisch.png" 
+         alt="Stammtisch der UVC Regionalgruppe Emsland–Osnabrück" 
+         onclick="openLightbox('stammtisch.png')"
+         style="display: block; margin: 20px auto 30px auto; max-width: 220px; width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.18); cursor: pointer;">
 
-    <!-- Treffpunkt -->
-    <div class="box">
-        <h2>Treffpunkt</h2>
-        <p>
-            Unser Stammtisch findet in der <strong>Gaststätte Urban</strong> statt:<br>
-            <strong>Hasberger Straße 13, 49504 Lotte</strong>.
-        </p>
-        <p>
-            Die Betreiber sind <strong>bodenständig, herzlich und absolut unkompliziert</strong> – genau die richtige Umgebung für gute Gespräche über Technik, Treffen und natürlich den Unimog.
-        </p>
-        <p>
-            Die Speisekarte ist bewusst <strong>minimalistisch</strong> gehalten und bietet vor allem klassische Gerichte wie <strong>Pommes und Schnitzel</strong>.
-        </p>
-        <p style="color:#b22222; font-weight:bold;">
-            Bitte beachten: In der Gaststätte Urban ist <u>nur Barzahlung</u> möglich.
-        </p>
-        <p style="color:#b22222; font-weight:bold;">
-            Zusätzlich wichtig: <u>Es steht kein WLAN zur Verfügung</u>.
-        </p>
-        <p style="color:#b22222; font-weight:bold; margin-top:20px;">
-            Hinweis: Der Stammtisch am <strong>09.04.2027</strong> findet <u>nicht</u> im Urban statt.  
-            Die alternative Gaststätte wird noch bekannt gegeben.
-        </p>
+    <h2>Auf einen Blick</h2>
+
+    <dl class="datenblatt">
+        <dt>Turnus:</dt>
+        <dd>Jeder zweite Freitag im Quartal</dd>
+
+        <dt>Uhrzeit:</dt>
+        <dd>Ab 19:30 Uhr</dd>
+
+        <dt>Stammlokal:</dt>
+        <dd>Gaststätte Urban</dd>
+
+        <dt>Adresse:</dt>
+        <dd>Hasberger Straße 13, 49504 Lotte</dd>
+
+        <dt>Verpflegung:</dt>
+        <dd>Kleine, klassische Karte (z. B. Schnitzel &amp; Pommes)</dd>
+    </dl>
+
+    <h2>Treffpunkt &amp; Atmosphäre</h2>
+    <p>
+        Unser Stammtisch findet regelmäßig in der <strong>Gaststätte Urban</strong> in Lotte statt. 
+        Die Betreiber sind <strong>bodenständig, herzlich und absolut unkompliziert</strong> – genau die richtige Umgebung für gute Gespräche über Technik, Ausfahrten und natürlich den Unimog.
+    </p>
+
+    <div style="background: #fdf3f3; border-left: 5px solid #b22222; padding: 15px 20px; margin: 25px 0; border-radius: 6px;">
+        <strong style="color: #b22222; display: block; margin-bottom: 8px;">Wichtige Hinweise vorab:</strong>
+        <ul style="margin: 0; padding-left: 20px; color: #333;">
+            <li style="margin-bottom: 6px;">In der Gaststätte Urban ist <strong>ausschließlich Barzahlung</strong> möglich.</li>
+            <li style="margin-bottom: 6px;">Vor Ort steht <strong>kein WLAN</strong> zur Verfügung.</li>
+            <li><strong>Sondertermin 09.04.2027:</strong> Dieser Stammtisch findet <u>nicht</u> im Urban statt. Die alternative Gaststätte wird rechtzeitig bekannt gegeben.</li>
+        </ul>
     </div>
 
-    <!-- Termine -->
-    <div class="box">
-        <h2>Termine</h2>
-        <p>
-            Unser Stammtisch findet an jedem <strong>zweiten Freitag eines Quartals</strong> statt – jeweils ab <strong>19:30 Uhr</strong>.
-        </p>
+    <h2>Termine</h2>
+    <p>
+        Alle geplanten Stammtisch-Abende (jeweils ab <strong>19:30 Uhr</strong>) in der Übersicht:
+    </p>
 
-        <table>
-            <tr><th>Quartal</th><th>Datum</th><th>Uhrzeit</th></tr>
-
-            <tr><td>Q4/2026</td><td>09.10.2026</td><td>19:30 Uhr</td></tr>
-            <tr><td>Q1/2027</td><td>08.01.2027</td><td>19:30 Uhr</td></tr>
-
-            <tr>
-                <td>Q2/2027</td>
-                <td>
-                    09.04.2027<br>
-                    <span style="color:#b22222; font-weight:bold;">Nicht im Urban – neuer Treffpunkt folgt</span>
-                </td>
-                <td>19:30 Uhr</td>
-            </tr>
-
-            <tr><td>Q3/2027</td><td>09.07.2027</td><td>19:30 Uhr</td></tr>
-            <tr><td>Q4/2027</td><td>15.10.2027</td><td>19:30 Uhr</td></tr>
-
-            <tr><td>Q1/2028</td><td>14.01.2028</td><td>19:30 Uhr</td></tr>
-            <tr><td>Q2/2028</td><td>14.04.2028</td><td>19:30 Uhr</td></tr>
-            <tr><td>Q3/2028</td><td>14.07.2028</td><td>19:30 Uhr</td></tr>
-            <tr><td>Q4/2028</td><td>13.10.2028</td><td>19:30 Uhr</td></tr>
+    <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background: #2e5c2e; color: white; text-align: left;">
+                    <th style="padding: 10px 12px;">Quartal</th>
+                    <th style="padding: 10px 12px;">Datum</th>
+                    <th style="padding: 10px 12px;">Uhrzeit &amp; Ort</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid #ddd; color: #777;">
+                    <td style="padding: 10px 12px;">Q4/2026</td>
+                    <td style="padding: 10px 12px;">09.10.2026</td>
+                    <td style="padding: 10px 12px;">19:30 Uhr – Gaststätte Urban</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd; background: #f9faf9;">
+                    <td style="padding: 10px 12px;"><strong>Q1/2027</strong></td>
+                    <td style="padding: 10px 12px;"><strong>08.01.2027</strong></td>
+                    <td style="padding: 10px 12px;">19:30 Uhr – Gaststätte Urban</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd; background: #fdf3f3;">
+                    <td style="padding: 10px 12px;"><strong>Q2/2027</strong></td>
+                    <td style="padding: 10px 12px;"><strong>09.04.2027</strong></td>
+                    <td style="padding: 10px 12px; color: #b22222; font-weight: bold;">19:30 Uhr – Nicht im Urban (neuer Treffpunkt folgt)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd; background: #f9faf9;">
+                    <td style="padding: 10px 12px;"><strong>Q3/2027</strong></td>
+                    <td style="padding: 10px 12px;"><strong>09.07.2027</strong></td>
+                    <td style="padding: 10px 12px;">19:30 Uhr – Gaststätte Urban</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd;">
+                    <td style="padding: 10px 12px;"><strong>Q4/2027</strong></td>
+                    <td style="padding: 10px 12px;"><strong>15.10.2027</strong></td>
+                    <td style="padding: 10px 12px;">19:30 Uhr – Gaststätte Urban</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd; background: #f9faf9;">
+                    <td style="padding: 10px 12px;"><strong>Q1/2028</strong></td>
+                    <td style="padding: 10px 12px;"><strong>14.01.2028</strong></td>
+                    <td style="padding: 10px 12px;">19:30 Uhr – Gaststätte Urban</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd;">
+                    <td style="padding: 10px 12px;"><strong>Q2/2028</strong></td>
+                    <td style="padding: 10px 12px;"><strong>14.04.2028</strong></td>
+                    <td style="padding: 10px 12px;">19:30 Uhr – Gaststätte Urban</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd; background: #f9faf9;">
+                    <td style="padding: 10px 12px;"><strong>Q3/2028</strong></td>
+                    <td style="padding: 10px 12px;"><strong>14.07.2028</strong></td>
+                    <td style="padding: 10px 12px;">19:30 Uhr – Gaststätte Urban</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px 12px;"><strong>Q4/2028</strong></td>
+                    <td style="padding: 10px 12px;"><strong>13.10.2028</strong></td>
+                    <td style="padding: 10px 12px;">19:30 Uhr – Gaststätte Urban</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vergrößerte Ansicht">
 </div>
 
 <footer>
