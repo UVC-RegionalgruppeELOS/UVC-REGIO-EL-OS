@@ -3,149 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termine – UVC Regionalgruppe Emsland–Osnabrück</title>
+    <title>Andere Treffen &amp; Termine – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <meta name="description" content="Aktuelle Termine und Treffen der UVC Regionalgruppe Emsland–Osnabrück.">
-    <meta name="keywords" content="UVC, Unimog, Treffen, Termine, Regionalgruppe, Emsland, Osnabrück">
+    <meta name="description" content="Aktuelle Termine und überregionale Treffen rund um Unimog und MB-trac für Mitglieder der UVC Regionalgruppe Emsland–Osnabrück.">
+    <meta name="keywords" content="UVC, Unimog, MB-trac, Treffen, Termine, Regionalgruppe, Emsland, Osnabrück">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background: rgba(0,0,0,0.85);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        /* PC-Menü: weiß */
-        nav a {
-            color: white;
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        /* Handy-Menü: grün */
-        @media (max-width: 899px) {
-            nav a {
-                color: #2e5c2e;
-            }
-            nav a:hover {
-                color: #1b3b1b;
-            }
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.9);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-                font-size: 1.05rem;
-            }
-            nav.active { display: flex; }
-        }
-
-        /* Weißer Block */
-        section {
-            max-width: 900px;
-            width: 90%;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1 {
-            color: #2e5c2e;
-        }
-
-        .termin-box {
-            background: #f7f7f7;
-            border-left: 5px solid #2e5c2e;
-            padding: 15px 20px;
-            margin-bottom: 20px;
-            border-radius: 6px;
-        }
-
-        .termin-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #2e5c2e;
-        }
-
-        .termin-date {
-            font-weight: bold;
-            margin-top: 5px;
-        }
-
-        .termin-location {
-            margin-top: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -153,13 +19,13 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="andere-treffen.html" class="aktiv">Andere Treffen</a>
         <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
         <a href="intern.html">Intern</a>
@@ -167,54 +33,76 @@
     </nav>
 </header>
 
-<section>
-    <h1>Termine </h1>
-    <p>Aktuelle Übersicht der geplanten Treffen und Veranstaltungen:</p>
+<div class="container">
+    <h1>Andere Treffen &amp; Termine</h1>
+    <p>Aktuelle Übersicht überregionale Treffen und Veranstaltungen rund um Unimog und MB‑trac:</p>
 
-    <div class="termin-box">
-    <div class="termin-title">UVC‑Jahreshauptversammlung</div>
-    <div class="termin-date">📅 07.03.2027</div>
-    <div class="termin-location">📍 Aschenberg</div>
+    <div class="box">
+        <h2>UVC‑Jahreshauptversammlung</h2>
+        <dl class="datenblatt">
+            <dt>Datum:</dt>
+            <dd>📅 07.03.2027</dd>
+            <dt>Ort:</dt>
+            <dd>📍 Aschenberg</dd>
+        </dl>
+    </div>
+
+    <div class="box">
+        <h2>30 Jahre Oberbayerische Unimogfreunde &amp; UCG‑Jahrestreffen</h2>
+        <dl class="datenblatt">
+            <dt>Datum:</dt>
+            <dd>📅 27.–30.05.2027</dd>
+            <dt>Ort:</dt>
+            <dd>📍 Golkofen bei Wolfratshausen</dd>
+        </dl>
+    </div>
+
+    <div class="box">
+        <h2>UVC‑Sommertreffen Dülmen‑Rorup</h2>
+        <dl class="datenblatt">
+            <dt>Datum:</dt>
+            <dd>📅 29.07.–01.08.2027</dd>
+            <dt>Ort:</dt>
+            <dd>📍 Dülmen‑Rorup</dd>
+        </dl>
+    </div>
+
+    <div class="box">
+        <h2>Der Berg ruft – Venner Berg</h2>
+        <dl class="datenblatt">
+            <dt>Datum:</dt>
+            <dd>📅 27.–29.08.2027</dd>
+            <dt>Ort:</dt>
+            <dd>📍 Venner Berg</dd>
+        </dl>
+    </div>
+
+    <div class="box">
+        <h2>MB trac &amp; Unimog Feldtage</h2>
+        <dl class="datenblatt">
+            <dt>Datum:</dt>
+            <dd>📅 03.–05.09.2027</dd>
+            <dt>Ort:</dt>
+            <dd>📍 Kirchlinteln / Kreepen</dd>
+        </dl>
+    </div>
+
+    <div class="box">
+        <h2>Unimog &amp; MB trac Treffen Friedeburg</h2>
+        <dl class="datenblatt">
+            <dt>Datum:</dt>
+            <dd>📅 11.–12.09.2027</dd>
+            <dt>Ort:</dt>
+            <dd>📍 Friedeburg</dd>
+        </dl>
+    </div>
 </div>
-    
-    <div class="termin-box">
-        <div class="termin-title">30 Jahre Oberbayerische Unimogfreunde & UCG‑Jahrestreffen</div>
-        <div class="termin-date">📅 27.–30.05.2027</div>
-        <div class="termin-location">📍 Golkofen bei Wolfratshausen</div>
-    </div>
-
-    <div class="termin-box">
-        <div class="termin-title">UVC‑Sommertreffen Dülmen‑Rorup</div>
-        <div class="termin-date">📅 29.07.–01.08.2027</div>
-        <div class="termin-location">📍 Dülmen‑Rorup</div>
-    </div>
-
-    <div class="termin-box">
-        <div class="termin-title">Der Berg ruft – Venner Berg</div>
-        <div class="termin-date">📅 27.–29.08.2027</div>
-        <div class="termin-location">📍 Venner Berg</div>
-    </div>
-
-    <div class="termin-box">
-        <div class="termin-title">MB trac & Unimog Feldtage</div>
-        <div class="termin-date">📅 03.–05.09.2027</div>
-        <div class="termin-location">📍 Kirchlinteln / Kreepen</div>
-    </div>
-
-    <div class="termin-box">
-        <div class="termin-title">Unimog & MB trac Treffen Friedeburg</div>
-        <div class="termin-date">📅 11.–12.09.2027</div>
-        <div class="termin-location">📍 Friedeburg</div>
-    </div>
-
-
-</section>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a> ·  
-    <a href="impressum.html">Impressum</a> ·  
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
