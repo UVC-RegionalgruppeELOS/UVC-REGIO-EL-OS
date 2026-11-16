@@ -3,161 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programm | UVC Regionalgruppe Emsland–Osnabrück</title>
+    <title>Programm – UVC Regionalgruppe Emsland–Osnabrück</title>
 
     <meta name="description" content="Programm der UVC Regionalgruppe Emsland–Osnabrück: Stammtische, Treffen und Aktivitäten rund um historische Unimogs.">
+    <meta name="keywords" content="Unimog, Programm, Termine, Stammtisch, Treffen, UVC, Regionalgruppe, Emsland, Osnabrück">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
+    <meta property="og:title" content="Programm – UVC Regionalgruppe Emsland–Osnabrück">
+    <meta property="og:description" content="Stammtische, Treffen und Aktivitäten rund um historische Unimogs in der Region Emsland–Osnabrück.">
+    <meta property="og:image" content="programm.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.io">
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #222;
-            background: #e5e5e5;
-            line-height: 1.6;
-        }
-
-        header {
-            background: rgba(0,0,0,0.85);
-            padding: 15px 10px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        /* Kompakte Abstände für eine garantiert einzeilige Navigation */
-        nav a {
-            color: white;
-            margin: 0 6px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.85rem;
-            transition: color 0.3s;
-            white-space: nowrap;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.9);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-                font-size: 1.05rem;
-                color: #2e5c2e;
-            }
-            nav.active { display: flex; }
-        }
-
-        /* Bild oben, schneidet transparente Ränder der PNG sauber ab */
-        .programmbild-top {
-            margin: 40px auto 20px auto;
-            max-width: 900px;
-            width: 90%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            overflow: hidden;
-            aspect-ratio: 16 / 9;
-            background: white;
-        }
-
-        .programmbild-top img {
-            width: 154%;
-            height: auto;
-            display: block;
-            margin-left: -1%;
-            margin-top: -1%;
-        }
-
-        section {
-            max-width: 900px;
-            width: 90%;
-            margin: 20px auto 40px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-        }
-
-        h1, h2 {
-            color: #2e5c2e;
-        }
-
-        a {
-            color: #2e5c2e;
-            text-decoration: none;
-            transition: color 0.2s ease, text-decoration 0.2s ease;
-        }
-
-        a:hover {
-            color: #1b3b1b;
-            text-decoration: underline;
-        }
-
-        .box {
-            background: #f7f7f7;
-            border-left: 5px solid #2e5c2e;
-            padding: 15px 20px;
-            margin: 25px 0;
-            border-radius: 6px;
-        }
-
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #2e5c2e;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #1b3b1b;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -166,7 +26,7 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
         <a href="index.html">Start</a>
-        <a href="programm.html"><strong>Programm</strong></a>
+        <a href="programm.html" class="aktiv">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
@@ -179,11 +39,13 @@
     </nav>
 </header>
 
-<div class="programmbild-top">
-    <img src="programm.png" alt="Unimog-Treffen im Steinbruch Bad Laer">
+<div class="hero" onclick="openLightbox('programm.png')" style="aspect-ratio: 16 / 9;">
+    <img src="programm.png" 
+         alt="Unimog-Treffen im Steinbruch Bad Laer" 
+         style="width: 185%; max-width: none; height: auto; margin-left: -1%; margin-top: -1%;">
 </div>
 
-<section>
+<div class="container">
     <h1>Unser Programm</h1>
 
     <div class="box">
@@ -204,13 +66,13 @@
             <a href="unsere-treffen.html"><strong>Unsere Treffen</strong></a>.
         </p>
     </div>
-</section>
+</div>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a> ·  
-    <a href="impressum.html">Impressum</a> ·  
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
