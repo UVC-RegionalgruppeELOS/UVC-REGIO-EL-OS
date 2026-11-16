@@ -102,7 +102,6 @@ function buildSeamlessMarquee(trackId, imageList) {
         const img = document.createElement("img");
         img.src = item.src;
         img.alt = item.text;
-        img.loading = "lazy";
 
         const caption = document.createElement("div");
         caption.className = "marquee-caption";
