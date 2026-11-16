@@ -16,145 +16,8 @@
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/gruendung-2026.html">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            nav.active {
-                display: flex;
-            }
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 {
-            color: #2e5c2e;
-        }
-
-        .meta {
-            font-size: 0.95rem;
-            color: #555;
-            margin-bottom: 15px;
-        }
-
-        .bilder {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .bilder img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.2);
-        }
-
-        .backlinks {
-            margin-top: 30px;
-            font-size: 0.95rem;
-        }
-
-        .backlinks a {
-            color: #2e5c2e;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .backlinks a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 1px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -162,24 +25,40 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen oder schließen">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
-        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="unsere-treffen.html" class="aktiv">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
+<div class="hero" onclick="openLightbox('gruendung.png')">
+    <img src="gruendung.png" alt="Gründung der UVC Regionalgruppe Emsland–Osnabrück auf dem Hof Blanke in Bad Laer Müschen">
+</div>
+
 <div class="container">
     <h1>Gründung der UVC Regionalgruppe Emsland–Osnabrück</h1>
-    <p class="meta">
-        <strong>Datum:</strong> Sonntag, 12. April 2026<br>
-        <strong>Ort:</strong> Hof Blanke, Bad Laer – Ortsteil Müschen<br>
-        <strong>Teilnehmer:</strong> ca. 20 Personen, davon 6 mit Unimog angereist
-    </p>
+
+    <dl class="datenblatt">
+        <dt>Datum:</dt>
+        <dd>Sonntag, 12. April 2026 (ab 11:00 Uhr)</dd>
+
+        <dt>Ort:</dt>
+        <dd>Hof Blanke, Bad Laer – Ortsteil Müschen</dd>
+
+        <dt>Teilnehmer:</dt>
+        <dd>ca. 20 Personen, davon 6 mit Unimog angereist</dd>
+
+        <dt>Anlass:</dt>
+        <dd>Offizielle Gründung in Abstimmung mit dem UVC Dachverband</dd>
+    </dl>
 
     <h2>Der Tag der Gründung</h2>
     <p>
@@ -204,36 +83,15 @@
         auf den Heimweg machten. Damit war der Grundstein für eine lebendige und engagierte Gemeinschaft gelegt.
     </p>
 
-    <div class="bilder">
-        <h2>Foto von der Gründung</h2>
-        <p>Ein Eindruck vom Gründungstag der UVC Regionalgruppe Emsland–Osnabrück:</p>
-        <img src="gruendung.png" alt="Gründung der UVC Regionalgruppe Emsland–Osnabrück auf dem Hof Blanke in Bad Laer Müschen">
-    </div>
-
-    <div class="backlinks">
-        <p>
-            <a href="index.html">Zur Startseite</a> · 
-            <a href="unsere-treffen.html">Zu den Treffen</a>
-        </p>
-    </div>
+    <a href="unsere-treffen.html" class="btn-zurueck">← Zurück zu unseren Treffen</a>
 </div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto;">
-        <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-        <p>
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-        <p style="font-size: 0.75rem; color: #777;">
-            Besucher:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 border="0"
-                 alt="Besucherzähler der Webseite"
-                 style="vertical-align: middle; opacity: 0.6; height: 20px; width: auto; max-width: 120px;">
-        </p>
-    </div>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
