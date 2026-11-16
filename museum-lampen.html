@@ -3,100 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Blanke – Taschenlampen & Handlampen</title>
+    <title>Museum Hof Blanke – Taschenlampen &amp; Handlampen | UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <meta name="description" content="Historische Taschenlampen und Handlampen im Museum Blanke, sortiert nach Baujahr und Hersteller.">
+    <meta name="description" content="Historische Taschenlampen und Handlampen in der Sammlung auf dem Hof Blanke, sortiert nach Baujahr und Hersteller.">
     <meta name="keywords" content="Taschenlampe, Handlampe, VARTA, Daimon, Maglite, Makita, CEAG, Acculux, Museum Blanke, Bad Laer, Beleuchtung, Geschichte">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background: rgba(0,0,0,0.85);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-        nav a:hover { color: #2e5c2e; }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.9); padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; color: #2e5c2e; }
-            nav.active { display: flex; }
-        }
-
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 { color: #2e5c2e; }
-
-        .lampe-item { margin-bottom: 40px; }
-
-        .lampe-item img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            display: block;
-            margin: 15px auto;
-            border-radius: 6px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.15);
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #e5e5e5;
-            color: #555;
-            font-size: 0.9rem;
-            border-top: 1px solid #ccc;
-        }
-        footer a { color: #2e5c2e; text-decoration: none; }
-        footer a:hover { color: #1d3d1d; }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -104,240 +19,216 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
-        <a href="museum.html">Museum</a>
-        <a href="museum-buero.html">Büro</a>
-        <a href="museum-haushalt.html">Haushalt</a>
-        <a href="museum-landwirtschaft.html">Landwirtschaft</a>
-        <a href="museum-telefonie.html">Telefonie</a>
-        <a href="museum-lampen.html">Taschenlampen & Handlampen</a>
-        <a href="museum-werkstatt.html">Werkstatt</a>
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<section>
-    <h1>Taschenlampen & Handlampen</h1>
-    <p>Historische Taschenlampen und Handlampen aus verschiedenen Jahrzehnten. Die Sammlung ist streng nach Baujahr sortiert.</p>
+<div class="container">
+    <h1>Taschenlampen &amp; Handlampen</h1>
+    <p>Historische Taschenlampen und Handlampen aus verschiedenen Jahrzehnten. Die Sammlung auf dem Hof Blanke ist chronologisch nach Baujahr sortiert. Ein Klick auf ein Foto öffnet die vergrößerte Ansicht.</p>
 
     <!-- 1950er – Daimon 314 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1950er Jahre – Daimon 314 (Bundeswehr-Handlampe)</h2>
-        <img src="TL 7 Daimon 414..png" alt="Daimon 314 Bundeswehr-Handlampe">
-        <p><strong>Hersteller:</strong> Daimon<br>
-           <strong>Modell:</strong> 314<br>
-           <strong>Baujahr:</strong> Ab den 1950er Jahren<br>
-           <strong>Besonderheiten:</strong> Robuste Metalllampe, häufig bei der Bundeswehr eingesetzt.</p>
+        <img src="TL 7 Daimon 414..png" alt="Daimon 314 Bundeswehr-Handlampe" onclick="openLightbox('TL 7 Daimon 414..png')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>Daimon</dd>
+            <dt>Modell:</dt>
+            <dd>314</dd>
+            <dt>Baujahr:</dt>
+            <dd>Ab den 1950er Jahren</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Robuste Metalllampe, häufig bei der Bundeswehr eingesetzt.</dd>
+        </dl>
     </div>
 
     <!-- 1950er – VARTA TL 2 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1950er Jahre – VARTA TL 2 (505)</h2>
-        <img src="TL 2 VARTA 505.png" alt="VARTA TL 2">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 2 (505)<br>
-           <strong>Baujahr:</strong> Ab den 1950er Jahren<br>
-           <strong>Besonderheiten:</strong> Klassische Metalltaschenlampe.</p>
+        <img src="TL 2 VARTA 505.png" alt="VARTA TL 2" onclick="openLightbox('TL 2 VARTA 505.png')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA</dd>
+            <dt>Modell:</dt>
+            <dd>TL 2 (505)</dd>
+            <dt>Baujahr:</dt>
+            <dd>Ab den 1950er Jahren</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Klassische Metalltaschenlampe.</dd>
+        </dl>
     </div>
 
-    <!-- 1950er – Daimon Focus (NEU, korrigiert) -->
-    <div class="lampe-item">
+    <!-- 1950er – Daimon Focus -->
+    <div class="box">
         <h2>1950er Jahre – Daimon Focus</h2>
-        <img src="TL 9 DAIMON FOCUS.jpg" alt="Daimon Focus">
-        <p><strong>Hersteller:</strong> Daimon<br>
-           <strong>Modell:</strong> Focus<br>
-           <strong>Baujahr:</strong> 1950er Jahre<br>
-           <strong>Besonderheiten:</strong> Frühe Fokuslampe mit Metallgehäuse und verstellbarem Reflektor.</p>
+        <img src="TL 9 DAIMON FOCUS.jpg" alt="Daimon Focus" onclick="openLightbox('TL 9 DAIMON FOCUS.jpg')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>Daimon</dd>
+            <dt>Modell:</dt>
+            <dd>Focus</dd>
+            <dt>Baujahr:</dt>
+            <dd>1950er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Frühe Fokuslampe mit Metallgehäuse und verstellbarem Reflektor.</dd>
+        </dl>
     </div>
 
     <!-- 1958–1965 – VARTA 616 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1958–1965 – VARTA Spot‑Light 616 (Duplexlampe)</h2>
-        <img src="TL 8 VARTA 616.jpg" alt="VARTA Spot-Light 616 Duplexlampe">
-        <p><strong>Hersteller:</strong> VARTA AG, Hagen<br>
-           <strong>Modell:</strong> Spot‑Light 616<br>
-           <strong>Besonderheiten:</strong> Doppelreflektor-System, 4,5‑V‑Flachbatterie.</p>
+        <img src="TL 8 VARTA 616.jpg" alt="VARTA Spot-Light 616 Duplexlampe" onclick="openLightbox('TL 8 VARTA 616.jpg')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA AG, Hagen</dd>
+            <dt>Modell:</dt>
+            <dd>Spot‑Light 616</dd>
+            <dt>Bauzeit:</dt>
+            <dd>1958–1965</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Doppelreflektor-System, Betrieb mit 4,5‑V‑Flachbatterie.</dd>
+        </dl>
     </div>
 
     <!-- 1960er – VARTA TL 4 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1960er Jahre – VARTA TL 4 (618)</h2>
-        <img src="TL 4 VARTA 618.png" alt="VARTA TL 4">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 4 (618)<br>
-           <strong>Baujahr:</strong> 1960er Jahre<br>
-           <strong>Besonderheiten:</strong> Klassische Haushaltslampe.</p>
+        <img src="TL 4 VARTA 618.png" alt="VARTA TL 4" onclick="openLightbox('TL 4 VARTA 618.png')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA</dd>
+            <dt>Modell:</dt>
+            <dd>TL 4 (618)</dd>
+            <dt>Baujahr:</dt>
+            <dd>1960er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Klassische Haushaltslampe.</dd>
+        </dl>
     </div>
 
-    <!-- 1960er – Daimon Handlampe (NEU, korrigiert) -->
-    <div class="lampe-item">
+    <!-- 1960er – Daimon Handlampe -->
+    <div class="box">
         <h2>1960er Jahre – Daimon Handlampe</h2>
-        <img src="TL 11 DAIMON.jpg" alt="Daimon Handlampe">
-        <p><strong>Hersteller:</strong> Daimon<br>
-           <strong>Modell:</strong> unbekannt<br>
-           <strong>Baujahr:</strong> 1960er Jahre<br>
-           <strong>Besonderheiten:</strong> Metallgehäuse, typisches Design der 60er Jahre.</p>
+        <img src="TL 11 DAIMON.jpg" alt="Daimon Handlampe" onclick="openLightbox('TL 11 DAIMON.jpg')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>Daimon</dd>
+            <dt>Modell:</dt>
+            <dd>Unbekannt</dd>
+            <dt>Baujahr:</dt>
+            <dd>1960er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Metallgehäuse, typisches Design der 60er Jahre.</dd>
+        </dl>
     </div>
 
     <!-- 1970er – VARTA TL 3 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1970er Jahre – VARTA TL 3 (657)</h2>
-        <img src="TL 3 VARTA 657.png" alt="VARTA TL 3">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 3 (657)<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Robuste Bauform.</p>
+        <img src="TL 3 VARTA 657.png" alt="VARTA TL 3" onclick="openLightbox('TL 3 VARTA 657.png')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA</dd>
+            <dt>Modell:</dt>
+            <dd>TL 3 (657)</dd>
+            <dt>Baujahr:</dt>
+            <dd>1970er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Robuste Bauform.</dd>
+        </dl>
     </div>
 
     <!-- 1970er – VARTA TL 5 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1970er Jahre – VARTA TL 5 (658)</h2>
-        <img src="TL 5 VARTA 658.png" alt="VARTA TL 5">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 5 (658)<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Großes Gehäuse, starke Leuchtkraft.</p>
+        <img src="TL 5 VARTA 658.png" alt="VARTA TL 5" onclick="openLightbox('TL 5 VARTA 658.png')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA</dd>
+            <dt>Modell:</dt>
+            <dd>TL 5 (658)</dd>
+            <dt>Baujahr:</dt>
+            <dd>1970er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Großes Gehäuse, starke Leuchtkraft.</dd>
+        </dl>
     </div>
 
     <!-- 1970er – VARTA TL 6 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1970er Jahre – VARTA TL 6 (430 / Duplex)</h2>
-        <img src="TL 6 VARTA Duplex.png" alt="VARTA TL 6 Duplex">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> TL 6 (430)<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Doppelreflektor.</p>
+        <img src="TL 6 VARTA Duplex.png" alt="VARTA TL 6 Duplex" onclick="openLightbox('TL 6 VARTA Duplex.png')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA</dd>
+            <dt>Modell:</dt>
+            <dd>TL 6 (430)</dd>
+            <dt>Baujahr:</dt>
+            <dd>1970er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Doppelreflektor.</dd>
+        </dl>
     </div>
 
     <!-- 1970er – VARTA 670 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1970er Jahre – VARTA 670</h2>
-        <img src="TL 12 VARTA 670.jpg" alt="VARTA 670">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> 670<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Kompakte Bauform.</p>
+        <img src="TL 12 VARTA 670.jpg" alt="VARTA 670" onclick="openLightbox('TL 12 VARTA 670.jpg')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA</dd>
+            <dt>Modell:</dt>
+            <dd>670</dd>
+            <dt>Baujahr:</dt>
+            <dd>1970er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Kompakte Bauform.</dd>
+        </dl>
     </div>
 
     <!-- 1970er – VARTA 615 -->
-    <div class="lampe-item">
+    <div class="box">
         <h2>1970er Jahre – VARTA 615</h2>
-        <img src="TL 13 VARTA 615.jpg" alt="VARTA 615">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> 615<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Klassische 4,5‑V‑Lampe.</p>
+        <img src="TL 13 VARTA 615.jpg" alt="VARTA 615" onclick="openLightbox('TL 13 VARTA 615.jpg')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA</dd>
+            <dt>Modell:</dt>
+            <dd>615</dd>
+            <dt>Baujahr:</dt>
+            <dd>1970er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Klassische 4,5‑V‑Lampe.</dd>
+        </dl>
     </div>
 
-    <!-- 1970er – VARTA -->
-    <div class="lampe-item">
+    <!-- 1970er – VARTA Handlampe -->
+    <div class="box">
         <h2>1970er Jahre – VARTA Handlampe</h2>
-        <img src="TL 14 VARTA.jpg" alt="VARTA Handlampe">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> unbekannt<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Kunststoffgehäuse.</p>
+        <img src="TL 14 VARTA.jpg" alt="VARTA Handlampe" onclick="openLightbox('TL 14 VARTA.jpg')" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Hersteller:</dt>
+            <dd>VARTA</dd>
+            <dt>Modell:</dt>
+            <dd>Unbekannt</dd>
+            <dt>Baujahr:</dt>
+            <dd>1970er Jahre</dd>
+            <dt>Besonderheiten:</dt>
+            <dd>Kunststoffgehäuse.</dd>
+        </dl>
     </div>
 
-    <!-- 1970er – VARTA -->
-    <div class="lampe-item">
+    <!-- 1970er – VARTA TL (15) -->
+    <div class="box">
         <h2>1970er Jahre – VARTA TL</h2>
-        <img src="TL 15 VARTA.jpg" alt="VARTA TL">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> unbekannt<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Haushaltslampe.</p>
-    </div>
-
-    <!-- 1970er – VARTA -->
-    <div class="lampe-item">
-        <h2>1970er Jahre – VARTA TL</h2>
-        <img src="TL 16 VARTA.jpg" alt="VARTA TL">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> unbekannt<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Kompakte Bauform.</p>
-    </div>
-
-    <!-- 1970er – VARTA -->
-    <div class="lampe-item">
-        <h2>1970er Jahre – VARTA TL</h2>
-        <img src="TL 17 VARTA.jpg" alt="VARTA TL">
-        <p><strong>Hersteller:</strong> VARTA<br>
-           <strong>Modell:</strong> unbekannt<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Kunststoffgehäuse.</p>
-    </div>
-
-    <!-- 1970er – unbekannt -->
-    <div class="lampe-item">
-        <h2>1970er Jahre – Handlampe</h2>
-        <img src="TL 18.jpg" alt="Handlampe">
-        <p><strong>Hersteller:</strong> unbekannt<br>
-           <strong>Modell:</strong> unbekannt<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Besonderheiten:</strong> Klassische Form.</p>
-    </div>
-
-    <!-- 1970er–1990er – CEAG -->
-    <div class="lampe-item">
-        <h2>1970er–1990er Jahre – CEAG Akkumulator‑Sicherheitslampen</h2>
-        <img src="HL CEAG Dortmund.jpg" alt="CEAG Akkumulator-Sicherheitslampen">
-        <p><strong>Hersteller:</strong> CEAG Dortmund<br>
-           <strong>Modell:</strong> Sicherheitslampen<br>
-           <strong>Besonderheiten:</strong> Zwei Lampen mit gemeinsamer Ladestation.</p>
-    </div>
-
-    <!-- 1984 – Maglite Mini -->
-    <div class="lampe-item">
-        <h2>Ab 1984 – Maglite Mini AA</h2>
-        <img src="TL1 Maglite Mini.png" alt="Maglite Mini">
-        <p><strong>Hersteller:</strong> Maglite<br>
-           <strong>Modell:</strong> Mini AA<br>
-           <strong>Baujahr:</strong> ab 1984<br>
-           <strong>Besonderheiten:</strong> Kompakte Metalllampe.</p>
-    </div>
-
-    <!-- 1990er – Makita -->
-    <div class="lampe-item">
-        <h2>1990er Jahre – Makita ML120 (12 V)</h2>
-        <img src="HL 1 Makita.png" alt="Makita ML120">
-        <p><strong>Hersteller:</strong> Makita<br>
-           <strong>Modell:</strong> ML120<br>
-           <strong>Baujahr:</strong> 1990er Jahre<br>
-           <strong>Besonderheiten:</strong> Teil der frühen Akku‑Werkzeugserie.</p>
-    </div>
-
-    <!-- 1990er – Wonder Babet -->
-    <div class="lampe-item">
-        <h2>1990er Jahre – Wonder Babet</h2>
-        <img src="TL 19 WONDER BABET.jpg" alt="Wonder Babet">
-        <p><strong>Hersteller:</strong> Wonder<br>
-           <strong>Modell:</strong> Babet<br>
-           <strong>Baujahr:</strong> 1990er Jahre<br>
-           <strong>Besonderheiten:</strong> Französische Kunststofflampe.</p>
-    </div>
-
-    <!-- 2000er – Acculux -->
-    <div class="lampe-item">
-        <h2>2000er Jahre – Acculux SL6 LED</h2>
-        <img src="HL Acculux SL6 LED.jpg" alt="Acculux SL6 LED">
-        <p><strong>Hersteller:</strong> Acculux<br>
-           <strong>Modell:</strong> SL6 LED<br>
-           <strong>Baujahr:</strong> ca. 2005–2010<br>
-           <strong>Besonderheiten:</strong> Erste LED‑Sicherheitslampe.</p>
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-    <p>
-        <a href="hosting.html">Hosting & Technik</a> ·
-        <a href="impressum.html">Impressum</a> ·
-        <a href="datenschutz.html">Datenschutz</a>
-    </p>
-</footer>
-
-</body>
-</html>
