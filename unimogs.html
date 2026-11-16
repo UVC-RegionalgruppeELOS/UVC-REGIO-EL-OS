@@ -5,179 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimogs unserer Mitglieder – UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <meta name="description" content="Übersicht aller Unimogs der UVC Regionalgruppe Emsland–Osnabrück. Fahrzeuge nach Baujahr und Anbaugeräten sortiert.">
+    <meta name="description" content="Übersicht aller Unimogs der UVC Regionalgruppe Emsland–Osnabrück. Fahrzeuge nach Baujahr und Ausstattung sortiert.">
     <meta name="keywords" content="Unimog, Unimog Übersicht, Unimog Baujahre, Unimog Anbaugeräte, UVC, Unimog Veteranen Club, Oldtimer">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <meta property="og:title" content="Unimogs unserer Mitglieder – Übersicht">
+    <meta property="og:title" content="Unimogs unserer Mitglieder – UVC Regionalgruppe Emsland–Osnabrück">
     <meta property="og:description" content="Alle Unimogs der Regionalgruppe Emsland–Osnabrück übersichtlich nach Baujahr und Ausstattung sortiert.">
-    <meta property="og:image" content="PLATZHALTER-UNIMOG.jpg">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.io">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #222;
-            background: #e5e5e5;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: rgba(255,255,255,0.92);
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-                font-size: 1.05rem;
-            }
-
-            nav.active { display: flex; }
-        }
-
-        /* Hero */
-        .hero {
-            max-width: 900px;
-            width: 100%;
-            height: 300px;
-            margin: 30px auto;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            background: url('PLATZHALTER-UNIMOG.jpg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero h1 {
-            font-size: 2.4rem;
-            color: white;
-            text-shadow: 0 0 10px black;
-            margin: 0;
-        }
-
-        @media (max-width: 899px) {
-            .hero { height: 220px; }
-            .hero h1 { font-size: 1.9rem; }
-        }
-
-        /* Content */
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h2 {
-            color: #2e5c2e;
-            margin-top: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        a.yearlink {
-            color: #2e5c2e;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        a.yearlink:hover {
-            text-decoration: underline;
-        }
-
-        .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: space-between;
-        }
-
-        .flex-item {
-            flex: 1 1 400px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer p {
-            margin: 6px 0;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -186,58 +25,56 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
 
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
-        <a href="unimogs.html">Unimogs</a>
+        <a href="unimogs.html" class="aktiv">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<div class="hero">
+<section>
     <h1>Unimogs unserer Mitglieder</h1>
-</div>
+    <p>
+        Hier findest du eine Übersicht der historischen Unimog-Fahrzeuge aus unserer Regionalgruppe – 
+        sortiert nach Baujahr mit Steckbriefen, technischen Daten und Bildern.
+    </p>
 
-<section class="flex-container">
-
-    <!-- Linke Spalte -->
-    <div class="flex-item">
-        <h2>Baujahre</h2>
+    <div class="box">
+        <h2>Fahrzeuge nach Baujahr</h2>
         <ul>
-            <li><a class="yearlink" href="unimog-1951.html">1951 – Unimog 2010 „Dieseli“</a></li>
-            <li><a class="yearlink" href="unimog-1956.html">1956 – Unimog U 401</a></li>
-            <li><a class="yearlink" href="unimog-1957.html">1957 – Unimog 411</a></li>
-            <li><a class="yearlink" href="unimog-1958-nils.html">1958 – Unimog 411.110 Cabrio</a></li>
-            <li><a class="yearlink" href="unimog-1961-nils.html">1961 – Unimog 411.117 Westfalia</a></li>
-            <li><a class="yearlink" href="unimog-1975.html">1975 – Unimog 406 Cabrio</a></li>
-            <li><a class="yearlink" href="unimog-1979.html">1979 (1.HJ) – Unimog 424 / U 1000</a></li>
-            <li><a class="yearlink" href="unimog-1979-2.html">1979 (2.HJ) – Unimog 424 / U 1000</a></li>
-            <li><a class="yearlink" href="unimog-1986.html">1986 – Unimog 435 / U 1300L</a></li>
+            <li><a href="unimog-1951.html"><strong>1951</strong> – Unimog 2010 „Dieseli“</a></li>
+            <li><a href="unimog-1956.html"><strong>1956</strong> – Unimog U 401 mit Beilhack-Schneeschleuder</a></li>
+            <li><a href="unimog-1957.html"><strong>1957</strong> – Unimog 411.110</a></li>
+            <li><a href="unimog-1958.html"><strong>1958</strong> – Unimog 411.110 Cabrio</a></li>
+            <li><a href="unimog-1961.html"><strong>1961</strong> – Unimog 411.117 Westfalia</a></li>
+            <li><a href="unimog-1975.html"><strong>1975</strong> – Unimog 406 Cabrio</a></li>
+            <li><a href="unimog-1979.html"><strong>1979 (1. HJ)</strong> – Unimog 424 / U 1000</a></li>
+            <li><a href="unimog-1979-2.html"><strong>1979 (2. HJ)</strong> – Unimog 424 / U 1000</a></li>
+            <li><a href="unimog-1986.html"><strong>1986</strong> – Unimog 435 / U 1300L</a></li>
         </ul>
     </div>
 
-    <!-- Rechte Spalte -->
-    <div class="flex-item">
-        <h2>Anbaugeräte</h2>
-        <ul>
-            <li><a class="yearlink" href="anbaugeraet-abc.html">abc</a></li>
-            <li><a class="yearlink" href="anbaugeraet-bcd.html">bcd</a></li>
-            <li><a class="yearlink" href="anbaugeraet-cde.html">cde</a></li>
-        </ul>
+    <div class="box">
+        <h2>Anbaugeräte &amp; Technik</h2>
+        <p style="margin-bottom: 0;">
+            Eine separate Übersicht über historische Anbaugeräte und Sonderausstattungen unserer Mitglieder befindet sich aktuell im Aufbau und folgt in Kürze.
+        </p>
     </div>
-
 </section>
 
 <footer>
-    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-    <p>
-        <a href="hosting.html">Hosting & Technik</a> ·
-        <a href="impressum.html">Impressum</a> ·
-        <a href="datenschutz.html">Datenschutz</a>
-    </p>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
