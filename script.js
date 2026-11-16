@@ -215,3 +215,42 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "TL 15 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
         { src: "TL 16 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
         { src: "TL 17 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
+        { src: "TL 18.jpg", text: "Unbekannt · Handlampe · 1970er" },
+        { src: "HL CEAG Dortmund.jpg", text: "CEAG Dortmund · Sicherheitslampen · 1970er–1990er" },
+        { src: "TL1 Maglite Mini.png", text: "Maglite · Mini AA · ab 1984" },
+        { src: "HL 1 Makita.png", text: "Makita · ML120 (12 V) · 1990er" },
+        { src: "TL 19 WONDER BABET.jpg", text: "Wonder · Babet · 1990er" },
+        { src: "HL Acculux SL6 LED.jpg", text: "Acculux · SL6 LED · ca. 2005–2010" },
+
+        /* Uhren (Firma · Typ · Baujahr) */
+        { src: "Uhr Taschenuhr 1.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
+        { src: "Uhr Taschenuhr 2.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
+        { src: "Uhr Armbanduhr 1.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
+        { src: "Uhr Armbanduhr 2.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
+        { src: "Uhr Armbanduhr 3.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
+        { src: "Uhr Armbanduhr 4.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
+        { src: "Uhr Reisewecker 1.jpg", text: "Reisewecker · Klappgehäuse · 1950er" },
+        { src: "Uhr Reisewecker 2.jpg", text: "Reisewecker · Klappgehäuse · 1950er" },
+        { src: "Uhr Reisewecker 3.jpg", text: "Reisewecker · Klappgehäuse · 1950er" },
+        { src: "Uhr Kurzzeitmesser 1.jpg", text: "Kurzzeitmesser · Federwerk · 1960er" },
+        { src: "Uhr Kurzzeitmesser 2.jpg", text: "Kurzzeitmesser · Federwerk · 1960er" },
+        { src: "Uhr Mutteruhr.jpg", text: "Mutteruhr · Hauptuhr · 1970er" },
+        { src: "Uhr Tochter PEWETA.jpg", text: "PEWETA · Tochteruhr · 1970er" },
+        { src: "Uhr Tochter SIEMENS.jpg", text: "SIEMENS · Tochteruhr · 1970er" },
+        { src: "Uhr Tochter TN.jpg", text: "Telefonbau & Normalzeit · Tochteruhr · 1970er" },
+        { src: "Uhr Wanduhr.jpg", text: "Wanduhr · Quarzwerk · 1980er" },
+        { src: "Uhr Schrankuhr 1.jpg", text: "Schrankuhr · Pendelwerk · 1980er" },
+        { src: "Uhr Standuhr.jpg", text: "Standuhr · Pendel-Schlagwerk · 1990er" },
+
+        /* Vorhängeschlösser (Firma · Typ · Baujahr) */
+        { src: "VHS alt.jpg", text: "Eisen-Vorhängeschloss · Genietet · ca. 1920–1930" },
+        { src: "VHS rund.jpg", text: "Rund-Vorhängeschloss · Stahl · ca. 1950–1960" },
+        { src: "VHS Burg.jpg", text: "BURG-Wächter · Vorhängeschloss · ca. 1960–1970" },
+        { src: "VHS Abus 465-60.jpg", text: "ABUS · Modell 465-60 · ca. 1960er" },
+        { src: "VHS Abus rot.jpg", text: "ABUS · Vorhängeschloss rot · ca. 1970er" },
+        { src: "VHS Goldfarbend.jpg", text: "Messing-Minischloss · Zylinder · ca. 1980er" }
+    ];
+
+    buildSeamlessMarquee("unimogScroll", unimogImages);
+    buildSeamlessMarquee("museumScroll", museumImages);
+});
