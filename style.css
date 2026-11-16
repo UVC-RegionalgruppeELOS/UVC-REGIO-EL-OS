@@ -370,7 +370,7 @@ footer a:hover {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    padding: 12px 0;
+    padding: 14px 0;
     cursor: pointer;
     background: #ffffff;
     border-radius: 6px;
@@ -379,30 +379,49 @@ footer a:hover {
 
 .marquee-track {
     display: inline-flex;
-    align-items: center;
-    animation: marqueeScroll 180s linear infinite;
+    align-items: flex-start;
+    animation: marqueeScroll 240s linear infinite;
 }
 
 .marquee-track.museum-speed {
-    animation-duration: 210s;
+    animation-duration: 280s;
 }
 
 .marquee:hover .marquee-track {
     animation-play-state: paused;
 }
 
-.marquee img {
-    height: 180px;
-    width: auto;
+.marquee-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 12px;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    transition: transform 0.2s ease;
     flex-shrink: 0;
+    transition: transform 0.2s ease;
 }
 
-.marquee img:hover {
-    transform: scale(1.04);
+.marquee-item:hover {
+    transform: scale(1.03);
+}
+
+.marquee-item img {
+    height: 170px;
+    width: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    display: block;
+}
+
+.marquee-caption {
+    margin-top: 7px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    max-width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @keyframes marqueeScroll {
@@ -427,13 +446,25 @@ footer a:hover {
 }
 
 .marquee:fullscreen .marquee-track {
-    animation-duration: 260s;
+    animation-duration: 360s;
     animation-play-state: running !important;
 }
 
-.marquee:fullscreen img {
-    height: 88vh;
-    margin: 0 28px;
+.marquee:fullscreen .marquee-item {
+    margin: 0 32px;
+}
+
+.marquee:fullscreen .marquee-item img {
+    height: 80vh;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.marquee:fullscreen .marquee-caption {
+    margin-top: 16px;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    max-width: 85vw;
+    letter-spacing: 0.3px;
 }
