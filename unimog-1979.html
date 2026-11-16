@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimog 1979 – Unimog 424</title>
+
     <meta name="description" content="Unimog Baujahr 1979: Modell 424 mit Schmidt Frontlader FL4. Historie, Besitzer, Restaurierung und technische Ausstattung des Fahrzeugs der UVC Regionalgruppe Emsland–Osnabrück.">
     <meta name="keywords" content="Unimog 1979, Unimog 424, Schmidt Frontlader FL4, WIKA Beton, Restaurierung, Oldtimer, UVC Regionalgruppe Emsland–Osnabrück">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
@@ -14,171 +15,58 @@
     <meta property="og:type" content="article">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: rgba(255,255,255,0.92);
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-                font-size: 1.05rem;
-            }
-
-            nav.active {
-                display: flex;
-            }
-        }
-
-        /* Hero */
-        .hero {
-            max-width: 900px;
-            width: 100%;
-            margin: 30px auto;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            background: white;
-        }
-
-        .hero img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Content */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h2 {
-            color: #2e5c2e;
-            margin-top: 0;
-        }
-
-        a {
-            color: #2e5c2e;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
-        <a href="unimogs.html">Unimogs</a>
-        <a href="weiterführende-links.html">Weiterführende Links</a>
+        <a href="unimogs.html" class="aktiv">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
 <div class="hero">
-    <img src="1979.jpg" alt="Unimog 424 Baujahr 1979 mit Schmidt Frontlader FL4">
+    <img src="1979.jpg"
+         alt="Unimog 424 Baujahr 1979 mit Schmidt Frontlader FL4"
+         onclick="openLightbox('1979.jpg')">
 </div>
 
 <div class="container">
+    <h1>Unimog 424 – Baujahr 1979</h1>
+
     <h2>Steckbrief</h2>
-    <p><strong>Modell:</strong> Unimog 424</p>
-    <p><strong>Baujahr:</strong> 1979</p>
-    <p><strong>Erstbesitzer:</strong> WIKA Beton, Stade</p>
-    <p><strong>Besitzer ab 2009:</strong> Familie aus Egerstorf (Schätzendorf)</p>
-    <p><strong>Besitzer seit 2017:</strong> Michael</p>
-    <p><strong>Anbaugerät:</strong> Schmidt Frontlader Typ FL4</p>
+    <dl class="datenblatt">
+        <dt>Modell:</dt>
+        <dd>Unimog 424</dd>
+
+        <dt>Baujahr:</dt>
+        <dd>1979</dd>
+
+        <dt>Erstbesitzer:</dt>
+        <dd>WIKA Beton, Stade</dd>
+
+        <dt>Besitzer ab 2009:</dt>
+        <dd>Familie aus Egerstorf (Schätzendorf)</dd>
+
+        <dt>Besitzer seit 2017:</dt>
+        <dd>Michael</dd>
+
+        <dt>Anbaugerät:</dt>
+        <dd>Schmidt Frontlader Typ FL4</dd>
+    </dl>
 
     <h2>Historie</h2>
     <p>
@@ -190,10 +78,13 @@
     <p>
         Seit 2017 befindet sich der Unimog im Besitz von Michael und wird weiterhin gepflegt und erhalten. Mit dem montierten <strong>Schmidt Frontlader FL4</strong> ist der Unimog vielseitig einsetzbar und bleibt ein beeindruckendes Beispiel für die robuste 424er‑Baureihe.
     </p>
+
+    <a href="unimogs.html" class="btn-zurueck">← Zurück zur Übersicht</a>
 </div>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück <br>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
     <a href="hosting.html">Hosting & Technik</a> ·
     <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
