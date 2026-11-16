@@ -3,49 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Blanke – Historische Telefone</title>
+    <title>Museum Hof Blanke – Historische Telefone | UVC Regionalgruppe Emsland–Osnabrück</title>
 
-    <meta name="description" content="Historische Telefone im Museum Blanke, sortiert nach Baujahr.">
+    <meta name="description" content="Historische Telefone in der Sammlung auf dem Hof Blanke, chronologisch sortiert nach Baujahr.">
     <meta name="keywords" content="Telefon, FeTAp, Wählapparat, Wandapparat, Museum Blanke, Bad Laer, Müschen, Telefonie, Geschichte">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
-
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #2e5c2e; }
-        .menu-toggle { display: none; background: #2e5c2e; color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
-            nav.active { display: flex; }
-        }
-
-        section { max-width: 900px; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
-        h1, h2 { color: #2e5c2e; }
-
-        .telefon-item { margin-bottom: 40px; }
-        .telefon-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 6px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.15);
-            margin-top: 10px;
-        }
-
-        footer { text-align: center; padding: 25px; background: #e5e5e5; color: #555; font-size: 0.9rem; border-top: 1px solid #ccc; }
-        footer a { color: #2e5c2e; text-decoration: none; }
-        footer a:hover { color: #1d3d1d; }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -53,243 +19,362 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
-        <a href="museum.html">Museum</a>
-        <a href="museum-buero.html">Büro</a>
-        <a href="museum-haushalt.html">Haushalt</a>
-        <a href="museum-landwirtschaft.html">Landwirtschaft</a>
-        <a href="museum-telefonie.html">Telefonie</a>
-        <a href="museum-werkstatt.html">Werkstatt</a>
+        <a href="index.html">Start</a>
+        <a href="programm.html">Programm</a>
+        <a href="stammtisch.html">Stammtisch</a>
+        <a href="ansprechpartner.html">Ansprechpartner</a>
+        <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<section>
-    <h1>Historische Telefone – Bildgalerie</h1>
-    <p>Alle Geräte sind chronologisch nach Baujahr sortiert. Die Sammlung umfasst OB‑Geräte, Feldtelefone, Industriewandapparate und FeTAp‑Modelle.</p>
+<div class="container">
+    <h1>Historische Telefone</h1>
+    <p>Alle Geräte in der Sammlung auf dem Hof Blanke sind chronologisch nach Baujahr sortiert. Die Ausstellung umfasst OB‑Geräte, Feldtelefone, Industriewandapparate und FeTAp‑Modelle. Ein Klick auf ein Foto öffnet die vergrößerte Ansicht.</p>
 
     <!-- 1930er – OB33 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1930er Jahre – OB33 (Ortsbatteriebetrieb)</h2>
-        <img src="OB33.png" alt="OB33 Ortsbatteriebetrieb">
-        <p><strong>Typ:</strong> OB‑Gerät (Ortsbatteriebetrieb)<br>
-           <strong>Modell:</strong> OB33<br>
-           <strong>Baujahr:</strong> 1930er bis Nachkriegszeit<br>
-           <strong>Hersteller:</strong> Deutsche Bundesbahn (DB)<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="OB33.png" alt="OB33 Ortsbatteriebetrieb" onclick="openLightbox('OB33.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>OB‑Gerät (Ortsbatteriebetrieb)</dd>
+            <dt>Modell:</dt>
+            <dd>OB33</dd>
+            <dt>Baujahr:</dt>
+            <dd>1930er bis Nachkriegszeit</dd>
+            <dt>Hersteller:</dt>
+            <dd>Deutsche Bundesbahn (DB)</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1940er – RhAp -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1940er–1960er – Reihenapparat (RhAp)</h2>
-        <img src="RhAp.png" alt="Reihenapparat RhAp">
-        <p><strong>Typ:</strong> Reihenapparat (Wandapparat)<br>
-           <strong>Modell:</strong> RhAp<br>
-           <strong>Baujahr:</strong> 1940er bis 1960er Jahre<br>
-           <strong>Hersteller:</strong> Deutsche Reichspost<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="RhAp.png" alt="Reihenapparat RhAp" onclick="openLightbox('RhAp.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>Reihenapparat (Wandapparat)</dd>
+            <dt>Modell:</dt>
+            <dd>RhAp</dd>
+            <dt>Baujahr:</dt>
+            <dd>1940er bis 1960er Jahre</dd>
+            <dt>Hersteller:</dt>
+            <dd>Deutsche Reichspost</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1950er – W28 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1950er Jahre – FeTAp W28</h2>
-        <img src="FeTAp W28-38 angeschlossen.png" alt="FeTAp W28 angeschlossen">
-        <p><strong>Typ:</strong> Wählapparat<br>
-           <strong>Modell:</strong> W28/38<br>
-           <strong>Baujahr:</strong> 1950er Jahre<br>
-           <strong>Status:</strong> Angeschlossen</p>
+        <img src="FeTAp W28-38 angeschlossen.png" alt="FeTAp W28 angeschlossen" onclick="openLightbox('FeTAp W28-38 angeschlossen.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>Wählapparat</dd>
+            <dt>Modell:</dt>
+            <dd>W28/38</dd>
+            <dt>Baujahr:</dt>
+            <dd>1950er Jahre</dd>
+            <dt>Status:</dt>
+            <dd>Angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1950er–1960er – Ftf50 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1950er–1960er – Feldtelefon 50 (Ftf50)</h2>
-        <img src="Ftf50.png" alt="Feldtelefon 50">
-        <p><strong>Typ:</strong> Feldfernsprecher (OB‑Gerät, Ortsbatteriebetrieb)<br>
-           <strong>Modell:</strong> Ftf50<br>
-           <strong>Baujahr:</strong> 1950er bis 1960er Jahre<br>
-           <strong>Hersteller:</strong> Albiswerk Zürich AG<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="Ftf50.png" alt="Feldtelefon 50" onclick="openLightbox('Ftf50.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>Feldfernsprecher (OB‑Gerät, Ortsbatteriebetrieb)</dd>
+            <dt>Modell:</dt>
+            <dd>Ftf50</dd>
+            <dt>Baujahr:</dt>
+            <dd>1950er bis 1960er Jahre</dd>
+            <dt>Hersteller:</dt>
+            <dd>Albiswerk Zürich AG</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1955 – W48 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1955 – FeTAp W48</h2>
-        <img src="FeTAp W48 angeschlossen.png" alt="FeTAp W48 angeschlossen">
-        <p><strong>Typ:</strong> Wählapparat W48<br>
-           <strong>Modell:</strong> W48<br>
-           <strong>Baujahr:</strong> Februar 1955<br>
-           <strong>Status:</strong> Angeschlossen</p>
+        <img src="FeTAp W48 angeschlossen.png" alt="FeTAp W48 angeschlossen" onclick="openLightbox('FeTAp W48 angeschlossen.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>Wählapparat W48</dd>
+            <dt>Modell:</dt>
+            <dd>W48</dd>
+            <dt>Baujahr:</dt>
+            <dd>Februar 1955</dd>
+            <dt>Status:</dt>
+            <dd>Angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1962 – DDR W58 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1962 – DDR W58</h2>
-        <img src="DDR-W58.png" alt="DDR W58 Telefon">
-        <p><strong>Typ:</strong> Wählapparat<br>
-           <strong>Modell:</strong> W58<br>
-           <strong>Baujahr:</strong> 1962<br>
-           <strong>Hersteller:</strong> VEB Fernmeldewerk Nordhausen<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="DDR-W58.png" alt="DDR W58 Telefon" onclick="openLightbox('DDR-W58.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>Wählapparat</dd>
+            <dt>Modell:</dt>
+            <dd>W58</dd>
+            <dt>Baujahr:</dt>
+            <dd>1962</dd>
+            <dt>Hersteller:</dt>
+            <dd>VEB Fernmeldewerk Nordhausen</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1970er – DDR IFW/W -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1970er Jahre – DDR Industriewandfernsprecher IFW/W</h2>
-        <img src="DDR IFW W.png" alt="DDR Industriewandfernsprecher IFW/W">
-        <p><strong>Typ:</strong> Industriewandfernsprecher<br>
-           <strong>Modell:</strong> IFW/W<br>
-           <strong>Baujahr:</strong> 1970er Jahre<br>
-           <strong>Hersteller:</strong> VEB Apparatebau Caputh<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="DDR IFW W.png" alt="DDR Industriewandfernsprecher IFW/W" onclick="openLightbox('DDR IFW W.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>Industriewandfernsprecher</dd>
+            <dt>Modell:</dt>
+            <dd>IFW/W</dd>
+            <dt>Baujahr:</dt>
+            <dd>1970er Jahre</dd>
+            <dt>Hersteller:</dt>
+            <dd>VEB Apparatebau Caputh</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1971 – 611-2 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1971 – FeTAp 611‑2</h2>
-        <img src="FeTAp 611-2 von 05-1971.png" alt="FeTAp 611‑2 von Mai 1971">
-        <p><strong>Typ:</strong> FeTAp 611‑2<br>
-           <strong>Modell:</strong> 611‑2<br>
-           <strong>Baujahr:</strong> Mai 1971<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp 611-2 von 05-1971.png" alt="FeTAp 611‑2 von Mai 1971" onclick="openLightbox('FeTAp 611-2 von 05-1971.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp 611‑2</dd>
+            <dt>Modell:</dt>
+            <dd>611‑2</dd>
+            <dt>Baujahr:</dt>
+            <dd>Mai 1971</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1972 – Te100 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1972 – FeTAp Te100</h2>
-        <img src="FeTAp Te100 von 11-1972.png" alt="FeTAp Te100 von November 1972">
-        <p><strong>Typ:</strong> FeTAp Te100<br>
-           <strong>Modell:</strong> Te100<br>
-           <strong>Baujahr:</strong> November 1972<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp Te100 von 11-1972.png" alt="FeTAp Te100 von November 1972" onclick="openLightbox('FeTAp Te100 von 11-1972.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp Te100</dd>
+            <dt>Modell:</dt>
+            <dd>Te100</dd>
+            <dt>Baujahr:</dt>
+            <dd>November 1972</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1977 – 612 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1977 – FeTAp 612</h2>
-        <img src="FeTAp 612 von 1977.png" alt="FeTAp 612 von 1977">
-        <p><strong>Typ:</strong> FeTAp 612<br>
-           <strong>Modell:</strong> 612<br>
-           <strong>Baujahr:</strong> 1977<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp 612 von 1977.png" alt="FeTAp 612 von 1977" onclick="openLightbox('FeTAp 612 von 1977.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp 612</dd>
+            <dt>Modell:</dt>
+            <dd>612</dd>
+            <dt>Baujahr:</dt>
+            <dd>1977</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1979 – 611-1a -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1979 – FeTAp 611‑1a</h2>
-        <img src="FeTAp 611-1a von 11-1979.png" alt="FeTAp 611‑1a von November 1979">
-        <p><strong>Typ:</strong> FeTAp 611‑1a<br>
-           <strong>Modell:</strong> 611‑1a<br>
-           <strong>Baujahr:</strong> November 1979<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp 611-1a von 11-1979.png" alt="FeTAp 611‑1a von November 1979" onclick="openLightbox('FeTAp 611-1a von 11-1979.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp 611‑1a</dd>
+            <dt>Modell:</dt>
+            <dd>611‑1a</dd>
+            <dt>Baujahr:</dt>
+            <dd>November 1979</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1980er – Masterset -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1980er Jahre – FeTAp Masterset</h2>
-        <img src="FeTAp Masterset 80er Jahre.png" alt="FeTAp Masterset 80er Jahre">
-        <p><strong>Typ:</strong> FeTAp Masterset<br>
-           <strong>Modell:</strong> Masterset<br>
-           <strong>Baujahr:</strong> 1980er Jahre<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp Masterset 80er Jahre.png" alt="FeTAp Masterset 80er Jahre" onclick="openLightbox('FeTAp Masterset 80er Jahre.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp Masterset</dd>
+            <dt>Modell:</dt>
+            <dd>Masterset</dd>
+            <dt>Baujahr:</dt>
+            <dd>1980er Jahre</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
-
     <!-- 1982 – 612-21 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1982 – FeTAp 612‑21</h2>
-        <img src="FeTAp 612-2a angeschlossen.png" alt="FeTAp 612‑21 angeschlossen">
-        <p><strong>Typ:</strong> Fernmeldetischapparat (FeTAp)<br>
-           <strong>Modell:</strong> 612‑21<br>
-           <strong>Baujahr:</strong> November 1982<br>
-           <strong>Status:</strong> Angeschlossen</p>
+        <img src="FeTAp 612-2a angeschlossen.png" alt="FeTAp 612‑21 angeschlossen" onclick="openLightbox('FeTAp 612-2a angeschlossen.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>Fernmeldetischapparat (FeTAp)</dd>
+            <dt>Modell:</dt>
+            <dd>612‑21</dd>
+            <dt>Baujahr:</dt>
+            <dd>November 1982</dd>
+            <dt>Status:</dt>
+            <dd>Angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1986 – 791-1 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1986 – FeTAp 791‑1</h2>
-        <img src="FeTAp 791-1 von 12-1986.png" alt="FeTAp 791‑1 von Dezember 1986">
-        <p><strong>Typ:</strong> FeTAp 791‑1<br>
-           <strong>Modell:</strong> 791‑1<br>
-           <strong>Baujahr:</strong> Dezember 1986<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp 791-1 von 12-1986.png" alt="FeTAp 791‑1 von Dezember 1986" onclick="openLightbox('FeTAp 791-1 von 12-1986.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp 791‑1</dd>
+            <dt>Modell:</dt>
+            <dd>791‑1</dd>
+            <dt>Baujahr:</dt>
+            <dd>Dezember 1986</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1988 – Feldfernsprecher -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1988 – Bundeswehr Feldfernsprecher Modell 54 OB/ZB</h2>
-        <img src="FeTAp BW Modell 54 OB-ZB angeschlossen.png" alt="Bundeswehr Feldfernsprecher Modell 54 OB/ZB">
-        <p><strong>Typ:</strong> Feldfernsprecher mit Amtszusatz<br>
-           <strong>Modell:</strong> 54 OB/ZB<br>
-           <strong>Baujahr:</strong> August 1988<br>
-           <strong>Status:</strong> Angeschlossen</p>
+        <img src="FeTAp BW Modell 54 OB-ZB angeschlossen.png" alt="Bundeswehr Feldfernsprecher Modell 54 OB/ZB" onclick="openLightbox('FeTAp BW Modell 54 OB-ZB angeschlossen.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>Feldfernsprecher mit Amtszusatz</dd>
+            <dt>Modell:</dt>
+            <dd>54 OB/ZB</dd>
+            <dt>Baujahr:</dt>
+            <dd>August 1988</dd>
+            <dt>Status:</dt>
+            <dd>Angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1988 – 795-1 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1988 – FeTAp 795‑1</h2>
-        <img src="FeTAp 795-1 von 10-1988.png" alt="FeTAp 795‑1 von Oktober 1988">
-        <p><strong>Typ:</strong> FeTAp 795‑1<br>
-           <strong>Modell:</strong> 795‑1<br>
-           <strong>Baujahr:</strong> Oktober 1988<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp 795-1 von 10-1988.png" alt="FeTAp 795‑1 von Oktober 1988" onclick="openLightbox('FeTAp 795-1 von 10-1988.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp 795‑1</dd>
+            <dt>Modell:</dt>
+            <dd>795‑1</dd>
+            <dt>Baujahr:</dt>
+            <dd>Oktober 1988</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1989 – Tel 0164 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1989 – FeTAp Tel 0164</h2>
-        <img src="FeTAp Tel 0164 von 06-1989.png" alt="FeTAp Tel 0164 von Juni 1989">
-        <p><strong>Typ:</strong> FeTAp Tel 0164<br>
-           <strong>Modell:</strong> Tel 0164<br>
-           <strong>Baujahr:</strong> Juni 1989<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp Tel 0164 von 06-1989.png" alt="FeTAp Tel 0164 von Juni 1989" onclick="openLightbox('FeTAp Tel 0164 von 06-1989.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp Tel 0164</dd>
+            <dt>Modell:</dt>
+            <dd>Tel 0164</dd>
+            <dt>Baujahr:</dt>
+            <dd>Juni 1989</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1989 – 2L-752-1 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1989 – FeTAp 2L‑752‑1</h2>
-        <img src="FeTAp 2L-752-1 von 08-1989.png" alt="FeTAp 2L‑752‑1 von August 1989">
-        <p><strong>Typ:</strong> FeTAp 2L‑752‑1<br>
-           <strong>Modell:</strong> 2L‑752‑1<br>
-           <strong>Baujahr:</strong> August 1989<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp 2L-752-1 von 08-1989.png" alt="FeTAp 2L‑752‑1 von August 1989" onclick="openLightbox('FeTAp 2L-752-1 von 08-1989.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp 2L‑752‑1</dd>
+            <dt>Modell:</dt>
+            <dd>2L‑752‑1</dd>
+            <dt>Baujahr:</dt>
+            <dd>August 1989</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1991 – Tel 0164 LX -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1991 – FeTAp Tel 0164 LX</h2>
-        <img src="FeTAp Tel 0164 LXvon 02-1991.png" alt="FeTAp Tel 0164 LX von Februar 1991">
-        <p><strong>Typ:</strong> FeTAp Tel 0164 LX<br>
-           <strong>Modell:</strong> Tel 0164 LX<br>
-           <strong>Baujahr:</strong> Februar 1991<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp Tel 0164 LXvon 02-1991.png" alt="FeTAp Tel 0164 LX von Februar 1991" onclick="openLightbox('FeTAp Tel 0164 LXvon 02-1991.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp Tel 0164 LX</dd>
+            <dt>Modell:</dt>
+            <dd>Tel 0164 LX</dd>
+            <dt>Baujahr:</dt>
+            <dd>Februar 1991</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
     <!-- 1991 – SEL1026 -->
-    <div class="telefon-item">
+    <div class="box">
         <h2>1991 – FeTAp SEL1026</h2>
-        <img src="FeTAp SEL1026 von 10-1991.png" alt="FeTAp SEL1026 von Oktober 1991">
-        <p><strong>Typ:</strong> FeTAp SEL1026<br>
-           <strong>Modell:</strong> SEL1026<br>
-           <strong>Baujahr:</strong> Oktober 1991<br>
-           <strong>Status:</strong> Nicht angeschlossen</p>
+        <img src="FeTAp SEL1026 von 10-1991.png" alt="FeTAp SEL1026 von Oktober 1991" onclick="openLightbox('FeTAp SEL1026 von 10-1991.png')" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 15px auto; border-radius: 6px; cursor: zoom-in;">
+        <dl class="datenblatt">
+            <dt>Typ:</dt>
+            <dd>FeTAp SEL1026</dd>
+            <dt>Modell:</dt>
+            <dd>SEL1026</dd>
+            <dt>Baujahr:</dt>
+            <dd>Oktober 1991</dd>
+            <dt>Status:</dt>
+            <dd>Nicht angeschlossen</dd>
+        </dl>
     </div>
 
-</section>
+    <a href="museum.html" class="btn-zurueck">← Zurück zum Museum</a>
+</div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto;">
-        <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-        <p>
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-        <p style="font-size: 0.8rem; color: #777;">
-            Besucher:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px;">
-        </p>
-    </div>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
