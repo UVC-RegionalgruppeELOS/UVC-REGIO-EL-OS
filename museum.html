@@ -3,66 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Blanke – UVC Regionalgruppe Emsland–Osnabrück</title>
+    <title>Museum Hof Blanke – UVC Regionalgruppe Emsland–Osnabrück</title>
 
     <meta name="description" content="Museum Hof Blanke in Bad Laer Müschen – historische Technik, Büro, Telefonie, Lampen, Vorhängeschlösser, Aschenbecher, Haushaltsgeräte und Uhren.">
     <meta name="keywords" content="Museum Blanke, Bad Laer, Müschen, Büro, Technik, Telefonie, Lampen, Vorhängeschlösser, Aschenbecher, Haushaltsgeräte, Uhren">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; position: relative; }
-        nav a { color: #2e5c2e; margin: 0 15px; text-decoration: none; font-weight: bold; display: inline-block; }
-        nav a:hover { color: #1f3b1f; text-decoration: underline; }
-        .menu-toggle { display: none; background: rgba(0,0,0,0.75); color: white; border: none; padding: 10px 15px; font-size: 1.2rem; cursor: pointer; border-radius: 4px; position: absolute; left: 15px; top: 15px; }
+    <meta property="og:title" content="Museum Hof Blanke – UVC Regionalgruppe Emsland–Osnabrück">
+    <meta property="og:description" content="Historische Technik, Geräte und Alltagsgegenstände vergangener Jahrzehnte auf dem Hof Blanke in Bad Laer Müschen.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.io">
 
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav { display: none; flex-direction: column; background: rgba(0,0,0,0.85); border-top: 2px solid #ccc; padding: 10px 0; }
-            nav a { display: block; margin: 10px 0; color: #2e5c2e !important; text-decoration: none; font-weight: bold; }
-            nav a:hover { color: #1f3b1f; text-decoration: underline; }
-            nav.active { display: flex; }
-        }
-
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 { color: #2e5c2e; }
-        .rubrik { margin: 12px 0; }
-        .rubrik a { color: #2e5c2e; font-weight: bold; text-decoration: none; }
-        .rubrik a:hover { text-decoration: underline; }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #e5e5e5;
-            color: #555;
-            font-size: 0.9rem;
-            border-top: 1px solid #ccc;
-        }
-        footer a { color: #2e5c2e; text-decoration: none; }
-        footer a:hover { color: #1d3d1d; }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen oder schließen">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
@@ -76,66 +38,68 @@
     </nav>
 </header>
 
-<section>
-    <h1>Museum Blanke</h1>
+<div class="container">
+    <h1>Museum Hof Blanke</h1>
 
     <p>
-        Das kleine private Museum Hof Blanke zeigt historische Technik, Geräte und Alltagsgegenstände.
-        Die Sammlung wächst stetig und wird liebevoll gepflegt.
+        Das kleine private Museum auf dem <strong>Hof Blanke</strong> in Bad Laer-Müschen zeigt historische Technik, 
+        handwerkliche Geräte und liebevoll restaurierte Alltagsgegenstände vergangener Jahrzehnte. 
+        Die Sammlung wächst stetig und wird laufend weiter dokumentiert.
     </p>
 
-    <p style="font-size:1.1rem; font-weight:bold; color:#2e5c2e; margin-top:20px;">
-        Aktuell dokumentierte Exponate: <strong>100</strong>
-    </p>
+    <dl class="datenblatt">
+        <dt>Standort:</dt>
+        <dd>Hof Blanke, Bad Laer – Ortsteil Müschen</dd>
 
-    <h2>Rubriken</h2>
+        <dt>Sammlungsumfang:</dt>
+        <dd><strong>100 dokumentierte Exponate</strong> (Stand: aktuell)</dd>
 
-    <!-- Alphabetisch sortiert -->
-    <div class="rubrik">
-        <a href="museum-aschenbecher.html">Aschenbecher</a>
+        <dt>Schwerpunkte:</dt>
+        <dd>Bürotechnik, Telefonie, Beleuchtung, Haushalt, Schlösser &amp; Uhren</dd>
+    </dl>
+
+    <h2>Sammlungs-Rubriken entdecken</h2>
+    <p>Wähle eine Kategorie aus, um die einzelnen Exponate anzusehen:</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 20px 0;">
+        <a href="museum-aschenbecher.html" class="box" style="margin: 0; display: block; font-weight: bold; text-decoration: none;">
+            🚬 Aschenbecher →
+        </a>
+
+        <a href="museum-buero.html" class="box" style="margin: 0; display: block; font-weight: bold; text-decoration: none;">
+            📠 Büro &amp; Schreibtechnik →
+        </a>
+
+        <a href="museum-haushaltsgeraete-mit-kurbel.html" class="box" style="margin: 0; display: block; font-weight: bold; text-decoration: none;">
+            ⚙️ Haushaltsgeräte mit Kurbel →
+        </a>
+
+        <a href="museum-lampen.html" class="box" style="margin: 0; display: block; font-weight: bold; text-decoration: none;">
+            🔦 Taschenlampen &amp; Handlampen →
+        </a>
+
+        <a href="museum-telefonie.html" class="box" style="margin: 0; display: block; font-weight: bold; text-decoration: none;">
+            ☎️ Telefonie &amp; Fernmeldetechnik →
+        </a>
+
+        <a href="vorhaengeschloesser.html" class="box" style="margin: 0; display: block; font-weight: bold; text-decoration: none;">
+            🔒 Vorhängeschlösser →
+        </a>
+
+        <a href="museum-uhren.html" class="box" style="margin: 0; display: block; font-weight: bold; text-decoration: none;">
+            🕰️ Uhren &amp; Zeitmesser →
+        </a>
     </div>
 
-    <div class="rubrik">
-        <a href="museum-buero.html">Büro</a>
-    </div>
-
-    <div class="rubrik">
-        <a href="museum-haushaltsgeraete-mit-kurbel.html">Haushaltsgeräte mit Kurbel</a>
-    </div>
-
-    <div class="rubrik">
-        <a href="museum-lampen.html">Taschenlampen & Handlampen</a>
-    </div>
-
-    <div class="rubrik">
-        <a href="museum-telefonie.html">Telefonie</a>
-    </div>
-
-    <div class="rubrik">
-        <a href="vorhaengeschloesser.html">Vorhängeschlösser</a>
-    </div>
-
-    <div class="rubrik">
-        <a href="museum-uhren.html">Uhren</a>
-    </div>
-
-</section>
+    <a href="index.html" class="btn-zurueck">← Zurück zur Startseite</a>
+</div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto;">
-        <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-        <p>
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-        <p style="font-size: 0.8rem; color: #777;">
-            Besucher:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px;">
-        </p>
-    </div>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
