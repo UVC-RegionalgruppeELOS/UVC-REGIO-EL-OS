@@ -330,3 +330,38 @@ footer a:hover {
 .lightbox-close:hover {
     color: #bbb;
 }
+/* --- Bildlaufleisten & Vollbild-Präsentation --- */
+.marquee-box {
+    background: var(--box-grau);
+    border-left: 5px solid var(--gruen);
+    padding: 18px 20px;
+    margin: 24px 0;
+    border-radius: 8px;
+}
+
+.marquee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.marquee-header h2 {
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.btn-fullscreen {
+    background: var(--gruen);
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
