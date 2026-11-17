@@ -10,219 +10,69 @@
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: rgba(255,255,255,0.92);
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-                font-size: 1.05rem;
-            }
-            nav.active { display: flex; }
-        }
-
-        .box {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h2, h3 {
-            color: #2e5c2e;
-            margin-top: 0;
-        }
-
-        input[type=password] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #1f3b1f;
-        }
-
-        a {
-            color: #2e5c2e;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer p {
-            margin: 6px 0;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
-
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
-        <a href="intern.html">Intern</a>
+        <a href="intern.html" class="aktiv">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<div id="loginBox" class="box">
-    <h2>Interner Bereich</h2>
-    <p>Bitte Passwort eingeben:</p>
-    <input type="password" id="pw">
-    <button onclick="checkPW()">Weiter</button>
-</div>
+<div class="container">
+    <h1>Interner Bereich</h1>
 
-<div id="content" class="box" style="display:none;">
-    <h2>Interne Dokumente</h2>
-    <p>Hier stehen unsere Protokolle, Infos usw.</p>
+    <div id="loginBox" class="box">
+        <h2>Anmeldung für Mitglieder</h2>
+        <p>Bitte gib das Gruppen-Passwort ein, um Protokolle und das Mitgliederverzeichnis einzusehen:</p>
+        <input type="password" id="pw" placeholder="Passwort eingeben" onkeydown="if(event.key==='Enter') checkPW()" style="width: 100%; max-width: 360px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 12px 0;">
+        <button type="button" onclick="checkPW()" style="padding: 10px 20px; background: #2e5c2e; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Anmelden</button>
+        <p id="loginError" style="color: #b00020; font-weight: bold; margin-top: 10px; display: none;">Falsches Passwort. Bitte erneut versuchen.</p>
+    </div>
 
-    <h3>Stammtischprotokolle</h3>
-    <ul>
-        <li><a href="protokoll-q2-2026.html">Zweites Quartal 2026 (Gründung)</a></li>
-        <li><a href="protokoll-q3-2026.html">Drittes Quartal 2026</a></li>
-        <li><a href="protokoll-q4-2026.html">Viertes Quartal 2026 (09.10.2026)</a></li>
-    </ul>
+    <div id="content" style="display: none;">
+        <div class="box">
+            <h2>Stammtischprotokolle</h2>
+            <p>Hier findest du die Protokolle unserer bisherigen Quartals-Stammtische:</p>
+            <ul>
+                <li><a href="protokoll-q2-2026.html">Zweites Quartal 2026 (Gründung)</a></li>
+                <li><a href="protokoll-q3-2026.html">Drittes Quartal 2026</a></li>
+                <li><a href="protokoll-q4-2026.html">Viertes Quartal 2026 (09.10.2026)</a></li>
+            </ul>
+        </div>
 
-    <h3>Mitgliederliste</h3>
-    <p><a href="mitglieder.html"><strong>→ Mitgliederverzeichnis öffnen</strong></a></p>
+        <div class="box">
+            <h2>Mitgliederverzeichnis</h2>
+            <p style="margin-bottom: 0;"><a href="mitglieder.html"><strong>→ Mitgliederverzeichnis öffnen</strong></a></p>
+        </div>
 
-    <button onclick="logout()">Logout</button>
+        <button type="button" onclick="logout()" style="margin-top: 10px; padding: 10px 20px; background: #555; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Abmelden (Logout)</button>
+    </div>
+
+    <a href="index.html" class="btn-zurueck">← Zurück zur Startseite</a>
 </div>
 
 <footer>
-    <p>© 2026 UVC Regionalgruppe Emsland–Osnabrück</p>
-    <p>
-        <a href="hosting.html">Hosting & Technik</a> ·
-        <a href="impressum.html">Impressum</a> ·
-        <a href="datenschutz.html">Datenschutz</a>
-    </p>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
-
-<script>
-if (localStorage.getItem("uvcLoggedIn") === "true") {
-    document.getElementById("loginBox").style.display = "none";
-    document.getElementById("content").style.display = "block";
-}
-
-function checkPW() {
-    const pw = document.getElementById("pw").value;
-    const correct = "unimog2026";
-
-    if (pw === correct) {
-        localStorage.setItem("uvcLoggedIn", "true");
-        document.getElementById("loginBox").style.display = "none";
-        document.getElementById("content").style.display = "block";
-    } else {
-        alert("Falsches Passwort");
-    }
-}
-
-function logout() {
-    localStorage.removeItem("uvcLoggedIn");
-    window.location.href = "index.html";
-}
-</script>
 
 </body>
 </html>
