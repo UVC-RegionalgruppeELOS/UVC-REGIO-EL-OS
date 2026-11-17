@@ -15,116 +15,8 @@
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/unsere-treffen.html">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* Einheitlicher Header mit grünem Menü */
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: #2e5c2e;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #1f3b1f;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-            nav a { display: block; margin: 10px 0; }
-            nav.active { display: flex; }
-        }
-
-        /* Container */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 { color: #2e5c2e; }
-
-        a { color: #2e5c2e; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        ul { list-style: none; padding-left: 0; }
-
-        li {
-            margin: 12px 0;
-            padding: 10px;
-            background: #f7f7f7;
-            border-left: 4px solid #2e5c2e;
-            border-radius: 4px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -132,12 +24,12 @@
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
-        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="unsere-treffen.html" class="aktiv">Unsere Treffen</a>
         <a href="andere-treffen.html">Andere Treffen</a>
         <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
@@ -148,55 +40,74 @@
 
 <div class="container">
     <h1>Unsere Treffen</h1>
-    <p>Hier findest du alle bisherigen Treffen der UVC Regionalgruppe Emsland–Osnabrück.</p>
-
-    <h2>Vergangene Treffen</h2>
-    <ul>
-        <li>
-            <a href="treffen-2023.html">Unimog‑Treffen 2023 – Bad Laer Müschen</a><br>
-            Erstes gemeinsames Treffen, große Ausfahrt mit Besichtigung der Fa. Schlingmann, gemütlicher Grillabend.
-        </li>
-
-        <li>
-            <a href="treffen-2024.html">Unimog‑Treffen 2024 – Bad Laer Müschen</a><br>
-            Freitag Planwagenfahrt, Museumsbesuch; Samstag 81‑km‑Ausfahrt mit Besichtigung der Fa. Dyckerhoff in Lengerich und Einfahrt in die Kiesgrube Hankenberge.
-        </li>
-
-        <li>
-            <a href="treffen-2025.html">Unimog‑Treffen 2025 – Baccum</a><br>
-            Museumsbesuch, Ausfahrt über Barwinkel, Werksbesichtigung bei Fa. Wienhoff und Börstel, geselliges Wochenende.
-        </li>
-
-        <li>
-            <a href="gruendung-2026.html">Gründungstreffen 2026 – Hof Blanke</a><br>
-            Offizielle Gründung der Regionalgruppe Emsland–Osnabrück.
-        </li>
-
-        <li>
-            <a href="treffen-2026.html">Unimog‑Treffen 2026 – Hof Coesfeld, Versmold‑Loxten</a><br>
-            Viertes Treffen der Regionalgruppe, Ausfahrten nach Peckelloh, Versmold und Melle, gemütlicher Ausklang.
-        </li>
-    </ul>
+    <p>Hier findest du alle bisherigen und geplanten Treffen der UVC Regionalgruppe Emsland–Osnabrück im Überblick.</p>
 
     <h2>Kommende Treffen</h2>
-    <ul>
-        <li>
-            <a href="treffen-2027.html">Unimog‑Treffen 2027 – Wallenhorst bei Michael Spoida</a><br>
-            <strong>09.07.2027 – 11.07.2027</strong><br>
-            Herzstück des Jahresprogramms – gemütliches Beisammensein, Fachgespräche rund um den Unimog und gemeinsame Ausfahrt.
-        </li>
 
-        <li><strong>2028:</strong> Termin folgt</li>
-    </ul>
+    <div class="box">
+        <h3>Unimog‑Treffen 2027 – Wallenhorst bei Michael Spoida</h3>
+        <dl class="datenblatt">
+            <dt>Termin:</dt>
+            <dd><strong>09.07.2027 – 11.07.2027</strong></dd>
 
-    <p><a href="index.html">Zur Startseite</a></p>
+            <dt>Ort:</dt>
+            <dd>Wallenhorst (Gastgeber: Michael Spoida)</dd>
+
+            <dt>Programm:</dt>
+            <dd>Herzstück des Jahresprogramms – gemütliches Beisammensein, Fachgespräche rund um den Unimog und gemeinsame Ausfahrt.</dd>
+        </dl>
+    </div>
+
+    <div class="box">
+        <h3>Unimog‑Treffen 2028</h3>
+        <p style="margin-bottom: 0;"><strong>Termin &amp; Ort:</strong> Folgen in Kürze.</p>
+    </div>
+
+    <h2>Vergangene Treffen (Rückblicke &amp; Fotos)</h2>
+
+    <div class="box">
+        <h3><a href="treffen-2026.html">Unimog‑Treffen 2026 – Hof Coesfeld, Versmold‑Loxten →</a></h3>
+        <p style="margin-bottom: 0;">
+            Viertes Treffen der Regionalgruppe, Ausfahrten nach Peckeloh, Versmold und Melle, gemütlicher Ausklang.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3><a href="gruendung-2026.html">Gründungstreffen 2026 – Hof Blanke →</a></h3>
+        <p style="margin-bottom: 0;">
+            Offizielle Gründung der UVC Regionalgruppe Emsland–Osnabrück auf dem Hof Blanke in Bad Laer-Müschen.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3><a href="treffen-2025.html">Unimog‑Treffen 2025 – Baccum →</a></h3>
+        <p style="margin-bottom: 0;">
+            Museumsbesuch, Ausfahrt über Bawinkel, Werksbesichtigung bei Fa. Wienhoff und Börstel, geselliges Wochenende.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3><a href="treffen-2024.html">Unimog‑Treffen 2024 – Bad Laer Müschen →</a></h3>
+        <p style="margin-bottom: 0;">
+            Freitag Planwagenfahrt und Museumsbesuch; Samstag 81‑km‑Ausfahrt mit Besichtigung der Fa. Dyckerhoff in Lengerich und Einfahrt in die Kiesgrube Hankenberge.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3><a href="treffen-2023.html">Unimog‑Treffen 2023 – Bad Laer Müschen →</a></h3>
+        <p style="margin-bottom: 0;">
+            Erstes gemeinsames Treffen, große Ausfahrt mit Besichtigung der Fa. Schlingmann, gemütlicher Grillabend.
+        </p>
+    </div>
+
+    <a href="index.html" class="btn-zurueck">← Zurück zur Startseite</a>
 </div>
 
 <footer>
-    © 2026 UVC Regionalgruppe Emsland–Osnabrück  
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a> ·  
-    <a href="impressum.html">Impressum</a> ·  
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
