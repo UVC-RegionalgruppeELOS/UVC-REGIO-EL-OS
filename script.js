@@ -12,7 +12,6 @@ function toggleMenu() {
 function openLightbox(imageSrc) {
     let lightbox = document.getElementById("collageLightbox");
 
-    // Erzeugt die Lightbox automatisch, falls sie noch nicht im HTML steht
     if (!lightbox) {
         lightbox = document.createElement("div");
         lightbox.id = "collageLightbox";
@@ -48,7 +47,6 @@ function closeLightbox() {
     }
 }
 
-// Schließt die Lightbox beim Drücken der Escape-Taste
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         closeLightbox();
@@ -92,10 +90,9 @@ function buildSeamlessMarquee(trackId, imageList) {
     if (!track) return;
 
     const shuffled = shuffleImages(imageList);
-    // Zweifache Einfügung für eine komplett nahtlose Endlosschleife
     const doubled = shuffled.concat(shuffled);
 
-    doubled.forEach(item => {
+    doubled.forEach(function (item) {
         const figure = document.createElement("div");
         figure.className = "marquee-item";
 
@@ -115,7 +112,6 @@ function buildSeamlessMarquee(trackId, imageList) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const unimogImages = [
-        /* Mitglieder-Fahrzeuge (9 Unimogs nach Baujahr) */
         { src: "1951.jpg", text: "Unimog 2010 „Dieseli“ · 1951" },
         { src: "1956.jpg", text: "Unimog · 1956" },
         { src: "1957.png", text: "Unimog 411.110 · 1957" },
@@ -125,15 +121,11 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "1979.jpg", text: "Unimog · 1979" },
         { src: "unimog-1979-2.jpg", text: "Unimog · 1979" },
         { src: "1986.jpg", text: "Unimog · 1986" },
-
-        /* Eigene Treffen & Veranstaltungen */
         { src: "2023.jpg", text: "Treffen Bad Laer · 2023" },
         { src: "2024.jpg", text: "Treffen Bad Laer · 2024" },
         { src: "2025.jpg", text: "Treffen Baccum · 2025" },
         { src: "2026.jpeg", text: "Treffen Versmold-Loxten · 2026" },
         { src: "gruendung.png", text: "Gründung Regionalgruppe · 2026" },
-
-        /* Weitere Treffen */
         { src: "Nordhorn1.jpg", text: "Feldtage Nordhorn · 2022" },
         { src: "Nordhorn2.jpg", text: "Feldtage Nordhorn · 2022" },
         { src: "Nordhorn3.jpg", text: "Feldtage Nordhorn · 2022" },
@@ -183,7 +175,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const museumImages = [
-        /* Telefone (Firma · Typ · Baujahr) */
         { src: "OB33.png", text: "Deutsche Bundesbahn · OB33 · 1930er" },
         { src: "RhAp.png", text: "Deutsche Reichspost · RhAp · 1940er–1960er" },
         { src: "FeTAp W28-38 angeschlossen.png", text: "Wählapparat · W28/38 · 1950er" },
@@ -204,8 +195,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "FeTAp 2L-752-1 von 08-1989.png", text: "Deutsche Bundespost · FeTAp 2L-752-1 · 1989" },
         { src: "FeTAp Tel 0164 LXvon 02-1991.png", text: "Telekom · Tel 0164 LX · 1991" },
         { src: "FeTAp SEL1026 von 10-1991.png", text: "SEL · FeTAp SEL1026 · 1991" },
-
-        /* Taschenlampen & Handlampen (Firma · Typ · Baujahr) */
         { src: "TL 7 Daimon 414..png", text: "Daimon · 314 (Bundeswehr) · 1950er" },
         { src: "TL 2 VARTA 505.png", text: "VARTA · TL 2 (505) · 1950er" },
         { src: "TL 9 DAIMON FOCUS.jpg", text: "Daimon · Focus · 1950er" },
@@ -214,29 +203,19 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "TL 11 DAIMON.jpg", text: "Daimon · Handlampe · 1960er" },
         { src: "TL 3 VARTA 657.png", text: "VARTA · TL 3 (657) · 1970er" },
         { src: "TL 5 VARTA 658.png", text: "VARTA · TL 5 (658) · 1970er" },
-Verwende Code mit Vorsicht.
-{ src: "TL 6 VARTA Duplex.png", text: "VARTA · TL 6 Duplex (430) · 1970er" },
-{ src: "TL 12 VARTA 670.jpg", text: "VARTA · 670 · 1970er" },
-{ src: "TL 13 VARTA 615.jpg", text: "VARTA · 615 · 1970er" },
-{ src: "TL 14 VARTA.jpg", text: "VARTA · Handlampe · 1970er" },
-{ src: "TL 15 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
-{ src: "TL 16 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
-{ src: "TL 17 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
-{ src: "TL 18.jpg", text: "Unbekannt · Handlampe · 1970er" },
-{ src: "HL CEAG Dortmund.jpg", text: "CEAG Dortmund · Sicherheitslampen · 1970er–1990er" },
-{ src: "TL1 Maglite Mini.png", text: "Maglite · Mini AA · ab 1984" },
-{ src: "HL 1 Makita.png", text: "Makita · ML120 (12 V) · 1990er" },
-{ src: "TL 19 WONDER BABET.jpg", text: "Wonder · Babet · 1990er" },
-{ src: "HL Acculux SL6 LED.jpg", text: "Acculux · SL6 LED · ca. 2005–2010" },
-
----
-
-### Teil 2: Rest der `script.js` (direkt darunter einfügen)
-
-Kopiere direkt im Anschluss diesen zweiten Block exakt unter die letzte Zeile von Teil 1:
-
-```javascript
-        /* Uhren (Firma · Typ · Baujahr) */
+        { src: "TL 6 VARTA Duplex.png", text: "VARTA · TL 6 Duplex (430) · 1970er" },
+        { src: "TL 12 VARTA 670.jpg", text: "VARTA · 670 · 1970er" },
+        { src: "TL 13 VARTA 615.jpg", text: "VARTA · 615 · 1970er" },
+        { src: "TL 14 VARTA.jpg", text: "VARTA · Handlampe · 1970er" },
+        { src: "TL 15 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
+        { src: "TL 16 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
+        { src: "TL 17 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
+        { src: "TL 18.jpg", text: "Unbekannt · Handlampe · 1970er" },
+        { src: "HL CEAG Dortmund.jpg", text: "CEAG Dortmund · Sicherheitslampen · 1970er–1990er" },
+        { src: "TL1 Maglite Mini.png", text: "Maglite · Mini AA · ab 1984" },
+        { src: "HL 1 Makita.png", text: "Makita · ML120 (12 V) · 1990er" },
+        { src: "TL 19 WONDER BABET.jpg", text: "Wonder · Babet · 1990er" },
+        { src: "HL Acculux SL6 LED.jpg", text: "Acculux · SL6 LED · ca. 2005–2010" },
         { src: "Uhr Taschenuhr 1.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
         { src: "Uhr Taschenuhr 2.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
         { src: "Uhr Armbanduhr 1.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
@@ -255,16 +234,12 @@ Kopiere direkt im Anschluss diesen zweiten Block exakt unter die letzte Zeile vo
         { src: "Uhr Wanduhr.jpg", text: "Wanduhr · Quarzwerk · 1980er" },
         { src: "Uhr Schrankuhr 1.jpg", text: "Schrankuhr · Pendelwerk · 1980er" },
         { src: "Uhr Standuhr.jpg", text: "Standuhr · Pendel-Schlagwerk · 1990er" },
-
-        /* Vorhängeschlösser (Firma · Typ · Baujahr) */
         { src: "VHS alt.jpg", text: "Eisen-Vorhängeschloss · Genietet · ca. 1920–1930" },
         { src: "VHS rund.jpg", text: "Rund-Vorhängeschloss · Stahl · ca. 1950–1960" },
         { src: "VHS Burg.jpg", text: "BURG-Wächter · Vorhängeschloss · ca. 1960–1970" },
         { src: "VHS Abus 465-60.jpg", text: "ABUS · Modell 465-60 · ca. 1960er" },
         { src: "VHS Abus rot.jpg", text: "ABUS · Vorhängeschloss rot · ca. 1970er" },
         { src: "VHS Goldfarbend.jpg", text: "Messing-Minischloss · Zylinder · ca. 1980er" },
-
-        /* Aschenbecher (Material / Motiv · Baujahr) */
         { src: "AB 1.jpg", text: "Keramikaschenbecher · 1950er" },
         { src: "AB 2.jpg", text: "Schwarzer Glasaschenbecher · 1960er" },
         { src: "AB 3.jpg", text: "Metallaschenbecher emailliert · 1950–1960" },
@@ -272,8 +247,6 @@ Kopiere direkt im Anschluss diesen zweiten Block exakt unter die letzte Zeile vo
         { src: "AB 5.jpg", text: "Dreieckiger Glasaschenbecher · 1960er" },
         { src: "AB 6.jpg", text: "Quadratischer Glasaschenbecher · 1950–1960" },
         { src: "AB 7.jpg", text: "Glasaschenbecher mit Metallhalterung · 1960er" },
-
-        /* Büro & Schreibtechnik (Firma / Gegenstand · Baujahr) */
         { src: "Büro Schreibmaschine.jpg", text: "Mechanische Schreibmaschine · 1950er" },
         { src: "Büro Hefter.jpg", text: "Skrebba · Mechanischer Hefter · 1950–1960" },
         { src: "Büro Aschenbecher.jpg", text: "Büro-Aschenbecher aus Alabaster · 1950er" },
@@ -282,8 +255,6 @@ Kopiere direkt im Anschluss diesen zweiten Block exakt unter die letzte Zeile vo
         { src: "Büro Pelikan.jpg", text: "Pelikan · Schreibwaren-Etui · 1970er" },
         { src: "Büro 100 Kugelschreiber.jpg", text: "Kugelschreiber-Sammlung · 20. Jahrhundert" },
         { src: "Büro Taschenrechner.jpg", text: "Casio · Taschenrechner FX-790P · 1985" },
-
-        /* Haushaltsgeräte mit Kurbel (Firma · Typ · Baujahr) */
         { src: "Röster.jpg", text: "Kaffeeröster aus Gusseisen · ca. 1900–1920" },
         { src: "Bohnenschneider 3.jpg", text: "Pe De · Bohnenschneider Holz-Metall · ca. 1910–1925" },
         { src: "Zentrifuge.jpg", text: "Alfa Laval · Milchseparator Modell 23 · ca. 1920–1930" },
@@ -333,7 +304,7 @@ function checkPW() {
         document.getElementById("content").style.display = "block";
         if (errorMsg) errorMsg.style.display = "none";
     } else {
-   if (errorMsg) {
+        if (errorMsg) {
             errorMsg.style.display = "block";
         } else {
             alert("Falsches Passwort");
