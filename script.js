@@ -214,3 +214,134 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "TL 11 DAIMON.jpg", text: "Daimon · Handlampe · 1960er" },
         { src: "TL 3 VARTA 657.png", text: "VARTA · TL 3 (657) · 1970er" },
         { src: "TL 5 VARTA 658.png", text: "VARTA · TL 5 (658) · 1970er" },
+Verwende Code mit Vorsicht.
+{ src: "TL 6 VARTA Duplex.png", text: "VARTA · TL 6 Duplex (430) · 1970er" },
+{ src: "TL 12 VARTA 670.jpg", text: "VARTA · 670 · 1970er" },
+{ src: "TL 13 VARTA 615.jpg", text: "VARTA · 615 · 1970er" },
+{ src: "TL 14 VARTA.jpg", text: "VARTA · Handlampe · 1970er" },
+{ src: "TL 15 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
+{ src: "TL 16 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
+{ src: "TL 17 VARTA.jpg", text: "VARTA · Taschenlampe · 1970er" },
+{ src: "TL 18.jpg", text: "Unbekannt · Handlampe · 1970er" },
+{ src: "HL CEAG Dortmund.jpg", text: "CEAG Dortmund · Sicherheitslampen · 1970er–1990er" },
+{ src: "TL1 Maglite Mini.png", text: "Maglite · Mini AA · ab 1984" },
+{ src: "HL 1 Makita.png", text: "Makita · ML120 (12 V) · 1990er" },
+{ src: "TL 19 WONDER BABET.jpg", text: "Wonder · Babet · 1990er" },
+{ src: "HL Acculux SL6 LED.jpg", text: "Acculux · SL6 LED · ca. 2005–2010" },
+
+---
+
+### Teil 2: Rest der `script.js` (direkt darunter einfügen)
+
+Kopiere direkt im Anschluss diesen zweiten Block exakt unter die letzte Zeile von Teil 1:
+
+```javascript
+        /* Uhren (Firma · Typ · Baujahr) */
+        { src: "Uhr Taschenuhr 1.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
+        { src: "Uhr Taschenuhr 2.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
+        { src: "Uhr Armbanduhr 1.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
+        { src: "Uhr Armbanduhr 2.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
+        { src: "Uhr Armbanduhr 3.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
+        { src: "Uhr Armbanduhr 4.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
+        { src: "Uhr Reisewecker 1.jpg", text: "Reisewecker · Klappgehäuse · 1950er" },
+        { src: "Uhr Reisewecker 2.jpg", text: "Reisewecker · Klappgehäuse · 1950er" },
+        { src: "Uhr Reisewecker 3.jpg", text: "Reisewecker · Klappgehäuse · 1950er" },
+        { src: "Uhr Kurzzeitmesser 1.jpg", text: "Kurzzeitmesser · Federwerk · 1960er" },
+        { src: "Uhr Kurzzeitmesser 2.jpg", text: "Kurzzeitmesser · Federwerk · 1960er" },
+        { src: "Uhr Mutteruhr.jpg", text: "Mutteruhr · Hauptuhr · 1970er" },
+        { src: "Uhr Tochter PEWETA.jpg", text: "PEWETA · Tochteruhr · 1970er" },
+        { src: "Uhr Tochter SIEMENS.jpg", text: "SIEMENS · Tochteruhr · 1970er" },
+        { src: "Uhr Tochter TN.jpg", text: "Telefonbau & Normalzeit · Tochteruhr · 1970er" },
+        { src: "Uhr Wanduhr.jpg", text: "Wanduhr · Quarzwerk · 1980er" },
+        { src: "Uhr Schrankuhr 1.jpg", text: "Schrankuhr · Pendelwerk · 1980er" },
+        { src: "Uhr Standuhr.jpg", text: "Standuhr · Pendel-Schlagwerk · 1990er" },
+
+        /* Vorhängeschlösser (Firma · Typ · Baujahr) */
+        { src: "VHS alt.jpg", text: "Eisen-Vorhängeschloss · Genietet · ca. 1920–1930" },
+        { src: "VHS rund.jpg", text: "Rund-Vorhängeschloss · Stahl · ca. 1950–1960" },
+        { src: "VHS Burg.jpg", text: "BURG-Wächter · Vorhängeschloss · ca. 1960–1970" },
+        { src: "VHS Abus 465-60.jpg", text: "ABUS · Modell 465-60 · ca. 1960er" },
+        { src: "VHS Abus rot.jpg", text: "ABUS · Vorhängeschloss rot · ca. 1970er" },
+        { src: "VHS Goldfarbend.jpg", text: "Messing-Minischloss · Zylinder · ca. 1980er" },
+
+        /* Aschenbecher (Material / Motiv · Baujahr) */
+        { src: "AB 1.jpg", text: "Keramikaschenbecher · 1950er" },
+        { src: "AB 2.jpg", text: "Schwarzer Glasaschenbecher · 1960er" },
+        { src: "AB 3.jpg", text: "Metallaschenbecher emailliert · 1950–1960" },
+        { src: "AB 4.jpg", text: "Glasaschenbecher · Vogelpark Bad Rothenfelde · 1970er" },
+        { src: "AB 5.jpg", text: "Dreieckiger Glasaschenbecher · 1960er" },
+        { src: "AB 6.jpg", text: "Quadratischer Glasaschenbecher · 1950–1960" },
+        { src: "AB 7.jpg", text: "Glasaschenbecher mit Metallhalterung · 1960er" },
+
+        /* Büro & Schreibtechnik (Firma / Gegenstand · Baujahr) */
+        { src: "Büro Schreibmaschine.jpg", text: "Mechanische Schreibmaschine · 1950er" },
+        { src: "Büro Hefter.jpg", text: "Skrebba · Mechanischer Hefter · 1950–1960" },
+        { src: "Büro Aschenbecher.jpg", text: "Büro-Aschenbecher aus Alabaster · 1950er" },
+        { src: "Büro Füller.jpg", text: "Tropen · Füllfederhalter „Gold“ · 1960er" },
+        { src: "Büro Box.jpg", text: "Büro-Ablagebox · 1970er" },
+        { src: "Büro Pelikan.jpg", text: "Pelikan · Schreibwaren-Etui · 1970er" },
+        { src: "Büro 100 Kugelschreiber.jpg", text: "Kugelschreiber-Sammlung · 20. Jahrhundert" },
+        { src: "Büro Taschenrechner.jpg", text: "Casio · Taschenrechner FX-790P · 1985" },
+
+        /* Haushaltsgeräte mit Kurbel (Firma · Typ · Baujahr) */
+        { src: "Röster.jpg", text: "Kaffeeröster aus Gusseisen · ca. 1900–1920" },
+        { src: "Bohnenschneider 3.jpg", text: "Pe De · Bohnenschneider Holz-Metall · ca. 1910–1925" },
+        { src: "Zentrifuge.jpg", text: "Alfa Laval · Milchseparator Modell 23 · ca. 1920–1930" },
+        { src: "Bohnenschneider1.jpg", text: "Pe De · Bohnenschneider Gussmodell · ca. 1930–1940" },
+        { src: "10.jpg", text: "Alexanderwerk · Fleischwolf 10 · ca. 1930–1945" },
+        { src: "Dosenmaschine.jpg", text: "Lanico · Dosenverschlussmaschine TR38 · ab 1938" },
+        { src: "Brotschneider.jpg", text: "Mechanischer Brotschneider · ca. 1940–1950" },
+        { src: "20N.jpg", text: "Alexanderwerk · Fleischwolf 20N · ca. 1940–1955" },
+        { src: "Kaffeemühle.jpg", text: "Zassenhaus · Handkaffeemühle · ca. 1950–1960" },
+        { src: "Kohlschneider.jpg", text: "Mechanischer Kohlschneider · ca. 1950–1960" },
+        { src: "Kartoffelpüree.jpg", text: "Kartoffelpüreegerät · ca. 1950–1960" },
+        { src: "Schneebesen.jpg", text: "Schneebesen mit Kurbel · ca. 1950–1960" },
+        { src: "ALKA.jpg", text: "ALKA · Kurbelgerät · ca. 1950–1965" },
+        { src: "Parmesanmühle.jpg", text: "Schulte · Trommelreibe Modell 820 · ca. 1950–1970" },
+        { src: "BME5.jpg", text: "BME5 · Kurbelgerät · ca. 1960–1970" },
+        { src: "Alexanderwerk7.jpg", text: "Alexanderwerk · Kurbelgerät 7 · ca. 1960–1970" }
+    ];
+
+    buildSeamlessMarquee("unimogScroll", unimogImages);
+    buildSeamlessMarquee("museumScroll", museumImages);
+    initInternArea();
+});
+
+/* =========================================================
+   Interner Bereich – Passwortprüfung & Logout
+   ========================================================= */
+
+function initInternArea() {
+    const loginBox = document.getElementById("loginBox");
+    const content = document.getElementById("content");
+    if (!loginBox || !content) return;
+
+    if (localStorage.getItem("uvcLoggedIn") === "true") {
+        loginBox.style.display = "none";
+        content.style.display = "block";
+    }
+}
+
+function checkPW() {
+    const pwInput = document.getElementById("pw");
+    const errorMsg = document.getElementById("loginError");
+    if (!pwInput) return;
+
+    if (pwInput.value === "unimog2026") {
+        localStorage.setItem("uvcLoggedIn", "true");
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        if (errorMsg) errorMsg.style.display = "none";
+    } else {
+        if (errorMsg) {
+            errorMsg.style.display = "block";
+        } else {
+            alert("Falsches Passwort");
+        }
+    }
+}
+
+function logout() {
+    localStorage.removeItem("uvcLoggedIn");
+    window.location.href = "index.html";
+}
