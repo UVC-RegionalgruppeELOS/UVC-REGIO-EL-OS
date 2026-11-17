@@ -9,64 +9,43 @@
     <meta name="keywords" content="Unimog, UVC, Treffen, Kaunitz, Verl, Ostwestfalenhalle, Sommertreffen 2026">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #e5e5e5; color: #222; line-height: 1.6; }
-
-        header { background: rgba(0,0,0,0.75); padding: 15px; text-align: center; border-bottom: 2px solid #ccc; }
-        nav a { color: #2e5c2e; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-
-        section { max-width: 1000px; width: 90%; margin: 40px auto; padding: 25px; background: white;
-                  border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); }
-
-        h1, h2 { color: #2e5c2e; }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            margin-top: 25px;
-        }
-
-        .gallery a img {
-            width: 300px;
-            height: auto;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-            transition: transform 0.2s ease;
-        }
-
-        .gallery a img:hover {
-            transform: scale(1.05);
-        }
-
-        footer { text-align: center; padding: 25px 10px; color: #555; font-size: 0.9rem;
-                 border-top: 1px solid #ccc; margin-top: 40px; background: #e5e5e5; }
-        footer a { color: #2e5c2e; text-decoration: none; font-size: 0.85rem; }
-        footer a:hover { color: #1d3d1d; }
-    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <nav>
-        <a href="index.html"><strong>Start</strong></a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
+    <nav id="mainNav">
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
         <a href="unsere-treffen.html">Unsere Treffen</a>
-        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="andere-treffen.html" class="aktiv">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
         <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
-<section>
+<div class="container">
     <h1>UVC Sommertreffen 2026 – Ostwestfalenhalle Kaunitz / Verl</h1>
+
+    <dl class="datenblatt">
+        <dt>Datum</dt>
+        <dd>17. bis 19. Juli 2026</dd>
+        <dt>Veranstaltungsort</dt>
+        <dd>Ostwestfalenhalle Kaunitz, Verl</dd>
+        <dt>Veranstalter</dt>
+        <dd>Unimog Veteranen Club (UVC) / Regionalgruppe Ostwestfalen-Lippe</dd>
+        <dt>Teilnehmerzahl</dt>
+        <dd>Fast 500 Unimogs verschiedener Baujahre und Baureihen</dd>
+    </dl>
 
     <h2>Zusammenfassung</h2>
     <p>
@@ -91,74 +70,60 @@
     </p>
 
     <h2>Fotogalerie</h2>
+    <p>Klicke auf ein Foto, um es zu vergrößern.</p>
 
-    <div class="gallery">
-        <!-- Verl1 bis Verl27 -->
-        <a href="Verl1.jpg" target="_blank"><img src="Verl1.jpg" alt="Verl 1"></a>
-        <a href="Verl2.jpg" target="_blank"><img src="Verl2.jpg" alt="Verl 2"></a>
-        <a href="Verl3.jpg" target="_blank"><img src="Verl3.jpg" alt="Verl 3"></a>
-        <a href="Verl4.jpg" target="_blank"><img src="Verl4.jpg" alt="Verl 4"></a>
-        <a href="Verl5.jpg" target="_blank"><img src="Verl5.jpg" alt="Verl 5"></a>
-        <a href="Verl6.jpg" target="_blank"><img src="Verl6.jpg" alt="Verl 6"></a>
-        <a href="Verl7.jpg" target="_blank"><img src="Verl7.jpg" alt="Verl 7"></a>
-        <a href="Verl8.jpg" target="_blank"><img src="Verl8.jpg" alt="Verl 8"></a>
-        <a href="Verl9.jpg" target="_blank"><img src="Verl9.jpg" alt="Verl 9"></a>
-        <a href="Verl10.jpg" target="_blank"><img src="Verl10.jpg" alt="Verl 10"></a>
-        <a href="Verl11.jpg" target="_blank"><img src="Verl11.jpg" alt="Verl 11"></a>
-        <a href="Verl12.jpg" target="_blank"><img src="Verl12.jpg" alt="Verl 12"></a>
-        <a href="Verl13.jpg" target="_blank"><img src="Verl13.jpg" alt="Verl 13"></a>
-        <a href="Verl14.jpg" target="_blank"><img src="Verl14.jpg" alt="Verl 14"></a>
-        <a href="Verl15.jpg" target="_blank"><img src="Verl15.jpg" alt="Verl 15"></a>
-        <a href="Verl16.jpg" target="_blank"><img src="Verl16.jpg" alt="Verl 16"></a>
-        <a href="Verl17.jpg" target="_blank"><img src="Verl17.jpg" alt="Verl 17"></a>
-        <a href="Verl18.jpg" target="_blank"><img src="Verl18.jpg" alt="Verl 18"></a>
-        <a href="Verl19.jpg" target="_blank"><img src="Verl19.jpg" alt="Verl 19"></a>
-        <a href="Verl20.jpg" target="_blank"><img src="Verl20.jpg" alt="Verl 20"></a>
-        <a href="Verl21.jpg" target="_blank"><img src="Verl21.jpg" alt="Verl 21"></a>
-        <a href="Verl22.jpg" target="_blank"><img src="Verl22.jpg" alt="Verl 22"></a>
-        <a href="Verl23.jpg" target="_blank"><img src="Verl23.jpg" alt="Verl 23"></a>
-        <a href="Verl24.jpg" target="_blank"><img src="Verl24.jpg" alt="Verl 24"></a>
-        <a href="Verl25.jpg" target="_blank"><img src="Verl25.jpg" alt="Verl 25"></a>
-        <a href="Verl26.jpg" target="_blank"><img src="Verl26.jpg" alt="Verl 26"></a>
-        <a href="Verl27.jpg" target="_blank"><img src="Verl27.jpg" alt="Verl 27"></a>
-        <a href="Verl28.jpg" target="_blank"><img src="Verl28.jpg" alt="Verl 28"></a>
-        <a href="Verl29.jpg" target="_blank"><img src="Verl29.jpg" alt="Verl 29"></a>
-        <a href="Verl30.jpg" target="_blank"><img src="Verl30.jpg" alt="Verl 30"></a>
-        <a href="Verl30a.jpg" target="_blank"><img src="Verl30a.jpg" alt="Verl 30a"></a>
-        <a href="Verl31.jpg" target="_blank"><img src="Verl31.jpg" alt="Verl 31"></a>
-        <a href="Verl32.jpg" target="_blank"><img src="Verl32.jpg" alt="Verl 32"></a>
-        <a href="Verl33.jpg" target="_blank"><img src="Verl33.jpg" alt="Verl 33"></a>
-        <a href="Verl34.jpg" target="_blank"><img src="Verl34.jpg" alt="Verl 34"></a>
-        <a href="Verl35.jpg" target="_blank"><img src="Verl35.jpg" alt="Verl 35"></a>
-        <a href="Verl36.jpg" target="_blank"><img src="Verl36.jpg" alt="Verl 36"></a>
-        <a href="Verl37.jpg" target="_blank"><img src="Verl37.jpg" alt="Verl 37"></a>
-        <a href="Verl38.jpg" target="_blank"><img src="Verl38.jpg" alt="Verl 38"></a>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 20px;">
+        <img src="Verl1.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 1" onclick="openLightbox('Verl1.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl2.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 2" onclick="openLightbox('Verl2.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl3.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 3" onclick="openLightbox('Verl3.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl4.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 4" onclick="openLightbox('Verl4.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl5.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 5" onclick="openLightbox('Verl5.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl6.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 6" onclick="openLightbox('Verl6.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl7.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 7" onclick="openLightbox('Verl7.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl8.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 8" onclick="openLightbox('Verl8.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl9.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 9" onclick="openLightbox('Verl9.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl10.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 10" onclick="openLightbox('Verl10.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl11.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 11" onclick="openLightbox('Verl11.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl12.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 12" onclick="openLightbox('Verl12.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl13.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 13" onclick="openLightbox('Verl13.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl14.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 14" onclick="openLightbox('Verl14.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl15.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 15" onclick="openLightbox('Verl15.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl16.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 16" onclick="openLightbox('Verl16.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl17.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 17" onclick="openLightbox('Verl17.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl18.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 18" onclick="openLightbox('Verl18.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl19.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 19" onclick="openLightbox('Verl19.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl20.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 20" onclick="openLightbox('Verl20.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl21.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 21" onclick="openLightbox('Verl21.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl22.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 22" onclick="openLightbox('Verl22.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl23.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 23" onclick="openLightbox('Verl23.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl24.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 24" onclick="openLightbox('Verl24.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl25.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 25" onclick="openLightbox('Verl25.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl26.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 26" onclick="openLightbox('Verl26.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl27.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 27" onclick="openLightbox('Verl27.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl28.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 28" onclick="openLightbox('Verl28.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl29.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 29" onclick="openLightbox('Verl29.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl30.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 30" onclick="openLightbox('Verl30.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl30a.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 30a" onclick="openLightbox('Verl30a.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl31.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 31" onclick="openLightbox('Verl31.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl32.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 32" onclick="openLightbox('Verl32.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl33.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 33" onclick="openLightbox('Verl33.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl34.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 34" onclick="openLightbox('Verl34.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl35.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 35" onclick="openLightbox('Verl35.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl36.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 36" onclick="openLightbox('Verl36.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl37.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 37" onclick="openLightbox('Verl37.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
+        <img src="Verl38.jpg" alt="UVC Sommertreffen Verl 2026 – Bild 38" onclick="openLightbox('Verl38.jpg')" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; cursor: pointer;">
     </div>
-</section>
+
+    <a href="andere-treffen.html" class="btn-zurueck">← Zurück zu anderen Treffen</a>
+</div>
 
 <footer>
-    <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 25px 10px; font-family: Arial, sans-serif; color: #555;">
-        <p style="margin: 0 0 10px 0; font-size: 0.95rem;">
-            © 2026 UVC Regionalgruppe Emsland–Osnabrück
-        </p>
-
-        <p style="margin: 6px 0;">
-            <a href="hosting.html">Hosting & Technik</a> ·
-            <a href="impressum.html">Impressum</a> ·
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-
-        <p style="margin: 10px 0 0 0; font-size: 0.8rem; color: #777;">
-            Besucher gesamt:
-            <img src="https://www.counter12.com/img-0A0A0A0A0A0A0A0A-0.gif"
-                 alt="Besucherzähler"
-                 style="vertical-align: middle; opacity: 0.7; height: 22px; width: auto; border-radius: 4px;">
-        </p>
-    </div>
+    © 2026 UVC Regionalgruppe Emsland–Osnabrück
+    <br>
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a>
 </footer>
 
 </body>
 </html>
-
-
-        <
