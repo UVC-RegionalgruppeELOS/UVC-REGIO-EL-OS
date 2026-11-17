@@ -333,7 +333,7 @@ function checkPW() {
         document.getElementById("content").style.display = "block";
         if (errorMsg) errorMsg.style.display = "none";
     } else {
-        if (errorMsg) {
+   if (errorMsg) {
             errorMsg.style.display = "block";
         } else {
             alert("Falsches Passwort");
