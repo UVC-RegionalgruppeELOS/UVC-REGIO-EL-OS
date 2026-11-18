@@ -652,3 +652,7 @@ form button[type="submit"]:hover,
 .daten-tabelle tbody tr:hover {
     background: #f4f8f4;
 }
+.daten-tabelle td:last-child {
+    white-space: normal;
+    min-width: 240px;
+}
