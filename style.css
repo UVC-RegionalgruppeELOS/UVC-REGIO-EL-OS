@@ -468,3 +468,70 @@ footer a:hover {
     max-width: 85vw;
     letter-spacing: 0.3px;
 }
+/* --- Formulare & Hinweistexte (Kontakt & Intern) --- */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--gruen);
+    box-shadow: 0 0 0 3px rgba(46, 92, 46, 0.15);
+}
+
+form button[type="submit"],
+.btn-aktion {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 11px 22px;
+    background: var(--gruen);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+form button[type="submit"]:hover,
+.btn-aktion:hover {
+    background: var(--gruen-dunkel);
+}
+
+.hinweis-klein {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+/* Verschachteltes Datenblatt in einer Box ohne doppelten Rahmen */
+.box .datenblatt {
+    padding: 8px 0 0 0;
+    border-left: none;
+    margin-bottom: 0;
+}
