@@ -614,3 +614,41 @@ form button[type="submit"]:hover,
     border-left: none;
     margin-bottom: 0;
 }
+/* --- Tabellen & Breiter Container (Mitgliederliste & Geschichts-Tabellen) --- */
+.container-breit {
+    max-width: 1100px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+}
+
+.daten-tabelle {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    background: #ffffff;
+}
+
+.daten-tabelle th,
+.daten-tabelle td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    white-space: nowrap;
+}
+
+.daten-tabelle th {
+    background: var(--box-grau);
+    color: var(--gruen);
+    font-weight: 700;
+    border-bottom: 2px solid var(--gruen);
+}
+
+.daten-tabelle tbody tr:hover {
+    background: #f4f8f4;
+}
