@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosting & Technik | UVC Regionalgruppe Emsland–Osnabrück</title>
+    <title>Hosting &amp; Technik – UVC Regionalgruppe Emsland–Osnabrück</title>
 
     <!-- SEO-Meta-Tags -->
     <meta name="description" content="Technische Informationen zur Website der UVC Regionalgruppe Emsland–Osnabrück: Hosting über GitHub Pages, Kontaktformular, Besucherzähler und technische Umsetzung.">
@@ -16,180 +16,78 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/hosting.html">
 
-    <!-- Favicon -->
+    <!-- Favicon & Zentrale Dateien -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* Einheitlicher Header */
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            nav.active {
-                display: flex;
-            }
-        }
-
-        /* Inhalt */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 {
-            color: #2e5c2e;
-        }
-
-        /* Neuer 2‑Zeilen‑Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
-
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
         <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
 <div class="container">
-    <h1>Hosting & Technik</h1>
+    <h1>Hosting &amp; Technik</h1>
 
     <p>
         Diese Website der <strong>UVC Regionalgruppe Emsland–Osnabrück</strong> basiert auf einer modernen, 
-        zuverlässigen und datensparsamen technischen Infrastruktur.  
+        zuverlässigen und datensparsamen technischen Infrastruktur. 
         Hier findest du eine Übersicht über die eingesetzten Systeme.
     </p>
 
     <h2>1. Hosting über GitHub Pages</h2>
     <p>
         Die Website wird über <strong>GitHub Pages</strong> gehostet – einem schnellen, stabilen und 
-        weltweit verfügbaren Hosting‑Dienst für statische Webseiten.  
+        weltweit verfügbaren Hosting‑Dienst für statische Webseiten. 
         Änderungen an den HTML‑Dateien werden automatisch veröffentlicht.
     </p>
 
     <h2>2. Kontaktformular (Formspree)</h2>
     <p>
-        Das Kontaktformular nutzt den Dienst <strong>Formspree</strong>, um Nachrichten sicher zu übermitteln.  
+        Das Kontaktformular nutzt den Dienst <strong>Formspree</strong>, um Nachrichten sicher zu übermitteln. 
         Dadurch ist kein eigener Mailserver notwendig.
     </p>
 
     <h2>3. Besucherzähler (Counter12)</h2>
     <p>
-        Der Besucherzähler stammt von <strong>Counter12</strong>.  
-        Er verarbeitet IP‑Adressen anonymisiert und zeigt die Besucherzahlen im Footer an.
+        Der Besucherzähler stammt von <strong>Counter12</strong>. 
+        Er verarbeitet IP‑Adressen anonymisiert und zeigt die Besucherzahlen ausschließlich im Footer der Startseite an.
     </p>
 
     <h2>4. Eingebettete Inhalte</h2>
     <p>
-        Auf der Seite <strong>„Weiterführende Links“</strong> wird eine Google‑Maps‑Karte verlinkt.  
+        Auf der Seite <strong>„Weiterführende Links“</strong> wird eine Google‑Maps‑Karte verlinkt. 
         Beim Öffnen können Daten an Google übertragen werden.
     </p>
 
     <h2>5. Technische Umsetzung</h2>
     <p>
-        Die Website wurde vollständig in <strong>HTML</strong> und <strong>CSS</strong> erstellt.  
+        Die Website wurde vollständig in <strong>HTML</strong>, <strong>CSS</strong> und schlankem <strong>JavaScript</strong> erstellt. 
         Es werden keine Cookies gesetzt und keine Tracking‑Dienste verwendet.
     </p>
+
+    <a href="index.html" class="btn-zurueck">← Zurück zur Startseite</a>
 </div>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
     <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
