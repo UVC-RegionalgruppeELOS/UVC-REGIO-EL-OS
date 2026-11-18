@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interner Bereich – UVC Regionalgruppe Emsland–Osnabrück</title>
 
+    <!-- SEO-Meta-Tags -->
     <meta name="description" content="Interner Bereich der UVC Regionalgruppe Emsland–Osnabrück. Passwortgeschützter Zugang zu Protokollen und Dokumenten.">
     <meta name="keywords" content="UVC, Intern, Protokolle, Mitglieder, Regionalgruppe, Emsland, Osnabrück">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
+    <!-- Favicon & Zentrale Dateien -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -39,12 +41,12 @@
     <div id="loginBox" class="box">
         <h2>Anmeldung für Mitglieder</h2>
         <p>Bitte gib das Gruppen-Passwort ein, um Protokolle und das Mitgliederverzeichnis einzusehen:</p>
-        <input type="password" id="pw" placeholder="Passwort eingeben" onkeydown="if(event.key==='Enter') checkPW()" style="width: 100%; max-width: 360px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 12px 0;">
-        <button type="button" onclick="checkPW()" style="padding: 10px 20px; background: #2e5c2e; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Anmelden</button>
-        <p id="loginError" style="color: #b00020; font-weight: bold; margin-top: 10px; display: none;">Falsches Passwort. Bitte erneut versuchen.</p>
+        <input type="password" id="pw" class="login-input" placeholder="Passwort eingeben" onkeydown="if(event.key==='Enter') checkPW()">
+        <button type="button" class="btn-aktion" onclick="checkPW()">Anmelden</button>
+        <p id="loginError" class="login-error">Falsches Passwort. Bitte erneut versuchen.</p>
     </div>
 
-    <div id="content" style="display: none;">
+    <div id="content" class="hidden">
         <div class="box">
             <h2>Stammtischprotokolle</h2>
             <p>Hier findest du die Protokolle unserer bisherigen Quartals-Stammtische:</p>
@@ -57,10 +59,10 @@
 
         <div class="box">
             <h2>Mitgliederverzeichnis</h2>
-            <p style="margin-bottom: 0;"><a href="mitglieder.html"><strong>→ Mitgliederverzeichnis öffnen</strong></a></p>
+            <p class="no-margin-bottom"><a href="mitglieder.html"><strong>→ Mitgliederverzeichnis öffnen</strong></a></p>
         </div>
 
-        <button type="button" onclick="logout()" style="margin-top: 10px; padding: 10px 20px; background: #555; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Abmelden (Logout)</button>
+        <button type="button" class="btn-logout" onclick="logout()">Abmelden (Logout)</button>
     </div>
 
     <a href="index.html" class="btn-zurueck">← Zurück zur Startseite</a>
