@@ -1,4 +1,10 @@
 User-agent: *
-Allow: /
+Allow: /UVC-REGIO-EL-OS/
 
-Sitemap: https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/sitemap.xml
+# Internen Bereich, Mitgliederliste und Protokolle ausschliessen
+Disallow: /UVC-REGIO-EL-OS/intern.html
+Disallow: /UVC-REGIO-EL-OS/mitglieder.html
+Disallow: /UVC-REGIO-EL-OS/protokoll-
+
+# Verweis auf die Sitemap
+Sitemap: https://github.io
