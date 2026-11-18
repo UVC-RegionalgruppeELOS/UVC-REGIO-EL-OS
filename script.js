@@ -76,6 +76,50 @@ function toggleMarqueeFullscreen(marqueeId) {
     }
 }
 
+function toggleMarqueePause(trackId, btn) {
+    const track = document.getElementById(trackId);
+    if (!track) return;
+
+    const anims = track.getAnimations();
+    const isPaused = track.dataset.paused === "true";
+
+    if (!isPaused) {
+        anims.forEach(function (anim) {
+            anim.pause();
+        });
+        track.dataset.paused = "true";
+        if (btn) btn.textContent = "▶ Weiterlaufen";
+    } else {
+        anims.forEach(function (anim) {
+            anim.play();
+        });
+        track.dataset.paused = "false";
+        if (btn) btn.textContent = "⏸ Pause";
+    }
+}
+
+function stepMarquee(trackId) {
+    const track = document.getElementById(trackId);
+    if (!track) return;
+
+    const anims = track.getAnimations();
+    const firstItem = track.querySelector(".marquee-item");
+    if (!anims.length || !firstItem) return;
+
+    const halfWidth = track.scrollWidth / 2;
+    const itemWidth = firstItem.offsetWidth + 20;
+    if (halfWidth <= 0) return;
+
+    anims.forEach(function (anim) {
+        const timing = anim.effect.getComputedTiming();
+        const duration = timing.duration;
+        if (!duration || duration === Infinity) return;
+
+        const stepTime = (itemWidth / halfWidth) * duration;
+        anim.currentTime = (anim.currentTime || 0) + stepTime;
+    });
+}
+
 function shuffleImages(array) {
     const copy = array.slice();
     for (let i = copy.length - 1; i > 0; i--) {
@@ -121,6 +165,14 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "1979.jpg", text: "Unimog · 1979" },
         { src: "unimog-1979-2.jpg", text: "Unimog · 1979" },
         { src: "1986.jpg", text: "Unimog · 1986" },
+        { src: "ABG 1 Reinhold.jpg", text: "Anbaugerät · Frontdrücker (Reinhold)" },
+        { src: "ABG 2 Reinhold.jpg", text: "Anbaugerät · Schlegelmulcher (Michael)" },
+        { src: "ABG 3 Reinhold.jpg", text: "Anbaugerät · Forstseilwinde (Reinhold)" },
+        { src: "ABG 4 Häcksler mit Anhänger Michael.jpg", text: "Anbaugerät · Feldhäcksler Speiser Scampolo (Michael)" },
+        { src: "ABG 5 Kreissäge Familie Garner.jpg", text: "Anbaugerät · Kreissäge (Familie Garner)" },
+        { src: "ABG 6 Mähbalken Michael.jpeg", text: "Anbaugerät · Mähbalken (Michael)" },
+        { src: "ABG 7 Sähmaschine Michael.jpeg", text: "Anbaugerät · Sähmaschine / Drillmaschine (Michael)" },
+        { src: "ABG 8 Industrie-Frontlader Michael.jpg", text: "Anbaugerät · Industrie-Frontlader (Michael)" },
         { src: "2023.jpg", text: "Treffen Bad Laer · 2023" },
         { src: "2024.jpg", text: "Treffen Bad Laer · 2024" },
         { src: "2025.jpg", text: "Treffen Baccum · 2025" },
