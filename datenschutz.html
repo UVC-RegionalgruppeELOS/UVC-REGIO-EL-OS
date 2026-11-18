@@ -3,131 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung | UVC Regionalgruppe Emsland–Osnabrück</title>
+    <title>Datenschutzerklärung – UVC Regionalgruppe Emsland–Osnabrück</title>
 
+    <!-- SEO-Meta-Tags -->
     <meta name="description" content="Datenschutzerklärung der UVC Regionalgruppe Emsland–Osnabrück. Informationen zu Hosting, Kontaktformular, Besucherzähler, eingebetteten Inhalten und Ihren Datenschutzrechten.">
     <meta name="keywords" content="Datenschutz, Datenschutzerklärung, UVC, Unimog, Regionalgruppe, Emsland, Osnabrück, DSGVO, GitHub Pages, Formspree, Counter12, Google Maps">
     <meta name="author" content="UVC Regionalgruppe Emsland–Osnabrück">
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Datenschutzerklärung – UVC Regionalgruppe Emsland–Osnabrück">
     <meta property="og:description" content="Informationen zur Datenverarbeitung, Hosting, Kontaktformular, Besucherzähler und Ihren Rechten gemäß DSGVO.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/datenschutz.html">
 
+    <!-- Favicon & Zentrale Dateien -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e5e5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        /* Einheitlicher Header */
-        header {
-            background: rgba(0,0,0,0.75);
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #ccc;
-            position: relative;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #2e5c2e;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: #2e5c2e;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 4px;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
-
-        @media (max-width: 899px) {
-            .menu-toggle { display: block; }
-            nav {
-                display: none;
-                flex-direction: column;
-                background: rgba(0,0,0,0.85);
-                border-top: 2px solid #ccc;
-                padding: 10px 0;
-            }
-            nav a { display: block; margin: 10px 0; }
-            nav.active { display: flex; }
-        }
-
-        /* Inhalt */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-
-        h1, h2 {
-            color: #2e5c2e;
-        }
-
-        /* Neuer 2‑Zeilen‑Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #444;
-            font-size: 0.9rem;
-            border-top: 2px solid #ccc;
-            margin-top: 40px;
-            background: #e5e5e5;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        footer a:hover {
-            color: #2e5c2e;
-        }
-    </style>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("mainNav").classList.toggle("active");
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
 <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menü</button>
-
     <nav id="mainNav">
-        <a href="index.html"><strong>Start</strong></a>
+        <a href="index.html">Start</a>
         <a href="programm.html">Programm</a>
         <a href="stammtisch.html">Stammtisch</a>
         <a href="ansprechpartner.html">Ansprechpartner</a>
         <a href="unimogs.html">Unimogs</a>
-        <a href="weiterführende-links.html">Weiterführende Links</a>
+        <a href="unsere-treffen.html">Unsere Treffen</a>
+        <a href="andere-treffen.html">Andere Treffen</a>
+        <a href="bildlaufleisten.html">Bildlaufleisten</a>
+        <a href="weiterfuehrende-links.html">Weiterführende Links</a>
+        <a href="intern.html">Intern</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
@@ -142,7 +51,7 @@
         Michael Blanke<br>
         Versmolder Str. 42<br>
         49196 Bad Laer<br>
-        E‑Mail: michael.blanke@mail.de
+        E‑Mail: <a href="mailto:michael.blanke@mail.de">michael.blanke@mail.de</a>
     </p>
 
     <h2>2. Hosting (GitHub Pages)</h2>
@@ -170,7 +79,7 @@
 
     <h2>4. Besucherzähler (Counter12)</h2>
     <p>
-        Diese Website nutzt einen Besucherzähler von <strong>Counter12</strong>. Dabei wird Ihre IP‑Adresse anonymisiert verarbeitet.
+        Diese Website nutzt auf der Startseite einen Besucherzähler von <strong>Counter12</strong>. Dabei wird Ihre IP‑Adresse anonymisiert verarbeitet.
     </p>
     <p>
         Weitere Informationen:<br>
@@ -214,12 +123,14 @@
     <p>
         Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden.
     </p>
+
+    <a href="index.html" class="btn-zurueck">← Zurück zur Startseite</a>
 </div>
 
 <footer>
     © 2026 UVC Regionalgruppe Emsland–Osnabrück
     <br>
-    <a href="hosting.html">Hosting & Technik</a> ·
+    <a href="hosting.html">Hosting &amp; Technik</a> ·
     <a href="impressum.html">Impressum</a> ·
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
