@@ -41,7 +41,11 @@
     <div class="marquee-box">
         <div class="marquee-header">
             <h2>Unimog‑Galerie</h2>
-            <button type="button" class="btn-fullscreen" onclick="toggleMarqueeFullscreen('marqueeUnimog')">⛶ Vollbild starten</button>
+            <div>
+                <button type="button" class="btn-fullscreen" onclick="toggleMarqueePause('unimogScroll', this)">⏸ Pause</button>
+                <button type="button" class="btn-fullscreen" onclick="stepMarquee('unimogScroll')">⏭ Weiter</button>
+                <button type="button" class="btn-fullscreen" onclick="toggleMarqueeFullscreen('marqueeUnimog')">⛶ Vollbild starten</button>
+            </div>
         </div>
         <div class="marquee" id="marqueeUnimog" onclick="toggleMarqueeFullscreen('marqueeUnimog')" title="Klicken für Vollbild-Präsentation">
             <div class="marquee-track" id="unimogScroll"></div>
