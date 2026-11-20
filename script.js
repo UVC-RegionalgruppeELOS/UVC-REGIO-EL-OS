@@ -76,7 +76,8 @@ function toggleMarqueeFullscreen(marqueeId) {
     }
 }
 
-function toggleMarqueePause(trackId, btn) {
+function toggleMarqueePause(trackId, btn, event) {
+    if (event) event.stopPropagation();
     const track = document.getElementById(trackId);
     if (!track) return;
 
@@ -98,7 +99,8 @@ function toggleMarqueePause(trackId, btn) {
     }
 }
 
-function stepMarquee(trackId) {
+function stepMarquee(trackId, event) {
+    if (event) event.stopPropagation();
     const track = document.getElementById(trackId);
     if (!track) return;
 
@@ -268,6 +270,14 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "HL 1 Makita.png", text: "Makita · ML120 (12 V) · 1990er" },
         { src: "TL 19 WONDER BABET.jpg", text: "Wonder · Babet · 1990er" },
         { src: "HL Acculux SL6 LED.jpg", text: "Acculux · SL6 LED · ca. 2005–2010" },
+        { src: "LmK Tischlampe 2.jpg", text: "Zierliche Vintage-Tischlampe · ca. 1950er" },
+        { src: "LmK Deckenlampe.jpg", text: "Deckenlampe mit Glasschirm · ca. 1950er–1960er" },
+        { src: "LmK Nachttischlampe.jpg", text: "Nachttischlampe mit Strukturglas · ca. 1960er" },
+        { src: "LmK Tischlampe.jpg", text: "Tischlampe mit Holzfuß · ca. 1960er–1970er" },
+        { src: "LmK Wagenradnabe.jpg", text: "Tischlampe aus Wagenradnabe · ca. 1960er–1970er" },
+        { src: "LmK Kronleuchter.jpg", text: "Mehrflammiger Kronleuchter · ca. 1970er" },
+        { src: "LmK Lampe 1.jpg", text: "Türkisblaue Retro-Tischleuchte · 1970er" },
+        { src: "LmK Reiselampe.jpg", text: "Klappbare Reiselampe · ca. 1970er–1980er" },
         { src: "Uhr Taschenuhr 1.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
         { src: "Uhr Taschenuhr 2.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
         { src: "Uhr Armbanduhr 1.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
