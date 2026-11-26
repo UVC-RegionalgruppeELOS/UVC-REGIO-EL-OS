@@ -185,10 +185,10 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Museum Hof Blanke & alle 7 Rubriken -->
+  <!-- Museum Hof Blanke & alle 9 Rubriken -->
   <url>
     <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/museum.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
 
@@ -217,7 +217,19 @@
   </url>
 
   <url>
+    <loc>https://github.io</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/museum-telefonie.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/museum-uhren.html</loc>
     <lastmod>2026-11-18</lastmod>
     <priority>0.7</priority>
   </url>
@@ -229,8 +241,8 @@
   </url>
 
   <url>
-    <loc>https://uvc-regionalgruppeelos.github.io/UVC-REGIO-EL-OS/museum-uhren.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://github.io</loc>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
 
