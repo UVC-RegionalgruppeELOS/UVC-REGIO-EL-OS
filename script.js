@@ -332,7 +332,24 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "ALKA.jpg", text: "ALKA · Kurbelgerät · ca. 1950–1965" },
         { src: "Parmesanmühle.jpg", text: "Schulte · Trommelreibe Modell 820 · ca. 1950–1970" },
         { src: "BME5.jpg", text: "BME5 · Kurbelgerät · ca. 1960–1970" },
-        { src: "Alexanderwerk7.jpg", text: "Alexanderwerk · Kurbelgerät 7 · ca. 1960–1970" }
+        { src: "Alexanderwerk7.jpg", text: "Alexanderwerk · Kurbelgerät 7 · ca. 1960–1970" },
+        { src: "WKZ Holzschuh Werkzeug.jpg", text: "Holzschuhmacher-Löffelbohrer · ca. 1890–1920" },
+        { src: "WKZ Handbohrer 2.jpg", text: "Schlangen- und Nagelbohrer · ca. 1900–1920" },
+        { src: "Rahmensäge und Zugsäge.jpg", text: "Rahmensäge und Zugsäge · ca. 1900–1930" },
+        { src: "WKZ Hobel groß.jpg", text: "Große Raubankhobel · ca. 1900–1930" },
+        { src: "WKZ Hobel.jpg", text: "Schlicht-, Putz- und Profilhobel · ca. 1910–1935" },
+        { src: "WKZ Huf- und Klauenzange.jpg", text: "Huf- und Klauenzange · ca. 1910–1935" },
+        { src: "Wkz Kneifzange.jpg", text: "Schmiedeeiserne Kneifzange · ca. 1910–1935" },
+        { src: "WKZ Sägeschränkzange.jpg", text: "Sägeschränkzange · ca. 1920–1940" },
+        { src: "WKZ Locheisen.jpg", text: "Locheisen-Satz · ca. 1920–1940" },
+        { src: "WKZ Handbohrer.jpg", text: "Brustleiern und Handbohrwinde · ca. 1920–1945" },
+        { src: "WKZ Blechschere.jpg", text: "Handblechscheren · ca. 1925–1945" },
+        { src: "WKZ Endländer.jpg", text: "Engländer und Rollgabelschlüssel · ca. 1925–1950" },
+        { src: "WKZ Zangen.jpg", text: "Kombi- und Monierzangen · ca. 1930–1950" },
+        { src: "WKZ Schlüssel.jpg", text: "Ring- und Spezialschlüssel · ca. 1930–1955" },
+        { src: "WKZ Ölkännchen.jpg", text: "Pump-Ölkännchen · ca. 1935–1955" },
+        { src: "WKZ Maulschlüssel.jpg", text: "Doppelmaulschlüssel-Satz · ca. 1935–1960" },
+        { src: "WKZ Fettpressen.jpg", text: "Stoß- und Handfettpressen · ca. 1940–1960" }
     ];
 
     buildSeamlessMarquee("unimogScroll", unimogImages);
@@ -340,41 +357,3 @@ document.addEventListener("DOMContentLoaded", function () {
     initInternArea();
 });
 
-/* =========================================================
-   Interner Bereich – Passwortprüfung & Logout
-   ========================================================= */
-
-function initInternArea() {
-    const loginBox = document.getElementById("loginBox");
-    const content = document.getElementById("content");
-    if (!loginBox || !content) return;
-
-    if (localStorage.getItem("uvcLoggedIn") === "true") {
-        loginBox.style.display = "none";
-        content.style.display = "block";
-    }
-}
-
-function checkPW() {
-    const pwInput = document.getElementById("pw");
-    const errorMsg = document.getElementById("loginError");
-    if (!pwInput) return;
-
-    if (pwInput.value === "unimog2026") {
-        localStorage.setItem("uvcLoggedIn", "true");
-        document.getElementById("loginBox").style.display = "none";
-        document.getElementById("content").style.display = "block";
-        if (errorMsg) errorMsg.style.display = "none";
-    } else {
-        if (errorMsg) {
-            errorMsg.style.display = "block";
-        } else {
-            alert("Falsches Passwort");
-        }
-    }
-}
-
-function logout() {
-    localStorage.removeItem("uvcLoggedIn");
-    window.location.href = "index.html";
-}
