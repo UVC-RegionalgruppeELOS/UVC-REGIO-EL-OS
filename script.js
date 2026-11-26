@@ -227,7 +227,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "Verl37.jpg", text: "Treffen Verl · 2026" },
         { src: "Verl38.jpg", text: "Treffen Verl · 2026" }
     ];
-
     const museumImages = [
         { src: "OB33.png", text: "Deutsche Bundesbahn · OB33 · 1930er" },
         { src: "RhAp.png", text: "Deutsche Reichspost · RhAp · 1940er–1960er" },
@@ -278,6 +277,13 @@ document.addEventListener("DOMContentLoaded", function () {
         { src: "LmK Kronleuchter.jpg", text: "Mehrflammiger Kronleuchter · ca. 1970er" },
         { src: "LmK Lampe 1.jpg", text: "Türkisblaue Retro-Tischleuchte · 1970er" },
         { src: "LmK Reiselampe.jpg", text: "Klappbare Reiselampe · ca. 1970er–1980er" },
+        { src: "RF Röhrenradio LÖWE Rheingold.jpg", text: "Loewe Opta · Röhrenradio Rheingold · ca. 1952/1953" },
+        { src: "RF Röhrenradio PHILIPS.jpg", text: "Philips · Röhrenradio · ca. 1955–1957" },
+        { src: "RF Röhrenradio Blaupunkt GRANADA.jpg", text: "Blaupunkt · Röhrenradio Granada · ca. 1958–1961" },
+        { src: "RF Plattenspieler POP.jpg", text: "Schallplattenspieler „POP“ · ca. 1970er" },
+        { src: "RF DDR STERN - RECORDER.jpg", text: "RFT · DDR Stern-Recorder R 160 · 1972–1980" },
+        { src: "TF Tonfilmprojektor Eumig S905.jpg", text: "Eumig · Super-8-Projektor Mark S 905 · ca. 1979–1981" },
+        { src: "TF Radio SONY IFC-704S.jpg", text: "Sony · Kofferradio ICF-704S · ca. 2000er" },
         { src: "Uhr Taschenuhr 1.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
         { src: "Uhr Taschenuhr 2.jpg", text: "Taschenuhr · Handaufzug · ca. 1930er" },
         { src: "Uhr Armbanduhr 1.jpg", text: "Armbanduhr · Mechanisch · 1940er" },
@@ -357,3 +363,41 @@ document.addEventListener("DOMContentLoaded", function () {
     initInternArea();
 });
 
+/* =========================================================
+   Interner Bereich – Passwortprüfung & Logout
+   ========================================================= */
+
+function initInternArea() {
+    const loginBox = document.getElementById("loginBox");
+    const content = document.getElementById("content");
+    if (!loginBox || !content) return;
+
+    if (localStorage.getItem("uvcLoggedIn") === "true") {
+        loginBox.style.display = "none";
+        content.style.display = "block";
+    }
+}
+
+function checkPW() {
+    const pwInput = document.getElementById("pw");
+    const errorMsg = document.getElementById("loginError");
+    if (!pwInput) return;
+
+    if (pwInput.value === "unimog2026") {
+        localStorage.setItem("uvcLoggedIn", "true");
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        if (errorMsg) errorMsg.style.display = "none";
+    } else {
+        if (errorMsg) {
+            errorMsg.style.display = "block";
+        } else {
+            alert("Falsches Passwort");
+        }
+    }
+}
+
+function logout() {
+    localStorage.removeItem("uvcLoggedIn");
+    window.location.href = "index.html";
+}
